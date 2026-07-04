@@ -275,23 +275,27 @@ impl ContentStore {
         Ok(results)
     }
 
+    /// Documents for a node's whole subtree, metadata only. The list UI never uses
+    /// the document body, and fetching every subtree doc's `content` (especially at
+    /// the vehicle root, which spans the entire tree) is expensive — so select an
+    /// empty blob for `content` and don't guard the root.
     pub fn list_documents_by_node_id(&self, node_id: i32) -> Result<Vec<Document>> {
-        let node = self.get_tree_node_by_id(node_id)?;
-        if node.location == Some("000".into()) {
-            return Ok(vec![]);
-        }
-
-        let q = self.q("WITH RECURSIVE sub(id) AS (\
+        let empty_content = if self.is_postgres { "''::bytea" } else { "x''" };
+        let sql = format!(
+            "WITH RECURSIVE sub(id) AS (\
                    SELECT node_id FROM tree_nodes WHERE node_id = ? \
                    UNION ALL \
                    SELECT tnl.child_node_id FROM tree_node_links tnl JOIN sub ON sub.id = tnl.parent_node_id\
                  ) \
                  SELECT DISTINCT d.hkap_id, d.variant_id, d.language_code, d.version, d.vehicle_component, \
                  d.title, d.document_type, d.publication_date, d.file_format, \
-                 d.vehicle_component_with_document_index, d.new, d.bookmarked, d.content \
+                 d.vehicle_component_with_document_index, d.new, d.bookmarked, {} AS content \
                  FROM documents d \
                  JOIN document_links dl ON dl.hkap_id = d.hkap_id \
-                 WHERE dl.node_id IN (SELECT id FROM sub)");
+                 WHERE dl.node_id IN (SELECT id FROM sub)",
+            empty_content,
+        );
+        let q = self.q(&sql);
         let mut results: Vec<Document> = block(
             sqlx::query_as::<_, Document>(&q)
             .bind(node_id)

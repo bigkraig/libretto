@@ -7,7 +7,7 @@ import Tooltip from '@mui/material/Tooltip';
 import React, {useEffect, useRef, useState} from "react";
 import clsx from "clsx";
 import {InsertDriveFile, PictureAsPdf} from "@mui/icons-material";
-import {IDocument, ListDocuments, SearchDocumentsByVehicle, SearchDocumentsInSubtree} from "@/lib/api";
+import {IDocument, ListDocuments, ListVehicleDocuments, SearchDocumentsByVehicle, SearchDocumentsInSubtree} from "@/lib/api";
 import {useSearchParams} from "next/navigation";
 
 const kinds: { [id: string]: string } = {
@@ -47,10 +47,33 @@ function InfoState({title, hint}: { title: string, hint?: string }) {
   )
 }
 
+const PAGE = 80;
+
 function DocumentsList({documents}: { documents: IDocument[] }) {
   const searchParams = useSearchParams()
   const vehicle = searchParams.get("vehicle");
   const year = searchParams.get("year") ? Number(searchParams.get("year")) : null;
+
+  // Render progressively — the vehicle-level list can be hundreds/thousands of rows.
+  const [visible, setVisible] = useState(PAGE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => { setVisible(PAGE) }, [documents]);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    // The list grows with content and the page scrolls (the panel is not a bounded
+    // scroller), so observe against the viewport.
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) setVisible(v => Math.min(v + PAGE, documents.length));
+      },
+      {rootMargin: "500px"},
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [documents.length, visible]);
 
   if (documents.length == 0 || vehicle == null || year == null) {
     return <InfoState title="Select a component" hint="Pick a section in the tree to see its workshop literature."/>
@@ -59,7 +82,7 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
   return (
     <div className={clsx("divide-y divide-line")}>
       {
-        documents.map((doc: IDocument) => {
+        documents.slice(0, visible).map((doc: IDocument) => {
           const href = `/documents/${year}/${vehicle}/${doc.hkap_id}`
           return (
             <a key={doc.id}
@@ -80,6 +103,7 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
           );
         })
       }
+      {visible < documents.length && <div ref={sentinelRef} className={clsx("h-10")}/>}
     </div>
   )
 }
@@ -98,7 +122,7 @@ export default function Index({location, vehicle, year}: Params) {
   const searchAbortRef = useRef<AbortController | null>(null)
 
   useEffect(() => {
-    if (!vehicle || !year || !location) {
+    if (!vehicle || !year) {
       setDocuments([])
       return
     }
@@ -108,7 +132,9 @@ export default function Index({location, vehicle, year}: Params) {
       d.scrollTop = Number(localStorage.getItem(key) || "")
     }
 
-    ListDocuments(location).then(docs => setDocuments(docs));
+    // A component (location) shows its subtree; no component shows the whole vehicle.
+    const req = location ? ListDocuments(location) : ListVehicleDocuments(year, vehicle)
+    req.then(docs => setDocuments(docs)).catch(() => setDocuments([]))
   }, [location, vehicle, year])
 
   // Reset search when navigating to a different location.

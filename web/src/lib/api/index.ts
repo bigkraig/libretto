@@ -3,6 +3,7 @@ export {GetVehicle} from './GetVehicle';
 export {GetWorkshopLiterature} from "./GetWorkshopLiterature";
 export {ListVehicles} from './ListVehicles';
 export {ListDocuments} from './ListDocuments';
+export {ListVehicleDocuments} from './ListVehicleDocuments';
 export {SearchDocumentsInSubtree} from './SearchDocumentsInSubtree';
 export {SearchDocumentsByVehicle} from './SearchDocumentsByVehicle';
 export {GetWorkshopImageUrl} from './GetWorkshopImageUrl';

@@ -88,6 +88,7 @@ pub async fn serve(bind_address: &String, api: Api) -> Result<(), anyhow::Error>
     let vehicle_component_tree_routes = Router::new()
         .route("/:year/:model", get(root_tree_node))
         .route("/:year/:model/", get(root_tree_node))
+        .route("/:year/:model/documents", get(get_vehicle_documents))
         .route("/nodes/:node_id", get(get_tree_node))
         .route("/nodes/:node_id/documents", get(get_documents))
         .route("/nodes/:node_id/documents/search", get(search_documents_in_subtree))
@@ -444,6 +445,14 @@ async fn search_documents(State(state): State<Arc<Api>>, body: Json<SearchDocume
 
 async fn get_documents(State(state): State<Arc<Api>>, Path(node_id): Path<i32>) -> Result<Json<Vec<DocumentsResponse>>, AppError> {
     let result = state.content_store.list_documents_by_node_id(node_id)?.iter().map(|d| d.into()).collect::<Vec<DocumentsResponse>>();
+    Ok(Json(result))
+}
+
+// Every document for a vehicle (the root node's whole subtree), so the list can
+// show data the moment a vehicle is picked, before drilling into a component.
+async fn get_vehicle_documents(State(state): State<Arc<Api>>, Path((year, vehicle)): Path<(i32, String)>) -> Result<Json<Vec<DocumentsResponse>>, AppError> {
+    let root = state.content_store.get_tree_node(&vehicle, year, None)?;
+    let result = state.content_store.list_documents_by_node_id(root.node_id)?.iter().map(|d| d.into()).collect::<Vec<DocumentsResponse>>();
     Ok(Json(result))
 }
 
