@@ -19,19 +19,9 @@ const kinds: { [id: string]: string } = {
   "SY": "Symptom-based Workshop Manual",
 }
 
-// Restrained, scannable badge treatment: workshop manuals (RM) are the core
-// content and read solid ink; technical info (TI) carries the brass accent;
-// everything else stays quiet.
-function badgeClass(type: string): string {
-  switch ((type || "").toUpperCase()) {
-    case "RM":
-      return "bg-ink text-white";
-    case "TI":
-      return "bg-brass-wash text-brass-dim";
-    default:
-      return "bg-white text-muted ring-1 ring-inset ring-line";
-  }
-}
+// One quiet, uniform chip for every document type — the mono letters do the
+// differentiating; no color-coding to compete with the brass accents.
+const BADGE_CLASS = "bg-white text-ink ring-1 ring-inset ring-line";
 
 function TypeBadge({type}: { type: string }) {
   const label = (type || "—").toUpperCase();
@@ -39,7 +29,7 @@ function TypeBadge({type}: { type: string }) {
     <span className={clsx(
       "inline-flex items-center justify-center min-w-[2.6rem] px-1.5 py-1 rounded-sm",
       "font-mono text-[11px] leading-none tracking-wide",
-      badgeClass(type),
+      BADGE_CLASS,
     )}>{label}</span>
   );
   return kinds[label]
@@ -196,14 +186,15 @@ export default function Index({location, vehicle, year}: Params) {
           )}
         </div>
 
-        <div className={clsx("flex items-center")}>
-          <div className={clsx("flex flex-row items-center gap-1.5 rounded-sm border border-line bg-paper px-2",
+        <div className={clsx("w-full md:w-auto")}>
+          <div className={clsx("flex w-full flex-row items-center gap-1.5 rounded-sm border border-line bg-paper px-2 md:w-auto",
                                "focus-within:border-brass focus-within:ring-1 focus-within:ring-brass",
                                "aria-disabled:opacity-60")}
                aria-disabled={!canSearch}>
             <SearchIcon fontSize="small" className={clsx("text-muted")}/>
             <input autoComplete="off" type="search"
-                   className={clsx("w-[26rem] max-w-[60vw] bg-transparent py-1.5 text-sm outline-none placeholder:text-muted disabled:text-muted")}
+                   className={clsx("w-full bg-transparent py-1.5 outline-none placeholder:text-muted disabled:text-muted",
+                                   "text-base md:w-[26rem] md:text-sm")}
                    placeholder={searchPlaceholder}
                    maxLength={100}
                    disabled={!canSearch}

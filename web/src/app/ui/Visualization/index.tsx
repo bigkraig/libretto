@@ -115,8 +115,8 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
     const polygons = svg.getElementsByTagName(qualifiedName) as HTMLCollectionOf<SVGElement>;
     for (const polygon of polygons) {
       if (polygon.id.endsWith(`_${data.active_location}`)) {
-        polygon.style.fill = '#690';
-        polygon.style.fillOpacity = "0.8"
+        polygon.style.fill = '#C0862C';
+        polygon.style.fillOpacity = "0.55"
       }
     }
   }

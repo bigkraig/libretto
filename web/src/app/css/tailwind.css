@@ -198,15 +198,15 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 #CC_HOTSPOT .selectable:hover, #CC_HOTSPOT .selectable.highlight, #CC_HOTSPOT .selectable.highlight path, #CC_HOTSPOT .selectable.highlight text, #CC_HOTSPOT .selectable:hover path, #CC_HOTSPOT .selectable:hover text a {
-  fill: #690;
-  fill-opacity: .7;
+  fill: #C0862C;
+  fill-opacity: .55;
   cursor: pointer
 }
 
 #CC_HOTSPOT .not-selectable:hover, #CC_HOTSPOT .not-selectable.highlight, #CC_HOTSPOT .not-selectable.highlight path, #CC_HOTSPOT .not-selectable.highlight text, #CC_HOTSPOT .not-selectable:hover path, #CC_HOTSPOT .not-selectable:hover text a {
-  fill: #d5001c;
-  fill-opacity: .7;
-  cursor: pointer
+  fill: #6B6E73;
+  fill-opacity: .25;
+  cursor: default
 }
 
 
