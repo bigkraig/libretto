@@ -1,0 +1,1436 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81276381"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81276381"
+    ,
+    
+    "version" :
+    8,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "4739"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "98/17"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2021-01-21T11:02:04.168+01:00"
+    ,
+    
+    "modificationDate" :
+    1721144082122,
+    
+    "issueDate" :
+    
+    
+    "2017-11-20T09:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Spare Parts Requirements - Front Brake Caliper: Observe specified procedure (98/17)"
+    ,
+    
+    "fileName" :
+    
+    
+    "81276381_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "qualityLineSegment" : {
+    
+    
+    "locationText" :
+    
+    
+    "Front brake calliper"
+    ,
+    
+    "locationType" :
+    
+    
+    "47390"
+    ,
+    
+    "symptomText" :
+    
+    
+    "Broken"
+    ,
+    
+    "symptomType" :
+    
+    
+    "1511"
+    
+    }
+    ,
+    
+    "parts" : [
+    
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "99135142786"
+    ,
+    
+    "label" :
+    
+    
+    "Front left brake caliper"
+    ,
+    
+    "extendedLabel" : ""
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "99135042880"
+    ,
+    
+    "label" :
+    
+    
+    "Front right brake caliper"
+    ,
+    
+    "extendedLabel" : ""
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "99135142986"
+    ,
+    
+    "label" :
+    
+    
+    "Front left brake caliper"
+    ,
+    
+    "extendedLabel" : ""
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "99135143086"
+    ,
+    
+    "label" :
+    
+    
+    "Front right brake caliper"
+    ,
+    
+    "extendedLabel" : ""
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81276382"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    ,
+    
+    
+    "LBL_TO"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2014 $LBL_TO$ 2016"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicle Type: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayman GT4</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>911 R (991)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>911 GT3 (991)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>911 GT3 RS (991)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Subject:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Front brake caliper</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>If the front brake caliper needs to be replaced and a complaint has been received, both brake calipers on the front axle must be replaced</b>, see "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "473919"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing front brake calliper"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Check whether Porsche Ceramic Composite Brakes (PCCB) (I-no. 450) or steel brake discs are installed and select the required part number accordingly."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Parts Info:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Part No. (new)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Designation</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Qty.</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "991.351.427.<b>86</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"99135142786\">Front left brake caliper</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "<b> with steel brake discs</b>"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1 ea."
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "991.351.428.<b>86</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"99135042880\">Front right brake caliper</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "<b> with steel brake discs</b>"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1 ea."
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "991.351.429.<b>86</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"99135142986\">Front left brake caliper</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "<b> with ceramic brake system</b>"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1 ea."
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "991.351.430.<b>86</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"99135143086\">Front right brake caliper</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "<b> with ceramic brake system</b>"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1 ea."
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Invoicing:"
+    ,
+    
+    "children" : ""
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The work involved is invoiced under the labor operation:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_APOS_NUMBER"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_APOS_NUMBER$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_DESCRIPTION"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_DESCRIPTION$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_INUMBER"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_INUMBER$"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "47395650"
+    ,
+    
+    
+    "Replacing front brake calipers"
+    ,
+    
+    
+    "-"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "For invoicing and documentation using PQIS, enter the following coding:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "invoiceTable"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FES5"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FES5$"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "47390"
+    ,
+    
+    
+    "Front brake calliper"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_SA4"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_SA4$"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1511"
+    ,
+    
+    
+    "Broken"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

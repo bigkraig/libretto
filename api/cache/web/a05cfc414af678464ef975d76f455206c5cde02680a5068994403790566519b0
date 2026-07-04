@@ -1,0 +1,842 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80232441"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80232441"
+    ,
+    
+    "version" :
+    17,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "1701"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "15/14"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2019-01-24T00:33:10.515+01:00"
+    ,
+    
+    "modificationDate" :
+    1721141174126,
+    
+    "issueDate" :
+    
+    
+    "2014-03-06T09:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Measuring Engine-oil Level on GT3 vehicles: \"Minimum\" Display in the PIWIS Tester is Currently Slightly Different (15/14)"
+    ,
+    
+    "fileName" :
+    
+    
+    "80232441_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e61a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester II"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9818"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9818"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80232444"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Document with limited validity."
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This Quick Information shall remain valid until such a time as PIWIS Tester software version 13.800 becomes available."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2014"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicle Type:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>911 GT3 (991)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Measuring engine-oil level</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>The engine-oil level displayed in the PIWIS Tester when the oil level is at the Minimum marking is slightly different to the display in the instrument cluster.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the message \"Oil level minimum reached\" or \"Oil level below minimum\" is displayed in the instrument cluster when measuring the engine-oil level, an engine-oil level above minimum can be displayed when you then check the engine-oil level using the PIWIS Tester."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Until PIWIS Tester software version 13.800 becomes available:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "The <b>engine-oil level will be displayed correctly in the instrument cluster – even at the minimum level</b>."
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Due to a short-term software change in the DME control unit, an engine-oil level above the Minimum marking can be displayed in the PIWIS Tester."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>⇒ The PIWIS Tester can still be used as before to determine the amount of oil to be added or drained.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The <b>quantity of oil required</b> in order to reach the “Maximum” oil level is <b>determined and displayed correctly using the PIWIS Tester</b>."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The measured result in the PIWIS Tester will be adapted according to specifications when PIWIS Tester software version 13.800 becomes available."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Date of Introduction:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This issue will be resolved when PIWIS Tester software version 13.800 becomes available "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Tools:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e61a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

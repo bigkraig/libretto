@@ -1,0 +1,2357 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82244666"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82244666"
+    ,
+    
+    "version" :
+    46,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "270355"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-24T03:35:12.765+02:00"
+    ,
+    
+    "modificationDate" :
+    1721871054296,
+    
+    "title" :
+    
+    
+    "Replacing HV voltage converter"
+    ,
+    
+    "fileName" :
+    
+    
+    "82244666_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Preliminary work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISf7b0cd49-a5ee-47fa-ad60-276b8b3e354d"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Replacing HV voltage converter"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS18443b23-46c2-498a-96c0-75233c403438"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Subsequent work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS245e8287-be1c-4d5a-881b-c081e1ab3bdf"
+    
+    }
+    
+    ]
+    ,
+    
+    "techvalues" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "external current supply"
+    ,
+    
+    "description" :
+    
+    
+    "charging device"
+    ,
+    
+    "kind" :
+    
+    
+    "current"
+    ,
+    
+    "baseValue" :
+    
+    
+    "90 A"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISf7b0cd49-a5ee-47fa-ad60-276b8b3e354d\" >Preliminary work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82329841"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The voltage converter must be de-energized before the high-voltage voltage transformer can be programmed."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc500940d-e768-4356-9ddf-fbe03671a940"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Isolate high-voltage system from power supply.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Isolating high-voltage system from power supply/Starting high-voltage system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS18443b23-46c2-498a-96c0-75233c403438\" >Replacing HV voltage converter</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82244668"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "0Hinweis"
+    ,
+    
+    "source" :
+    
+    
+    "Voltage drop"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Irreparable damage to control unit"
+    ,
+    
+    
+    "Damage to control unit"
+    ,
+    
+    
+    "Fault entries in the control unit"
+    ,
+    
+    
+    "Control unit programming/coding is aborted"
+    ,
+    
+    
+    "Malfunctions in the control unit, even during programming"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Switch off ignition before disconnecting the control unit."
+    ,
+    
+    
+    "Make sure that the power supply is not interrupted during programming/coding."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                         Connect the battery charger with at least                         "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a class=\"qv qv-techvalue\" href=\"\" target=\"PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584\">current 90 A </a>"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "external current supply"
+    ,
+    
+    "description" :
+    
+    
+    "charging device"
+    ,
+    
+    "kind" :
+    
+    
+    "current"
+    ,
+    
+    "baseValue" :
+    
+    
+    "90 A"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    "                          to the vehicle battery.                     "
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The terms \"Ignition on\" and \"Starting engine\" are re-defined for fully electric vehicles (battery electric vehicles - BEV)."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Establishing operational readiness/Ignition on:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Prerequisites for establishing operational readiness: High-voltage battery is sufficiently charged, remove vehicle charging cable from the vehicle charge port, put driver's key in the emergency start tray."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establishing operational readiness automatically: Get into the vehicle and close the driver's door. The driver's key is recognised inside the vehicle. Operational readiness is established."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establishing operational readiness manually: Press Start/Stop switch. The driver's key is recognised inside the vehicle. Operational readiness is established."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Establishing operational readiness/Starting engine:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establish operational readiness and engage transmission range. The vehicle is now ready to drive and can be moved."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ending operational readiness/Switching off ignition</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ending operational readiness automatically: Get out of the vehicle with the driver's key and close the driver door. The driver's key is no longer detected outside the vehicle. Operational readiness ends."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ending operational readiness manually: Press Start/Stop switch until the instrument cluster is switched off."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ending driving readiness/Stopping engine </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Vehicle is stationary: Press the                      <b>P</b>                      button on the instrument cluster. The vehicle is parked.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ensure the consistency of a combination of hardware and software versions</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "After performing software updates, always make sure that the target software versions are also actually installed on the control units and that the system is therefore ensured."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This also applies in the case of hardware replacement."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "See TI 9X00 Information on the software system for various control units in the vehicle (112/21)"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     The                      <b>PIWIS Tester</b>                      instructions take precedence since the description may be different with later Tester releases.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     The procedure described here has been structured in general terms. Different text or additional information may appear on the                      <b>PIWIS Tester</b>                     .                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8faf06b1-4d4d-470e-b505-a84d50f45011"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Connect the Tester to the vehicle and start it. Establish operational readiness on the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS76822578-9837-4d8d-adad-275e5a2317cd"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Place original remote control (hand-held transmitter) in emergency start tray."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS2b9a3cb0-cdba-4e16-a0c3-cc5ec3f8c151"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS9823e642-6d74-4c5c-80f6-75fa1c11cec9"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "81902808"
+    ,
+    
+    "title" :
+    
+    
+    "Emergency start tray"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS0a5174a1-4d15-4436-b135-736466c931da"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the vehicle type if necessary."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf17c295e-6137-48bd-8067-651271109b2f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select the                      <b>HV voltage converter</b>                      control unit in the                      <b>overview</b>                     . Press                      <span class=\"key\">F12</span>                      to continue. The message \"Create vehicle analysis log (VAL)?\" appears. Press                      <span class=\"key\">F11</span>                      to continue.                  "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS40211400-a385-440b-9f26-de2c14e403e0"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select                      <b>Coding/programming</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS97e61078-972f-4a73-a76f-83162b3eb176"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select                      <b>Automatic programming</b>                     . Press                      <span class=\"key\">F12</span>                      to continue.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS84e83028-a219-4c3f-a993-7dbd7572ca7f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The Tester displays the message: Programming was completed successfully."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS2651fe52-97f3-4cbf-ae98-bc72e953db7c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Go back to the                      <b>overview</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "8"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISff6c417a-848e-4155-b07f-d4d3c39d2053"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     In the                      <b>overview</b>                     , press                      <span class=\"key\">F7</span>                      to switch to the                      <b>Additional menu</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb929af20-009d-4953-9f2f-450710168a6d"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Read out all                      <b>fault memories</b>                     , work through faults that are stored if necessary and clear the fault memories.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "10"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc5996bdc-70bb-4894-909b-006cc3464755"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Exit the diagnostic application. End operational readiness on the vehicle. Disconnect the Tester from the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS245e8287-be1c-4d5a-881b-c081e1ab3bdf\" >Subsequent work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82329842"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS76cb84cf-87b5-448e-844a-c988ef76439f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Start the high-voltage system.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Isolating high-voltage system from power supply/Starting high-voltage system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

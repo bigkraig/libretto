@@ -1,0 +1,2353 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81663271"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81663271"
+    ,
+    
+    "version" :
+    48,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "914455"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-24T03:11:32.676+02:00"
+    ,
+    
+    "modificationDate" :
+    1721868260356,
+    
+    "title" :
+    
+    
+    "Replacing loudspeaker booster"
+    ,
+    
+    "fileName" :
+    
+    
+    "81663271_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Replacing loudspeaker booster"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIScbc34ff0-cbc6-4ede-9467-de48103eeaa3"
+    
+    }
+    
+    ]
+    ,
+    
+    "techvalues" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "external current supply"
+    ,
+    
+    "description" :
+    
+    
+    "charging device"
+    ,
+    
+    "kind" :
+    
+    
+    "current"
+    ,
+    
+    "baseValue" :
+    
+    
+    "90 A"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIScbc34ff0-cbc6-4ede-9467-de48103eeaa3\" >Replacing loudspeaker booster</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81721398"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "0Hinweis"
+    ,
+    
+    "source" :
+    
+    
+    "Voltage drop"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Irreparable damage to control unit"
+    ,
+    
+    
+    "Damage to control unit"
+    ,
+    
+    
+    "Fault entries in the control unit"
+    ,
+    
+    
+    "Control unit programming/coding is aborted"
+    ,
+    
+    
+    "Malfunctions in the control unit, even during programming"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Switch off ignition before disconnecting the control unit."
+    ,
+    
+    
+    "Make sure that the power supply is not interrupted during programming/coding."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                         Connect the battery charger with at least                         "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a class=\"qv qv-techvalue\" href=\"\" target=\"PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584\">current 90 A </a>"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0c3fb4f4-878c-4d92-8c17-527e34b2c584"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "external current supply"
+    ,
+    
+    "description" :
+    
+    
+    "charging device"
+    ,
+    
+    "kind" :
+    
+    
+    "current"
+    ,
+    
+    "baseValue" :
+    
+    
+    "90 A"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    "                          to the vehicle battery.                     "
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The terms \"Ignition on\" and \"Starting engine\" are re-defined for fully electric vehicles (battery electric vehicles - BEV)."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Establishing operational readiness/Ignition on:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Prerequisites for establishing operational readiness: High-voltage battery is sufficiently charged, remove vehicle charging cable from the vehicle charge port, put driver's key in the emergency start tray."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establishing operational readiness automatically: Get into the vehicle and close the driver's door. The driver's key is recognised inside the vehicle. Operational readiness is established."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establishing operational readiness manually: Press Start/Stop switch. The driver's key is recognised inside the vehicle. Operational readiness is established."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Establishing operational readiness/Starting engine:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establish operational readiness and engage transmission range. The vehicle is now ready to drive and can be moved."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ending operational readiness/Switching off ignition</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ending operational readiness automatically: Get out of the vehicle with the driver's key and close the driver door. The driver's key is no longer detected outside the vehicle. Operational readiness ends."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ending operational readiness manually: Press Start/Stop switch until the instrument cluster is switched off."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ending driving readiness/Stopping engine </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Vehicle is stationary: Press the                      <b>P</b>                      button on the instrument cluster. The vehicle is parked.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     The                      <b>PIWIS Tester</b>                      instructions take precedence since the description may be different with later Tester releases.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     The procedure described here has been structured in general terms. Different text or additional information may appear on the                      <b>PIWIS Tester</b>                     .                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS09946412-6a43-49b8-9696-f5d7b20b2c6b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Connect the Tester to the vehicle and start it. Establish operational readiness on the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS167f7d17-45cf-444e-b347-832100cecacb"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Place original remote control (hand-held transmitter) in emergency start tray."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS828fdb57-54bb-4d51-93ca-cd49f25ff5c8"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS8f700eb3-7e6f-45ef-8016-fead48610c76"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "81902808"
+    ,
+    
+    "title" :
+    
+    
+    "Emergency start tray"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1bf1e534-256b-40cd-99ee-59de013ab4f0"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the vehicle type if required."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5006bbb4-e26e-489e-b716-7d080354258a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select the                      <b>Amplifier</b>                      control unit in the                      <b>overview</b>                     . Press                      <span class=\"key\">F12</span>                      to start. The message \"Create Vehicle Analysis Log (VAL)?\" appears. Press                      <span class=\"key\">F11</span>                      to continue.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS9549b5bf-aa5f-4756-8a9d-913c86162766"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Coding/programming</b>                      must be selected.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS79d0d7b1-e98a-44e3-8b48-01ef576f8b16"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Automatic coding</b>                      must now be selected. Press                      <span class=\"key\">F12</span>                      to continue.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd67d0b9a-dae3-4835-9b53-a79772613b8e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The Tester displays the message: Coding was completed successfully."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS657e5fc9-ddc1-480a-a560-9219db5b37ef"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Go back to the overview."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "8"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa1845cd2-b509-4921-a6e6-bd987c4981e9"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     In the                      <b>overview</b>                     , press                      <span class=\"key\">F7</span>                      to switch to the                      <b>Additional menu</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS667e8fe8-5602-4c3d-9dbe-a74ecc638f21"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Component protection start-up</b>                      must now be selected. Press                      <span class=\"key\">F12</span>                      to continue.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5155e853-0459-4b6d-be0c-2199a262883c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Follow instructions and procedure."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb1c7038c-e567-4351-bfff-9c3f2932d8b9"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Teach component protection according to menu guidance."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS36d6ead0-f33d-4f7f-a810-5044b36bacb7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The Tester displays the message: Component protection taught."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "10"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS371cea6b-742f-4470-8092-f73afb9ffdeb"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Go back to the overview."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISbe4fdcfe-fb43-4364-b8f0-47d10072ef71"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Teach combination sensor."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb9b0a956-c2ce-4f42-9b3c-b1abcf9c50f2"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                         Select                          <b>Airbag</b>                          control unit in the                          <b>overview</b>                         .                     "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS043398fa-0f3d-481c-aaa6-38e30e326113"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Maintenance/repairs</b>                          must now be selected.                     "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISad3f4b84-055a-4d3c-9172-a69e452c05b6"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Teach combination sensor</b>                          must be selected. Press                          <span class=\"key\">F12</span>                          to continue.                     "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS361e56bc-17d9-489a-8f83-4df8e7c1a3c4"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Read and follow the instructions and information on the Tester."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "12"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS450c1d09-6f09-4895-8203-747eca9bd907"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Go back to the                      <b>overview</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "13"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS2cf31513-f8a0-4f56-89a6-4f8b4888855c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     In the                      <b>overview</b>                     , press                      <span class=\"key\">F7</span>                      to switch to the                      <b>Additional menu</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "14"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS91f69049-d0d4-46aa-b6c9-3a2d895a4d02"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Read out all                      <b>fault memories</b>                     , work through faults that are stored if necessary and clear the fault memories.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "15"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5c732d9e-deae-47fd-a796-d0b8889a99e7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Exit the diagnostic application. End operational readiness on the vehicle. Disconnect the Tester from the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

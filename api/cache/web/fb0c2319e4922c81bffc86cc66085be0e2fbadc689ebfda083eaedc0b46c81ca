@@ -1,0 +1,3967 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81505107"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81505107"
+    ,
+    
+    "version" :
+    27,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "9638K2"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-24T02:43:40.984+02:00"
+    ,
+    
+    "modificationDate" :
+    1721864856507,
+    
+    "title" :
+    
+    
+    "Calibrating front camera"
+    ,
+    
+    "fileName" :
+    
+    
+    "81505107_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Information"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS673fd0fd-17eb-461a-8a10-34cf3e8dfdcb"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Preliminary work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISfadc9e22-5d7d-43d3-aa95-7629dbf3dc43"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Calibrating front camera"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS18f9f3ed-a28a-4528-993b-9b7db10e5f6a"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Subsequent work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS40d73953-c0e1-426a-80e5-0251bddfb254"
+    
+    }
+    
+    ]
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e36a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Setting Device with Reflector"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6430/1A"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6430/1A"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e39a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Lane Departure Warning Calibration Plate"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6430/4"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6430/4"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e42a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester II"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9818"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9818"
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS673fd0fd-17eb-461a-8a10-34cf3e8dfdcb\" >Information</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80141524"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>When does front camera need to be calibrated?</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The front camera must be re-calibrated in the following situations:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "When replacing the front camera"
+    ,
+    
+    
+    "When removing and installing the windscreen"
+    ,
+    
+    
+    "When changing the height of the chassis"
+    ,
+    
+    
+    "When adjusting the chassis or changing wheel alignment values"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISfadc9e22-5d7d-43d3-aa95-7629dbf3dc43\" >Preliminary work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80141432"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     The                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e36a1161\">VAS 6430/1A - Setting Device with Reflector</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                     , the                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                     ,                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                      and a wheel alignment computer are required for the calibration process.                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Calibration must only be performed on a levelled wheel alignment platform or on level ground."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     The surface of the                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                      must be clean and free of objects.                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    " The vehicle must be empty and ready to drive."
+    ,
+    
+    
+    "All vehicle doors must be closed."
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The position of the front camera in the vehicle coordinate system is determined by calibrating the front camera."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf0690d5d-0bb7-4664-821b-3f8c601f5ee4"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Before calibrating the front camera, a basic initial measurement must be performed.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "449503"
+    ,
+    
+    "title" :
+    
+    
+    "Suspension alignment, complete"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS782796c6-5725-40e4-b284-17fb6c5576ed"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Park the vehicle on a levelled wheel alignment platform or on a level surface and set up the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e36a1161\">VAS 6430/1A - setting device with reflector</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      with the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - calibration board for lane departure warning</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      in front of the vehicle in accordance with the instructions on the wheel alignment computer and                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS8f0d74de-df31-4a47-9bdb-f3dac6ec89ad"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISc00905b8-52ad-410f-a8b4-90a793d6a03a2"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80141526"
+    ,
+    
+    "title" :
+    
+    
+    "Setup overview"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS18f9f3ed-a28a-4528-993b-9b7db10e5f6a\" >Calibrating front camera</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80141528"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "0Hinweis"
+    ,
+    
+    "source" :
+    
+    
+    "Voltage drop"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Risk of irreparable damage to control unit"
+    ,
+    
+    
+    "Risk of damage to control unit"
+    ,
+    
+    
+    "Fault entries in the control unit"
+    ,
+    
+    
+    "Coding in the control unit is aborted"
+    ,
+    
+    
+    "Malfunctions in control unit, even during programming"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Prior to disconnecting the control unit, switch off ignition and remove ignition key."
+    ,
+    
+    
+    "Ensure that the power supply is not interrupted during programming."
+    ,
+    
+    
+    "Connect a battery charger with a current rating of at least 90 A to the vehicle battery."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Once all adjustment procedures are complete in the wheel alignment computer, start the calibration process in                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     The                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      instructions take precedence since the description may be different with later Tester releases.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     The procedure described here has been structured in general terms. Different text or additional information may appear in                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     The required height of the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      and its distance from the vehicle will not be displayed on the wheel alignment computer. These values are stored in                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      under                      <b>Front camera calibration</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb0002894-1d37-47f0-a801-e64ca5b6fa37"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select the                      <b>relevant vehicle</b>                      in the wheel alignment computer.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa32e8437-8ae9-4be5-b12a-f363a46288d1"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select quick function                      <b>Calibrate front camera</b>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS9948f0ca-2928-4b28-a3e6-f62c74ae8132"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - The calibration board for Lane Keep Assist</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must be aligned by following the procedure and instructions on the wheel alignment computer.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS58f5b755-8726-43a6-9759-ca4c612f7edc"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Set the distance from the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e36a1161\">VAS 6430/1A - setting device with reflector</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      to the vehicle as shown on                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     . The distance                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS3004ba7e-147c-4ec9-b2c1-7d4e0317e3972\">-LHD vehicle  -</a>                      from the centre of the wheel hub to the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e36a1161\">VAS 6430/1A - setting device with reflector</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must always be                      <b>1,500 mm</b>                     . The difference between the distance                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS3004ba7e-147c-4ec9-b2c1-7d4e0317e3972\">-LHD vehicle  -</a>                      on the left side of the vehicle and the distance                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS3004ba7e-147c-4ec9-b2c1-7d4e0317e3972\">-LHD vehicle  -</a>                      on the right side of the vehicle must not be more than 5 mm.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS68eaec85-3259-4e0f-b076-7870facc1e44"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS3004ba7e-147c-4ec9-b2c1-7d4e0317e3972"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80141604"
+    ,
+    
+    "title" :
+    
+    
+    "Distance from calibration unit to vehicle"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS79ef4879-4add-4722-a3f9-01cdb2fee180"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Secure measured-value pickup mounting to the rear wheels of the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS6875c6bf-d66f-46e5-986d-89acbc827b74"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Fit the relevant measured-value pickups on the measured-value pickup mounting and                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - calibration board for lane departure warning</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS263ae58d-fd0f-4064-85ea-44428562ad99"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     The height of the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - calibration board for lane departure warning</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must be                      <b>1,200 mm</b>                     . Make sure that the measuring stick is touching the floor. If the vehicle is on a wheel alignment platform, the height of the                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - calibration board for lane departure warning</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must be adjusted to include the height of the wheel alignment platform.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "8"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1a6b140f-611e-45d2-8616-59de9b5ac42e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Measure the distance from the highest point of each wheel housing edge to the floor (vehicle standing level) and write these dimensions down in mm. These measurements will have to be entered later under                      <b>Wheel housing edge height</b>                      in                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The wheel alignment computer is no longer needed for the rest of the calibration process."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>                         Do not move the vehicle or                          "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                          from this point onwards!                     </b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISfb64b2b0-a183-4455-8327-75e3daa17c08"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must be connected to the vehicle before starting                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     . Switch on the ignition.                      "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "10"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd20e47ab-2710-40c3-95e4-f7231be29803"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Start the diagnostic application and select the required vehicle type."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS41db1b02-4ae4-491f-8dbf-75d90ec27a97"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select the                      <b>Front camera</b>                      control unit in the                      <b>overview</b>                     .                  "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "12"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISedad0db6-c543-4791-98bc-5a214706965e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Select the option                      <b>Calibrate front camera</b>                      under                      <b>Maintenance/repairs</b>                     . Press                      <span class=\"key\">F12</span>                      to continue.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "13"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc0b07d33-8576-4140-b58d-6d0d1fe8b813"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Read the warnings displayed on                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      and follow the instructions.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "14"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5f577be4-29b9-424b-a583-efb2b8c1f08d"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Enter the previously recorded values for                      <b>Wheel housing edge height</b>                      and                      <b>Distance to calibration board</b>                      and press                      <span class=\"key\">F8</span>                      to confirm your entries. Press                      <span class=\"key\">F12</span>                      to continue.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "15"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe0a50500-20e7-4f88-af37-460422d28e1e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Start the calibration process by pressing                      <span class=\"key\">F8</span>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     The height of the                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                      is not correct.                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     The vehicle and                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                      are not aligned correctly.                 "
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the calibration process cannot be completed successfully, one or more of the calibration values are outside of the required range. There can be a number of different reasons for this:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "16"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISae5818e4-e706-4205-bfc3-5c53372525cd"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Wait for confirmation that                      <b>calibration was completed successfully</b>                     . Press                      <span class=\"key\">F12</span>                      to continue.                      "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "17"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS028cc0ae-571c-4a05-bec1-a3ce4eeeafa8"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch ignition off and on again."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "18"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS54a3e816-9dbf-4abc-b975-6160493896dd"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Check the function and image quality of the front camera."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "19"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8c95cf02-0942-479f-b325-47cbc9496d21"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Read out the fault memory."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS40d73953-c0e1-426a-80e5-0251bddfb254\" >Subsequent work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80141747"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS53b11055-d25d-4704-84df-62635fdff654"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Switch off ignition and disconnect                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e42a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      from the vehicle.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISce9808d0-3538-4b36-954a-c28b59dc69d0"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e36a1161\">VAS 6430/1A - Setting Device with Reflector</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      and                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e39a1161\">VAS 6430/4 - Lane Departure Warning Calibration Plate</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                      must now be removed.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

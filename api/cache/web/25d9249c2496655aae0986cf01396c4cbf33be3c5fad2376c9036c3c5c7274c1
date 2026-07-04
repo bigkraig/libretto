@@ -1,0 +1,2943 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82360175"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82360175"
+    ,
+    
+    "version" :
+    3,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "9940"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "12/22"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-02-23T22:07:32.478+01:00"
+    ,
+    
+    "modificationDate" :
+    1721154950133,
+    
+    "issueDate" :
+    
+    
+    "2022-03-14T05:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Emergency Call Indicator Light Flashes Red/Cannot Log in Using Porsche ID: Perform Tester Routine \"Reset ORU Warning\" (12/22)"
+    ,
+    
+    "fileName" :
+    
+    
+    "82360175_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "qualityLineSegment" : {
+    
+    
+    "locationText" :
+    
+    
+    "Porsche Connect"
+    ,
+    
+    "locationType" :
+    
+    
+    "99400"
+    ,
+    
+    "symptomText" :
+    
+    
+    "Function not as specified"
+    ,
+    
+    "symptomType" :
+    
+    
+    "1614"
+    
+    }
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e37a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester 3"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9900"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9900"
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "4fc1b8a9-573f-4e39-90ea-9cc706a3e003"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "9f85855e-8485-48ab-8702-0cfd5f60f2af"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360176"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    ,
+    
+    
+    "LBL_TO"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2022 $LBL_TO$ 2022"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model Series:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Taycan (Y1A/Y1B)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Connect (ConBox) and Over the Air (OTA) control units</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The emergency call indicator light in the roof console flashes red and login with the Porsche ID is not possible. The fault occurs after deactivating Transport or Flight mode. This is caused by missing registration between the Connect (ConBox), Over the Air (OTA) and the backend (ODP) control units due to missing GPS data."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Action required:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Park the vehicle outdoors with sufficient GPS reception and then carry out the tester routine 'Reset ORU warning'."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360177"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Required tools</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Tool:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e37a1161\">9900 - PIWIS Tester 3</a>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360178"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Preparatory work</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8b32c02d-f2a1-44b8-813e-17f5e69b70b3"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Move the vehicle outdoors."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS34abc83e-31cf-4ff3-ac0d-19c9332c8db5"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Place driver’s key in emergency start tray."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS95df75ea-c269-4d51-8f04-871ecaf598b7"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISf089d431-223d-43d3-adc6-4b78896a7388"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "4fc1b8a9-573f-4e39-90ea-9cc706a3e003"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "9f85855e-8485-48ab-8702-0cfd5f60f2af"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "9176fa3d-b372-49a1-a502-078b1f6b8ed3"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "81902808"
+    ,
+    
+    "title" :
+    
+    
+    "Emergency start tray"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb4408601-2e71-4d1f-a416-f17d65b8c98a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e37a1161\">9900 - Connect PIWIS Tester 3</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " to the vehicle communication interface module (VCI) via the <b>USB cable</b>. Then connect the communication module to the vehicle and switch on the PIWIS Tester."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS10265e03-38c2-47fe-9072-099c8a4d9250"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch on ignition."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa33006d8-0717-473d-b663-dee7b8c1c2b5"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "On the PIWIS Tester start screen, call up the <b>'Diagnostics'</b> application."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The vehicle type is then read out, the diagnostic application is started and the control unit selection screen is populated."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360179"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Check GPS reception of the Connect (ConBox) control unit</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc8cde18a-1039-443b-b3e3-60b1f6abc244"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Check GPS reception of the Connect (ConBox) control unit:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISfa80b727-c96d-4270-aed6-02582fd2de36"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select <b>'Connect'</b> control unit."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa9be047d-2884-4d84-b2ac-b3b9c93dd2ed"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the <b>‘Actual values/input signals’</b> menu."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS531e7e09-321b-48ca-acb4-cea27c2e32cf"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select menu item <b>'GPS'</b>."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS54d029b0-ddea-479e-b46c-5bb03aa3f66c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>'GPS reception status: Select the ‘number of visible satellites'</b> and check whether GPS data is received from more than five satellites."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.4.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe6648d26-1445-456c-81bc-479b84866807"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If GPS data is received from <b>more than five satellites</b>, continue with Step '1.5'."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.4.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS3b7da6b3-04f2-4b29-baeb-36dd9cba881b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If GPS data is received from <b>fewer than five satellites</b>, park the vehicle in a different area with better GPS reception and repeat the test."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS369efa57-3f13-41c5-8148-8c1b3da22c72"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>'GPS reception status: Select Status'</b> and check the value."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.5.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS40e9e2d0-046a-4979-a161-aa86fdb20f0d"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "If the value <b>'GPS data is received, position is determined fully'</b> is specified, continue with Resetting \"ORU warning\" "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82343491"
+    ,
+    
+    "html" :
+    
+    
+    "tester routine"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.5.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISbabe4e1e-42e7-48a9-841c-3e292f3c03f8"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the value <b>'GPS data is received, position height unknown'</b> is specified, park the vehicle in a different area with better GPS reception and repeat the test."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360180"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Perform Tester routine \"Reset ORU warning\"</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Before carrying out the Tester routine, make sure that you have sufficient GPS reception."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc4a9b78a-d74b-4fc4-acfa-5a8db942e0d6"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Perform Tester routine \"Reset ORU warning\":"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe872f288-fcfe-42ff-b536-29f02aaae43b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Over-the-air (OTA)</b> control unit"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS7e842278-dabb-4155-8478-770de0d176cd"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select <b>'Maintenance/repairs'</b> menu."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf048f42c-7e59-4ed0-bfd5-39ded2b0247a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the ⇒ <b>‘Reset service interval’</b> function and confirm with <span class=\"key\">F12</span> ('Next')."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS972c0751-9599-4184-9cf0-2909490cd21c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Start the test routine with <span class=\"key\">F8</span>."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360182"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Concluding work</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS4cccdef9-06b3-4fc4-981e-afec3161299a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch off ignition."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5004f8c8-1da2-4d6a-b717-844ea7f537c7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch on ignition and check whether the emergency call indicator light lights up green."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa0b875e2-d4d9-4f7c-ac6f-251dcfcb00d5"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the emergency call indicator light lights up green, continue with Step '3'."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb39f7ce6-05f8-4456-b851-875581934120"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the emergency call indicator light continues to flash red, park the vehicle in a different area with better GPS reception and repeat the Tester routine."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS65f62773-34ac-426c-b7ce-254614ea3553"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch off ignition."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc8a2ffde-12d7-4b79-b7fc-593498309f63"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e37a1161\">9900 - PIWIS Tester 3</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " must now be disconnected from the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS90f50374-f646-47c9-b7ea-2d79abdd83a1"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Remove the driver’s key from the emergency start tray."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82360183"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Invoicing</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "For documentation and warranty invoicing, enter the labor operation and PCSS encryption specified below in the warranty claim:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_APOS_NUMBER"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_APOS_NUMBER$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_DESCRIPTION"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_DESCRIPTION$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_INUMBER"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_INUMBER$"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "99402500"
+    ,
+    
+    
+    "Programming Porsche Connect"
+    ,
+    
+    
+    "-"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "PCSS encryption:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "invoiceTable"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FES5"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FES5$"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "99400"
+    ,
+    
+    
+    "Porsche Connect"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_SA4"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_SA4$"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "1614"
+    ,
+    
+    
+    "Function not as specified"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

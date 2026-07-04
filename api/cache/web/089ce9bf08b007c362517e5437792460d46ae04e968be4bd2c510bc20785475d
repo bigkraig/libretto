@@ -1,0 +1,2322 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80503935"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80503935"
+    ,
+    
+    "version" :
+    14,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "455919"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-01-10T06:31:36.749+01:00"
+    ,
+    
+    "modificationDate" :
+    1674232233877,
+    
+    "title" :
+    
+    
+    "Removing and installing rotation-rate sensor for PSM"
+    ,
+    
+    "fileName" :
+    
+    
+    "80503935_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Preliminary work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS2372f6f5-c3ca-4a4e-b119-ed43ca67cc98"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Removing rotation-rate sensor for PSM"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISee753ed6-d5ce-45d8-a1bb-eac664e6054d"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Installing rotation-rate sensor for PSM"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS3099c801-ae23-4779-9992-29c1f6282c17"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Calibrating rotation-rate sensor for PSM"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISa47725d5-4e01-4f11-bcac-23fd4b5b2812"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Subsequent work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS238494a5-dd50-4a6a-a1a0-5a3973a89a6a"
+    
+    }
+    
+    ]
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e66a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester II"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9818"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9818"
+    
+    }
+    
+    ]
+    ,
+    
+    "techvalues" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS9f933a54-37f3-4353-8d50-98ca2c05e8f1"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "PSM control unit to body"
+    ,
+    
+    "description" :
+    
+    
+    "Hexagon nut, M6"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "10 (7.5 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS2372f6f5-c3ca-4a4e-b119-ed43ca67cc98\" >Preliminary work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80590144"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS7d87f53f-55d7-4b9e-b129-5a849e06a224"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>On vehicles with manual transmission:</b>                      Remove gearshift bracket.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "340819"
+    ,
+    
+    "activity" :
+    
+    
+    "21"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing gearshift bracket - section on \"Removing\""
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>For vehicles with PDK:</b>                      Remove selector support.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "370819"
+    ,
+    
+    "activity" :
+    
+    
+    "21"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing selector support - section on \"Removing\""
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISee753ed6-d5ce-45d8-a1bb-eac664e6054d\" >Removing rotation-rate sensor for PSM</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80590145"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS6425b2d9-dcb4-4a36-b724-8fc8680f3e1e"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4ecb2080-8e01-4196-ae25-f931726a38742"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "57286288"
+    ,
+    
+    "title" :
+    
+    
+    "Installation position of rotation-rate sensor for PSM"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Combination sensor not calibrated or calibrated incorrectly"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Unexpected vehicle handling"
+    ,
+    
+    
+    "Combination sensor does not work"
+    ,
+    
+    
+    "Malfunction in combination sensor"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                         Calibrate the vehicle after installing or replacing the combination sensor using                          "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e66a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                         .                     "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Only perform calibration when the vehicle is positioned horizontally and the brake is not actuated."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The combination sensor is located under the centre console."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The functions listed below are integrated in the combination sensor:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Rotation-rate sensor"
+    ,
+    
+    
+    "Lateral-acceleration sensor"
+    ,
+    
+    
+    "Axial-acceleration sensor."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISfd14d7ca-dbee-4618-9372-38ba850b3cad2"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Unscrew fastening nuts                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS7e396c63-e574-4393-9e0a-a00153f1bb6b\">-1-</a>                      and pull rotation-rate sensor                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS7e396c63-e574-4393-9e0a-a00153f1bb6b\">-2-</a>                      out slightly                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS7e396c63-e574-4393-9e0a-a00153f1bb6b\">-arrow-</a>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISc5d0270f-3432-43b1-8b98-4609fdbacfa2"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS7e396c63-e574-4393-9e0a-a00153f1bb6b"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "57286325"
+    ,
+    
+    "title" :
+    
+    
+    "Removing rotation-rate sensor"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS59aaecf5-40d4-4fc9-aa3c-13af52524f4e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Disconnect electric plug connection                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS25477061-17c0-42db-8920-2c8cd9034df5\">-1-</a>                      on rotation-rate sensor                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS25477061-17c0-42db-8920-2c8cd9034df5\">-2-</a>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISe191a7c6-c5ec-4263-82d3-9ddcf441dcdb"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS25477061-17c0-42db-8920-2c8cd9034df5"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "57286361"
+    ,
+    
+    "title" :
+    
+    
+    "Disconnecting plug connection "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS3099c801-ae23-4779-9992-29c1f6282c17\" >Installing rotation-rate sensor for PSM</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80590165"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS898ae139-b149-45e9-b181-93c7631470a2"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Connect electric plug connection                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS056a950f-561d-4d2c-af35-4e20cd2d8a32\">-1-</a>                      on rotation-rate sensor                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS056a950f-561d-4d2c-af35-4e20cd2d8a32\">-2-</a>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISa52b3547-4955-4638-86e8-9d5da9d97b1d"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS056a950f-561d-4d2c-af35-4e20cd2d8a32"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "57286399"
+    ,
+    
+    "title" :
+    
+    
+    "Locking plug connection"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS100944c7-de88-43e5-a5b9-f48047bf8690"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Position rotation-rate sensor                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS79df2809-ad9b-41d6-a97b-60bd2daa74c2\">-2-</a>                      (                     <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS79df2809-ad9b-41d6-a97b-60bd2daa74c2\">-arrow-</a>                     ) and centre it.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS3ca13ac6-a368-4b7a-a112-e77bdf4d14ff"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Tighten fastening nuts                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS79df2809-ad9b-41d6-a97b-60bd2daa74c2\">-1-</a>                     .                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a class=\"qv qv-techvalue\" href=\"\" target=\"PIWIS9f933a54-37f3-4353-8d50-98ca2c05e8f1\">Tightening torque 10 (7.5 ftlb.) Nm </a>"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS9f933a54-37f3-4353-8d50-98ca2c05e8f1"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "PSM control unit to body"
+    ,
+    
+    "description" :
+    
+    
+    "Hexagon nut, M6"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "10 (7.5 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4efc98d2-0cc9-4154-bc6e-1ef15c623bdd"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS79df2809-ad9b-41d6-a97b-60bd2daa74c2"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "57286468"
+    ,
+    
+    "title" :
+    
+    
+    "Installing rotation-rate sensor"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISa47725d5-4e01-4f11-bcac-23fd4b5b2812\" >Calibrating rotation-rate sensor for PSM</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80590182"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Combination sensor not calibrated or calibrated incorrectly"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Unexpected vehicle handling"
+    ,
+    
+    
+    "Combination sensor does not work"
+    ,
+    
+    
+    "Malfunction in combination sensor"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                         Calibrate the vehicle after installing or replacing the combination sensor using                          "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e66a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                         .                     "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Only perform calibration when the vehicle is positioned horizontally and the brake is not actuated."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1b8bf0df-b2a4-4daf-b9db-7ae4682af990"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Calibrate the rotation-rate sensor using                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e66a1161\">9818 - PIWIS Tester II</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                      "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa5f09729-583d-4d3a-8168-f8ed97de1bd7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "To do this, select: Control unit overview > PSM > Maintenance/repairs > Sensor cluster calibration (combination sensor)."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS238494a5-dd50-4a6a-a1a0-5a3973a89a6a\" >Subsequent work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80590188"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS7d84534e-392f-4606-a894-7f1edf1b1659"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>On vehicles with manual transmission:</b>                      Install gearshift bracket.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "340819"
+    ,
+    
+    "activity" :
+    
+    
+    "23"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing gearshift bracket - section on \"Installing\""
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>For vehicles with PDK:</b>                      Install selector support.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "370819"
+    ,
+    
+    "activity" :
+    
+    
+    "23"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing selector support - section on \"Installing\""
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

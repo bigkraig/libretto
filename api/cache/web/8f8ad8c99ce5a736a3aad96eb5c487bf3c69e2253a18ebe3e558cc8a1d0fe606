@@ -1,0 +1,755 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82700236"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82700236"
+    ,
+    
+    "version" :
+    4,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "0X00"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "09/23"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-20T15:44:08.471+02:00"
+    ,
+    
+    "modificationDate" :
+    1721483086132,
+    
+    "issueDate" :
+    
+    
+    "2024-07-02T06:00:00.000+02:00"
+    ,
+    
+    "title" :
+    
+    
+    "Warranty Information: Warranty Extension for Air Conditioning System Servo Motors (09/23)"
+    ,
+    
+    "fileName" :
+    
+    
+    "82700236_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82700237"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    ,
+    
+    
+    "LBL_TO"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2020 $LBL_TO$ 2022"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicle Type:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Taycan (Y1A / Y1B / Y1C)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Servo motor</b> (KDNR 8720)"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Cause:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Technical extended warranty (TGV) air conditioning system servo motors</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The warranty on the air conditioning system servo motors lasts for <b>six years from the new vehicle delivery date</b>, irrespective of the total mileage of the vehicle. <br/>You will find the exact warranty period of a vehicle in the vehicle information in the PCSS – Porsche Central Service System."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The warranty extension is displayed as an additional new vehicle warranty scope and contains the added information <b>\"Air conditioning system servo motors\"</b> in the \"Coverage\" column. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The warranty applies to all vehicles assigned to the warranty extension and is transferred automatically to the next owner. <br/>All other warranty terms and conditions remain unchanged."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Overview of components covered by the warranty extension</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>PART ID</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Designation</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "8720"
+    ,
+    
+    
+    "Servo motor"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The warranty extension applies to all servo motors installed in the air conditioner, which are summarized under the KDNR 8720 servo motor."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Scopes not covered by this warranty extension</b><br/>All damage or malfunctions caused by other external influences such as damage as a result of an accident, incorrect use or neglect of the vehicle."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Restrictions on cover of the warranty extension</b><br/>The warranty and service information in the vehicle includes information about the warranty conditions for the vehicle. The owner should always read these warranty conditions carefully as the rights and obligations listed there also apply to the warranty extension."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Customer communication</b><br/>Please actively inform affected customers about the warranty extension only if this is a legal requirement in your market. Otherwise, <b>no active customer communication</b> is planned."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Invoicing:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "For invoicing warranty claims using the “Air conditioning system servo motors” warranty extension, the claim must be entered by specifying <b>Warranty type 111</b> under <b>KDNR 8720 – servo motor</b> as the <b>component responsible for causing the problem</b>. The damage category is to be selected in accordance with the customer complaint. The documentation specifications in the Porsche Warranty Manual must be observed without restriction."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If a mobility option is required in relation to repairs covered by the Extended warranty, this can be invoiced as part of the existing customer mobility programme. The Customer mobility programme regulations apply unchanged."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If you have further questions and concerns relating to this warranty extension, open a Warranty PRMS ticket."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

@@ -1,0 +1,2174 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81663201"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81663201"
+    ,
+    
+    "version" :
+    52,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "873429"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-05-14T16:14:30.579+02:00"
+    ,
+    
+    "modificationDate" :
+    1716349677888,
+    
+    "title" :
+    
+    
+    "Cleaning the air-conditioning compressor"
+    ,
+    
+    "fileName" :
+    
+    
+    "81663201_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Tools"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISd6a58b88-12f9-45c3-b301-69a3492333ae"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Preliminary work"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISbf6f3ce7-bb74-4524-8970-8b4351efbe7f"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Cleaning electric air-conditioning compressor"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS6f281ad4-70f9-4c91-bb37-5a728e84c87b"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Subsequent work "
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISbcdf7e9c-8b76-4ac3-ac1d-7d7079c35d54"
+    
+    }
+    
+    ]
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e105a1161"
+    ,
+    
+    "label" :
+    
+    
+    "sealing caps"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6338/30A"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6338/30A"
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISd6a58b88-12f9-45c3-b301-69a3492333ae\" >Tools</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80918293"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Air conditioning servicing equipment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Only use recommended air conditioning servicing equipment for R134a and R1234yf with flushing device (see Workshop Equipment and Special Tools Manual)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80948224"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Adapters for cleaning the refrigerant circuit</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "You can blow compressed air and nitrogen through the refrigerant circuit in certain cases, e.g. if only individual components have to be cleaned."
+    ,
+    
+    
+    "Compressed air and then nitrogen must only be blown through the refrigerant circuit if it is not possible to flush the refrigerant circuit or if it would take too much time and effort to flush individual components (it takes very little time to blow small particles of dirt and moisture, for example, out of removed refrigerant lines)."
+    ,
+    
+    
+    "Blowing compressed air and nitrogen through the entire refrigerant circuit generally involves considerably more work than cleaning (flushing) with refrigerant R1234yf or R134a. Flushing with refrigerant R1234yf or R134a also cleans the components much better. The refrigerant circuit should therefore always be flushed in the event of a problem (blasting with compressed air and nitrogen should only be used for certain problems and for individual components)."
+    ,
+    
+    
+    "Under certain conditions, blasting certain components (e.g. individual refrigerant lines or refrigerant hoses) with compressed air (e.g. for removing old refrigerant machine oil from individual removed components) or with nitrogen (for drying individual components) may be sufficient, for example."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 An overview of approved adapters is summarised in a table.                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "8X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Overview of adapters for cleaning the refrigerant circuit"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISbf6f3ce7-bb74-4524-8970-8b4351efbe7f\" >Preliminary work</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80973144"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Preliminary work for electric air-conditioning compressor </h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf490d3d1-84f6-4577-b388-e819cd27a3f7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Remove electric air-conditioning compressor.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "873419"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing electric air-conditioning compressor"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS6f281ad4-70f9-4c91-bb37-5a728e84c87b\" >Cleaning electric air-conditioning compressor</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80680358"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Warning notes for handling refrigerant</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Refrigerant"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Danger of freezing"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Avoid contact with refrigerant."
+    ,
+    
+    
+    "Wear personal protective gear."
+    ,
+    
+    
+    "Observe the safety regulations for working on air-conditioned vehicles and handling refrigerant."
+    ,
+    
+    
+    "Observe the safety regulations for extraction and filling systems."
+    ,
+    
+    
+    "Observe the instructions for repairing air-conditioning systems and storing spare parts."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81817762"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Only the refrigerant oil SP-A2 can be used for the refrigerant R134a."
+    ,
+    
+    
+    "Only the refrigerant oil SP-A2 can be used for the refrigerant R1234yf."
+    ,
+    
+    
+    "The allocation of refrigerant to the vehicle is controlled using the additional equipment number (M-number) and the allocation of refrigerant and the refrigerant quantity can also be found on the sticker in the engine compartment."
+    ,
+    
+    
+    "Read the relevant safety data sheet for handling refrigerant R134a and R1234yf."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "For all work on the air-conditioning system that necessitates opening the refrigerant system, the system contents must first be disposed of in accordance with regulations."
+    ,
+    
+    
+    "Dirt and moisture must be kept out of the air-conditioning system pipes and hoses."
+    ,
+    
+    
+    "Cleanliness must be ensured during all work."
+    ,
+    
+    
+    "System components must never be cleaned on the inside with hot steam."
+    ,
+    
+    
+    "Only use nitrogen for cleaning."
+    ,
+    
+    
+    "When replacing a component, all openings must be closed off using suitable stoppers immediately after opening the system."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Instructions in the operating instructions for the air-conditioning servicing equipment take precedence. The procedure described here may differ from the description provided by the respective air-conditioning servicing equipment manufacturer."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     If a flushed refrigerant circuit will not be assembled again immediately after flushing, leave the adapters on the connections and close off the connections on the adapters using                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e105a1161\">VAS 6338/30A - sealing caps</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                     .                 "
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "If different refrigerant oil must be used."
+    ,
+    
+    
+    "Following an accident resulting in damage to air conditioning components"
+    ,
+    
+    
+    "Refrigerant circuit has been open for an indefinite period of time and is not closed off properly."
+    ,
+    
+    
+    "In order to determine the refrigerant oil quantity."
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The electric air-conditioning compressor must be cleaned in the following situations:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>The refrigerant oil in the electric air-conditioning compressor must be removed by flushing in direction of flow (from intake on low-pressure side to outlet on high-pressure side). It is not possible to flush against the direction of flow due to the installed valves.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    " In order to flush the air-conditioning compressor, it must be positioned so that the connection for the refrigerant line on the high-pressure side is as low as possible."
+    ,
+    
+    
+    "If air-conditioning servicing equipment without programming is used for flushing, the procedure must be performed manually (evacuate, flush 4 times using at least 2 kg of refrigerant each time and extract the refrigerant again, evacuate)."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Basic circuit diagram (flushing circuit) for cleaning with refrigerant</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS81253604-63f3-47f2-b0d4-df849d66247b"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS64a1bacb-6137-40af-9f4f-1e7c92c8043f"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80973184"
+    ,
+    
+    "title" :
+    
+    
+    "Basic circuit diagram (flushing circuit) for cleaning the electric air-conditioning compressor"
+    ,
+    
+    "legend" : [
+    
+    
+    [
+    
+    
+    
+    "1"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Air-conditioning servicing equipment (with flushing device)"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "2"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "High-pressure hose on air-conditioning servicing equipment"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "3"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Adapter for connection for the low-pressure side on the air-conditioning compressor"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "4"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Refrigerant line"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "5"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Electric air-conditioning compressor"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "6"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Refrigerant line"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "7"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Adapter for connection for the high-pressure side on the air-conditioning compressor"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "8"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Hose on flushing device"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "9"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Flushing device for refrigerant circuit"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "10"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Low-pressure hose on air-conditioning servicing equipment"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS457e542f-9884-468e-81d0-449640b2c8b0"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Secure adapters                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-7-</a><b>VAS 6338/40</b>                      to the high-pressure side (small diameter) and                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-3-</a><b>VAS 6338/41</b>                      to the low-pressure side (large diameter) using the screws used to secure the refrigerant line to the electric air-conditioning compressor                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-5-</a>                     . Use the same tightening torque as for securing refrigerant lines to air-conditioning compressor.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS46c01738-c33a-4af8-ba4f-81a396c08c3a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Connect high-pressure hose                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-2-</a>                      of the air-conditioning servicing equipment (generally red) to the adapter                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-3-</a>                      on the electric air-conditioning compressor.                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS0560379c-e961-4eb7-a420-b8f06c905698"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "To do this, the quick connector on the high-pressure line of the air-conditioning servicing equipment must be removed."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1b72ed6e-362f-472e-8015-bd43d22fe5a9"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Connect low-pressure hose                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-10-</a>                      of the air-conditioning servicing equipment (generally blue) to the outlet of the flushing device (chip filter)                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-9-</a>                      for refrigerant circuits using the quick connector.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa96f3ced-a5cb-42fd-9ecc-801bc56b6a7c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Connect hose on the flushing device                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-8-</a>                      of the air-conditioning servicing equipment to the adapter                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISa7e217c2-3569-41da-8094-9a20f4063631\">-7-</a>                      on the electric air-conditioning compressor.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS94eba3a1-a787-4913-bd68-692dda85da58"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Clean the refrigerant circuit as described in the operating instructions for the air-conditioning servicing equipment. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS99d31cb4-59ec-4e03-b4dc-a51a5c572067"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "After flushing, check the pressure in the refrigerant circuit. There must be no overpressure in the refrigerant circuit (evacuate the refrigerant circuit again briefly if necessary). "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa79328f2-d672-49b3-84ec-e566a7d541ed"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Take into account the amount of refrigerant oil extracted from the electric air-conditioning compressor when filling the refrigerant circuit."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISbcdf7e9c-8b76-4ac3-ac1d-7d7079c35d54\" >Subsequent work </h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80973404"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Subsequent work for electric air-conditioning compressor</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd1db2176-beaa-4ce7-a6fb-999e7b3c69e8"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Install electric air-conditioning compressor.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "873419"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing electric air-conditioning compressor"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

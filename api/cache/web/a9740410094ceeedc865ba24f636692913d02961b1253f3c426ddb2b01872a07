@@ -1,0 +1,2818 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80662144"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80662144"
+    ,
+    
+    "version" :
+    29,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "4890"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "40/15"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-24T03:42:46.931+02:00"
+    ,
+    
+    "modificationDate" :
+    1721834687719,
+    
+    "issueDate" :
+    
+    
+    "2016-03-02T09:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Power Steering Plus (I-no. 658)"
+    ,
+    
+    "fileName" :
+    
+    
+    "80662144_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TEQ"
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e33a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester 4"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "P90999"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "P90999"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e46a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester III"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9900"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9900"
+    
+    }
+    
+    ]
+    ,
+    
+    "laborpos" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Activating Power steering Plus."
+    ,
+    
+    "aposNumber" :
+    
+    
+    "96273140"
+    ,
+    
+    "timeUnits" :
+    
+    
+    "50"
+    
+    }
+    
+    ]
+    ,
+    
+    "parts" : [
+    
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "99104490115"
+    ,
+    
+    "label" :
+    
+    
+    "Power steering Plus"
+    ,
+    
+    "extendedLabel" : ""
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80462343"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2017"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicles Type:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>718 Cayman (982)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concern:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Retrofitting</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Restriction:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Only</b> for vehicles <b>with</b> standard power steering (657)"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Notes:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Power steering Plus is a speed-sensitive power steering system. It reduces steering forces while manoeuvring the vehicle and driving at low speeds."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Parts Info:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>991.044.901.15</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"99104490115\">Power steering Plus</a>"
+    
+    }
+    
+    }
+    ,2,1
+    ]
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Activation Code:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Power steering Plus</b><br/> These components require a VIN-specific enabling code and will not function without it. To get the enabling code, order the applicable kit via your normal parts channels (POLARIS). You must then submit a Parts Technical Assistance Request (PTAR) in the PTEC system with the correct VIN, Part Number and PCNA order number to PCNA Parts Support. The PTAR will be returned to you in 1+ working days, advising you that the code is now displayed in the PIWIS System. Consult Parts Bulletin GR13D90 for additional ordering details."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Tools:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e46a1161\">9900 - PIWIS Tester III</a>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS73bc9255-c916-4bcc-a7f8-a933ba81e81c"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Preparatory work."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf73eab3e-9258-4d17-8228-6cc464c7af5b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Connect a battery charger. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Battery trickle charging"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "0Hinweis"
+    ,
+    
+    "source" :
+    
+    
+    "Voltage drop"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Risk of irreparable damage to control unit"
+    ,
+    
+    
+    "Risk of damage to control unit"
+    ,
+    
+    
+    "Fault entries in the control unit"
+    ,
+    
+    
+    "Coding in the control unit is aborted"
+    ,
+    
+    
+    "Malfunctions in control unit, even during programming"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Prior to disconnecting the control unit, switch off the ignition and remove the ignition key."
+    ,
+    
+    
+    "Ensure that the power supply is not interrupted during programming."
+    ,
+    
+    
+    "Connect battery charger/power supply suitable for AGM Type batteries, recommended current rating  of 90A fixed voltage 13.5V to 14.5V, tool number VAS 5908."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "The "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e33a1161\">P90999 - PIWIS Tester 4</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " instructions take precedence since the description may be different with later Tester releases."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "The procedure described here has been structured in general terms; different text or additions may appear on the "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e33a1161\">P90999 - PIWIS Tester 4</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e46a1161\">9900 - PIWIS Tester III</a>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Activation code for Power steering Plus available"
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The following prerequisites must be met for coding Power steering Plus:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISecd1a949-d0ce-4d28-b623-f6f8486a255e"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Code Power steering Plus."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIScb92d803-bed8-469c-8496-dfacfa50f11d"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e46a1161\">9900 - PIWIS Tester III</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " must now be connected and the ignition switched on."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd624a011-1b63-48c4-8dae-28e7dda68a74"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the required vehicle type. PIWIS Tester Diagnostics starts."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS110cf642-1f71-49e0-b94b-18a59ca986f5"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Maintenance of vehicle data."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISaab5a572-475f-4480-a0ea-f5d231ee4fd8"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Additional menu</b> must now be selected by pressing <span class=\"key\">F7</span>. Press <span class=\"key\">F11</span> to confirm the question “Create vehicle analysis log (VAL)?”."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS9e0cf597-e2c3-4c2e-95e8-c176bca793ee"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the <b>Maintenance of vehicle data</b> function. Press <span class=\"key\">F12</span> until <b>M numbers</b> appears in the Value group column."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe5b03b3e-27e0-4670-a697-9025b15a7d30"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "De-select \"Installed\" in the Coding value column <b>657 - Standard power steering</b>."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd135c0f9-d78c-4271-b8e2-0a86acd2b529"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select \"Installed\" in the Coding value column <b>658 - Servotronic</b>."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa746e93c-1f8f-4ade-bf04-8e9f5e3c16ee"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Enter the activation code and press OK to confirm."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<br/>Press <span class=\"key\">F12</span> to continue."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5c7ea8f2-2095-4fe2-95b2-fd9613a64194"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A table containing the values to be changed appears."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Save the values by pressing <span class=\"key\">F8</span>. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS12ba4aec-d6ef-40cc-ade5-33df728e4c2d"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Wait until the message <b>Generation of vehicle data is complete.....</b> appears."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.8"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS77dd1e7f-bdec-42d5-a42d-9fa3f89098a7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Press <span class=\"key\">F12</span> to switch to Report management."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3.9"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS613272ee-8d2d-454b-994d-9a54bc555d46"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Press <span class=\"key\">F10</span> to open the log and check that vehicle equipment <b>Standard power steering (657)</b> is no longer displayed and vehicle equipment <b>Servotronic (658)</b> is displayed. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Close the log."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1b6e6deb-adf6-4eff-bd80-443a730b7fde"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Adapt coding."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS0c01b905-5928-4afe-9b4b-79681cc90d09"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch to the <b>Overview</b> menu."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Press <span class=\"key\">F11</span> to return to the list of control units."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISba73dba5-a14e-44e3-b060-da532c126047"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select all control units by pressing <span class=\"key\">Ctrl A</span>. Press <span class=\"key\">F12</span> to continue."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS5d6b649c-2133-414e-8d3e-ad449c9f9cc4"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch to the <b>Codings/adaptations</b> menu. Press <span class=\"key\">F12</span> to continue."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select <b>Automatic coding</b> mode. Press <span class=\"key\">F12</span> to continue."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS2d018c5b-3347-4595-912f-4207d9c1fd27"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Wait until the message <b>Coding has been completed successfully</b> appears. Press <span class=\"key\">F12</span> to continue."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4.5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb2fb42a9-fa26-4f86-bb2c-00346403fc47"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch to the <b>Overview</b> menu."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb374870a-2679-4f69-9443-e4fbc758d098"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Read out the fault memories of all systems, work through any existing faults and erase the fault memories. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "033500"
+    ,
+    
+    "title" :
+    
+    
+    "Fault memory for on-board diagnosis"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS05536df1-4a16-42fd-980e-f25ef90cddd1"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Disconnect the battery charger. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Battery trickle charging"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd8017152-53db-4474-a3b2-5d411ecf8789"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Carry out a function test."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "48902500:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "laborpos"
+    ,
+    
+    "inputs" : {
+    
+    
+    "timeUnits" :
+    
+    
+    "50"
+    ,
+    
+    "titleHtml" :
+    
+    
+    "Activating Power steering Plus. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

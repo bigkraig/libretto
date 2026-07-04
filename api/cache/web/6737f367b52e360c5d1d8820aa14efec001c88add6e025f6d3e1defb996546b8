@@ -1,0 +1,1524 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81690111"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81690111"
+    ,
+    
+    "version" :
+    24,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "287319"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-04-04T02:43:52.506+02:00"
+    ,
+    
+    "modificationDate" :
+    1712252725632,
+    
+    "title" :
+    
+    
+    "Removing and installing pulse sender"
+    ,
+    
+    "fileName" :
+    
+    
+    "81690111_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Removing pulse sender"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISc8a267e80dd2100586c7baa3cc285367"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Installing pulse sender"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISce9290100dd2100586c7baa3cc285367"
+    
+    }
+    
+    ]
+    ,
+    
+    "techvalues" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS10215478101a10058b49f6aa0405a080"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "Pulse sender (speed sender)"
+    ,
+    
+    "description" :
+    
+    
+    "Cheese head bolt, M6 x 16"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "10 (7.5 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISc8a267e80dd2100586c7baa3cc285367\" >Removing pulse sender</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81690113"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS6504b9700f9410058bd8a595dcced867"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS6505ea200f9410058bd8a595dcced8672"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "60132328"
+    ,
+    
+    "title" :
+    
+    
+    "Installation position of pulse sender"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     On manual transmissions with the index 24 or 25 (see table),                      <b>a spacer must not be fitted</b>                      for the pulse sender (rpm sensor).                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     For all manual transmissions with an index                      <b>less than 24</b>                     , a spacer is required between the transmission and pulse sender (rpm sensor).                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>No spacer for the pulse sender on the following transmissions:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    
+    "Transmission number"
+    ,
+    
+    
+    "Spacer"
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "981.300.020.24"
+    ,
+    
+    
+    "Do not fit"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "981.300.010.25"
+    ,
+    
+    
+    "Do not fit"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "981.300.020.25"
+    ,
+    
+    
+    "Do not fit"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISebd2a1c00f9310058bd7a595dcced867"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Unscrew screw                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISfb1f36480f9310058bd7a595dcced8672\">-1-</a>                      on the pulse sender.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISfb1e44180f9310058bd7a595dcced867"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISfb1f36480f9310058bd7a595dcced8672"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "60129733"
+    ,
+    
+    "title" :
+    
+    
+    "Removing crankshaft pulse sender"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf48e55980f9310058bd7a595dcced867"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Pull the pulse sender                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISfb1f36480f9310058bd7a595dcced8672\">-2-</a>                      out of the transmission housing                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISfb1f36480f9310058bd7a595dcced8672\">-arrow-</a>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISedca6e680f9310058bd7a595dcced867"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Release cable plug on the pulse sender                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS1a24fff00f9410058bd7a595dcced8672\">-a-</a>                      and pull it off                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS1a24fff00f9410058bd7a595dcced8672\">-A-</a>                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS1a2409d80f9410058bd7a595dcced867"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS1a24fff00f9410058bd7a595dcced8672"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "60130720"
+    ,
+    
+    "title" :
+    
+    
+    "Connector on pulse sender"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISce9290100dd2100586c7baa3cc285367\" >Installing pulse sender</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81690114"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     On manual transmissions with the index 24 or 25 (see table),                      <b>a spacer must not be fitted</b>                      for the pulse sender (rpm sensor).                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     For all manual transmissions with an index                      <b>less than 24</b>                     , a spacer is required between the transmission and pulse sender (rpm sensor).                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS2d98ac8b-1012-4e3c-bd36-71023e8b4ef3"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>See information on fitting the spacer!</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe0a3f1b80dd2100586d6baa3cc285367"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Connect cable plug on the pulse sender                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS4a9f52e80f9410058bd7a595dcced8672\">-A-</a>                      and check that it is seated securely.                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4a9b09400f9410058bd7a595dcced867"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4a9f52e80f9410058bd7a595dcced8672"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "60132101"
+    ,
+    
+    "title" :
+    
+    
+    "Connector on pulse sender"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS370797900f9410058bd7a595dcced867"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                     Insert pulse sender                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS566355200f9410058bd7a595dcced8672\">-2-</a>                      into the transmission housing                      <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS566355200f9410058bd7a595dcced8672\">-arrow-</a>                     .                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf6c4f5601344100588bb91a16e300e80"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                         Tighten screw                          <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS566355200f9410058bd7a595dcced8672\">-1-</a>                         .                     "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a class=\"qv qv-techvalue\" href=\"\" target=\"PIWIS10215478101a10058b49f6aa0405a080\">Tightening torque 10 (7.5 ftlb.) Nm </a>"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS10215478101a10058b49f6aa0405a080"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "Pulse sender (speed sender)"
+    ,
+    
+    "description" :
+    
+    
+    "Cheese head bolt, M6 x 16"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "10 (7.5 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS56625f080f9410058bd7a595dcced867"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS566355200f9410058bd7a595dcced8672"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "60132284"
+    ,
+    
+    "title" :
+    
+    
+    "Installing crankshaft pulse sender"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

@@ -1,0 +1,2766 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82318572"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82318572"
+    ,
+    
+    "version" :
+    4,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "6631"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "01 / 20"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-05-02T07:53:56.709+02:00"
+    ,
+    
+    "modificationDate" :
+    1719919275612,
+    
+    "issueDate" :
+    
+    
+    "2021-10-18T06:00:00.000+02:00"
+    ,
+    
+    "title" :
+    
+    
+    "Illuminated Door-Sill Guards"
+    ,
+    
+    "fileName" :
+    
+    
+    "82318572_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TEQ"
+    ,
+    
+    "laborpos" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "66312340: Installing illuminated door entry guard"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "66312340"
+    ,
+    
+    "timeUnits" :
+    
+    
+    "245"
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "66ba8715-d0dd-4bed-a0a9-5ed7fdb66d4d"
+    ,
+    
+    
+    "e3ae190b-32ce-4a59-b5fa-8b2225cd4491"
+    ,
+    
+    
+    "8e7e1b13-0b35-4975-bac1-36aab4409f25"
+    ,
+    
+    
+    "84ddb3c0-913f-4e38-9ead-36f1b63412f9"
+    ,
+    
+    
+    "236338b0-c7c8-49fc-b619-6bac3cddd800"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "f038c1b7-6401-45a8-a467-c9e71a3c7278"
+    ,
+    
+    
+    "4b1b97c7-1d39-4877-a3e7-aea41e6ad0fc"
+    ,
+    
+    
+    "3c408179-8601-47ae-89bb-25bf993398a1"
+    ,
+    
+    
+    "b9941ea6-6a89-47f9-adc7-d1a8376eb516"
+    ,
+    
+    
+    "995fe206-bda2-4940-bc21-308aa9886898"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82318573"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2020"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicle Type:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Taycan</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Retrofitting</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISe31c5773-c96b-4486-984e-dcb315c0a1ce"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS5cc533bf-9b43-4b41-8695-6ffb53becea92"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "66ba8715-d0dd-4bed-a0a9-5ed7fdb66d4d"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "f038c1b7-6401-45a8-a467-c9e71a3c7278"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "1d8ab469-a3c8-4478-807e-ee4ecac2f44a"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82284134"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 1"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The door-sill guards can be ordered either with black anodized or carbon finish. Each has a white illuminated model designation."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Parts Info:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>The following part numbers apply to the door-sill guards with carbon finish.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> 9J1.073.800</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.800.A</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan 4S "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.800.B</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan Turbo"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.800.C</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan Turbo S"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.800.D</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan 4"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>The following part numbers apply to the door-sill guards with black anodized finish.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.801</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.801.A</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan 4S "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.801.B</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan Turbo"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.801.C</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan Turbo S"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>9J1.073.801.D</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Taycan 4"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS6fc394d2-2b3c-4fae-a054-1585ab783655"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS33fc2608-ae30-4f89-b770-6ebb1cac6b772"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "e3ae190b-32ce-4a59-b5fa-8b2225cd4491"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "4b1b97c7-1d39-4877-a3e7-aea41e6ad0fc"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "58859f98-6020-4795-8d3c-ef74504a877b"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82284137"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 2"
+    ,
+    
+    "legend" : [
+    
+    
+    [
+    
+    
+    
+    "1"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Cable harness for rear door-sill guards"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "2"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Retaining clips"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "3"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Cable harness for rear door-sill guards"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "4"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Rear door-sill guards"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "5"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Front door-sill guards"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Some of the repair illustrations show only one side of the vehicle or a similar component."
+    ,
+    
+    
+    "Naturally, some steps also have to be performed on the opposite side of the vehicle as well."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc2034aaa-3db1-431d-9f8c-15609ddb1a7b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Remove door-sill guards."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISbc7e171c-e4d7-4a0c-860b-e0748f07ee66"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Remove front door-sill guards. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "hkapId" :
+    
+    
+    "81663017"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing (front) inner door sill trim"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1902d743-2f20-4fde-9396-e126d369b3a6"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Remove rear door-sill guards. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "hkapId" :
+    
+    
+    "81663016"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing (rear) inner door sill trim"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS168a6f48-c3d4-43cf-a7d5-144e2eda456b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Route electric wire harness. <b>Important: Connect the cable harness to the cable harness in the vehicle with wrapping tape. Use of tie-wraps not allowed!</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ensure socket contact is seated securely. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1947b813-90d1-4396-96a7-20b4b9bd66ed"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Overview of the electrical plug connection:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Power is supplied via the plugs of the respective door connection point.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Front left door connection point: pin 2"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Front right door connection point: pin 2"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Rear left door connection point: pin 9"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Rear right door connection point: pin 9"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ground contact is established via the following ground points:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ground supply, left: Area of left rear seat"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Ground supply, right: Area of right rear seat"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISc70d3e74-9ff1-400d-b1d3-35056c54ffbe"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Power supply to front door-sill guards. Route wiring harness towards the front door connection point under the dashboard <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS0356fa23-6dd2-4bba-9b1f-2e3c5a4f64c8\">-1-</a>. Route the connector for the front door-sill guard <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS0356fa23-6dd2-4bba-9b1f-2e3c5a4f64c8\">-2-</a> near the door sill. Route the ground line <a class=\"qv qv-grafik\" href=\"\" target=\"PIWIS0356fa23-6dd2-4bba-9b1f-2e3c5a4f64c8\">-3-</a> towards the rear in the area of the door sill."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0356fa23-6dd2-4bba-9b1f-2e3c5a4f64c8"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISa8d5638e-6fcc-4a66-ad5a-cfe99d0ed9862"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "8e7e1b13-0b35-4975-bac1-36aab4409f25"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "3c408179-8601-47ae-89bb-25bf993398a1"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "bf50f3af-ad06-4833-b916-f8213d7711cd"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82284145"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 3"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS51c6c3f2-aa17-43eb-9df9-bda02d08884b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Power supply to rear door-sill guards. Route the cable harness towards the door connection point <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISb9152741-4d71-4440-8f83-dcf7f7e4c299\">-1-</a> at the rear near the B-pillar."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISb9152741-4d71-4440-8f83-dcf7f7e4c299"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISdbc4cb1b-040a-4fc7-bcfc-2f0014c2103e2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "84ddb3c0-913f-4e38-9ead-36f1b63412f9"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "b9941ea6-6a89-47f9-adc7-d1a8376eb516"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "63480384-03f9-43b4-b166-12a303a3ccfb"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82284146"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 4"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2.4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS43ac40cd-e93f-4200-a18c-9113164f48be"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Establish ground supply to door-sill guards. There is only one ground point for each. Front and rear door-sill guards on <b>left</b> have one ground point and front and rear door-sill guards on <b>right</b> have one ground point. The ground points are located in the left and right rear seat area <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISe03f390b-36f3-4e82-b971-4123d7c7b642\">-1-</a>. Connect excess wiring harness to the wiring harness located in the vehicle <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISe03f390b-36f3-4e82-b971-4123d7c7b642\">-2-</a>. Route plug connection for rear door-sill guards towards the door-sill guard <a class=\"qv qv-grafik\" href=\"\" target=\"PIWISe03f390b-36f3-4e82-b971-4123d7c7b642\">-3-</a>."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISe03f390b-36f3-4e82-b971-4123d7c7b642"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS60560334-4346-4c45-b8e3-1306e7ea2a8c2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "236338b0-c7c8-49fc-b619-6bac3cddd800"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "995fe206-bda2-4940-bc21-308aa9886898"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "38d70bab-310a-44c7-87e2-42e0bea8a569"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82284147"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 5"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe192bf94-7ebf-42df-9a3f-ae6337ed4eb1"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Concluding work."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISd286ab3d-61de-4232-853d-177ee0ca0edd"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Install rear door-sill guards. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "hkapId" :
+    
+    
+    "81663016"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing (rear) inner door sill trim"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS2605b841-4169-4497-a277-9842ee0bef8f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Install front door-sill guards. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "hkapId" :
+    
+    
+    "81663017"
+    ,
+    
+    "title" :
+    
+    
+    "Removing and installing (front) inner door sill trim"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS05456930-6640-4e2e-b983-7c2d686f780f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Function test."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Working time:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "laborpos"
+    ,
+    
+    "inputs" : {
+    
+    
+    "timeUnits" :
+    
+    
+    "245"
+    ,
+    
+    "titleHtml" :
+    
+    
+    "66312340: Installing illuminated door entry guard "
+    ,
+    
+    "withHtml" :
+    
+    
+    "Installing electric wire harness, removing and installing cover strips. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

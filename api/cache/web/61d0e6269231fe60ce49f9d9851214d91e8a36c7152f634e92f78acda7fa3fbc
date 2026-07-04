@@ -1,0 +1,2728 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80830554"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80830554"
+    ,
+    
+    "version" :
+    9,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "9110"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "34/16"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-09-20T00:54:37.223+02:00"
+    ,
+    
+    "modificationDate" :
+    1721186282056,
+    
+    "issueDate" :
+    
+    
+    "2017-02-17T09:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Assessment of the Status of Display Errors in Vehicle Displays (34/16)"
+    ,
+    
+    "fileName" :
+    
+    
+    "80830554_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "65a523ab-e370-414e-8b4f-8d1c461ec817"
+    ,
+    
+    
+    "2b97c7fe-5ab7-4fb6-a88d-1d88991ca983"
+    ,
+    
+    
+    "2d8c258c-65bb-44a6-82d4-e150249e82fc"
+    ,
+    
+    
+    "bc000f70-b10a-4367-a2cb-5da5c4243ede"
+    ,
+    
+    
+    "5944dc2e-128e-4a36-bfa6-2112fa64b80e"
+    ,
+    
+    
+    "284fa1a7-e9e3-4856-87e0-19d5925aaf1d"
+    ,
+    
+    
+    "5d459b33-1ebb-4838-97dd-1c2ed8339e5c"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "d4e1e715-7444-49f1-8d00-25d17009da48"
+    ,
+    
+    
+    "e11c1759-4276-495a-84a5-bd927f12cee7"
+    ,
+    
+    
+    "f1833602-5bb9-424b-a3e5-670b820e4bed"
+    ,
+    
+    
+    "d3eaa6ba-fb0a-4740-9d5b-1f34e6b5e612"
+    ,
+    
+    
+    "e78ead4d-3829-44e8-bd61-205ff8aa9fd3"
+    ,
+    
+    
+    "aedbef11-e7b2-4d9d-95f8-b5a4db70cff2"
+    ,
+    
+    
+    "033741a0-1c9d-4687-9fd2-bd6a1ab1383a"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80830555"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "In order to use this Technical Information, you must be familiar with the symptom-based instructions \"Eliminating symptoms in body interior: PCMX.X integrated system: Complaints and repair instructions\" for the relevant PCM system."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2009"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Revision:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This bulletin replaces buleltin Group 9, #34/16, dated July 26, 2016."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This update includes added information regarding:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche Communication Management (PCM4)<br/>Instrument Cluster<br/>Porsche Rear Seat Entertainment System"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model Line:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>All model lines</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Equipment: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche Communication Management (PCM3)"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche Communication Management (PCM4)"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Instrument cluster"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Rear Seat Entertainment system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Subject:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>PCM 3.x operator control unit:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Standard equipment"
+    ,
+    
+    
+    "Retrofitting solution"
+    ,
+    
+    
+    "Parts for spare parts requirements"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>PCM 4.x operator control unit:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Standard equipment"
+    ,
+    
+    
+    "Retrofitting solution"
+    ,
+    
+    
+    "Parts for spare parts requirements"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Instrument cluster</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Standard equipment"
+    ,
+    
+    
+    "Parts for spare parts requirements"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Rear Seat Entertainment system</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Standard equipment"
+    ,
+    
+    
+    "Retrofitting solution"
+    ,
+    
+    
+    "Parts for spare parts requirements"
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concern:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Assessment of the status of display errors in the PCM operator control unit, in the instrument cluster and in the Rear Seat Entertainment system.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Pixel error classification:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Type 1: A pixel is stuck ON (it appears as a white dot)"
+    ,
+    
+    
+    "Type 2: A pixel is stuck OFF (it appears as a black dot)"
+    ,
+    
+    
+    "Type 3: A pixel flickers"
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Complaint:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Pixel error:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Cause: Fault in individual or multiple screen transistors"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Result: Pixel error"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISa9c7cdc5-8bd4-4077-b58c-5ebe7e81b31d"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS945b046f-89dd-4695-beaf-0b121ddc9ec8"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "65a523ab-e370-414e-8b4f-8d1c461ec817"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "d4e1e715-7444-49f1-8d00-25d17009da48"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "a805f738-f163-424a-82d8-8e1b8c56dc0a"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80517302"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 1"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS769919bf-50a8-4fdf-949a-0683e1917d89"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS182c9105-9ff7-4074-8318-06b4fe1637cf"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "2b97c7fe-5ab7-4fb6-a88d-1d88991ca983"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "e11c1759-4276-495a-84a5-bd927f12cee7"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "2144aeea-7f9f-47c5-a895-6efb8a978131"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80517303"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 2 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS0b370cf5-7e7a-4b8e-b2d0-125adf94d36f"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISab11fd67-a3ec-46bc-883d-8dba35d0a695"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "2d8c258c-65bb-44a6-82d4-e150249e82fc"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "f1833602-5bb9-424b-a3e5-670b820e4bed"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "915ef944-fb15-4b6f-842a-f962e48be376"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80519142"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 3 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISd93649e2-e13b-4a5a-b708-39a91da1f435"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISbf4c477c-8d96-41db-8899-20db57a49652"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "bc000f70-b10a-4367-a2cb-5da5c4243ede"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "d3eaa6ba-fb0a-4740-9d5b-1f34e6b5e612"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "dfaaf99b-8998-455e-bc73-3f6c3fa2f851"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80519143"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 4 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS96bb8f26-9c5d-467e-ac60-d7dd31d9afba"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS1e6f99e2-a14f-4ead-967a-11436be9bf572"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "5944dc2e-128e-4a36-bfa6-2112fa64b80e"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "e78ead4d-3829-44e8-bd61-205ff8aa9fd3"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "7ece138b-c011-4651-aa65-925d8c7b36cb"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80979543"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 5 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Character and display errors:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Cause: If the operating temperature is too high (strong sunlight), this can cause changes in contrast and light density in the display"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Result: Characters and symbols are only partly displayed or illegible"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIScd6a0bc1-30f0-40c0-a90e-c174c68b378a"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISa6838549-9d9e-4ad5-8d93-c0028cefaa81"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "284fa1a7-e9e3-4856-87e0-19d5925aaf1d"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "aedbef11-e7b2-4d9d-95f8-b5a4db70cff2"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "34fe9dab-6e8e-41bb-8f57-746c4d3f0439"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80517323"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 6 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS45681601-e0a8-44c0-826c-8de86c9c1612"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISce347178-060c-4ff5-b88b-e1608012c1fc"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "5d459b33-1ebb-4838-97dd-1c2ed8339e5c"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "033741a0-1c9d-4687-9fd2-bd6a1ab1383a"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "9c0d4b63-e351-42ab-9585-f3169b49d946"
+    ,
+    
+    "inTable" :
+    true,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80517324"
+    ,
+    
+    "title" :
+    
+    
+    "Figure 7 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Remedial Action:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Replace component once you have identified the problem</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ > 1 pixel error in visible area - at the request of the customer"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ If characters and symbols in the driver's visible area are difficult to read or illegible"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ If implausible characters and symbols are displayed"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Customer information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Avoid pressing too hard on the display"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Targeted amassing of pixel errors can cause consequential damage"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ Strong fluctuations in temperature affect the light crystals in LCD displays. <br/>This is not a technical fault, but a property of the light crystals"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "→ In the event of fault symptoms, such as:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Changes in contrast"
+    ,
+    
+    
+    "Changes in light density"
+    ,
+    
+    
+    "Implausible display of characters and symbols"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A rest period of approx. 24 hours can resolve the customer complaint."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Invoicing:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The work involved is invoiced under the following labour operation:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>LO</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Labor operation</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>I-number</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "91105500"
+    ,
+    
+    
+    "Replacing PCM display and operator control unit"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "90255500"
+    ,
+    
+    
+    "Replacing instrument cluster"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "91945500"
+    ,
+    
+    
+    "Rear Seat Entertainment system"
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "For invoicing and documentation using PQIS, enter the following codes:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Fault location (FES5)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "91100"
+    ,
+    
+    
+    "PCM operator control unit"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Damage category (SA4)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "4041"
+    ,
+    
+    
+    "Display error"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Fault location (FES5)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "90250"
+    ,
+    
+    
+    "Instrument cluster"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Damage category (SA4)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "4041"
+    ,
+    
+    
+    "Display error"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Fault location (FES5)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "91940"
+    ,
+    
+    
+    "Rear Seat Entertainment system"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Damage category (SA4)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "4041"
+    ,
+    
+    
+    "Display error"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

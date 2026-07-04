@@ -1,0 +1,1822 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81662770"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81662770"
+    ,
+    
+    "version" :
+    24,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "4495TW"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-04-12T21:29:54.538+02:00"
+    ,
+    
+    "modificationDate" :
+    1712951283749,
+    
+    "title" :
+    
+    
+    "Setting values for vehicle alignment"
+    ,
+    
+    "fileName" :
+    
+    
+    "81662770_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Vehicle height"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISe5f9599f-eb98-41a3-8b00-2d202a71fcbc"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Wheel alignment values"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISc1cbbfc2-9385-493c-869c-23cafbd86593"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISe5f9599f-eb98-41a3-8b00-2d202a71fcbc\" >Vehicle height</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81786482"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The following data refers to DIN empty weight (ISO 1176 - M06 [mm]), meaning: Vehicle together with all fluids, tyre sealant (or spare wheel, collapsible wheel) and tools, not including vehicle occupants and luggage."
+    ,
+    
+    
+    "Tyre pressure in accordance with specifications."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Only measure and adjust vehicles with air suspension in the                      <b>Normal Level vehicle setting with narrow control tolerances</b>                     .                 "
+    
+    }
+    
+    }
+    ,
+    
+    
+    "If the control unit or one of the level sensors was replaced, calibration must be carried out using the Porsche System Tester."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    true,
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    
+    "Vehicle height"
+    ,
+    
+    
+    "Steel springs"
+    ,
+    
+    
+    "Air springs"
+    ,
+    
+    
+    "Cross Turismo air spring with/without cover"
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Front axle height</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "with 19, 20, 21-inch wheels [mm]"
+    ,
+    
+    
+    "419 ± 10"
+    ,
+    
+    
+    "404 ± 7"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "With cover: 416 ± 7"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Without cover: 422 ± 7"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    
+    "From outer wheel centre to bottom edge of wing"
+    ,4,1
+    ]
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    
+    "Maximum difference in height, left to right: 10 mm"
+    ,3,1
+    ]
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Rear-axle height</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "with 19, 20, 21-inch wheels [mm]"
+    ,
+    
+    
+    "421 ± 10"
+    ,
+    
+    
+    "406 ± 7"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "With cover: 420 ± 7"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Without cover: 426 ± 7"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    
+    "From outer wheel centre to bottom edge of wing (on Cross Turismo, up to plastic cover trim)"
+    ,4,1
+    ]
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    
+    "Maximum difference in height, left to right: 10 mm"
+    ,4,1
+    ]
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISc1cbbfc2-9385-493c-869c-23cafbd86593\" >Wheel alignment values</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81786484"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Adjusting the front axle</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The front axle can be adjusted as follows:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Toe:</b>                      Adjustment using the tie rod                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Camber:</b>                      Adjustment by moving the front-axle carrier (necessary if maximum difference from left to right is exceeded)                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Caster:</b>                      Cannot be adjusted!                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     For a detailed description, see                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "449503"
+    ,
+    
+    "title" :
+    
+    
+    "Performing front and rear suspension alignment"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     .                 "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Steering-angle sensor not calibrated or calibrated incorrectly"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Unexpected vehicle handling"
+    ,
+    
+    
+    "Steering-angle sensor does not function"
+    ,
+    
+    
+    "Malfunction in steering-angle sensor"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                         After working on wheel suspension parts, when replacing the steering-angle sensor, and after changing the wheel alignment values, calibrate the steering-angle sensor using the                          <b>PIWIS Tester</b>                         .                     "
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Keep the front wheels in straight-ahead position on the measuring platform during calibration."
+    ,
+    
+    
+    "For vehicles with electromechanical steering, also re-teach the electric steering lock settings."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The following data refers to DIN empty weight (ISO 1176 - M06 [mm]), meaning: Vehicle together with all fluids, tyre sealant (or spare wheel, collapsible wheel) and tools, not including vehicle occupants and luggage."
+    ,
+    
+    
+    "Tyre pressure in accordance with specifications."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Only measure and adjust vehicles with air suspension in the                      <b>Normal Level vehicle setting with narrow control tolerances</b>                     .                 "
+    
+    }
+    
+    }
+    ,
+    
+    
+    "If the control unit or one of the level sensors was replaced, calibration must be carried out using the Porsche System Tester."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    true,
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    
+    "Wheel alignment values"
+    ,
+    
+    
+    "Steel springs"
+    ,
+    
+    
+    "Air springs"
+    ,
+    
+    
+    "Air suspension - Cross Turismo"
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Front axle</b>"
+    
+    }
+    
+    }
+    ,3,1
+    ]
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Toe</b>                                      unpressed (per wheel)                                      <b>< 1000 km</b><br/><b>Adjustment value</b>                                     :                                     <br/><b>Control value:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 9.5' + 4' / - 1'                                     <br/>                                      + 9.5' + 5' / -2'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 9.5' + 4' / - 1'                                     <br/>                                      + 9.5' + 5' / -2'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 9.5' + 4' / - 1'                                     <br/>                                      + 9.5' + 5 '/ -2'                                 "
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Toe</b>                                      unpressed (per wheel)                                      <b>> 1000 km</b><br/><b>Adjustment value:</b><br/><b>Control value:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' + 4' / - 1'                                     <br/>                                      + 5' + 5 '/ -2'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' + 4' / - 1'                                     <br/>                                      + 5' + 5 '/ -2'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' + 4' / - 1'                                     <br/>                                      + 5' + 5 '/ -2'                                 "
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "maximum difference, left to right"
+    ,
+    
+    
+    "5'"
+    ,
+    
+    
+    "5'"
+    ,
+    
+    
+    "5'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Camber</b>                                      (vehicle with suspension compressed                                      <b>0 mm</b>                                     )                                 "
+    
+    }
+    
+    }
+    ,
+    
+    
+    "- 45' ± 20'"
+    ,
+    
+    
+    "- 60' ± 20'"
+    ,
+    
+    
+    "- 70' ± 20'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "maximum difference, left to right"
+    ,
+    
+    
+    "20'"
+    ,
+    
+    
+    "20'"
+    ,
+    
+    
+    "20'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Castor (not adjustable)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "+ 7°15' ± 30'"
+    ,
+    
+    
+    "+ 7°30' ± 30'"
+    ,
+    
+    
+    "+ 7°25' ± 30'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "maximum difference, left to right"
+    ,
+    
+    
+    "15'"
+    ,
+    
+    
+    "15'"
+    ,
+    
+    
+    "15'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Rear axle</b>"
+    
+    }
+    
+    }
+    ,4,1
+    ]
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Toe</b>                                      unpressed (per wheel)                                      <br/><b>Adjustment value:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' ± 5'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' ± 5'                                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<br/>                                      + 5' ± 5'                                 "
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "maximum difference, left to right"
+    ,
+    
+    
+    "5'"
+    ,
+    
+    
+    "5'"
+    ,
+    
+    
+    "5'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Camber</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "- 1°25' ± 15'"
+    ,
+    
+    
+    "- 1°30' ± 15'"
+    ,
+    
+    
+    "- 1°44' ± 15'"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "maximum difference, left to right"
+    ,
+    
+    
+    "20'"
+    ,
+    
+    
+    "20'"
+    ,
+    
+    
+    "20'"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

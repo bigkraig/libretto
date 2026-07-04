@@ -1,0 +1,761 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82337008"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82337008"
+    ,
+    
+    "version" :
+    3,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "401750"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "187/21"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-02-23T21:11:20.348+01:00"
+    ,
+    
+    "modificationDate" :
+    1721154530290,
+    
+    "issueDate" :
+    
+    
+    "2021-12-22T06:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Complaint - Grease Leaks at the Lower Control Arms of the Front Axle: Check and Clean Control Arms (187/21)"
+    ,
+    
+    "fileName" :
+    
+    
+    "82337008_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "8e789820-c87a-49b8-b30d-769aa15526a2"
+    ,
+    
+    
+    "b9c25d35-fd1e-4f58-89ad-5b902e7c16be"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "0c0cd796-0e3a-45de-a37d-b61afdb3dcd4"
+    ,
+    
+    
+    "5b9efda7-c068-48de-8718-1f8a63b0a3aa"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82337009"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2020"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model Line:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Taycan (Y1A) / (Y1B)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Transverse control arm front axle</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "During service work and/or other repairs, a loss of grease is detected on the outer ball joint on one or both control arms of the front axle."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Findings performed on supposedly damaged components have shown that they were of good quality and that there was no damage to the ball pin bellows, which could have resulted a grease leak."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Due to the process, grease may leak during the initial assembly of the control arms due to a maximum deflection of the conical spigot before the control arm is screwed into the wheel carrier. Over the service life, additional foreign bodies can collect in the corresponding area and stick to the excess grease, which can then be distributed over a larger area."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS428146ce-9663-4f09-b3e5-5e5fd3073328"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISf13b324f-89fd-42b6-948a-e3c9564099702"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "8e789820-c87a-49b8-b30d-769aa15526a2"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "0c0cd796-0e3a-45de-a37d-b61afdb3dcd4"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "c7de1516-3e83-4777-96e0-943c5ac952d1"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82330329"
+    ,
+    
+    "title" :
+    
+    
+    "Example of grease leaks"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISf893ef65-e05c-4f1b-964d-2e3453158004"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISd89b1e9c-3e7c-4abc-bd9a-df48ac1574d72"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "b9c25d35-fd1e-4f58-89ad-5b902e7c16be"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "5b9efda7-c068-48de-8718-1f8a63b0a3aa"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "97835da5-3f82-4660-b93f-c2a72f294e8d"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82330385"
+    ,
+    
+    "title" :
+    
+    
+    "Example of grease leak 2"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Action required:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If there is no customer complaint about noises (rattling, pinching, creaking) from the area of the front axle and the lower control arms have no clearance, remove excess grease and check the ball pin bellows for damage.<br/>If the ball pin bellows is not damaged, the lower control arm <b>does not</b> need to be replaced. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

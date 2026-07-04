@@ -1,0 +1,1218 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81372009"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81372009"
+    ,
+    
+    "version" :
+    103,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "5X00IN07"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-04-06T06:10:13.840+02:00"
+    ,
+    
+    "modificationDate" :
+    1718399949485,
+    
+    "title" :
+    
+    
+    "General information and notes on quality"
+    ,
+    
+    "fileName" :
+    
+    
+    "81372009_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Battery trickle charge "
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS8c9db792-9fbe-4ec2-b5a1-ec2b0d0bc2bc"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Information on control units"
+    ,
+    
+    "anchor" :
+    
+    
+    "g5xxxx04_2"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Information on maintaining long-life corrosion protection or the long-life guarantee"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS12b77717-e147-4c3f-a191-b863b3595646"
+    
+    }
+    
+    ]
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e15a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Battery Charger, 45 A"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-allgemein"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 5907"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 5907"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS8c9db792-9fbe-4ec2-b5a1-ec2b0d0bc2bc\" >Battery trickle charge </h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80802604"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Battery trickle charging</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e15a1161\">VAS 5907 - Battery Charger, 45 A</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                      must be connected as soon as the vehicle is unlocked in order to avoid running down the vehicle battery during the workshop visit.                 "
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISdc4a0993-d00e-48ae-8ace-a078796b35dc"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                     Connect battery charger.                      "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "270689"
+    ,
+    
+    "title" :
+    
+    
+    "Charging the battery"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"g5xxxx04_2\" >Information on control units</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80802624"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Information on removing and installing control units</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "If electronic components, e.g. ABS control unit, were removed for repair work and are then re-used, check that they are working correctly in accordance with existing specifications after fitting them."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80802628"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Protection against overvoltage when performing welding work </h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa92000ab-af31-4cdb-93ab-8e1f6c7e6b94"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "To protect control units from overvoltage during electric welding work, observe the following work regulations:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "When performing welding work: Disconnect electric plug connections on the engine, transmission and airbag control units."
+    ,
+    
+    
+    "Disconnect negative terminal of the battery and cover the battery."
+    ,
+    
+    
+    "During extensive welding work, remove control units in the immediate vicinity of the welding point."
+    ,
+    
+    
+    "Connect ground connection of the welder to the part to be welded as close as possible to the welding point. Make sure that there are no electrically insulated parts between the ground connection and welding point."
+    ,
+    
+    
+    "Do not touch control units or electric lines with the ground connection or welding electrode of the welder."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80805046"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Information for replacing control units</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The housing is noticeably deformed or damaged."
+    ,
+    
+    
+    "The sealing surface or console is deformed (no external signs of damage to the control unit)."
+    ,
+    
+    
+    "The electric plug connection is damaged or corroded by moisture."
+    ,
+    
+    
+    "Function tests or on-board diagnosis of the control unit indicate the fault \"Control unit faulty\"."
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The replacement of control units after an accident is necessary if at least one of the following conditions is met:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS12b77717-e147-4c3f-a191-b863b3595646\" >Information on maintaining long-life corrosion protection or the long-life guarantee</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80802664"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Information on maintaining long-life corrosion protection</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Apply welding primer to both sides of the welding flanges when resistance spot welding."
+    ,
+    
+    
+    "Prime repair areas from outside - on both sides if accessible."
+    ,
+    
+    
+    "Seal all sheetmetal overlaps, sheetmetal edges, butt joints, weld seams etc. with body sealant. "
+    ,
+    
+    
+    "When replacing structurally bonded body parts, proceed according to repair instructions."
+    ,
+    
+    
+    "Only apply body sealant to primed sheetmetal parts."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Apply top coat paint to the inside of the outer panelling before welding.                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "→ Paint Manual"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Build up paint on bare sheetmetal panels according to the painting methods described in the                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "→ Paint Manual"
+    
+    }
+    
+    }
+    ,
+    
+    "                     .                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Touch up or apply new standard underbody protection by applying long-life undersealing material."
+    ,
+    
+    
+    "Preserve all cavities in the repair area with cavity preservation after applying top coat paint."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Check that the standard water drains (stoppers) are working correctly and clean them after the cavity preservation has dried.                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "5X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "Diagram: Stopper plan"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Following repair work, standard corrosion protection should only be restored using approved corrosion protection agents. Observe the following points during body repairs:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80802684"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Information on maintaining the long-life guarantee</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Carry out all body repair work correctly and according to the specific Porsche instructions for sheetmetal, paint and corrosion protection/preservation work. To avoid jeopardising the long-life guarantee, a Paint Condition Report is prepared two years after delivery of the vehicle. This condition report must be updated every two years by every Official Porsche Centre."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

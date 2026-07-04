@@ -1,0 +1,10324 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81360426"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81360426"
+    ,
+    
+    "version" :
+    null,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "1701"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "07/18"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2018-09-25T04:02:13.360+02:00"
+    ,
+    
+    "modificationDate" :
+    1537875285362,
+    
+    "title" :
+    
+    
+    "Allocation of approved engine oils (07/18)"
+    ,
+    
+    "fileName" :
+    
+    
+    "81360426_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "MR"
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81360427"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 1984"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Vehicle Type: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>All Porsche standard-production vehicles</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Oil Quality: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Only <b>oils approved by Porsche and listed in the current approval lists</b> are to be used for the specified vehicle types."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Allocation of vehicle type - Porsche oil specification for Porsche standard-production vehicles from MY 2017:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Order type</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Designation</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Model year</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Model line designation</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>RS order type designation</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Oil specification</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Oil specification - China (+RoW without EU6, LEV)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAA1"
+    ,
+    
+    
+    "CAYENNE VR6 TIPTRONIC   "
+    ,
+    
+    
+    "2017     "
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAA1"
+    ,
+    
+    
+    "CAYENNE VR6 TIPTRONIC   "
+    ,
+    
+    
+    "2018  "
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAB1"
+    ,
+    
+    
+    "CAYENNE S V6 TIPTRONIC"
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAB1"
+    ,
+    
+    
+    "CAYENNE S V6 TIPTRONIC"
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAC1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU6)       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (193 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAC1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU6)       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (193 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAD1"
+    ,
+    
+    
+    "CAYENNE S V8 DIESEL"
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S DIESEL"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAD1"
+    ,
+    
+    
+    "CAYENNE S V8 DIESEL"
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S DIESEL"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAE1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI PLUG-IN HYBRID TIPTRONIC "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S E-HYBRID"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAE1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI PLUG-IN HYBRID TIPTRONIC "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S E-HYBRID"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAF1"
+    ,
+    
+    
+    "CAYENNE V8 TURBO   "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE TURBO"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAF1"
+    ,
+    
+    
+    "CAYENNE V8 TURBO   "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE TURBO"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAJ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (155 kW)     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (155 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAJ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (155 kW)     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (155 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAK1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU4/EU5)      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (180 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAK1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU4/EU5)      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (180 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAR1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI TIPTRONIC     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE (3.0)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAR1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI TIPTRONIC     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE (3.0)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAS1"
+    ,
+    
+    
+    "CAYENNE GTS V6 TIPTRONIC     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAS1"
+    ,
+    
+    
+    "CAYENNE GTS V6 TIPTRONIC     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAW1"
+    ,
+    
+    
+    "CAYENNE V8 TURBO S  "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE TURBO S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAW1"
+    ,
+    
+    
+    "CAYENNE V8 TURBO S  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE TURBO S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAY1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (BIN 5)      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (NAR)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAY1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (BIN 5)      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (NAR)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAZ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (184 kW)          "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (184 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92AAZ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (184 kW)          "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (184 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABA1"
+    ,
+    
+    
+    "CAYENNE VR6 \"PLATINUM EDITION\" TIPTRONIC           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABA1"
+    ,
+    
+    
+    "CAYENNE VR6 \"PLATINUM EDITION\" TIPTRONIC       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABB1"
+    ,
+    
+    
+    "CAYENNE S V6 TIPTRONIC \"PLATINUM EDITION\"           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S \"PLATINUM EDITION\""
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABB1"
+    ,
+    
+    
+    "CAYENNE S V6 TIPTRONIC \"PLATINUM EDITION\"           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S \"PLATINUM EDITION\""
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABC1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU6) \"PLATINUM EDITION\"    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (193 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABC1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU6) \"PLATINUM EDITION\"    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (193 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABD1"
+    ,
+    
+    
+    "CAYENNE S V8 DIESEL \"PLATINUM EDITION\"    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S DIESEL (283 kW) \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABD1"
+    ,
+    
+    
+    "CAYENNE S V8 DIESEL \"PLATINUM EDITION\"    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S DIESEL (283 kW) \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABE1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI PLUG-IN HYBRID \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S E-HYBRID \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABE1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI PLUG-IN HYBRID \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE S E-HYBRID \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABJ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (155 kW) \"PLATINUM EDITION\"   "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (155 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABJ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (155 kW) \"PLATINUM EDITION\"   "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (155 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABK1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU4/EU5) \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (180 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABK1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (EU4/EU5) \"PLATINUM EDITION\" "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (180 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABR1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI \"PLATINUM EDITION\" TIPTRONIC    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE (3.0) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABR1"
+    ,
+    
+    
+    "CAYENNE V6 TFSI \"PLATINUM EDITION\" TIPTRONIC    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE (3.0) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABY1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (BIN 5) \"PLATINUM EDITION\"     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (NAR) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABY1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (BIN 5) \"PLATINUM EDITION\"     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (NAR) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABZ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (184 kW) \"PLATINUM EDITION\"   "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (184 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "92ABZ1"
+    ,
+    
+    
+    "CAYENNE V6 DIESEL (184 kW) \"PLATINUM EDITION\"   "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (92A)"
+    ,
+    
+    
+    "CAYENNE DIESEL (184 kW) \"PLATINUM EDITION\""
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAA1"
+    ,
+    
+    
+    "MACAN - R4 TFSI AUTOMATIC (DSG)        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAA1"
+    ,
+    
+    
+    "MACAN - R4 TFSI AUTOMATIC (DSG)        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAB1"
+    ,
+    
+    
+    "MACAN S - V6 TURBO AUTOMATIC (DSG)      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAB1"
+    ,
+    
+    
+    "MACAN S - V6 TURBO AUTOMATIC (DSG)      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "C20"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAD1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI AUTOMATIC (DSG)  "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (190 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAD1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI AUTOMATIC (DSG)  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (190 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAF1"
+    ,
+    
+    
+    "MACAN TURBO - V6 TURBO AUTOMATIC (DSG)     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan Turbo (294 kW)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAF1"
+    ,
+    
+    
+    "MACAN TURBO - V6 TURBO AUTOMATIC (DSG)     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan Turbo (294 kW)"
+    ,
+    
+    
+    "A0"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAJ1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI (155 kW) AUTOMATIC (DSG)  "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (155 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAJ1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI (155 kW) AUTOMATIC (DSG)  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (155 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAK1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI AUTOMATIC (DSG)           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (180 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAK1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI AUTOMATIC (DSG)           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (180 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAS1"
+    ,
+    
+    
+    "MACAN GTS - V6 TURBO AUTOMATIC (DSG)        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAS1"
+    ,
+    
+    
+    "MACAN GTS - V6 TURBO AUTOMATIC (DSG)        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAX1"
+    ,
+    
+    
+    "MACAN TURBO KIT - V6 TURBO AUTOMATIC (DSG)    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan Turbo with Performance package (324 kW)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAX1"
+    ,
+    
+    
+    "MACAN TURBO KIT - V6 TURBO AUTOMATIC (DSG)    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan Turbo with Performance package (324 kW)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAZ1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI (184 kW) AUTOMATIC (DSG) "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (184 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "95BAZ1"
+    ,
+    
+    
+    "MACAN S DIESEL - V6 TDI (184 kW) AUTOMATIC (DSG) "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Macan (95B)"
+    ,
+    
+    
+    "Macan S Diesel (184 kW)"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97AAA1"
+    ,
+    
+    
+    "PANAMERA "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97AAA1"
+    ,
+    
+    
+    "PANAMERA "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ABA1"
+    ,
+    
+    
+    "PANAMERA 4  "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ABA1"
+    ,
+    
+    
+    "PANAMERA 4  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ABE1"
+    ,
+    
+    
+    "PANAMERA 4 HYBRID       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 E-Hybrid"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ABE1"
+    ,
+    
+    
+    "PANAMERA 4 HYBRID       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 E-Hybrid"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ADB1"
+    ,
+    
+    
+    "PANAMERA 4 S       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ADB1"
+    ,
+    
+    
+    "PANAMERA 4 S       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ADD1"
+    ,
+    
+    
+    "PANAMERA 4 S DIESEL       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Diesel"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97ADD1"
+    ,
+    
+    
+    "PANAMERA 4 S DIESEL       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Diesel"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97AFF1"
+    ,
+    
+    
+    "PANAMERA TURBO "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97AFF1"
+    ,
+    
+    
+    "PANAMERA TURBO "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97AFH1"
+    ,
+    
+    
+    "PANAMERA TURBO S HYBRID        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo S E-Hybrid"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BAA1"
+    ,
+    
+    
+    "PANAMERA LONG   "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Executive"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BBA1"
+    ,
+    
+    
+    "PANAMERA 4 LONG "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 Executive"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BBA1"
+    ,
+    
+    
+    "PANAMERA 4 LONG "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 Executive"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BBE1"
+    ,
+    
+    
+    "PANAMERA 4 HYBRID LONG    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 E-Hybrid Executive"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BBE1"
+    ,
+    
+    
+    "PANAMERA 4 HYBRID LONG    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 E-Hybrid Executive"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BDB1"
+    ,
+    
+    
+    "PANAMERA 4 S LONG      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Executive"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BDB1"
+    ,
+    
+    
+    "PANAMERA 4 S LONG      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Executive"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BFF1"
+    ,
+    
+    
+    "PANAMERA TURBO LONG     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo Executive"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BFF1"
+    ,
+    
+    
+    "PANAMERA TURBO LONG     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo Executive"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97BFH1"
+    ,
+    
+    
+    "PANAMERA TURBO S HYBRID LONG     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo S E-Hybrid Executive"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CBA1"
+    ,
+    
+    
+    "PANAMERA 4 SPORT TURISMO     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 Sport Turismo"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CBE1"
+    ,
+    
+    
+    "PANAMERA 4 HYBRID SPORT TURISMO      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4 E-Hybrid Sport Turismo "
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CDB1"
+    ,
+    
+    
+    "PANAMERA 4 S SPORT TURISMO      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Sport Turismo"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CDB1"
+    ,
+    
+    
+    "PANAMERA 4S DIESEL SPORT TURISMO   "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera 4S Diesel Sport Turismo"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "C30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CFF1"
+    ,
+    
+    
+    "PANAMERA TURBO SPORT TURISMO      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo Sport Turismo"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "97CFH1"
+    ,
+    
+    
+    "PANAMERA TURBO S HYBRID SPORT TURISMO      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Panamera (971)"
+    ,
+    
+    
+    "Panamera Turbo S Hybrid Sport Turismo"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982120"
+    ,
+    
+    
+    "CAYMAN  "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982120"
+    ,
+    
+    
+    "CAYMAN  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982121"
+    ,
+    
+    
+    "CAYMAN"
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982121"
+    ,
+    
+    
+    "CAYMAN"
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982130"
+    ,
+    
+    
+    "CAYMAN S    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982130"
+    ,
+    
+    
+    "CAYMAN S    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982131"
+    ,
+    
+    
+    "CAYMAN S    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982131"
+    ,
+    
+    
+    "CAYMAN S    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982140"
+    ,
+    
+    
+    "CAYMAN GTS  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982141"
+    ,
+    
+    
+    "CAYMAN GTS  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Cayman GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982320"
+    ,
+    
+    
+    "BOXSTER     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982320"
+    ,
+    
+    
+    "BOXSTER     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982321"
+    ,
+    
+    
+    "BOXSTER     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982321"
+    ,
+    
+    
+    "BOXSTER     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982330"
+    ,
+    
+    
+    "BOXSTER S        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982330"
+    ,
+    
+    
+    "BOXSTER S        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982331"
+    ,
+    
+    
+    "BOXSTER S        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982331"
+    ,
+    
+    
+    "BOXSTER S        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982340"
+    ,
+    
+    
+    "BOXSTER GTS       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "982341"
+    ,
+    
+    
+    "BOXSTER GTS       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Boxster/Cayman (982)"
+    ,
+    
+    
+    "718 Boxster GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991110"
+    ,
+    
+    
+    "911 CARRERA     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991110"
+    ,
+    
+    
+    "911 CARRERA     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991111"
+    ,
+    
+    
+    "911 CARRERA     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991111"
+    ,
+    
+    
+    "911 CARRERA     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991120"
+    ,
+    
+    
+    "911 CARRERA S       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991120"
+    ,
+    
+    
+    "911 CARRERA S       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991121"
+    ,
+    
+    
+    "911 CARRERA S       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991121"
+    ,
+    
+    
+    "911 CARRERA S       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991140"
+    ,
+    
+    
+    "911 CARRERA GTS      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991140"
+    ,
+    
+    
+    "911 CARRERA GTS      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991141"
+    ,
+    
+    
+    "911 CARRERA GTS      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991141"
+    ,
+    
+    
+    "911 CARRERA GTS      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991150"
+    ,
+    
+    
+    "911 CARRERA T              "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA T"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991151"
+    ,
+    
+    
+    "911 CARRERA T              "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA T (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991310"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991310"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991311"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991311"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991320"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991320"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991321"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991321"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991340"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET   "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991340"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET   "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991341"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991341"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA GTS CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991410"
+    ,
+    
+    
+    "911 CARRERA 4                      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991410"
+    ,
+    
+    
+    "911 CARRERA 4                      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991411"
+    ,
+    
+    
+    "911 CARRERA 4                      "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991411"
+    ,
+    
+    
+    "911 CARRERA 4                      "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991420"
+    ,
+    
+    
+    "911 CARRERA 4 S          "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991420"
+    ,
+    
+    
+    "911 CARRERA 4 S          "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991421"
+    ,
+    
+    
+    "911 CARRERA 4 S          "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991421"
+    ,
+    
+    
+    "911 CARRERA 4 S          "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991430"
+    ,
+    
+    
+    "911 TURBO     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991430"
+    ,
+    
+    
+    "911 TURBO     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991431"
+    ,
+    
+    
+    "911 TURBO     "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991431"
+    ,
+    
+    
+    "911 TURBO     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991440"
+    ,
+    
+    
+    "911 CARRERA 4 GTS "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991440"
+    ,
+    
+    
+    "911 CARRERA 4 GTS "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991441"
+    ,
+    
+    
+    "911 CARRERA 4 GTS "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991441"
+    ,
+    
+    
+    "911 CARRERA 4 GTS "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991450"
+    ,
+    
+    
+    "911 TURBO S           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991450"
+    ,
+    
+    
+    "911 TURBO S           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991451"
+    ,
+    
+    
+    "911 TURBO S           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991451"
+    ,
+    
+    
+    "911 TURBO S           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991480"
+    ,
+    
+    
+    "911 TURBO S EXC SERIES     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "991 TURBO S Exclusive Series"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991481"
+    ,
+    
+    
+    "911 TURBO S EXC SERIES     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "991 TURBO S Exclusive Series (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991510"
+    ,
+    
+    
+    "911 TARGA 4    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991510"
+    ,
+    
+    
+    "911 TARGA 4    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991511"
+    ,
+    
+    
+    "911 TARGA 4    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991511"
+    ,
+    
+    
+    "911 TARGA 4    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991520"
+    ,
+    
+    
+    "911 TARGA 4S        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991520"
+    ,
+    
+    
+    "911 TARGA 4S        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4S"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991521"
+    ,
+    
+    
+    "911 TARGA 4S        "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991521"
+    ,
+    
+    
+    "911 TARGA 4S        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4S (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991540"
+    ,
+    
+    
+    "911 TARGA 4 GTS           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991540"
+    ,
+    
+    
+    "911 TARGA 4 GTS           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 GTS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991541"
+    ,
+    
+    
+    "911 TARGA 4 GTS           "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991541"
+    ,
+    
+    
+    "911 TARGA 4 GTS           "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TARGA 4 GTS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991610"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991610"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991611"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991611"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991620"
+    ,
+    
+    
+    "911 CARRERA 4 S CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991620"
+    ,
+    
+    
+    "911 CARRERA 4 S CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991621"
+    ,
+    
+    
+    "911 CARRERA 4 S CABRIOLET       "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991621"
+    ,
+    
+    
+    "911 CARRERA 4 S CABRIOLET       "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991630"
+    ,
+    
+    
+    "911 TURBO CABRIOLET         "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991630"
+    ,
+    
+    
+    "911 TURBO CABRIOLET         "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991631"
+    ,
+    
+    
+    "911 TURBO CABRIOLET         "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991631"
+    ,
+    
+    
+    "911 TURBO CABRIOLET         "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991640"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991640"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991641"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991641"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 CARRERA 4 GTS CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991650"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991650"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991651"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET    "
+    ,
+    
+    
+    "2017"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991651"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 TURBO S CABRIOLET (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991810"
+    ,
+    
+    
+    "911 GT3        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 GT3"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991811"
+    ,
+    
+    
+    "911 GT3        "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "911 GT3 (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991860"
+    ,
+    
+    
+    "911 GT2 RS  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "991 GT2 RS"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "991861"
+    ,
+    
+    
+    "911 GT2 RS  "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "911 Carrera (991)"
+    ,
+    
+    
+    "991 GT2 RS (RHD)"
+    ,
+    
+    
+    "A40"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "9YAAA1"
+    ,
+    
+    
+    "CAYENNE (BASIC)    "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (9YA)"
+    ,
+    
+    
+    "Cayenne"
+    ,
+    
+    
+    "C20"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "9YABB1"
+    ,
+    
+    
+    "CAYENNE S"
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (9YA)"
+    ,
+    
+    
+    "Cayenne S"
+    ,
+    
+    
+    "C30"
+    ,
+    
+    
+    "A40"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "9YACF1"
+    ,
+    
+    
+    "CAYENNE TURBO     "
+    ,
+    
+    
+    "2018"
+    ,
+    
+    
+    "Cayenne (9YA)"
+    ,
+    
+    
+    "Cayenne Turbo"
+    ,
+    
+    
+    "C40"
+    ,
+    
+    
+    "C40"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>For Classic vehicles with air-cooled flat engines, Porsche recommends special engine oils, which are not included in the list provided above.</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Allocation of vehicle type - Porsche oil specification for all Porsche standard-production vehicles from MY 1997 to MY 2017:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Vehicle type</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Porsche oil specification</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Viscosity class</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>911</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Boxster</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayman</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Porsche A40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-50"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>918 Spyder</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Porsche A40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "SAE 0W-40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Macan S</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Macan Turbo</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Porsche A40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-50"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne S</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne S Transsyberia</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne GTS</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne Turbo</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne Turbo S</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Porsche A40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-40"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-50"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera 4 (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera S (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera 4S (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera GTS (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera Turbo (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera Turbo S (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>(incl. Executive variants)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Porsche A40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-40 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-50"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Macan </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne S Hybrid</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne S E-Hybrid </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera GTS (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera S Hybrid (G1)</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera S E-Hybrid (G1)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,1,2
+    ]
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>For all countries except China:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche C30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>or</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "VW504 00"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Only for China</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche A40"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>or</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "VW 507 00"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-40 (recommended) "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-40"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Not SAE 5W-50"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Macan S Diesel</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne Diesel</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Cayenne S Diesel</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Panamera Diesel (G1)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,1,2
+    ]
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>For all countries except Dominican Republic:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Porsche C30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>or</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "VW507 00"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 0W-30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "SAE 5W-30"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7\">1)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Only for Dominican Republic and only for vehicles without diesel particle filter</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Only the following brands of engine oil: "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "- Mobil Super 3000 X3 SAE 5W-40"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "- Castrol Magnatec Professional 508 88 5W-40"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "SAE 5W-40"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<sup><a class=\"qv\" href=\"\" target=\"PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9\">2)                     </a></sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS2aa64f81-aed5-4f58-919a-876c856c26b7"
+    ,
+    
+    "html" :
+    
+    
+    "                         </br><sup>1)</sup>                         For all temperature ranges"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4d912ded-9f57-4658-82d8-9e8714c42ab9"
+    ,
+    
+    "html" :
+    
+    
+    "                         </br><sup>2)</sup>                         For temperature range warmer than –25 °C"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>For Classic vehicles with air-cooled flat engines, Porsche recommends special engine oils, which are not included in the list provided above.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Viscosity: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The viscosity of an engine oil is specified by the SAE viscosity class."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The first number and the letter W (winter) identify the viscosity at low temperatures. This means that an oil with the specification “5W” is more viscous than oil with the specification “0W”."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The second number indicates the viscosity at high temperatures. This means that an oil with the specification “40” is less viscous than oil with the specification “50”. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Multi-grade oils are identified by both viscosity specifications, e.g. SAE 0W-40, 5W-40 or 5W-50.  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Examples:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "SAE 0W-40 and 5W-40 oils have the same viscosity at high temperatures, but at low temperatures, the “5W” oil is more viscous. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "SAE 5W-40 and 5W-50 oils have the same viscosity at low temperatures, but at higher temperatures, the oil with viscosity class “40” is less viscous. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Miscibility: "
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "All <b>engine oils approved by Porsche can be mixed provided they are of the same Porsche oil specification</b>. This means that it is not necessary to flush the engine when the oil is changed if another type of oil is used. However, since every brand of oil has a specially adapted unique composition, the same brand and type of oil should be used for topping up between oil change intervals if possible."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
