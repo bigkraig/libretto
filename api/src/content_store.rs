@@ -200,9 +200,12 @@ impl ContentStore {
                 Ok(())
             }))
         };
-        let pool = tokio::task::block_in_place(|| {
-            tokio::runtime::Handle::current().block_on(opts.connect(url))
-        }).expect("Failed to connect to database");
+        // Connect lazily: the pool opens its first connection on first use rather than at
+        // construction. This lets the API server boot even when the content DB is absent or
+        // temporarily unreachable (it just fails per-request) instead of hard-panicking at
+        // startup and crash-looping. Loaders still fail fast on their first query if the DB
+        // is unavailable.
+        let pool = opts.connect_lazy(url).expect("Failed to configure database pool");
         ContentStore {
             pool,
             vehicle_image_path: settings.importer.vehicle_image_path.clone(),
