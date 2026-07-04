@@ -9,9 +9,8 @@ web/tsconfig.tsbuildinfo
 # SQLite databases (generated, not committed)
 api/content.sqlite3
 
-# Source PDFs and generated split output (synced via B2, not git)
-api/source_files/
-api/before-ferrari/
+# Generated/temporary loader output (regenerable; e.g. audi PDF split trees)
+api/generated/
 
 # Python
 .venv-pdf/

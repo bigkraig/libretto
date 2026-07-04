@@ -334,7 +334,7 @@ def slice_and_relink(src_path, doc, manual_docs, dests, out_dir):
 
 def main():
     src_dir = sys.argv[1] if len(sys.argv) > 1 else "source_files/audi/2018-R8"
-    out_dir = sys.argv[2] if len(sys.argv) > 2 else "source_files/audi/2018-R8-split"
+    out_dir = sys.argv[2] if len(sys.argv) > 2 else "generated/audi/2018-R8-split"
     os.makedirs(out_dir, exist_ok=True)
 
     # ---- Pass A: scan manuals, decide main group per group, tally RG -> manuals

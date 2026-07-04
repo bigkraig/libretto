@@ -27,13 +27,17 @@ pub struct LoadAudiArgs {
 }
 
 /// If `path` contains raw PDFs but no manifest.json, run r8_split.py to produce
-/// the split tree in `<path>-split/` and return that path. Otherwise return `path` as-is.
+/// the split tree under `generated/` (temporary, regenerable output — kept out of
+/// `source_files/`) and return that path. Otherwise return `path` as-is.
 fn ensure_split(path: &str) -> Result<String> {
     let base = Path::new(path);
     if base.join("manifest.json").exists() {
         return Ok(path.to_string());
     }
-    let split_path = format!("{}-split", path);
+    // Mirror the source layout under generated/, e.g.
+    // source_files/audi/2018-R8 -> generated/audi/2018-R8-split
+    let rel = path.strip_prefix("source_files/").unwrap_or(path);
+    let split_path = format!("generated/{}-split", rel);
     println!("No manifest.json found — running r8_split.py to split PDFs into {} ...", split_path);
     let status = Command::new("python3")
         .args(["tools/r8_split.py", path, &split_path])
