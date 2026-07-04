@@ -112,19 +112,13 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
         year, model, manifest.vehicle.name, resolved_path
     );
 
-    // Vehicle row. Look for an image in the original source dir first (the split
-    // dir is generated and shouldn't need manual files dropped in it), then fall
-    // back to the split dir itself.
-    let original_path = args.path.clone();
-    let search_dirs = [original_path.as_str(), resolved_path.as_str()];
-    let image = ["vehicle.png", "vehicle.jpg", "image.png", "image.jpg"]
-        .iter()
-        .flat_map(|n| search_dirs.iter().map(move |d| Path::new(d).join(n)))
-        .find(|p| p.exists())
-        .and_then(|p| fs::read(p).ok())
-        .unwrap_or_default();
+    // Vehicle row. Use the same convention as the porsche/ferrari loaders:
+    // <vehicle_image_path>/<year>-<model>.png  (e.g. images/vehicles/2018-R8.png)
+    let image_path = Path::new(&settings.importer.vehicle_image_path)
+        .join(format!("{}-{}.png", year, model));
+    let image = fs::read(&image_path).unwrap_or_default();
     if image.is_empty() {
-        println!("note: no vehicle image found (drop vehicle.png in {} to set one)", original_path);
+        println!("note: no vehicle image found (drop {} to set one)", image_path.display());
     }
     store.upsert_vehicle_direct(&Vehicle {
         id: None,
