@@ -43,8 +43,10 @@ FERRARI_MODEL ?= F151M
 load-ferrari:
 	cargo run -- load-ferrari --path $(FERRARI_PATH) --year $(FERRARI_YEAR) --model $(FERRARI_MODEL)
 
+# The split step (tools/r8_split.py) needs python3 with pypdf on PATH. Provide it from
+# nixpkgs rather than pip, e.g. add `(python3.withPackages (ps: [ ps.pypdf ]))` to your
+# environment (see tools/requirements.txt for the version).
 load-audi:
-	pip3 install -q -r tools/requirements.txt
 	cargo run -- load-audi
 
 version:
