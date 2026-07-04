@@ -28,6 +28,7 @@ Links (all intra-PDF GoTo to named destinations):
 """
 import hashlib
 import json
+import logging
 import os
 import re
 import sys
@@ -37,6 +38,11 @@ from pypdf import PdfReader, PdfWriter
 from pypdf.generic import (
     ArrayObject, DictionaryObject, NameObject, NumberObject, TextStringObject,
 )
+
+# Silence pypdf's benign "Annotation sizes differ" warnings — expected when
+# slicing drops link annotations whose targets fall outside the copied range
+# (we rebuild the cross-reference links ourselves afterward).
+logging.getLogger("pypdf").setLevel(logging.ERROR)
 
 ROOT = "https://libretto.bigkraig.com"
 YEAR = 2018
