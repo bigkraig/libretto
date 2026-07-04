@@ -5,7 +5,10 @@ target/
 
 # Huge build artifacts that the image doesn't need.
 *.sqlite3
+cache/
 images/
+source_files/
+generated/
 ferrari/
 before-ferrari/
 web_cache.sqlite3
