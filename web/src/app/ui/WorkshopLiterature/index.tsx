@@ -172,8 +172,8 @@ export default function Index({location, vehicle, year}: Params) {
       : "Search all documents for this vehicle (title & content)"
 
   return (
-    <div className={clsx("w-full h-full flex flex-col bg-white")}>
-      <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 border-y border-line bg-white px-4 py-2.5")}>
+    <div className={clsx("w-full h-full flex flex-col bg-white border border-line overflow-hidden")}>
+      <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-line bg-white px-4 py-2.5")}>
 
         <div className={clsx("flex w-full items-center gap-2.5 md:w-auto")}>
           <LibraryBooksIcon fontSize="small" className={clsx("text-muted")}/>

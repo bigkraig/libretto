@@ -135,7 +135,7 @@ export default function Index({navLinks, location, vehicle, year}: Params) {
   const isVehicleAndYearPresent = vehicle && year;
   const HeaderComponent = isVehicleAndYearPresent ? <Header vehicle={vehicle} year={year}/> : <RootHeader/>;
 
-  return <div className={clsx("w-full h-full flex flex-col bg-white border-r border-line")}>
+  return <div className={clsx("w-full h-full flex flex-col bg-white border border-line overflow-hidden")}>
     {HeaderComponent}
     <NavLinks navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
   </div>
