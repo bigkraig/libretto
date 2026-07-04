@@ -80,7 +80,11 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
     inner.removeAttribute('height');
     inner.setAttribute('preserveAspectRatio', 'xMidYMin meet');
     inner.style.width = '100%';
-    inner.style.height = '100%';
+    inner.style.height = 'auto';
+    // Cap by viewport height so a landscape illustration can't grow taller than the
+    // pane and overflow (the pane's own height doesn't resolve reliably here). meet
+    // then letterboxes the content within, so nothing is clipped.
+    inner.style.maxHeight = '58vh';
   }
   navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
 
