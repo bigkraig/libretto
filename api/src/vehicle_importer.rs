@@ -106,7 +106,12 @@ impl VehicleImporter {
         let seen_tools: DashSet<String> = DashSet::new();
         let done = AtomicUsize::new(0);
 
-        let pool = ThreadPoolBuilder::new().num_threads(IMPORT_WORKERS).build()?;
+        // Large per-worker stack: pdf-extract can recurse deeply on some PDFs and overflow the
+        // default rayon stack. Lazily committed, so it costs no real memory unless used.
+        let pool = ThreadPoolBuilder::new()
+            .num_threads(IMPORT_WORKERS)
+            .stack_size(256 * 1024 * 1024)
+            .build()?;
         pool.install(|| {
             tree_nodes.par_iter().try_for_each(|node| -> Result<()> {
                 self.process_node(&pcss_client, &content_store, vehicle, year, node,

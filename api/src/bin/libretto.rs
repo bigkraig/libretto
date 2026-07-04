@@ -36,6 +36,13 @@ async fn main() -> Result<()> {
 
     let settings = Settings::new()?;
 
+    // pdf-extract can recurse deeply on some PDFs and overflow the default (small) rayon
+    // worker stack. Give the global rayon pool a large stack — it's lazily committed, so it
+    // costs no real memory unless a deep extraction actually uses it.
+    let _ = rayon::ThreadPoolBuilder::new()
+        .stack_size(256 * 1024 * 1024)
+        .build_global();
+
     // Run migrations on every startup (sqlx tracks which have run)
     {
         let content_store = ContentStore::new(&settings);
