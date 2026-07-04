@@ -6,7 +6,7 @@ CONTAINER_NAME ?= libretto-api
 NETWORK        ?= linuxserver
 DATA_DIR       ?= /mnt/appdata/libretto
 
-.PHONY: help build push release bump-patch run deploy clean version load load-porsche load-ferrari load-audi
+.PHONY: help build push release bump-patch run deploy clean version rebuild migrate load load-porsche load-ferrari load-audi extract-text
 
 help:
 	@echo "libretto-api targets:"
@@ -17,12 +17,23 @@ help:
 	@echo "  make run           foreground dev run on :3030, mounts \$$PWD at /data"
 	@echo "  make deploy        build, stop+rm $(CONTAINER_NAME), run detached"
 	@echo "  make version       print current version"
+	@echo "  make rebuild       migrate + run all loaders (full DB rebuild from committed sources)"
+	@echo "  make migrate       run pending migrations"
 	@echo "  make load          run all loaders (porsche, ferrari, audi)"
 	@echo "  make load-porsche  run vehicle-importer"
 	@echo "  make load-ferrari  run load-ferrari"
 	@echo "  make load-audi     run load-audi"
 	@echo ""
 	@echo "Set LIBRETTO_DATABASE_URL to target a specific database."
+
+# Rebuild the entire content database from the committed sources (cache/ + source_files/)
+# against LIBRETTO_DATABASE_URL: run migrations, then all three loaders. Idempotent — the
+# loaders upsert — so re-running refreshes in place; to rebuild from scratch, drop the target
+# database/schema first. (load-audi additionally needs python3 + pypdf for the R8 PDF split.)
+rebuild: migrate load
+
+migrate:
+	cargo run -- migrate
 
 load: load-porsche load-ferrari load-audi
 
