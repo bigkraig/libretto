@@ -43,11 +43,10 @@ FERRARI_MODEL ?= F151M
 load-ferrari:
 	cargo run -- load-ferrari --path $(FERRARI_PATH) --year $(FERRARI_YEAR) --model $(FERRARI_MODEL)
 
-# The split step (tools/r8_split.py) needs python3 + pypdf. Install python via mise
-# (`mise install`), then this installs pypdf into it. Uses `python3 -m pip` rather than a
-# `pip3` binary so it works with whatever python is on PATH.
+# The split step (tools/r8_split.py) needs python3 + pypdf on PATH. If pypdf is already
+# available (e.g. a nixpkgs python built with it), use it as-is; otherwise pip-install it.
 load-audi:
-	python3 -m pip install -q -r tools/requirements.txt
+	python3 -c "import pypdf" 2>/dev/null || python3 -m pip install -q -r tools/requirements.txt
 	cargo run -- load-audi
 
 version:
