@@ -54,7 +54,10 @@ export class NavigatorLink {
       return NavigatorLink.FromDriveFileTreeNode(config);
     }
 
-    let href = HREF(config.vehicle, config.year, config.parent_node_id)
+    // Going "up" from a folder lands on its parent; from the vehicle root ("000")
+    // there is no parent folder, so up leaves to the vehicle selection list.
+    const isRoot = config.node_value == "000";
+    let href = isRoot ? "/" : HREF(config.vehicle, config.year, config.parent_node_id)
     let children = config.children ? config.children.map((c) => NavigatorLink.FromChildNode(c, activeNode)) : [];
 
     return [new NavigatorLink({

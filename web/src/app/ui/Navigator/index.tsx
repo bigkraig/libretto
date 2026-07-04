@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, {useEffect, useState} from "react"
-import {Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
+import {ArrowUpward, ChevronLeft, Folder, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
 import {NavigatorLink} from "@/lib/navigator"
 import clsx from "clsx";
 import {GetVehicle, Vehicle} from "@/lib/api";
@@ -78,6 +78,7 @@ function NavLinks(params: Params) {
         params.navLinks.map((link: NavigatorLink, index) => {
           const isOpen = link.kind === "open_folder"
           const isVehicle = link.kind === "vehicle"
+          const backToVehicles = isOpen && link.href === "/"
           const iconColor = link.selected ? "text-brass" : "text-white/45"
           const className = clsx(
             "flex items-center border-l-2 text-[13px] transition-colors",
@@ -85,7 +86,7 @@ function NavLinks(params: Params) {
             link.selected
               ? "border-brass bg-white/[0.06] text-white font-medium"
               : "border-transparent text-white/70 hover:bg-white/[0.05] hover:text-white",
-            isOpen && "font-semibold text-white",
+            isOpen && "mb-1 border-b border-white/10 font-semibold text-white",
           )
 
           const linkedVisualization = link.text.split(" ")[0]
@@ -100,11 +101,16 @@ function NavLinks(params: Params) {
             >
               {link.kind == "vehicle" && <MarqueBadge marque={link.icon}/>}
               {link.kind == "folder" && <Folder className={clsx("size-[18px] shrink-0", iconColor)}/>}
-              {link.kind == "open_folder" && <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>}
+              {link.kind == "open_folder" && <ArrowUpward className={clsx("size-[18px] shrink-0 text-brass")}/>}
               {link.kind == "drive_file" && !link.selected && <InsertDriveFile className={clsx("size-[18px] shrink-0", iconColor)}/>}
               {link.kind == "drive_file" && link.selected &&
                   <InsertDriveFileOutlined className={clsx("size-[18px] shrink-0", iconColor)}/>}
               <p className={clsx("my-auto")}>{link.text}</p>
+              {isOpen && (
+                <span className={clsx("ml-auto font-mono text-[10px] uppercase tracking-wider text-white/40")}>
+                  {backToVehicles ? "Vehicles" : "Up"}
+                </span>
+              )}
             </Link>
           );
         })
@@ -136,6 +142,13 @@ export default function Index({navLinks, location, vehicle, year}: Params) {
   const HeaderComponent = isVehicleAndYearPresent ? <Header vehicle={vehicle} year={year}/> : <RootHeader/>;
 
   return <div className={clsx("w-full h-full flex flex-col bg-ink border border-ink-2 overflow-hidden")}>
+    {isVehicleAndYearPresent && (
+      <Link href="/"
+            className={clsx("flex items-center gap-1 border-b border-white/10 px-3 py-2",
+                            "font-mono text-[11px] uppercase tracking-[0.14em] text-white/50 hover:text-white transition-colors")}>
+        <ChevronLeft className={clsx("size-4 shrink-0")}/> All vehicles
+      </Link>
+    )}
     {HeaderComponent}
     <NavLinks navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
   </div>

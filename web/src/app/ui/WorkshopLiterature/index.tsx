@@ -202,17 +202,17 @@ export default function Index({location, vehicle, year}: Params) {
 
   return (
     <div className={clsx("w-full h-full flex flex-col bg-white border border-line overflow-hidden")}>
-      <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-line bg-white px-4 py-2.5")}>
+      <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 bg-ink px-4 py-2.5")}>
 
         <div className={clsx("flex w-full items-center gap-2.5 md:w-auto")}>
-          <LibraryBooksIcon fontSize="small" className={clsx("text-muted")}/>
-          <span className={clsx("font-mono text-[12px] uppercase tracking-[0.14em] text-ink")}>Workshop literature</span>
+          <LibraryBooksIcon fontSize="small" className={clsx("text-white/55")}/>
+          <span className={clsx("font-mono text-[12px] uppercase tracking-[0.14em] text-white")}>Workshop literature</span>
           {isSearching && searching && (
-            <span className={clsx("flex items-center gap-1.5 text-xs text-muted")}>
+            <span className={clsx("flex items-center gap-1.5 text-xs text-white/60")}>
               <span className={clsx("size-1.5 rounded-full bg-brass animate-pulse")}/> Searching…
             </span>
           )}
-          <span className={clsx("ml-auto md:ml-0 font-mono text-[11px] leading-none px-2 py-1 rounded-full bg-ink text-white tabular-nums")}>{displayed.length}</span>
+          <span className={clsx("ml-auto md:ml-0 font-mono text-[11px] font-semibold leading-none px-2 py-1 rounded-full bg-brass text-ink tabular-nums")}>{displayed.length}</span>
         </div>
 
         <div className={clsx("w-full md:w-auto")}>
