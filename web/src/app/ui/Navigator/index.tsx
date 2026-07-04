@@ -13,7 +13,7 @@ const navigatorDiv = "navigator"
 
 function RootHeader() {
   return (
-    <Link href="/" className={clsx("block bg-ink px-6 py-6 md:py-8 text-center")}>
+    <Link href="/" className={clsx("block bg-ink px-6 py-6 md:py-8 text-center border-b border-white/10")}>
       <div className={clsx("flex justify-center text-white")}>
         <LibrettoMark className={clsx("h-9 w-9 md:h-11 md:w-11")}/>
       </div>
@@ -31,7 +31,7 @@ function Header(params: { vehicle: string, year: number }) {
   }, [params.vehicle, params.year])
 
   if (!vehicle) return (
-    <div className={clsx("bg-ink px-4 py-3 md:px-6 md:py-6")}>
+    <div className={clsx("bg-ink px-4 py-3 md:px-6 md:py-6 border-b border-white/10")}>
       <div className={clsx("flex items-center gap-3 md:block")}>
         <div className={clsx("h-11 w-16 shrink-0 animate-pulse rounded bg-white/10 md:mx-auto md:h-auto md:aspect-[3/2] md:w-full md:max-w-[220px]")}/>
         <div className={clsx("h-4 w-32 animate-pulse rounded bg-white/10 md:mx-auto md:mt-4 md:w-2/3")}/>
@@ -40,7 +40,7 @@ function Header(params: { vehicle: string, year: number }) {
   )
 
   return (
-    <Link href="/" className={clsx("block bg-ink px-4 py-3 md:px-6 md:py-6")}>
+    <Link href="/" className={clsx("block bg-ink px-4 py-3 md:px-6 md:py-6 border-b border-white/10")}>
       <div className={clsx("flex items-center gap-3 md:block")}>
         <Image
           className={clsx("h-11 w-auto shrink-0 md:mx-auto md:h-auto md:w-full md:max-w-[220px]")}
@@ -78,14 +78,14 @@ function NavLinks(params: Params) {
         params.navLinks.map((link: NavigatorLink, index) => {
           const isOpen = link.kind === "open_folder"
           const isVehicle = link.kind === "vehicle"
-          const iconColor = link.selected ? "text-brass" : "text-muted"
+          const iconColor = link.selected ? "text-brass" : "text-white/45"
           const className = clsx(
             "flex items-center border-l-2 text-[13px] transition-colors",
             isVehicle ? "gap-3 px-4 py-2.5" : "gap-2.5 px-4 py-2",
             link.selected
-              ? "border-brass bg-brass-wash text-ink font-medium"
-              : "border-transparent text-ink/85 hover:bg-brass-wash hover:text-ink",
-            isOpen && "font-semibold text-ink",
+              ? "border-brass bg-white/[0.06] text-white font-medium"
+              : "border-transparent text-white/70 hover:bg-white/[0.05] hover:text-white",
+            isOpen && "font-semibold text-white",
           )
 
           const linkedVisualization = link.text.split(" ")[0]
@@ -135,7 +135,7 @@ export default function Index({navLinks, location, vehicle, year}: Params) {
   const isVehicleAndYearPresent = vehicle && year;
   const HeaderComponent = isVehicleAndYearPresent ? <Header vehicle={vehicle} year={year}/> : <RootHeader/>;
 
-  return <div className={clsx("w-full h-full flex flex-col bg-white border border-line overflow-hidden")}>
+  return <div className={clsx("w-full h-full flex flex-col bg-ink border border-ink-2 overflow-hidden")}>
     {HeaderComponent}
     <NavLinks navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
   </div>
