@@ -19,9 +19,9 @@ const kinds: { [id: string]: string } = {
   "SY": "Symptom-based Workshop Manual",
 }
 
-// One quiet, uniform chip for every document type — the mono letters do the
-// differentiating; no color-coding to compete with the brass accents.
-const BADGE_CLASS = "bg-white text-ink ring-1 ring-inset ring-line";
+// Brass chip for every document type — uniform (so RM doesn't read heavier than
+// the rest) but keeps the brass character.
+const BADGE_CLASS = "bg-brass-wash text-brass-dim";
 
 function TypeBadge({type}: { type: string }) {
   const label = (type || "—").toUpperCase();
@@ -172,18 +172,18 @@ export default function Index({location, vehicle, year}: Params) {
       : "Search all documents for this vehicle (title & content)"
 
   return (
-    <div className={clsx("w-full h-full flex flex-col bg-paper")}>
+    <div className={clsx("w-full h-full flex flex-col bg-white")}>
       <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 border-y border-line bg-white px-4 py-2.5")}>
 
-        <div className={clsx("flex items-center gap-2.5")}>
+        <div className={clsx("flex w-full items-center gap-2.5 md:w-auto")}>
           <LibraryBooksIcon fontSize="small" className={clsx("text-muted")}/>
           <span className={clsx("font-mono text-[12px] uppercase tracking-[0.14em] text-ink")}>Workshop literature</span>
-          <span className={clsx("font-mono text-[11px] leading-none px-2 py-1 rounded-full bg-ink text-white tabular-nums")}>{displayed.length}</span>
           {isSearching && searching && (
             <span className={clsx("flex items-center gap-1.5 text-xs text-muted")}>
               <span className={clsx("size-1.5 rounded-full bg-brass animate-pulse")}/> Searching…
             </span>
           )}
+          <span className={clsx("ml-auto md:ml-0 font-mono text-[11px] leading-none px-2 py-1 rounded-full bg-ink text-white tabular-nums")}>{displayed.length}</span>
         </div>
 
         <div className={clsx("w-full md:w-auto")}>

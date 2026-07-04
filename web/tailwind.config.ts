@@ -25,7 +25,7 @@ const config: Config = {
         // Libretto identity — marque-neutral, instrument-grade.
         'ink': '#16181D',        // sidebar / headers
         'ink-2': '#22252C',      // raised ink surface
-        'paper': '#FAFAFA',      // work area
+        'paper': '#F3F2ED',      // work area (warm stone; white panels sit on it)
         'line': '#E6E6E4',       // hairline dividers
         'muted': '#6B6E73',      // secondary text
         'brass': '#C0862C',      // single heritage accent

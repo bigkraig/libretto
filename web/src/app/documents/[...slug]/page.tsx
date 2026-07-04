@@ -70,7 +70,7 @@ export default function Home() {
   }
 
   const dtype = (workshopLiterature.documentType || "").toUpperCase();
-  const badgeCls = "bg-white text-ink ring-1 ring-inset ring-line";
+  const badgeCls = "bg-brass-wash text-brass-dim";
 
   return (
     <DocumentContext.Provider

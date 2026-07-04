@@ -60,10 +60,10 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
   const navigatorImage = document.getElementById('navigatorImage');
   const svg = document.createElement('div');
   svg.id = "navigatorImage";
-  svg.className = "flex h-full w-full items-center justify-center overflow-hidden";
+  svg.className = "flex h-full w-full items-start justify-center overflow-auto";
   svg.innerHTML = data.content;
-  // The illustration ships with fixed width/height and would overflow. Make it
-  // scale to fit the pane while keeping its aspect ratio.
+  // The illustration ships with fixed width/height and would overflow. Scale it to
+  // the pane width (natural height, so it starts at the top) keeping aspect ratio.
   const inner = svg.querySelector('svg') as SVGSVGElement | null;
   if (inner) {
     if (!inner.getAttribute('viewBox')) {
@@ -73,11 +73,10 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
     }
     inner.removeAttribute('width');
     inner.removeAttribute('height');
-    inner.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    inner.setAttribute('preserveAspectRatio', 'xMidYMin meet');
     inner.style.width = '100%';
-    inner.style.height = '100%';
+    inner.style.height = 'auto';
     inner.style.maxWidth = '100%';
-    inner.style.maxHeight = '100%';
   }
   navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
 
@@ -180,7 +179,7 @@ export default function Index({vehicle, year, location, navLinks}: Params) {
     <div className={clsx("w-full h-full p-2 bg-white")}>
       <div id="tooltip" className={clsx("hidden absolute z-30 rounded-sm bg-ink px-2 py-1 text-xs text-white pointer-events-none")}></div>
       <div id="navigatorImage"
-           className={clsx("flex h-full w-full items-center justify-center overflow-hidden")}>
+           className={clsx("flex h-full w-full items-start justify-center overflow-auto")}>
         <SVG vehicle={vehicle} year={year} location={location} navLinks={navLinks}/>
       </div>
     </div>
