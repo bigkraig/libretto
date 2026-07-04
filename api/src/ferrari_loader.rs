@@ -1,10 +1,11 @@
 use std::fs;
 use std::io::Cursor;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use uuid::Uuid;
 use anyhow::{bail, Result};
 use lopdf::{Document as PdfDocument, Object, ObjectId};
+use rayon::prelude::*;
 use regex::Regex;
 use serde_json::json;
 use pcss::api_types::Response;
@@ -12,6 +13,28 @@ use pcss::workshop_literature::{DocumentType, FileFormat, LanguageCode, Workshop
 use crate::content_store::ContentStore;
 use crate::models::{Document, TreeNode, Vehicle};
 use crate::settings::Settings;
+
+/// A PDF discovered during the tree walk, queued for parallel processing.
+struct PdfWork {
+    pdf_path: PathBuf,
+    doc_node_id: i32,
+    hkap_id: String,
+    vehicle_component: String,
+    title: String,
+    file_name: String,
+    media_cloud_file_id: String,
+    model: String,
+    year: i32,
+}
+
+/// A fully-processed PDF ready to be written to the DB.
+struct PreparedFerrari {
+    media_id: String,
+    content: Vec<u8>,
+    document: Document,
+    doc_node_id: i32,
+    hkap_id: String,
+}
 
 
 const FERRARI_LINK_PREFIX: &'static str = "https://modiscs.ferrari.it/techdoc_techinfo/";
@@ -93,8 +116,27 @@ impl FerrariLoader {
         };
         self.content_store.upsert_tree_node_direct(&root_node)?;
 
-        // Process directory structure
-        self.process_directory(root_path, root_node_id, &args.model, args.year, "000")?;
+        // Phase 1: walk the directory tree, writing folder/document nodes + links
+        // sequentially and collecting each PDF as a work item.
+        let mut work: Vec<PdfWork> = Vec::new();
+        self.process_directory(root_path, root_node_id, &args.model, args.year, "000", &mut work)?;
+        println!("  tree built; processing {} PDFs in parallel...", work.len());
+
+        // Phase 2: read + rewrite links + build each document payload in parallel
+        // (lopdf parsing/link-rewriting is the CPU bottleneck).
+        let prepared: Vec<PreparedFerrari> = work
+            .par_iter()
+            .map(|w| self.prepare_pdf(w))
+            .collect::<Result<Vec<_>>>()?;
+
+        // Phase 3: document rows + links sequentially, media bytes concurrently.
+        for p in &prepared {
+            self.content_store.upsert_document_direct(&p.document)?;
+            self.content_store.link_document_to_node(p.doc_node_id, &p.hkap_id)?;
+        }
+        let media: Vec<(String, Vec<u8>)> =
+            prepared.into_iter().map(|p| (p.media_id, p.content)).collect();
+        self.content_store.upsert_media_images(media)?;
 
         println!("Ferrari document loading complete");
         Ok(())
@@ -107,6 +149,7 @@ impl FerrariLoader {
         model: &str,
         year: i32,
         parent_location: &str,
+        work: &mut Vec<PdfWork>,
     ) -> Result<()> {
         let mut entries: Vec<_> = fs::read_dir(dir_path)?
             .filter_map(|e| e.ok())
@@ -140,21 +183,21 @@ impl FerrariLoader {
                 self.content_store.upsert_tree_node_direct(&node)?;
                 self.content_store.upsert_tree_node_links(parent_node_id, node_id)?;
 
-                println!("  Created node: {} - {} (id: {}, location: {})", code, description, node_id, location);
-
                 // Recursively process subdirectory
-                self.process_directory(&path, node_id, model, year, &location)?;
+                self.process_directory(&path, node_id, model, year, &location, work)?;
             } else if path.extension().map_or(false, |ext| ext == "pdf") {
-                // Process PDF file - create a document node for it
+                // Create the document node/link now (sequential, deterministic order)
+                // and queue the PDF for parallel content processing.
                 child_index += 1;
-                self.process_pdf(&path, parent_node_id, model, year, parent_location, child_index)?;
+                self.record_pdf(&path, parent_node_id, model, year, parent_location, child_index, work)?;
             }
         }
 
         Ok(())
     }
 
-    fn process_pdf(
+    /// Create the document's tree node + link and queue its PDF for parallel processing.
+    fn record_pdf(
         &self,
         pdf_path: &Path,
         parent_node_id: i32,
@@ -162,21 +205,12 @@ impl FerrariLoader {
         year: i32,
         parent_location: &str,
         doc_index: i32,
+        work: &mut Vec<PdfWork>,
     ) -> Result<()> {
         let file_name = pdf_path.file_name().unwrap().to_string_lossy().to_string();
-        //
-        // if file_name != "F2-07 Fuses and relays.pdf" {
-        //     return Ok(());
-        // }
-
-        // Parse filename to extract code and title separately
-        // e.g., "B4-01 Engine air intake system layout.pdf" -> ("B4-01", "Engine air intake system layout")
         let (vehicle_component, title) = self.parse_document_name(&file_name);
-
-        // Generate unique hkap_id for this document using the doc code
         let hkap_id = self.generate_hkap_id(model, year, &vehicle_component);
 
-        // Create a node for this document (like Porsche structure)
         let location = format!("{}{:03}", parent_location, doc_index);
         let doc_node_id = self.generate_node_id(model, year, &location);
 
@@ -190,37 +224,50 @@ impl FerrariLoader {
             location: Some(location),
             filter_applies: Some(false),
         };
-
         self.content_store.upsert_tree_node_direct(&doc_node)?;
         self.content_store.upsert_tree_node_links(parent_node_id, doc_node_id)?;
 
-        // Read PDF content and update links
-        let raw_content = fs::read(pdf_path)?;
-        let content = self.update_links(&raw_content, year, model)
+        let media_cloud_file_id = self.generate_consistent_uuid(model, year, &file_name).to_string();
+        work.push(PdfWork {
+            pdf_path: pdf_path.to_path_buf(),
+            doc_node_id,
+            hkap_id,
+            vehicle_component,
+            title,
+            file_name,
+            media_cloud_file_id,
+            model: model.to_string(),
+            year,
+        });
+        Ok(())
+    }
+
+    /// Read a queued PDF, rewrite its links, and build the document payload. Pure
+    /// (no DB access) so it can run on the rayon pool across all cores.
+    fn prepare_pdf(&self, w: &PdfWork) -> Result<PreparedFerrari> {
+        let raw_content = fs::read(&w.pdf_path)?;
+        let content = self.update_links(&raw_content, w.year, &w.model)
             .unwrap_or_else(|e| {
-                eprintln!("Warning: Failed to update PDF links for {}: {}", file_name, e);
+                eprintln!("Warning: Failed to update PDF links for {}: {}", w.file_name, e);
                 raw_content
             });
-
-        let media_cloud_file_id = self.generate_consistent_uuid(model, year, file_name.to_string().as_str()).to_string();
-        self.content_store.upsert_media_image(&media_cloud_file_id.to_string(), &content)?;
 
         let workshop_literature = Response {
             payload: WorkshopLiterature {
                 file_format: FileFormat::Pdf,
                 language_code: LanguageCode::EnUs,
-                hkap_id: hkap_id.clone(),
+                hkap_id: w.hkap_id.clone(),
                 variant_id: 1,
                 version: None,
                 latest_version: None,
                 version_source_system: None,
                 source_system: None,
-                kdnr: vehicle_component.clone(),
+                kdnr: w.vehicle_component.clone(),
                 ti_number: None,
                 publication_date: "2026-01-28T16:35:14.636+02:00".to_string(),
                 modification_date: 0,
-                title: title.clone(),
-                file_name,
+                title: w.title.clone(),
+                file_name: w.file_name.clone(),
                 document_type: DocumentType::Mr,
                 target_hkap_id: None,
                 content: None,
@@ -228,7 +275,7 @@ impl FerrariLoader {
                 techvalues: None,
                 mediacloud_image_ids: None,
                 tools: None,
-                media_cloud_file_id: Some(media_cloud_file_id),
+                media_cloud_file_id: Some(w.media_cloud_file_id.clone()),
                 issue_date: None,
                 vehicle_component_with_document_index: None,
                 links: None,
@@ -241,26 +288,28 @@ impl FerrariLoader {
         };
 
         let document = Document {
-            hkap_id: workshop_literature.payload.hkap_id.to_string(),
-            variant_id: workshop_literature.payload.variant_id.to_string(),
+            hkap_id: w.hkap_id.clone(),
+            variant_id: "1".to_string(),
             language_code: "en-us".to_string(),
             version: 1,
-            vehicle_component: vehicle_component.clone(),
-            title: title.clone(),
+            vehicle_component: w.vehicle_component.clone(),
+            title: w.title.clone(),
             document_type: "MR".to_string(),
             publication_date: workshop_literature.payload.publication_date.to_string(),
             file_format: "pdf".to_string(),
-            vehicle_component_with_document_index: vehicle_component.to_string(),
+            vehicle_component_with_document_index: w.vehicle_component.clone(),
             new: false,
             bookmarked: false,
             content: serde_json::to_vec(&json!(workshop_literature))?,
         };
 
-        self.content_store.upsert_document_direct(&document)?;
-        self.content_store.link_document_to_node(doc_node_id, &hkap_id)?;
-
-        println!("    Added document node: {} - {}", doc_node.node_value, title);
-        Ok(())
+        Ok(PreparedFerrari {
+            media_id: w.media_cloud_file_id.clone(),
+            content,
+            document,
+            doc_node_id: w.doc_node_id,
+            hkap_id: w.hkap_id.clone(),
+        })
     }
 
     fn stable_uuid(&self, model: &str, year: i32, key: &str) -> Uuid {

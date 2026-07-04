@@ -2,6 +2,7 @@ use std::io::Cursor;
 
 use anyhow::{Context, Result};
 use clap::arg;
+use rayon::prelude::*;
 use quick_xml::events::{BytesCData, BytesStart};
 use quick_xml::events::attributes::Attribute;
 use quick_xml::name::QName;
@@ -77,6 +78,12 @@ impl VehicleImporter {
                 content_store.upsert_illustration(node.illustration_id, &patched_illustration)?;
             }
 
+            // Per-node write buffers: media upserts are batched concurrently and PDF
+            // text extraction is deferred so it can run in parallel (rayon) after the
+            // sequential PCSS fetch pass, instead of one blocking extraction per doc.
+            let mut node_media: Vec<(String, Vec<u8>)> = Vec::new();
+            let mut node_pdf_text: Vec<(String, Vec<u8>)> = Vec::new();
+
             for document in all_literature {
                 // These return 500 errors
                 if document.hkap_id.eq("81372188") { // Taycan
@@ -134,19 +141,10 @@ impl VehicleImporter {
                 // this includes PDFs
                 if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
                     let content = pcss_client.get_pdf(media_cloud_file_id).context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
-                    content_store.upsert_media_image(&media_cloud_file_id.to_string(), &content)?;
-
                     if document.file_format == "pdf" {
-                        match crate::pdf_text::extract_pdf_text(&content) {
-                            Some(text) => {
-                                let normalized = collapse_whitespace(&text);
-                                if let Err(e) = content_store.upsert_document_text(&document.hkap_id, &normalized) {
-                                    eprintln!("warning: failed to store extracted text for {}: {}", &document.hkap_id, e);
-                                }
-                            }
-                            None => eprintln!("warning: pdf-extract failed for {}", &document.hkap_id),
-                        }
+                        node_pdf_text.push((document.hkap_id.clone(), content.clone()));
                     }
+                    node_media.push((media_cloud_file_id.to_string(), content));
                 }
 
                 // Get Images from the document
@@ -166,7 +164,7 @@ impl VehicleImporter {
                             if media_image_ids.len() != 0 {
                                 let media_images = pcss_client.get_media_ids(media_image_ids)?;
                                 for (image_id, content) in media_images {
-                                    content_store.upsert_media_image(&image_id, &content)?;
+                                    node_media.push((image_id, content));
                                 }
                             }
 
@@ -184,6 +182,18 @@ impl VehicleImporter {
                     }
                 }
             }
+
+            // Flush the node's buffered work: concurrent batch media upsert, then
+            // parallel PDF text extraction across cores, then concurrent text upsert.
+            content_store.upsert_media_images(node_media)?;
+            let texts: Vec<(String, String)> = node_pdf_text
+                .par_iter()
+                .filter_map(|(hkap_id, content)| {
+                    crate::pdf_text::extract_pdf_text(content)
+                        .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
+                })
+                .collect();
+            content_store.upsert_document_texts(texts)?;
         }
 
         Ok(self)
