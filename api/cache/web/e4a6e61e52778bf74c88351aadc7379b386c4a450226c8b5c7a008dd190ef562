@@ -1,0 +1,2645 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80696438"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80696438"
+    ,
+    
+    "version" :
+    52,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "919625"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-24T02:55:46.998+02:00"
+    ,
+    
+    "modificationDate" :
+    1721866426575,
+    
+    "title" :
+    
+    
+    "Commissioning/activating ERA GLONASS emergency call system"
+    ,
+    
+    "fileName" :
+    
+    
+    "80696438_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e88a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Y-connector, Russia"
+    ,
+    
+    "kind" :
+    
+    
+    "ersatzteil"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9818/ ET 500"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9818/ ET 500"
+    
+    }
+    
+    ]
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a80696439"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Coding emergency call system</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "0Hinweis"
+    ,
+    
+    "source" :
+    
+    
+    "Voltage drop"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Risk of irreparable damage to control unit"
+    ,
+    
+    
+    "Risk of damage to control unit"
+    ,
+    
+    
+    "Fault entries in the control unit"
+    ,
+    
+    
+    "Coding in the control unit is aborted"
+    ,
+    
+    
+    "Malfunctions in control unit, even during programming"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Prior to disconnecting the control unit, switch off ignition and remove ignition key."
+    ,
+    
+    
+    "Ensure that the power supply is not interrupted during programming."
+    ,
+    
+    
+    "Connect a battery charger with a current rating of at least 90 A to the vehicle battery."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the ERA GLONASS control unit is replaced, the following information must be sent to ivsactivation@aoglonass.ru:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "ICC ID"
+    ,
+    
+    
+    "VIN (Vehicle Identification Number)"
+    ,
+    
+    
+    "Body number"
+    ,
+    
+    
+    "Brand"
+    ,
+    
+    
+    "Model"
+    ,
+    
+    
+    "Colour"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The CSV file must not be bigger than 75 kByte."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The information in the CSV file should be UTF-8-encoded."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 The                  <b>PIWIS Tester</b>                  instructions take precedence since the description may be different with later Tester releases.             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 The procedure described here has been structured in general terms. Different text or additional information may appear on the                  <b>PIWIS Tester</b>                 .             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Important!</b>                  The emergency call system is only ready to use after carrying out commissioning                  <b>and</b>                  after successfully making the test call!             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 If commissioning fails                  <b>or</b>                  if the test call for the emergency call system fails, a vehicle analysis log (VAL)                  <b>must</b>                  be created using the                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e88a1161\">9818/ ET 500 - Y-connector, Russia</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                  and the                  <b>importer</b>                  must be contacted.             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A vehicle with an emergency call system that is not fully functional cannot be handed over to the customer!"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the emergency call system issues the announcement \"Test failed\", the activation process has failed even if the LED on the SOS button is permanently green."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8411fb73-393d-4030-bf0a-f48f740056ef"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 Connect the Tester to the service disconnector using                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e88a1161\">9818/ ET 500 - Y-connector, Russia</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 .             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS440c35a7-3504-4860-b067-ff462cd3c180"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 Remove fuse box cover on the passenger's side.                  <b>Connect the red cable</b>                  to the emergency call system (ERA GLONASS) socket.             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISd7d8b4eb-8c55-4b20-91fe-6f248b593d3d"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS95d8fa68-5ec6-440c-bb00-9605e2dbf028"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80748004"
+    ,
+    
+    "title" :
+    
+    
+    "Connecting PIWIS Tester and emergency call system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISfe893220-1094-4e1b-811f-89e330344546"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Connect the black cable to the service disconnector socket in the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS7ce59f8f-d893-464a-bec7-dfcbc86f865f"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Select the vehicle type if required."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "5"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISec11992a-baa1-4009-b196-aec3d7311ef4"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 Select                  <b>Emergency call system (ERA GLONASS)</b>                  in the overview. Press                  <span class=\"key\">F12</span>                  to continue. The message \"Create Vehicle Analysis Log (VAL)?\" appears. Press                  <span class=\"key\">F11</span>                  to continue.             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "6"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS81b922a6-bbe5-47b9-8c79-3b00ca803b1a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Maintenance/repairs</b>                  must now be selected.             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "7"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf7b5bf41-e739-4926-bf7b-8fa15df54204"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Control unit start-up</b>                  must now be selected. Press                  <span class=\"key\">F12</span>                  to continue and then press                  <span class=\"key\">F8</span>                  to start.             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "8"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISce03acd6-193c-4039-956c-597b51e0cfb8"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Follow the instructions on the Tester."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "9"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS885bb8c3-65bd-4af7-ac7f-1958804dc2af"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A message appears reporting that the start-up procedure was completed successfully."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the Tester and VCI are not disconnected from the vehicle, the activation process cannot be performed."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "10"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS640736ef-a458-4bb1-82de-d3a6ab120038"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 Exit the diagnostic application.                  <b>Disconnect the Tester</b>                  from the vehicle.             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "11"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS734fd9f4-3d28-48f7-8da1-c1d14be67444"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Leave the ignition switched on until the LED on the SOS button (centre console) changes from flashing green to permanent green. (This can take up to 2 minutes)"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "12"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS0be8eef1-a893-4ab6-891a-230a1379e2b4"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Control unit is activated. Emergency calls (SOS button) and test calls (additional button) can be made."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "13"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS4d410794-e078-4217-a6cb-d46455b470c5"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Park the vehicle in a place where mobile phone reception is guaranteed."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "14"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISff9158be-8178-48eb-936c-98f8253928f7"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Open the cover on the SOS button."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "15"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISa3c9047b-d872-4db5-8a2a-864e84e61745"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 Press the additional button for approx. 5 seconds using a suitable tool until you hear a                  <b>“beep”</b>                 .             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS117f9210-396e-499e-9cd4-edb72e9debd8"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS10371a59-7f66-4470-9bcd-30aa0426facb"
+    ,
+    
+    "mediacloudSmall" : ""
+    ,
+    
+    "mediacloudNormal" : ""
+    ,
+    
+    "mediacloudLarge" : ""
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "80747225"
+    ,
+    
+    "title" :
+    
+    
+    "Additional button"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "16"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISea8a6ed0-878e-431f-b18e-5b9896c39541"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Make the emergency call system test call in order to check SIM card activation as follows."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Step</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Duration</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Red LED</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Green LED</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Description</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"System Test\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Self-test"
+    ,
+    
+    
+    "30 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Press SOS button\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Press SOS button"
+    ,
+    
+    
+    "Press for approx. 1 second within 20 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Stops flashing after pressing the SOS button"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Beep\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Flashes only if SOS button was pressed before"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Press additional button\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Press additional button"
+    ,
+    
+    
+    "Press for approx. 1 second within 20 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Stops flashing after pressing the additional button"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Beep\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Flashes only if additional button was pressed before"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Recording\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Test recording"
+    ,
+    
+    
+    "10 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Recording your voice (e.g. Testing, Testing, 1, 2, 3)"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Playback"
+    ,
+    
+    
+    "10 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Playback of test recording"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Press SOS button if test recording is played back correctly\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Press SOS button"
+    ,
+    
+    
+    "Press for approx. 1 second within 20 seconds"
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Only press the SOS button if the recording was played back correctly"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Beep\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Flashes only if SOS button was pressed before"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Dialling"
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "On"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Sending"
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    "Flashing"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System OK"
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "On"
+    ,
+    
+    
+    "Only if the system does not detect any faults"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "System announcement: \"Test successful\""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    "Off"
+    ,
+    
+    
+    "On"
+    ,
+    
+    
+    "System diagnostics and test call successful. SIM card is activated"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "17"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS31590ca7-0ff9-43cd-94bc-438e21cc8e5a"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "LED on SOS button (centre console) lights up green and system announcement \"Test successful\". ERA GLONASS emergency call system is activated."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "LED on SOS button flashes or lights up red: System fault; read out fault memory"
+    ,
+    
+    
+    "LED on SOS button flashes or lights up red and system announcement \"Test failed\": System fault or network connection fault"
+    ,
+    
+    
+    "LED on SOS button lights up green and system announcement \"Test failed\": Network connection fault; contact importer"
+    
+    ]
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The following scenarios are possible after completing the commissioning/activation process for an emergency call system that is not fully functional:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

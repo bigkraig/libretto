@@ -1,0 +1,1476 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81663134"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81663134"
+    ,
+    
+    "version" :
+    29,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "8X00IN"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-07-17T20:49:48.606+02:00"
+    ,
+    
+    "modificationDate" :
+    1721242210238,
+    
+    "title" :
+    
+    
+    "Technical data for air conditioning system with R134a and R1234yf"
+    ,
+    
+    "fileName" :
+    
+    
+    "81663134_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81673870"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Technical data for air conditioning with R134a and refrigerant oil SP-A2</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The allocation of refrigerant to the vehicle is controlled via the additional equipment number (KK1 and KK3)."
+    ,
+    
+    
+    "The refrigerant quantity of the relevant refrigerant is controlled via the additional equipment number (9M3 = with heat pump)."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Air conditioning</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Refrigerant quantity R134a</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Filling capacity of refrigerant oil SP-A2</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Climate control (without heat pump)"
+    ,
+    
+    
+    "1050 g"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                 160 cm                                 <sup>3</sup>                                  +/- 10 cm                                 <sup>3</sup>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Climate control (with heat pump/addition equipment number 9M3)"
+    ,
+    
+    
+    "1100 g"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                 160 cm                                 <sup>3</sup>                                  +/- 10 cm                                 <sup>3</sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>General pressure values</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>bar (abs.)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "High pressure cut-off"
+    ,
+    
+    
+    "31"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Low-pressure cut-off at ambient temperature > 2 °C"
+    ,
+    
+    
+    "1"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Pressure relief valve purge pressure"
+    ,
+    
+    
+    "38"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The following table is used to determine the refrigerant oil quantity after replacing components or following refrigerant loss due to damage to the refrigerant circuit."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "             The              <b>Min</b>              column is relevant for replacing components and/or slow loss of refrigerant/refrigerant oil (e.g. stone damage).         "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "             The              <b>Max</b>              column is relevant for sudden loss of refrigerant/refrigerant oil (e.g. after an accident).         "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Refrigerant oil distribution in the circuit</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>                                     Min - approx. cm                                     <sup>3</sup></b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>                                     Max - approx. cm                                     <sup>3</sup></b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                                 Electric compressor (to determine the refrigerant oil quantity, proceed as described in the chapter “Replacing electric air-conditioning compressor”                                  "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "873455"
+    ,
+    
+    "title" :
+    
+    
+    "Replacing air-conditioning compressor"
+    
+    }
+    
+    }
+    ,
+    
+    "                                 )                             "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "—"
+    ,
+    
+    
+    "—"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Condenser (for 2 condensers, the value is 30 cm³/40 cm³)"
+    ,
+    
+    
+    "15"
+    ,
+    
+    
+    "20"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Evaporator"
+    ,
+    
+    
+    "20"
+    ,
+    
+    
+    "30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Dryer"
+    ,
+    
+    
+    "10"
+    ,
+    
+    
+    "10"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Chiller"
+    ,
+    
+    
+    "15"
+    ,
+    
+    
+    "30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Circulating oil quantity in refrigerant circuit"
+    ,
+    
+    
+    "45"
+    ,
+    
+    
+    "50"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81673871"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Technical data for air conditioning system with R1234yf and cold oil SP-A2</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The allocation of refrigerant to the vehicle is controlled via the additional equipment number (KK1 and KK3)."
+    ,
+    
+    
+    "The refrigerant quantity of the relevant refrigerant is controlled via the additional equipment number (9M3 = with heat pump)."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Air conditioning</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Refrigerant quantity R1234yf</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Filling capacity of refrigerant oil SP-A2</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Climate control (without heat pump)"
+    ,
+    
+    
+    "930 g"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                 160 cm                                 <sup>3</sup>                                  +/- 10 cm                                 <sup>3</sup>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Climate control (with heat pump/addition equipment number 9M3)"
+    ,
+    
+    
+    "980 g"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                 160 cm                                 <sup>3</sup>                                  +/- 10 cm                                 <sup>3</sup>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>General pressure values</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>bar (abs.)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "High pressure cut-off"
+    ,
+    
+    
+    "31"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Low-pressure cut-off at ambient temperature > 2 °C"
+    ,
+    
+    
+    "1"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Pressure relief valve purge pressure"
+    ,
+    
+    
+    "38"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The following table is used to determine the refrigerant oil quantity after replacing components or following refrigerant loss due to damage to the refrigerant circuit."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "             The              <b>Min</b>              column is relevant for replacing components and/or slow loss of refrigerant/refrigerant oil (e.g. stone damage).         "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "             The              <b>Max</b>              column is relevant for sudden loss of refrigerant/refrigerant oil (e.g. after an accident).         "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Refrigerant oil distribution in the circuit</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>                                     Min - approx. cm                                     <sup>3</sup></b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>                                     Max - approx. cm                                     <sup>3</sup></b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                                 Electric compressor (to determine the refrigerant oil quantity, proceed as described in the chapter “Replacing electric air-conditioning compressor”                                  "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "873455"
+    ,
+    
+    "title" :
+    
+    
+    "Replacing air-conditioning compressor"
+    
+    }
+    
+    }
+    ,
+    
+    "                                 )                             "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "—"
+    ,
+    
+    
+    "—"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Condenser (for 2 condensers, the value is 30 cm³/40 cm³)"
+    ,
+    
+    
+    "15"
+    ,
+    
+    
+    "20"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Evaporator"
+    ,
+    
+    
+    "20"
+    ,
+    
+    
+    "30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Dryer"
+    ,
+    
+    
+    "10"
+    ,
+    
+    
+    "10"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Chiller"
+    ,
+    
+    
+    "15"
+    ,
+    
+    
+    "30"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Circulating oil quantity in refrigerant circuit"
+    ,
+    
+    
+    "45"
+    ,
+    
+    
+    "50"
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
