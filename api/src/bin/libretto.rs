@@ -1,6 +1,11 @@
 use anyhow::Result;
 use clap::Parser;
 
+// glibc malloc bloats RSS badly under the bulk loader's many-threaded image churn; mimalloc
+// keeps it bounded by returning freed pages to the OS promptly.
+#[global_allocator]
+static GLOBAL: mimalloc::MiMalloc = mimalloc::MiMalloc;
+
 use libretto::api::{Api, ApiArgs};
 use libretto::content_store::ContentStore;
 use libretto::ferrari_loader::{FerrariLoader, LoadFerrariArgs};

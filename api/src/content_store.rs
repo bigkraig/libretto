@@ -129,15 +129,28 @@ fn escape_like(s: &str) -> String {
     s.replace('\\', "\\\\").replace('%', "\\%").replace('_', "\\_")
 }
 
-/// Run an async future while blocking the current thread.
-/// Uses block_in_place so it works from both async tasks and the tokio main context.
+/// Handle to the Tokio runtime, captured once at startup. Lets `block` drive futures from
+/// non-runtime threads (the rayon import workers) — see `block`.
+static RT_HANDLE: std::sync::OnceLock<tokio::runtime::Handle> = std::sync::OnceLock::new();
+
+/// Run an async future to completion while blocking the current thread. Works from three
+/// contexts:
+/// - a Tokio worker (API handlers, the import driver): `block_in_place` yields to the runtime;
+/// - a plain rayon worker (the import fetch/write threads): drive it on this thread via the
+///   captured handle. Keeping the DB write on the same thread that allocated and will free the
+///   image bytes is what avoids the cross-thread-free allocator thrash that made the parallel
+///   loader pathologically slow.
 fn block<F, T>(fut: F) -> Result<T>
 where
     F: std::future::Future<Output = sqlx::Result<T>>,
 {
-    Ok(tokio::task::block_in_place(|| {
-        tokio::runtime::Handle::current().block_on(fut)
-    })?)
+    Ok(match tokio::runtime::Handle::try_current() {
+        Ok(handle) => tokio::task::block_in_place(|| handle.block_on(fut)),
+        Err(_) => RT_HANDLE
+            .get()
+            .expect("RT_HANDLE not initialized (construct a ContentStore first)")
+            .block_on(fut),
+    }?)
 }
 
 /// Rewrite `?` placeholders to `$1, $2, ...` for Postgres.
@@ -165,6 +178,9 @@ impl ContentStore {
 
     pub fn new(settings: &Settings) -> Self {
         sqlx::any::install_default_drivers();
+        // Capture the runtime handle (we're on a Tokio thread here) so `block` can drive DB
+        // writes from the rayon import workers later.
+        let _ = RT_HANDLE.get_or_init(|| tokio::runtime::Handle::current());
         let url = &settings.database_url;
         let is_postgres = url.starts_with("postgres");
         // The content DB is a re-loadable cache of PCSS/source data, so per-commit
@@ -849,6 +865,7 @@ impl ContentStore {
         })?;
         Ok(())
     }
+
 
     pub fn upsert_tool_image(&self, image_id: &String, image: &Vec<u8>) -> Result<()> {
         let q = self.q("INSERT INTO tool_images (id, content) VALUES (?, ?) \

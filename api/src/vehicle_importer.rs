@@ -1,8 +1,11 @@
 use std::io::Cursor;
+use std::sync::atomic::{AtomicUsize, Ordering};
 
 use anyhow::{Context, Result};
 use clap::arg;
+use dashmap::DashSet;
 use rayon::prelude::*;
+use rayon::ThreadPoolBuilder;
 use quick_xml::events::{BytesCData, BytesStart};
 use quick_xml::events::attributes::Attribute;
 use quick_xml::name::QName;
@@ -10,34 +13,21 @@ use quick_xml::Writer;
 use thiserror::Error;
 
 use pcss::PCSS;
-use pcss::api_types::{Document, Part, Tool, TreeNode};
+use pcss::api_types::TreeNode;
 use pcss::workshop_literature::{Content, ContentType};
 use crate::content_store::ContentStore;
 use crate::settings::Settings;
 
-/// Everything fetched for a single tree node, materialized in the parallel fetch
-/// phase so the load phase can write it without touching the PCSS client.
-struct NodeData {
-    node: TreeNode,
-    child_ids: Vec<i32>,
-    parts: Vec<Part>,
-    illustration: Option<(i32, String)>,
-    documents: Vec<DocData>,
-}
+/// How many nodes to fetch+write in parallel. Each worker reads, writes, and frees a node's
+/// data on its own thread (no cross-thread hand-off of image buffers — that pattern thrashed
+/// the allocator), so this also bounds concurrent DB connections; keep it at/under the pool
+/// size (`DB_CONCURRENCY + 2`).
+const IMPORT_WORKERS: usize = 16;
 
-struct DocData {
-    node_id: i32,
-    document: Document,
-    raw_content: Option<Vec<u8>>,
-    /// media_images rows: (id, bytes) — PDF + mediacloud images
-    media: Vec<(String, Vec<u8>)>,
-    /// (hkap_id, pdf bytes) queued for full-text extraction
-    pdf_text: Option<(String, Vec<u8>)>,
-    /// (tool_data, tool_number, image bytes)
-    tools: Vec<(Tool, String, Vec<u8>)>,
-    /// (illustration key, size, image bytes) for workshop_images
-    workshop_images: Vec<(i32, String, Vec<u8>)>,
-}
+/// How many media ids to read per `get_media_ids` call. That call loads all the bytes for a
+/// batch into memory before returning, so keeping the batch small bounds a worker's footprint
+/// when a single document references a huge number of images.
+const MEDIA_READ_CHUNK: usize = 8;
 
 /// Tools that return errors from PCSS and should be skipped.
 fn is_bad_tool(number: &str) -> bool {
@@ -97,39 +87,73 @@ impl VehicleImporter {
             if node.node_id() == 29052 { node.illustration_id = 3708; }
         }
 
-        // Two-phase, chunked: FETCH each chunk of nodes in parallel (PCSS cache reads +
-        // parsing → NodeData, no DB, no shared state), then LOAD the chunk (DB writes, no
-        // PCSS). Chunking bounds peak memory (media/PDF bytes held before writing).
-        const CHUNK_NODES: usize = 24;
+        // Parallel per-node import. Each worker fetches ONE node and writes all of its rows and
+        // images itself, reading → writing → freeing each blob on its own thread. There is no
+        // hand-off of image buffers between threads: allocating on a producer and freeing on a
+        // consumer (the previous design) made every allocator spend the bulk of its time on
+        // cross-thread frees, which is what made the image-heavy nodes pathologically slow.
+        // Parallelism across nodes provides the throughput instead. A bounded rayon pool caps
+        // concurrent DB connections.
         let total = tree_nodes.len();
-        let mut done = 0usize;
-        for chunk in tree_nodes.chunks(CHUNK_NODES) {
-            let fetched: Vec<NodeData> = chunk
-                .par_iter()
-                .map(|node| self.fetch_node(&pcss_client, vehicle, year, node))
-                .collect::<Result<Vec<_>>>()?;
-            self.load_nodes(&content_store, vehicle, year, fetched, extract_text)?;
-            done += chunk.len();
-            println!("  loaded {}/{} nodes", done, total);
-        }
+
+        // Vehicle-wide dedup of media/image reads. `media_images`/`workshop_images` are global
+        // tables keyed by id, and a vehicle's sibling nodes reference the same illustrations
+        // over and over, so reading each unique file once across the whole vehicle (not once
+        // per node) avoids redundant cache reads and writes. Shared across the workers.
+        let seen_media: DashSet<String> = DashSet::new();
+        let seen_ws: DashSet<(String, &'static str)> = DashSet::new();
+        let seen_tools: DashSet<String> = DashSet::new();
+        let done = AtomicUsize::new(0);
+
+        let pool = ThreadPoolBuilder::new().num_threads(IMPORT_WORKERS).build()?;
+        pool.install(|| {
+            tree_nodes.par_iter().try_for_each(|node| -> Result<()> {
+                self.process_node(&pcss_client, &content_store, vehicle, year, node,
+                    &seen_media, &seen_ws, &seen_tools, extract_text)?;
+                let n = done.fetch_add(1, Ordering::Relaxed) + 1;
+                if n % 24 == 0 || n == total {
+                    println!("  loaded {}/{} nodes", n, total);
+                }
+                Ok(())
+            })
+        })?;
 
         Ok(self)
     }
 
-    /// FETCH phase (runs on the rayon pool): pull everything for one node out of the
-    /// PCSS cache into owned structures. No DB access, no shared mutable state.
-    fn fetch_node(&self, pcss: &PCSS, vehicle: &String, year: i32, node: &TreeNode) -> Result<NodeData> {
+    /// Fetch one node from the PCSS cache and write all of it to the DB, on this worker thread.
+    /// Every image is read, written, and freed here — nothing is handed to another thread — so
+    /// allocation and deallocation stay thread-local.
+    fn process_node(
+        &self,
+        pcss: &PCSS,
+        store: &ContentStore,
+        vehicle: &String,
+        year: i32,
+        node: &TreeNode,
+        seen_media: &DashSet<String>,
+        seen_ws: &DashSet<(String, &'static str)>,
+        seen_tools: &DashSet<String>,
+        extract_text: bool,
+    ) -> Result<()> {
         let all_literature = pcss.list_workshop_literature(vehicle, year, &node.node_value)?;
-        let child_ids = pcss.get_children_ids(node)?;
-        let parts = pcss.get_parts(vehicle, year, &node.node_value)?;
-        let illustration = if node.illustration_id != 0 {
-            let ill = pcss.get_illustration(node.illustration_id)?;
-            Some((node.illustration_id, patch_illustration(ill)?))
-        } else {
-            None
-        };
 
-        let mut documents = Vec::new();
+        store.upsert_tree_node(vehicle, year, node)?;
+        for link in pcss.get_children_ids(node)? {
+            store.upsert_tree_node_links(node.node_id(), link)?;
+        }
+        for part in pcss.get_parts(vehicle, year, &node.node_value)? {
+            store.insert_part(vehicle, year, &node.node_value, &part)?;
+        }
+        if node.illustration_id != 0 {
+            let ill = pcss.get_illustration(node.illustration_id)?;
+            store.upsert_illustration(node.illustration_id, &patch_illustration(ill)?)?;
+        }
+        let node_id = node.node_id();
+
+        // `seen_media`/`seen_ws`/`seen_tools` are shared across the whole vehicle (see `import`),
+        // so a file referenced by many documents — within this node or any sibling node — is
+        // read and written exactly once.
         for document in all_literature {
             // These return 500 errors
             if document.hkap_id == "81372188" || document.hkap_id == "75046626" {
@@ -137,140 +161,80 @@ impl VehicleImporter {
             }
 
             let worklit = pcss.get_workshop_literature(vehicle, year, &document)?;
-            let mut media: Vec<(String, Vec<u8>)> = Vec::new();
+            store.upsert_document(node_id, &document, &worklit.raw_content)?;
 
+            // Read each image/PDF, write it, and let it drop before the next — bounded footprint,
+            // and every allocation is freed on this same worker thread.
             if let Some(mci) = &worklit.mediacloud_image_ids {
                 let mut ids: Vec<&String> = Vec::new();
                 ids.extend(mci.mediacloud_small.iter());
                 ids.extend(mci.mediacloud_normal.iter());
-                ids.sort();
-                ids.dedup();
-                if !ids.is_empty() {
-                    media.extend(pcss.get_media_ids(ids)?);
+                ids.retain(|id| seen_media.insert((*id).clone()));
+                for chunk in ids.chunks(MEDIA_READ_CHUNK) {
+                    for (id, content) in pcss.get_media_ids(chunk.to_vec())? {
+                        store.upsert_media_image(&id, &content)?;
+                    }
                 }
             }
 
-            let mut tools = Vec::new();
             if let Some(tool_content) = &worklit.tools {
                 for tool in tool_content {
                     if is_bad_tool(&tool.tool_number) {
                         continue;
                     }
+                    if !seen_tools.insert(tool.tool_number.clone()) {
+                        continue;
+                    }
                     let tool_data = pcss.get_tool_data(&tool.tool_number)
                         .context(format!("failed getting tool data {}", &tool.tool_number))?;
+                    store.upsert_tool(&tool_data)?;
                     let image = pcss.get_tool(&tool.tool_number)
                         .context(format!("failed getting tool {}", &tool.tool_number))?;
-                    tools.push((tool_data, tool.tool_number.clone(), image));
+                    store.upsert_tool_image(&tool.tool_number, &image)?;
                 }
             }
 
-            let mut pdf_text = None;
             if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
                 let content = pcss.get_pdf(media_cloud_file_id)
                     .context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
-                if document.file_format == "pdf" {
-                    pdf_text = Some((document.hkap_id.clone(), content.clone()));
+                if extract_text && document.file_format == "pdf" {
+                    if let Some(text) = crate::pdf_text::extract_pdf_text(&content) {
+                        let normalized = collapse_whitespace(&text);
+                        if let Err(e) = store.upsert_document_text(&document.hkap_id, &normalized) {
+                            eprintln!("warning: failed to store extracted text for {}: {}", &document.hkap_id, e);
+                        }
+                    }
                 }
-                media.push((media_cloud_file_id.to_string(), content));
+                if seen_media.insert(media_cloud_file_id.to_string()) {
+                    store.upsert_media_image(&media_cloud_file_id.to_string(), &content)?;
+                }
             }
 
-            let mut workshop_images = Vec::new();
             for item in &worklit.pick_children(&vec![ContentType::Image]) {
                 if let Content::Image(image) = item {
                     let mut ids = vec![];
                     if image.mediacloud_normal.len() != 0 { ids.push(&image.mediacloud_normal); }
                     if image.mediacloud_large.len() != 0 { ids.push(&image.mediacloud_large); }
-                    ids.sort();
-                    ids.dedup();
-                    if !ids.is_empty() {
-                        media.extend(pcss.get_media_ids(ids)?);
+                    ids.retain(|id| seen_media.insert((**id).clone()));
+                    for chunk in ids.chunks(MEDIA_READ_CHUNK) {
+                        for (id, content) in pcss.get_media_ids(chunk.to_vec())? {
+                            store.upsert_media_image(&id, &content)?;
+                        }
                     }
                     if image.key.is_empty() {
                         continue;
                     }
                     for size in ["normal", "large"] {
+                        if !seen_ws.insert((image.key.clone(), size)) {
+                            continue;
+                        }
                         let img = pcss.get_workshop_image(&image.key, size)?;
-                        workshop_images.push((std::str::FromStr::from_str(&image.key)?, size.to_string(), img));
+                        store.upsert_workshop_image(std::str::FromStr::from_str(&image.key)?, &size.to_string(), &img)?;
                     }
                 }
             }
-
-            documents.push(DocData {
-                node_id: node.node_id(),
-                document,
-                raw_content: worklit.raw_content,
-                media,
-                pdf_text,
-                tools,
-                workshop_images,
-            });
         }
 
-        Ok(NodeData {
-            node: node.clone(),
-            child_ids,
-            parts,
-            illustration,
-            documents,
-        })
-    }
-
-    /// LOAD phase: write a chunk of fetched nodes. Structural rows go out sequentially;
-    /// media bytes and PDF text are batched (concurrent upserts + parallel extraction).
-    fn load_nodes(
-        &self,
-        store: &ContentStore,
-        vehicle: &String,
-        year: i32,
-        nodes: Vec<NodeData>,
-        extract_text: bool,
-    ) -> Result<()> {
-        for nd in &nodes {
-            store.upsert_tree_node(vehicle, year, &nd.node)?;
-            for link in &nd.child_ids {
-                store.upsert_tree_node_links(nd.node.node_id(), *link)?;
-            }
-            for part in &nd.parts {
-                store.insert_part(vehicle, year, &nd.node.node_value, part)?;
-            }
-            if let Some((id, content)) = &nd.illustration {
-                store.upsert_illustration(*id, content)?;
-            }
-            for doc in &nd.documents {
-                store.upsert_document(doc.node_id, &doc.document, &doc.raw_content)?;
-                store.link_document_to_node(doc.node_id, &doc.document.hkap_id)?;
-                for (tool_data, number, image) in &doc.tools {
-                    store.upsert_tool(tool_data)?;
-                    store.upsert_tool_image(number, image)?;
-                }
-                for (key, size, img) in &doc.workshop_images {
-                    store.upsert_workshop_image(*key, size, img)?;
-                }
-            }
-        }
-
-        // Consume the chunk for the batched media + text writes (moves bytes, no clone).
-        let mut media = Vec::new();
-        let mut pdfs = Vec::new();
-        for nd in nodes {
-            for doc in nd.documents {
-                media.extend(doc.media);
-                if let Some(pt) = doc.pdf_text {
-                    pdfs.push(pt);
-                }
-            }
-        }
-        store.upsert_media_images(media)?;
-        if extract_text {
-            let texts: Vec<(String, String)> = pdfs
-                .par_iter()
-                .filter_map(|(hkap_id, content)| {
-                    crate::pdf_text::extract_pdf_text(content)
-                        .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
-                })
-                .collect();
-            store.upsert_document_texts(texts)?;
-        }
         Ok(())
     }
 }
