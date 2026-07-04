@@ -1,7 +1,7 @@
 import React, {JSX, useState, useEffect, useRef, useCallback} from "react";
 import {GetMediaImageUrl} from "@/lib/api";
 import {Document, Page, pdfjs} from 'react-pdf';
-import {PSArrowRight} from "@/lib/icons";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -34,10 +34,24 @@ export function PDF({id}: {
 }): JSX.Element {
   const [numPages, setNumPages] = useState<number | null>(null);
   const [pagesRendered, setPagesRendered] = useState(0);
+  const [pageWidth, setPageWidth] = useState<number>(0);
   const currentPageRef = useRef<number>(1);
   const pageRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const containerRef = useRef<HTMLDivElement>(null);
   const hasRestoredRef = useRef(false);
+
+  // Render each page at the container's width so it fits on any screen (was a
+  // fixed fraction of window.outerWidth, which broke on mobile). Capped so pages
+  // don't get unreadably wide on large displays.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const update = () => setPageWidth(Math.min(el.clientWidth, 1100));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const saveCurrentPage = useCallback(() => {
     if (id && currentPageRef.current) {
@@ -196,21 +210,23 @@ export function PDF({id}: {
 
   const url = GetMediaImageUrl(id);
   return <div ref={containerRef}>
-    <a href={url} target="_blank" className={"flex flex-row items-center"}>
-      <PSArrowRight contentType={"_content-link"} size={"text-2xl"} color={"text-porschered"}/>
-      Open PDF</a>
-    <Document className={"border-2 mt-4"} file={url} onLoadSuccess={onDocumentLoadSuccess}>
-      {Array.from(
+    <a href={url} target="_blank" rel="noreferrer"
+       className={"mb-3 inline-flex items-center gap-1 text-sm font-medium text-brass-dim hover:text-brass"}>
+      Open PDF
+      <OpenInNewIcon fontSize="small"/>
+    </a>
+    <Document className={"mt-1"} file={url} onLoadSuccess={onDocumentLoadSuccess}>
+      {pageWidth > 0 && Array.from(
         new Array(numPages),
         (el, index) => (
           <div
             key={`page_${index + 1}`}
             ref={setPageRef(index + 1)}
             data-page={index + 1}
-            className="mb-4 shadow-lg"
+            className="mb-4 border border-line shadow-sm"
           >
             <Page
-              width={window.outerWidth * .75}
+              width={pageWidth}
               pageNumber={index + 1}
               onRenderSuccess={onPageRenderSuccess}
             />
