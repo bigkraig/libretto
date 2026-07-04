@@ -52,13 +52,29 @@ export default function Home() {
       .catch(err => console.error('Failed to load translations:', err));
   }, [hkap_id])
 
-  if (!workshopLiterature) {
-    return
+  if (!workshopLiterature || !translations) {
+    return (
+      <div className={clsx("min-h-screen bg-paper")}>
+        <div className={clsx("flex items-center gap-3 border-b border-line bg-white px-3 py-2.5")}>
+          <div className={clsx("size-9 shrink-0 rounded-sm bg-ink/90")}/>
+          <div className={clsx("h-4 w-56 max-w-[60vw] animate-pulse rounded bg-line")}/>
+        </div>
+        <div className={clsx("mx-auto max-w-3xl space-y-3 p-6")}>
+          <div className={clsx("h-6 w-1/2 animate-pulse rounded bg-line")}/>
+          <div className={clsx("h-4 w-full animate-pulse rounded bg-line")}/>
+          <div className={clsx("h-4 w-11/12 animate-pulse rounded bg-line")}/>
+          <div className={clsx("h-4 w-4/5 animate-pulse rounded bg-line")}/>
+        </div>
+      </div>
+    )
   }
 
-  if (!translations) {
-    return
-  }
+  const dtype = (workshopLiterature.documentType || "").toUpperCase();
+  const badgeCls = dtype === "RM"
+    ? "bg-ink text-white"
+    : dtype === "TI"
+      ? "bg-brass-wash text-brass-dim"
+      : "bg-white text-muted ring-1 ring-inset ring-line";
 
   return (
     <DocumentContext.Provider
@@ -70,30 +86,33 @@ export default function Home() {
         isPartsTableVisible,
         togglePartsTableVisible
       }}>
-      <main>
-        <div className={clsx("grid h-screen w-full grid-cols-6 grid-rows-[7rem,100%] bg-zinc-100")}>
-          <div id="navBar" className={clsx("row-span-1 col-span-5 bg-white inline-flex items-center")}>
-            <div className={clsx("flex pt-3 pb-3 bg-white")}>
-              <div
-                className={clsx("p-1.5 bg-zinc-700 text-white my-auto hover:bg-red-700 transition-colors duration-300 ease-in-out cursor-pointer")}
-                onClick={back}>
-                <ArrowBack className={clsx('m-auto')}/>
-              </div>
-              <span
-                className={clsx("text-xl font-bold my-auto pl-4")}>{workshopLiterature.documentType}, {workshopLiterature.kdnr} {workshopLiterature.title}</span>
-            </div>
-          </div>
-          <div className={clsx("col-span-5 print:overflow-visible mb-4 m-2")}>
+      <div className={clsx("min-h-screen bg-paper")}>
+        <header className={clsx("sticky top-0 z-20 flex items-center gap-3 border-b border-line bg-white px-3 py-2.5 print:hidden")}>
+          <button onClick={back} aria-label="Back"
+                  className={clsx("inline-flex size-9 shrink-0 items-center justify-center rounded-sm bg-ink text-white",
+                                  "transition-colors hover:bg-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass")}>
+            <ArrowBack fontSize="small"/>
+          </button>
+          <span className={clsx("inline-flex items-center justify-center min-w-[2.6rem] px-1.5 py-1 rounded-sm font-mono text-[11px] leading-none tracking-wide", badgeCls)}>
+            {dtype || "—"}
+          </span>
+          {workshopLiterature.kdnr && (
+            <span className={clsx("shrink-0 font-mono text-[13px] text-brass-dim")}>{workshopLiterature.kdnr}</span>
+          )}
+          <span className={clsx("truncate text-[15px] font-medium text-ink")}>{workshopLiterature.title}</span>
+        </header>
+
+        <div className={clsx("grid grid-cols-6")}>
+          <main className={clsx("col-span-6 lg:col-span-5 p-2 print:overflow-visible")}>
             <WorkshopLiterature hkap_id={hkap_id} translations={translations}/>
-          </div>
-          <div id="sideBar"
-               className={clsx("w-full col-start-6 row-start-1 row-span-2 col-span-1 bg-white border-l print:hidden")}>
-            <div className={clsx("flex flex-col fixed")}>
+          </main>
+          <aside id="sideBar" className={clsx("hidden lg:block lg:col-span-1 border-l border-line bg-white print:hidden")}>
+            <div className={clsx("sticky top-14")}>
               <SideBarIndex toc={workshopLiterature.toc}></SideBarIndex>
             </div>
-          </div>
+          </aside>
         </div>
-      </main>
+      </div>
     </DocumentContext.Provider>
   )
 }

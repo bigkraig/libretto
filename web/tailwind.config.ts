@@ -22,6 +22,16 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Libretto identity — marque-neutral, instrument-grade.
+        'ink': '#16181D',        // sidebar / headers
+        'ink-2': '#22252C',      // raised ink surface
+        'paper': '#FAFAFA',      // work area
+        'line': '#E6E6E4',       // hairline dividers
+        'muted': '#6B6E73',      // secondary text
+        'brass': '#C0862C',      // single heritage accent
+        'brass-dim': '#9A6D24',
+        'brass-wash': '#F6EEDD', // faint accent fill (active row)
+        // Porsche palette retained for the document viewer / legacy pieces.
         'cat1': 'rgb(255, 210, 50)',
         'catinfo': 'rgb(175, 177, 178)',
         'porschebase': 'rgb(33, 37, 41)',
@@ -37,6 +47,8 @@ const config: Config = {
         'btn': '34px',
       },
       fontFamily: {
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
         porsche: ['var(--font-porsche-next)']
       }
     }

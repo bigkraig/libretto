@@ -7,7 +7,17 @@ import {GetIllustration} from "@/lib/api";
 import {NavigatorLink} from "@/lib/navigator";
 
 function NoVisualization() {
-  return <div className={clsx("m-auto")}>No visualization available</div>
+  return (
+    <div className={clsx("m-auto flex flex-col items-center gap-2 px-6 text-center")}>
+      <svg viewBox="0 0 24 24" className={clsx("size-9 text-line")} fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="3" y="4" width="18" height="14" rx="1.5"/>
+        <path d="M3 15l4.5-4.5 3 3L15 9l6 6"/>
+        <circle cx="8.5" cy="8.5" r="1.25"/>
+      </svg>
+      <div className={clsx("text-sm text-ink")}>No diagram for this component</div>
+      <div className={clsx("max-w-xs text-xs text-muted")}>Choose a component from the tree to view its exploded diagram.</div>
+    </div>
+  )
 }
 
 function showTooltip(evt: MouseEvent, text: string | undefined) {
@@ -26,10 +36,12 @@ function hideTooltip() {
 function resetSVG() {
   var flex = document.createElement('div')
   flex.id = "navigatorImage"
-  flex.className = "font-bold flex h-full outline outline-1 outline-zinc-300 aspect-[1.41] text-center";
+  flex.className = "flex h-full w-full items-center justify-center bg-white text-center";
   var svg = document.createElement('div');
-  svg.innerHTML = "No visualization available";
-  svg.className = "m-auto";
+  svg.innerHTML =
+    '<div style="font-size:13px;color:#16181D">No diagram for this component</div>' +
+    '<div style="font-size:12px;color:#6B6E73;margin-top:3px">Open a document below to view it.</div>';
+  svg.className = "m-auto px-6";
   flex.appendChild(svg)
   const navigatorImage = document.getElementById('navigatorImage');
   navigatorImage?.parentNode?.replaceChild(flex, navigatorImage);

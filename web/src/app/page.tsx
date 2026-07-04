@@ -23,19 +23,19 @@ export default function Home() {
   }, [vehicle, year, location])
 
   return (
-    <main className={clsx("pt-2 pl-2 pr-2")}>
-      <div className={clsx("grid h-[60vh] w-full grid-cols-4 grid-rows-4 bg-zinc-50")}>
-        <div className={clsx("col-span-1 row-span-4")}>
+    <main className={clsx("flex flex-col gap-2 p-2 bg-paper")}>
+      <div className={clsx("grid gap-2 md:h-[62vh] md:grid-cols-4")}>
+        <div className={clsx("h-[46vh] md:h-full md:col-span-1")}>
           <Navigator navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
         </div>
-        <div className={clsx("col-span-3 row-span-4 fixed-height")}>
+        {/* Exploded-diagram navigator is desktop-only; on mobile the tree + document
+            list are the useful surfaces. */}
+        <div className={clsx("hidden md:block md:h-full md:col-span-3 border border-line bg-white")}>
           <Visualization navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
         </div>
       </div>
-      <div className={clsx("grid w-full bg-zinc-50")}>
-        <div className={clsx("")}>
-          <WorkshopLiterature location={location} vehicle={vehicle} year={year}/>
-        </div>
+      <div className={clsx("min-h-[44vh]")}>
+        <WorkshopLiterature location={location} vehicle={vehicle} year={year}/>
       </div>
     </main>
   );

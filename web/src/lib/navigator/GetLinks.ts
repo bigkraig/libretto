@@ -3,12 +3,14 @@ import {ListVehicles, Vehicle} from "@/lib/api";
 import {GetTreeNodes} from "@/lib/api/GetTreeNodes";
 import {HREF} from "@/lib";
 
-export const vehicleGlyphs: { [key: string]: string } = {
-  "991810": "911",
-  "Y1BFH1": "caye",
-  "981810": "caym",
-  "F151M": "911", // TODO -- its a ferrarrrri
-  "R8": "caym",   // Audi R8 -- coupe glyph
+// Marque per vehicle code. The badge renders /marques/<marque>.svg (drop official
+// emblem SVGs there); a monogram stands in until one is present.
+export const vehicleMarque: { [key: string]: string } = {
+  "991810": "porsche",
+  "981810": "porsche",
+  "Y1BFH1": "porsche",
+  "F151M": "ferrari",
+  "R8": "audi",
 }
 
 export async function GetLinks(vehicle: string | null, year: number | null, node_id: number | null): Promise<NavigatorLink[]> {
@@ -23,7 +25,7 @@ export async function GetLinks(vehicle: string | null, year: number | null, node
         kind: "vehicle",
         href: HREF(vehicle.vehicle, vehicle.year),
         selected: false,
-        icon: vehicleGlyphs[vehicle.vehicle],
+        icon: vehicleMarque[vehicle.vehicle],
       }
     });
   }

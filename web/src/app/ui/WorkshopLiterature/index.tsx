@@ -4,22 +4,11 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import Tooltip from '@mui/material/Tooltip';
-import React, {ReactElement, useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import clsx from "clsx";
 import {InsertDriveFile, PictureAsPdf} from "@mui/icons-material";
 import {IDocument, ListDocuments, SearchDocumentsByVehicle, SearchDocumentsInSubtree} from "@/lib/api";
 import {useSearchParams} from "next/navigation";
-
-function NoDocuments() {
-  return (
-    <div className={clsx("pl-2 w-full flex bg-zinc-100")}>
-      <div className={clsx("bg-zinc-700 p-1 size-11 flex")}>
-        <InfoOutlinedIcon className={clsx("m-auto text-white")}/>
-      </div>
-      <div className={clsx("pl-2 pr-6 my-auto")}> Please select a component.</div>
-    </div>
-  )
-}
 
 const kinds: { [id: string]: string } = {
   "RM": "Workshop Manual",
@@ -30,13 +19,42 @@ const kinds: { [id: string]: string } = {
   "SY": "Symptom-based Workshop Manual",
 }
 
-function KindToolTip(props: {
-  children: ReactElement<any, any>
-  kind: string
-}): React.ReactNode {
-  return <Tooltip title={kinds[props.kind]} placement="bottom-end">
-    {props.children}
-  </Tooltip>
+// Restrained, scannable badge treatment: workshop manuals (RM) are the core
+// content and read solid ink; technical info (TI) carries the brass accent;
+// everything else stays quiet.
+function badgeClass(type: string): string {
+  switch ((type || "").toUpperCase()) {
+    case "RM":
+      return "bg-ink text-white";
+    case "TI":
+      return "bg-brass-wash text-brass-dim";
+    default:
+      return "bg-white text-muted ring-1 ring-inset ring-line";
+  }
+}
+
+function TypeBadge({type}: { type: string }) {
+  const label = (type || "—").toUpperCase();
+  const badge = (
+    <span className={clsx(
+      "inline-flex items-center justify-center min-w-[2.6rem] px-1.5 py-1 rounded-sm",
+      "font-mono text-[11px] leading-none tracking-wide",
+      badgeClass(type),
+    )}>{label}</span>
+  );
+  return kinds[label]
+    ? <Tooltip title={kinds[label]} placement="bottom-end">{badge}</Tooltip>
+    : badge;
+}
+
+function InfoState({title, hint}: { title: string, hint?: string }) {
+  return (
+    <div className={clsx("flex flex-col items-center justify-center gap-1.5 px-6 py-12 text-center")}>
+      <InfoOutlinedIcon className={clsx("text-line")} style={{fontSize: 34}}/>
+      <div className={clsx("text-sm text-ink")}>{title}</div>
+      {hint && <div className={clsx("text-xs text-muted max-w-xs")}>{hint}</div>}
+    </div>
+  )
 }
 
 function DocumentsList({documents}: { documents: IDocument[] }) {
@@ -45,25 +63,29 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
   const year = searchParams.get("year") ? Number(searchParams.get("year")) : null;
 
   if (documents.length == 0 || vehicle == null || year == null) {
-    return <NoDocuments/>
+    return <InfoState title="Select a component" hint="Pick a section in the tree to see its workshop literature."/>
   }
 
   return (
-    <div className={clsx("divide-y")}>
+    <div className={clsx("divide-y divide-line")}>
       {
         documents.map((doc: IDocument) => {
           const href = `/documents/${year}/${vehicle}/${doc.hkap_id}`
           return (
-            <a key={doc.id} className={clsx("flex")} href={href}>
-              <div className={clsx("pl-2 pt-2")}></div>
-              <div className={clsx("p-2 bg-zinc-500 text-white size-11 flex")}>
-                <KindToolTip kind={doc.document_type}>
-                  <div className={clsx("m-auto")}>{doc.document_type}</div>
-                </KindToolTip>
-              </div>
-              {doc.file_format == "pdf" ? <PictureAsPdf className={clsx("ml-4 my-auto text-black")}/> :
-                <InsertDriveFile className={clsx("ml-4 my-auto text-black")}/>}
-              <div className={clsx("ml-4 my-auto text-left")}>{doc.vehicle_component_with_document_index} - {doc.title}</div>
+            <a key={doc.id}
+               href={href}
+               className={clsx(
+                 "group flex items-center gap-3 px-4 py-2.5",
+                 "hover:bg-brass-wash focus:bg-brass-wash focus-visible:outline-none transition-colors",
+               )}>
+              <TypeBadge type={doc.document_type}/>
+              {doc.file_format == "pdf"
+                ? <PictureAsPdf fontSize="small" className={clsx("shrink-0 text-muted group-hover:text-brass-dim")}/>
+                : <InsertDriveFile fontSize="small" className={clsx("shrink-0 text-muted")}/>}
+              <span className={clsx("shrink-0 font-mono text-[13px] text-brass-dim")}>
+                {doc.vehicle_component_with_document_index}
+              </span>
+              <span className={clsx("truncate text-[14px] text-ink")}>{doc.title}</span>
             </a>
           );
         })
@@ -160,23 +182,28 @@ export default function Index({location, vehicle, year}: Params) {
       : "Search all documents for this vehicle (title & content)"
 
   return (
-    <div className={clsx("w-full h-full flex flex-col bg-zinc-100")}>
-      <div className={clsx("bg-zinc-200 flex w-full justify-between")}>
+    <div className={clsx("w-full h-full flex flex-col bg-paper")}>
+      <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 border-y border-line bg-white px-4 py-2.5")}>
 
-        <div className={clsx("px-4 py-2 flex")}>
-          <LibraryBooksIcon className={clsx("my-auto")}/>
-          <div className={clsx("pl-2 pr-6 my-auto font-bold")}> Workshop literature</div>
-          <span className={clsx("pl-2 pr-2 bg-zinc-700 rounded-full text-white my-auto")}>{displayed.length}</span>
+        <div className={clsx("flex items-center gap-2.5")}>
+          <LibraryBooksIcon fontSize="small" className={clsx("text-muted")}/>
+          <span className={clsx("font-mono text-[12px] uppercase tracking-[0.14em] text-ink")}>Workshop literature</span>
+          <span className={clsx("font-mono text-[11px] leading-none px-2 py-1 rounded-full bg-ink text-white tabular-nums")}>{displayed.length}</span>
           {isSearching && searching && (
-            <span className={clsx("pl-3 my-auto text-zinc-500 text-sm")}>Searching…</span>
+            <span className={clsx("flex items-center gap-1.5 text-xs text-muted")}>
+              <span className={clsx("size-1.5 rounded-full bg-brass animate-pulse")}/> Searching…
+            </span>
           )}
         </div>
 
-        <div className={clsx("px-4 py-2 flex flex-row justify-end")}>
-          <div className={clsx("outline outline-1 flex flex-row bg-zinc-100 items-center")}>
-            <div className={clsx("my-auto pl-1 text-zinc-600")}><SearchIcon fontSize="small"/></div>
+        <div className={clsx("flex items-center")}>
+          <div className={clsx("flex flex-row items-center gap-1.5 rounded-sm border border-line bg-paper px-2",
+                               "focus-within:border-brass focus-within:ring-1 focus-within:ring-brass",
+                               "aria-disabled:opacity-60")}
+               aria-disabled={!canSearch}>
+            <SearchIcon fontSize="small" className={clsx("text-muted")}/>
             <input autoComplete="off" type="search"
-                   className={clsx("bg-zinc-100 px-2 py-1 outline-none w-[28rem] disabled:text-zinc-400")}
+                   className={clsx("w-[26rem] max-w-[60vw] bg-transparent py-1.5 text-sm outline-none placeholder:text-muted disabled:text-muted")}
                    placeholder={searchPlaceholder}
                    maxLength={100}
                    disabled={!canSearch}
@@ -184,7 +211,7 @@ export default function Index({location, vehicle, year}: Params) {
                    onChange={(e) => setQuery(e.target.value)}/>
             {query.length > 0 && (
               <button type="button"
-                      className={clsx("px-1 text-zinc-600 hover:text-black")}
+                      className={clsx("text-muted hover:text-ink")}
                       onClick={() => setQuery("")}
                       aria-label="Clear search">
                 <ClearIcon fontSize="small"/>
@@ -194,16 +221,11 @@ export default function Index({location, vehicle, year}: Params) {
         </div>
       </div>
 
-      <div className={clsx("p-1")}></div>
-      <div className={clsx("w-full h-full flex flex-col divide-y overflow-scroll")} id={documentsDiv}
+      <div className={clsx("w-full h-full flex flex-col overflow-y-auto")} id={documentsDiv}
            onClick={saveToLocalStorage}>
         {isSearching && !searching && (searchResults?.length ?? 0) === 0 ? (
-          <div className={clsx("pl-2 w-full flex bg-zinc-100")}>
-            <div className={clsx("bg-zinc-700 p-1 size-11 flex")}>
-              <InfoOutlinedIcon className={clsx("m-auto text-white")}/>
-            </div>
-            <div className={clsx("pl-2 pr-6 my-auto")}>No documents match &ldquo;{query}&rdquo; in this section.</div>
-          </div>
+          <InfoState title={`No documents match “${query}”`}
+                     hint={location ? "Try a different term, or clear the section to search the whole vehicle." : "Try a different term."}/>
         ) : (
           <DocumentsList documents={displayed}/>
         )}
