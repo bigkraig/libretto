@@ -31,6 +31,11 @@ pub struct VehicleImporterArgs {
     /// Model Year
     #[arg(short = 'y')]
     pub year: Option<i32>,
+
+    /// Skip PDF full-text extraction (the slow, CPU-heavy search back-fill).
+    /// Run it separately later with `extract-pdf-text`.
+    #[arg(long, default_value_t = false)]
+    pub no_text: bool,
 }
 
 
@@ -45,7 +50,7 @@ impl VehicleImporter {
         }
     }
 
-    pub fn import<'a>(&self, vehicle: &String, year: i32) -> Result<&VehicleImporter> {
+    pub fn import<'a>(&self, vehicle: &String, year: i32, extract_text: bool) -> Result<&VehicleImporter> {
         let mut pcss_client = PCSS::new(&self.settings.importer.cache_dir, &self.settings.importer.cookie);
         let content_store = ContentStore::new(&self.settings);
         let mut tree_nodes = pcss_client.get_tree_nodes(&vehicle, year)?;
@@ -143,7 +148,7 @@ impl VehicleImporter {
                 // this includes PDFs
                 if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
                     let content = pcss_client.get_pdf(media_cloud_file_id).context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
-                    if document.file_format == "pdf" {
+                    if extract_text && document.file_format == "pdf" {
                         pdf_buf.push((document.hkap_id.clone(), content.clone()));
                     }
                     media_buf.push((media_cloud_file_id.to_string(), content));

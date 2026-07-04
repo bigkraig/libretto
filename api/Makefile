@@ -26,8 +26,15 @@ help:
 
 load: load-porsche load-ferrari load-audi
 
+# Set NO_TEXT=1 to skip the slow PDF full-text search back-fill during import;
+# run it separately afterward with `make extract-text` (parallel across cores).
+NO_TEXT ?=
 load-porsche:
-	cargo run -- vehicle-importer
+	cargo run -- vehicle-importer $(if $(NO_TEXT),--no-text,)
+
+# Parallel PDF full-text extraction back-fill (safe to run/re-run anytime).
+extract-text:
+	cargo run -- extract-pdf-text
 
 FERRARI_PATH  ?= source_files/ferrari/2017-F151M
 FERRARI_YEAR  ?= 2017

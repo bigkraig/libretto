@@ -56,7 +56,7 @@ async fn main() -> Result<()> {
                             continue;
                         }
                     }
-                    vi.import(&vehicle.vehicle, vehicle.year)?;
+                    vi.import(&vehicle.vehicle, vehicle.year, !args.no_text)?;
                 }
                 Ok(())
             })

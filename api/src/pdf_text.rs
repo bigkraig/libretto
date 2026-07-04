@@ -4,6 +4,7 @@ use std::panic;
 use std::sync::Once;
 
 use anyhow::Result;
+use rayon::prelude::*;
 use serde_json::Value;
 
 use crate::content_store::ContentStore;
@@ -42,71 +43,57 @@ pub fn run(settings: &Settings, args: &ExtractPdfTextArgs) -> Result<()> {
     let total = pdfs.len();
     println!("Extracting text from {total} PDF document(s)");
 
-    let mut ok = 0usize;
+    // Phase 1: resolve candidates — skip docs that already have text (unless --force)
+    // and those with no backing PDF.
+    let mut candidates: Vec<(String, String)> = Vec::new(); // (hkap_id, media_id)
     let mut skipped = 0usize;
-    let mut failed = 0usize;
     let mut no_pdf = 0usize;
-    let mut missing_media = 0usize;
-    let mut failed_ids: Vec<String> = Vec::new();
-
-    for (idx, (hkap_id, content_json)) in pdfs.into_iter().enumerate() {
+    let mut malformed = 0usize;
+    for (hkap_id, content_json) in pdfs {
         if !args.force && store.has_document_text(&hkap_id).unwrap_or(false) {
             skipped += 1;
             continue;
         }
+        match media_cloud_file_id_from_metadata(&content_json) {
+            MediaIdLookup::Found(id) => candidates.push((hkap_id, id)),
+            MediaIdLookup::Null => no_pdf += 1,
+            MediaIdLookup::Malformed => malformed += 1,
+        }
+    }
+    println!(
+        "{} to extract ({} skipped, {} no_pdf, {} malformed)",
+        candidates.len(), skipped, no_pdf, malformed
+    );
 
-        let media_id = match media_cloud_file_id_from_metadata(&content_json) {
-            MediaIdLookup::Found(id) => id,
-            MediaIdLookup::Null => {
-                // Document metadata exists but has no backing PDF file.
-                no_pdf += 1;
-                continue;
-            }
-            MediaIdLookup::Malformed => {
-                failed += 1;
-                failed_ids.push(hkap_id.clone());
-                eprintln!("[{}/{}] {hkap_id}: malformed metadata JSON", idx + 1, total);
-                continue;
-            }
-        };
-
-        let pdf_bytes = match store.get_media(&media_id) {
-            Ok(b) => b,
-            Err(_) => {
-                missing_media += 1;
-                eprintln!("[{}/{}] {hkap_id}: media {media_id} not in media_images", idx + 1, total);
-                continue;
-            }
-        };
-
-        match extract_pdf_text(&pdf_bytes) {
-            Some(text) => {
-                let normalized = normalize_whitespace(&text);
-                if let Err(e) = store.upsert_document_text(&hkap_id, &normalized) {
-                    failed += 1;
-                    failed_ids.push(hkap_id.clone());
-                    eprintln!("[{}/{}] {hkap_id}: failed to upsert text ({e})", idx + 1, total);
-                } else {
-                    ok += 1;
-                    if (idx + 1) % 25 == 0 || idx + 1 == total {
-                        println!("[{}/{}] extracted {hkap_id} ({} chars)", idx + 1, total, normalized.len());
-                    }
-                }
-            }
-            None => {
-                failed += 1;
-                failed_ids.push(hkap_id.clone());
-                eprintln!("[{}/{}] {hkap_id}: pdf-extract could not parse", idx + 1, total);
+    // Phase 2: process in chunks — fetch PDF bytes (sequential DB reads), extract
+    // text in parallel across all cores (the CPU bottleneck), then batch-upsert.
+    let mut ok = 0usize;
+    let mut failed = 0usize;
+    let mut missing_media = 0usize;
+    const CHUNK: usize = 64;
+    for chunk in candidates.chunks(CHUNK) {
+        let mut with_bytes: Vec<(String, Vec<u8>)> = Vec::with_capacity(chunk.len());
+        for (hkap_id, media_id) in chunk {
+            match store.get_media(media_id) {
+                Ok(b) => with_bytes.push((hkap_id.clone(), b)),
+                Err(_) => missing_media += 1,
             }
         }
+        let texts: Vec<(String, String)> = with_bytes
+            .par_iter()
+            .filter_map(|(hkap_id, bytes)| {
+                extract_pdf_text(bytes).map(|t| (hkap_id.clone(), normalize_whitespace(&t)))
+            })
+            .collect();
+        failed += with_bytes.len() - texts.len();
+        ok += texts.len();
+        store.upsert_document_texts(texts)?;
+        println!("  {}/{} extracted...", ok, candidates.len());
     }
 
     println!(
         "Done. extracted={ok} skipped={skipped} no_pdf={no_pdf} missing_media={missing_media} failed={failed}"
     );
-    if !failed_ids.is_empty() {
-        println!("Failed PDFs (still findable by title / component-index): {}", failed_ids.join(", "));
-    }
     Ok(())
 }
 
