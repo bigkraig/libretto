@@ -75,8 +75,11 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
     return () => io.disconnect();
   }, [documents.length, visible]);
 
-  if (documents.length == 0 || vehicle == null || year == null) {
-    return <InfoState title="Select a component" hint="Pick a section in the tree to see its workshop literature."/>
+  if (vehicle == null || year == null) {
+    return <InfoState title="Select a vehicle" hint="Choose a vehicle from the list to browse its service literature."/>
+  }
+  if (documents.length == 0) {
+    return <InfoState title="No documents" hint="This vehicle has no workshop literature yet."/>
   }
 
   return (
