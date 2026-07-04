@@ -1,5 +1,5 @@
 use std::fs;
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 
 use anyhow::{bail, Context, Result};
 use base64::{Engine as _, engine::general_purpose::STANDARD};
@@ -256,7 +256,7 @@ impl PCSS {
             vehicle_request: VehicleRequest { order_type: vehicle.clone(), model_year: year },
         };
         let url = "https://ppn.porsche.com/pcss/workshop_literature/v1/en_US/documents?offset=0&limit=100&sort%5Bby%5D=vehicleComponent&sort%5Border%5D=asc".to_string();
-        let mut response: Response<Vec<Document>> = self.post(url, Some(json!(vehicle_request).to_string()))?;
+        let response: Response<Vec<Document>> = self.post(url, Some(json!(vehicle_request).to_string()))?;
         Ok(response.payload)
     }
 

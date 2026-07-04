@@ -2,7 +2,6 @@ use std::io::Cursor;
 use std::sync::atomic::{AtomicUsize, Ordering};
 
 use anyhow::{Context, Result};
-use clap::arg;
 use dashmap::DashSet;
 use rayon::prelude::*;
 use rayon::ThreadPoolBuilder;
