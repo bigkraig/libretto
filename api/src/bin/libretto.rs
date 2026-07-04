@@ -43,8 +43,11 @@ async fn main() -> Result<()> {
         .stack_size(256 * 1024 * 1024)
         .build_global();
 
-    // Run migrations on every startup (sqlx tracks which have run)
-    {
+    // Migrations are run by the loaders and the `migrate` command (sqlx tracks which have
+    // run). The API server must boot even when the content DB — a re-loadable cache — is
+    // absent or unreachable, so it does not migrate at startup; otherwise it hangs on the
+    // pool and crash-loops. This matches older releases that ran fine without a content DB.
+    if !matches!(&cli, Cli::Api(_)) {
         let content_store = ContentStore::new(&settings);
         content_store.run_migrations(&settings)?;
     }
