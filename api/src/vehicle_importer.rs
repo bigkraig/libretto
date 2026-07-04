@@ -10,9 +10,43 @@ use quick_xml::Writer;
 use thiserror::Error;
 
 use pcss::PCSS;
+use pcss::api_types::{Document, Part, Tool, TreeNode};
 use pcss::workshop_literature::{Content, ContentType};
 use crate::content_store::ContentStore;
 use crate::settings::Settings;
+
+/// Everything fetched for a single tree node, materialized in the parallel fetch
+/// phase so the load phase can write it without touching the PCSS client.
+struct NodeData {
+    node: TreeNode,
+    child_ids: Vec<i32>,
+    parts: Vec<Part>,
+    illustration: Option<(i32, String)>,
+    documents: Vec<DocData>,
+}
+
+struct DocData {
+    node_id: i32,
+    document: Document,
+    raw_content: Option<Vec<u8>>,
+    /// media_images rows: (id, bytes) — PDF + mediacloud images
+    media: Vec<(String, Vec<u8>)>,
+    /// (hkap_id, pdf bytes) queued for full-text extraction
+    pdf_text: Option<(String, Vec<u8>)>,
+    /// (tool_data, tool_number, image bytes)
+    tools: Vec<(Tool, String, Vec<u8>)>,
+    /// (illustration key, size, image bytes) for workshop_images
+    workshop_images: Vec<(i32, String, Vec<u8>)>,
+}
+
+/// Tools that return errors from PCSS and should be skipped.
+fn is_bad_tool(number: &str) -> bool {
+    const BAD: &[&str] = &[
+        "P90019", "V.A.G 1866/1", "V.A.G 1866", "VAS 6446A",
+        "VAS 6446/10", "VAS 6446/11", "1139", "Nr.168",
+    ];
+    BAD.contains(&number)
+}
 
 #[derive(Error, Debug)]
 pub enum Error {
@@ -51,178 +85,195 @@ impl VehicleImporter {
     }
 
     pub fn import<'a>(&self, vehicle: &String, year: i32, extract_text: bool) -> Result<&VehicleImporter> {
-        let mut pcss_client = PCSS::new(&self.settings.importer.cache_dir, &self.settings.importer.cookie);
+        let pcss_client = PCSS::new(&self.settings.importer.cache_dir, &self.settings.importer.cookie);
         let content_store = ContentStore::new(&self.settings);
         let mut tree_nodes = pcss_client.get_tree_nodes(&vehicle, year)?;
-        let mut bad_tools = vec![];
-        let mut good_tools = vec![];
 
         let ui_texts = pcss_client.get_ui_texts()?;
         content_store.upsert_ui_texts(&ui_texts)?;
 
-        // Vehicle-scoped write buffers, flushed in chunks. Media upserts go out as one
-        // concurrent batch and PDF text extraction runs as one big rayon pass — per-node
-        // batches were too small to parallelize (most nodes have 0-1 PDFs), so extraction
-        // ran nearly sequentially. Chunking bounds peak memory.
-        let mut media_buf: Vec<(String, Vec<u8>)> = Vec::new();
-        let mut pdf_buf: Vec<(String, Vec<u8>)> = Vec::new();
-        const FLUSH_AT: usize = 96;
-
+        // hooohooo hacks! the 991.2 gt3 transmission node has no illustration_id set.
         for node in &mut tree_nodes {
-            // hooohooo hacks! the 991.2 gt3 transmission node does not have an illustration_id set, but it should.
-            if node.node_id() == 29052 { node.illustration_id = 3708 }
-
-            let all_literature = pcss_client.list_workshop_literature(&vehicle, year, &node.node_value)?;
-
-            println!("Storing {} {} {}: {:?}", &vehicle, &node.node_value, node.clone().name.unwrap_or_default(), all_literature.len());
-            content_store.upsert_tree_node(&vehicle, year, node)?;
-
-            for link in pcss_client.get_children_ids(&node)? {
-                content_store.upsert_tree_node_links(node.node_id(), link)?;
-            }
-
-            for part_id in pcss_client.get_parts(&vehicle, year, &node.node_value)? {
-                content_store.insert_part(&vehicle, year, &node.node_value, &part_id)?;
-            }
-
-            if node.illustration_id != 0 {
-                let illustration = pcss_client.get_illustration(node.illustration_id)?;
-                let patched_illustration = patch_illustration(illustration)?;
-                content_store.upsert_illustration(node.illustration_id, &patched_illustration)?;
-            }
-
-            for document in all_literature {
-                // These return 500 errors
-                if document.hkap_id.eq("81372188") { // Taycan
-                    continue;
-                }
-                if document.hkap_id.eq("75046626") { // 991
-                    continue;
-                }
-
-                let worklit = pcss_client.get_workshop_literature(&vehicle, year, &document)?;
-                content_store.upsert_document(node.node_id(), &document, &worklit.raw_content.clone())?;
-                content_store.link_document_to_node(node.node_id(), &document.hkap_id)?;
-
-                // Get media images from document
-                if let Some(media_images) = &worklit.mediacloud_image_ids {
-                    let mut media_image_ids: Vec<&String> = vec![];
-                    media_image_ids.append(&mut media_images.mediacloud_small.iter().collect::<Vec<&String>>());
-                    media_image_ids.append(&mut media_images.mediacloud_normal.iter().collect::<Vec<&String>>());
-                    media_image_ids.sort();
-                    media_image_ids.dedup();
-
-                    if media_image_ids.len() != 0 {
-                        let media_images = pcss_client.get_media_ids(media_image_ids)?;
-                        for (image_id, content) in media_images {
-                            content_store.upsert_media_image(&image_id, &content)?;
-                        }
-                    }
-                }
-
-                // Known bad tools
-                bad_tools.push("P90019".to_string());
-                bad_tools.push("V.A.G 1866/1".to_string());
-                bad_tools.push("V.A.G 1866".to_string());
-                bad_tools.push("VAS 6446A".to_string());
-                bad_tools.push("VAS 6446/10".to_string());
-                bad_tools.push("VAS 6446/11".to_string());
-                bad_tools.push("1139".to_string());
-                bad_tools.push("Nr.168".to_string());
-
-                // Get Tools from the document
-                if let Some(tool_content) = &worklit.tools {
-                    for tool in tool_content {
-                        if bad_tools.contains(&tool.tool_number) || good_tools.contains(&tool.tool_number) {
-                            continue;
-                        }
-                        let tool_data = pcss_client.get_tool_data(&tool.tool_number).context(format!("failed getting tool data {}", &tool.tool_number))?;
-                        content_store.upsert_tool(&tool_data)?;
-                        let image = pcss_client.get_tool(&tool.tool_number).context(format!("failed getting tool {}", &tool.tool_number))?;
-                        content_store.upsert_tool_image(&tool.tool_number, &image)?;
-                        good_tools.push(tool.tool_number.clone());
-                    }
-                }
-
-
-                // this includes PDFs
-                if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
-                    let content = pcss_client.get_pdf(media_cloud_file_id).context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
-                    if extract_text && document.file_format == "pdf" {
-                        pdf_buf.push((document.hkap_id.clone(), content.clone()));
-                    }
-                    media_buf.push((media_cloud_file_id.to_string(), content));
-                }
-
-                // Get Images from the document
-                for item in &worklit.pick_children(&vec![ContentType::Image]) {
-                    match item {
-                        Content::Image(image) => {
-                            // Get media images
-                            let mut media_image_ids = vec![];
-                            if image.mediacloud_normal.len() != 0 {
-                                media_image_ids.push(&image.mediacloud_normal);
-                            }
-                            if image.mediacloud_large.len() != 0 {
-                                media_image_ids.push(&image.mediacloud_large);
-                            }
-                            media_image_ids.sort();
-                            media_image_ids.dedup();
-                            if media_image_ids.len() != 0 {
-                                let media_images = pcss_client.get_media_ids(media_image_ids)?;
-                                for (image_id, content) in media_images {
-                                    media_buf.push((image_id, content));
-                                }
-                            }
-
-                            // Get image key
-                            if &image.key == "" {
-                                continue;
-                            }
-
-                            for size in vec!["normal", "large"] {
-                                let img = pcss_client.get_workshop_image(&image.key, size)?;
-                                content_store.upsert_workshop_image(std::str::FromStr::from_str(&image.key)?, &size.to_string(), &img)?;
-                            }
-                        }
-                        _ => {}
-                    }
-                }
-            }
-
-            // Flush in chunks to bound memory while keeping the rayon batch large
-            // enough to saturate all cores.
-            if media_buf.len() + pdf_buf.len() >= FLUSH_AT {
-                flush_writes(&content_store, std::mem::take(&mut media_buf), std::mem::take(&mut pdf_buf))?;
-            }
+            if node.node_id() == 29052 { node.illustration_id = 3708; }
         }
 
-        // Flush whatever's left after the last node.
-        flush_writes(&content_store, media_buf, pdf_buf)?;
+        // Two-phase, chunked: FETCH each chunk of nodes in parallel (PCSS cache reads +
+        // parsing → NodeData, no DB, no shared state), then LOAD the chunk (DB writes, no
+        // PCSS). Chunking bounds peak memory (media/PDF bytes held before writing).
+        const CHUNK_NODES: usize = 24;
+        let total = tree_nodes.len();
+        let mut done = 0usize;
+        for chunk in tree_nodes.chunks(CHUNK_NODES) {
+            let fetched: Vec<NodeData> = chunk
+                .par_iter()
+                .map(|node| self.fetch_node(&pcss_client, vehicle, year, node))
+                .collect::<Result<Vec<_>>>()?;
+            self.load_nodes(&content_store, vehicle, year, fetched, extract_text)?;
+            done += chunk.len();
+            println!("  loaded {}/{} nodes", done, total);
+        }
 
         Ok(self)
     }
-}
 
-/// Batch-write buffered media bytes (concurrent) and extract PDF text in parallel
-/// across all cores, then batch-write the text rows (concurrent).
-fn flush_writes(
-    store: &ContentStore,
-    media: Vec<(String, Vec<u8>)>,
-    pdfs: Vec<(String, Vec<u8>)>,
-) -> Result<()> {
-    store.upsert_media_images(media)?;
-    let texts: Vec<(String, String)> = pdfs
-        .par_iter()
-        .filter_map(|(hkap_id, content)| {
-            crate::pdf_text::extract_pdf_text(content)
-                .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
+    /// FETCH phase (runs on the rayon pool): pull everything for one node out of the
+    /// PCSS cache into owned structures. No DB access, no shared mutable state.
+    fn fetch_node(&self, pcss: &PCSS, vehicle: &String, year: i32, node: &TreeNode) -> Result<NodeData> {
+        let all_literature = pcss.list_workshop_literature(vehicle, year, &node.node_value)?;
+        let child_ids = pcss.get_children_ids(node)?;
+        let parts = pcss.get_parts(vehicle, year, &node.node_value)?;
+        let illustration = if node.illustration_id != 0 {
+            let ill = pcss.get_illustration(node.illustration_id)?;
+            Some((node.illustration_id, patch_illustration(ill)?))
+        } else {
+            None
+        };
+
+        let mut documents = Vec::new();
+        for document in all_literature {
+            // These return 500 errors
+            if document.hkap_id == "81372188" || document.hkap_id == "75046626" {
+                continue;
+            }
+
+            let worklit = pcss.get_workshop_literature(vehicle, year, &document)?;
+            let mut media: Vec<(String, Vec<u8>)> = Vec::new();
+
+            if let Some(mci) = &worklit.mediacloud_image_ids {
+                let mut ids: Vec<&String> = Vec::new();
+                ids.extend(mci.mediacloud_small.iter());
+                ids.extend(mci.mediacloud_normal.iter());
+                ids.sort();
+                ids.dedup();
+                if !ids.is_empty() {
+                    media.extend(pcss.get_media_ids(ids)?);
+                }
+            }
+
+            let mut tools = Vec::new();
+            if let Some(tool_content) = &worklit.tools {
+                for tool in tool_content {
+                    if is_bad_tool(&tool.tool_number) {
+                        continue;
+                    }
+                    let tool_data = pcss.get_tool_data(&tool.tool_number)
+                        .context(format!("failed getting tool data {}", &tool.tool_number))?;
+                    let image = pcss.get_tool(&tool.tool_number)
+                        .context(format!("failed getting tool {}", &tool.tool_number))?;
+                    tools.push((tool_data, tool.tool_number.clone(), image));
+                }
+            }
+
+            let mut pdf_text = None;
+            if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
+                let content = pcss.get_pdf(media_cloud_file_id)
+                    .context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
+                if document.file_format == "pdf" {
+                    pdf_text = Some((document.hkap_id.clone(), content.clone()));
+                }
+                media.push((media_cloud_file_id.to_string(), content));
+            }
+
+            let mut workshop_images = Vec::new();
+            for item in &worklit.pick_children(&vec![ContentType::Image]) {
+                if let Content::Image(image) = item {
+                    let mut ids = vec![];
+                    if image.mediacloud_normal.len() != 0 { ids.push(&image.mediacloud_normal); }
+                    if image.mediacloud_large.len() != 0 { ids.push(&image.mediacloud_large); }
+                    ids.sort();
+                    ids.dedup();
+                    if !ids.is_empty() {
+                        media.extend(pcss.get_media_ids(ids)?);
+                    }
+                    if image.key.is_empty() {
+                        continue;
+                    }
+                    for size in ["normal", "large"] {
+                        let img = pcss.get_workshop_image(&image.key, size)?;
+                        workshop_images.push((std::str::FromStr::from_str(&image.key)?, size.to_string(), img));
+                    }
+                }
+            }
+
+            documents.push(DocData {
+                node_id: node.node_id(),
+                document,
+                raw_content: worklit.raw_content,
+                media,
+                pdf_text,
+                tools,
+                workshop_images,
+            });
+        }
+
+        Ok(NodeData {
+            node: node.clone(),
+            child_ids,
+            parts,
+            illustration,
+            documents,
         })
-        .collect();
-    store.upsert_document_texts(texts)?;
-    Ok(())
-}
+    }
 
+    /// LOAD phase: write a chunk of fetched nodes. Structural rows go out sequentially;
+    /// media bytes and PDF text are batched (concurrent upserts + parallel extraction).
+    fn load_nodes(
+        &self,
+        store: &ContentStore,
+        vehicle: &String,
+        year: i32,
+        nodes: Vec<NodeData>,
+        extract_text: bool,
+    ) -> Result<()> {
+        for nd in &nodes {
+            store.upsert_tree_node(vehicle, year, &nd.node)?;
+            for link in &nd.child_ids {
+                store.upsert_tree_node_links(nd.node.node_id(), *link)?;
+            }
+            for part in &nd.parts {
+                store.insert_part(vehicle, year, &nd.node.node_value, part)?;
+            }
+            if let Some((id, content)) = &nd.illustration {
+                store.upsert_illustration(*id, content)?;
+            }
+            for doc in &nd.documents {
+                store.upsert_document(doc.node_id, &doc.document, &doc.raw_content)?;
+                store.link_document_to_node(doc.node_id, &doc.document.hkap_id)?;
+                for (tool_data, number, image) in &doc.tools {
+                    store.upsert_tool(tool_data)?;
+                    store.upsert_tool_image(number, image)?;
+                }
+                for (key, size, img) in &doc.workshop_images {
+                    store.upsert_workshop_image(*key, size, img)?;
+                }
+            }
+        }
+
+        // Consume the chunk for the batched media + text writes (moves bytes, no clone).
+        let mut media = Vec::new();
+        let mut pdfs = Vec::new();
+        for nd in nodes {
+            for doc in nd.documents {
+                media.extend(doc.media);
+                if let Some(pt) = doc.pdf_text {
+                    pdfs.push(pt);
+                }
+            }
+        }
+        store.upsert_media_images(media)?;
+        if extract_text {
+            let texts: Vec<(String, String)> = pdfs
+                .par_iter()
+                .filter_map(|(hkap_id, content)| {
+                    crate::pdf_text::extract_pdf_text(content)
+                        .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
+                })
+                .collect();
+            store.upsert_document_texts(texts)?;
+        }
+        Ok(())
+    }
+}
 
 fn collapse_whitespace(text: &str) -> String {
     let mut out = String::with_capacity(text.len());

@@ -81,7 +81,7 @@ impl PCSS {
         self.cache_dir.join("media").join(id)
     }
 
-    fn add_headers(&mut self, request: reqwest::blocking::RequestBuilder) -> reqwest::blocking::RequestBuilder {
+    fn add_headers(&self, request: reqwest::blocking::RequestBuilder) -> reqwest::blocking::RequestBuilder {
         request
             .header("Cookie", &self.cookie)
             .header("Content-Type", "application/json")
@@ -95,7 +95,7 @@ impl PCSS {
             .header("Sec-Fetch-Dest", "empty")
     }
 
-    fn raw_get(&mut self, req_url: String) -> Result<Vec<u8>> {
+    fn raw_get(&self, req_url: String) -> Result<Vec<u8>> {
         // Strip volatile query params from CDN URLs before caching
         let cache_url = if req_url.starts_with("https://cdn.mediacloud.porsche.com/") {
             req_url.split('?').next().unwrap_or(&req_url).to_string()
@@ -122,7 +122,7 @@ impl PCSS {
         bail!(Error::HTTPError(res.status()))
     }
 
-    fn get_json<T: DeserializeOwned>(&mut self, req_url: String) -> Result<T> {
+    fn get_json<T: DeserializeOwned>(&self, req_url: String) -> Result<T> {
         let res = self.raw_get(req_url).context("Failed getting URL")?;
         let content = String::from_utf8(res).context("Invalid UTF-8")?;
         let jd = &mut serde_json::Deserializer::from_str(&content);
@@ -131,11 +131,11 @@ impl PCSS {
         Ok(deserialized.payload)
     }
 
-    fn get_bytes(&mut self, req_url: String) -> Result<Vec<u8>> {
+    fn get_bytes(&self, req_url: String) -> Result<Vec<u8>> {
         self.raw_get(req_url).context("Failed getting URL")
     }
 
-    fn raw_post(&mut self, req_url: String, body: Option<String>) -> Result<Option<String>> {
+    fn raw_post(&self, req_url: String, body: Option<String>) -> Result<Option<String>> {
         let cache_input = format!("{}\n{}", req_url, body.as_deref().unwrap_or(""));
         let path = self.web_cache_path(&cache_key(&cache_input));
 
@@ -160,7 +160,7 @@ impl PCSS {
         bail!(Error::HTTPError(res.status()))
     }
 
-    fn post<T: DeserializeOwned>(&mut self, req_url: String, body: Option<String>) -> Result<Response<T>> {
+    fn post<T: DeserializeOwned>(&self, req_url: String, body: Option<String>) -> Result<Response<T>> {
         let res = self.raw_post(req_url, body).context("Failed posting")?;
         if let Some(body) = &res {
             let jd = &mut serde_json::Deserializer::from_str(body);
@@ -171,7 +171,7 @@ impl PCSS {
         bail!(Error::InvalidJSON)
     }
 
-    pub fn get_tree_root(&mut self, vehicle: &String, year: i32) -> Result<Vec<TreeNode>> {
+    pub fn get_tree_root(&self, vehicle: &String, year: i32) -> Result<Vec<TreeNode>> {
         let url = format!(
             "{}/vehicle_component_tree/v1/en_US/{}/{}/tree-nodes/?roots=true&filter=WORKSHOP_LITERATURE&filter=LABOR_OPERATION",
             PPN, year, vehicle
@@ -183,7 +183,7 @@ impl PCSS {
         Ok(r)
     }
 
-    pub fn get_children_ids(&mut self, node: &TreeNode) -> Result<Vec<i32>> {
+    pub fn get_children_ids(&self, node: &TreeNode) -> Result<Vec<i32>> {
         let mut nodes: Vec<i32> = vec![];
         for href in node.children_links() {
             let children: Vec<TreeNode> = self.get_json(href)?;
@@ -194,7 +194,7 @@ impl PCSS {
         Ok(nodes)
     }
 
-    fn collect_children(&mut self, node: &TreeNode) -> Result<Vec<TreeNode>> {
+    fn collect_children(&self, node: &TreeNode) -> Result<Vec<TreeNode>> {
         let mut nodes: Vec<TreeNode> = vec![];
         for mut href in node.children_links() {
             if !href.contains("&filter=WORKSHOP_LITERATURE&filter=LABOR_OPERATION") {
@@ -211,7 +211,7 @@ impl PCSS {
         Ok(nodes)
     }
 
-    pub fn get_tree_nodes(&mut self, vehicle: &String, year: i32) -> Result<Vec<TreeNode>> {
+    pub fn get_tree_nodes(&self, vehicle: &String, year: i32) -> Result<Vec<TreeNode>> {
         let root_nodes = self.get_tree_root(vehicle, year)?;
         let mut nodes: Vec<TreeNode> = vec![];
         for node in &root_nodes {
@@ -223,7 +223,7 @@ impl PCSS {
         Ok(nodes)
     }
 
-    pub fn get_parts(&mut self, vehicle: &String, year: i32, vehicle_component: &String) -> Result<Vec<Part>> {
+    pub fn get_parts(&self, vehicle: &String, year: i32, vehicle_component: &String) -> Result<Vec<Part>> {
         let content: Vec<Part> = self.get_json(format!(
             "{}/vehicle_component_tree/v1/en_US/{}/{}/partids?validfordc=&filter%5Bvc%5D={}&limit=100&sort%5Bby%5D=partId",
             PPN, year, vehicle, vehicle_component
@@ -231,7 +231,7 @@ impl PCSS {
         Ok(content)
     }
 
-    pub fn get_illustration(&mut self, illustration_id: i32) -> Result<String> {
+    pub fn get_illustration(&self, illustration_id: i32) -> Result<String> {
         let content = self.get_bytes(format!(
             "https://ppn.porsche.com/pcss/vehicle_component_tree/v1/illustration/{}",
             illustration_id
@@ -239,13 +239,13 @@ impl PCSS {
         Ok(String::from_utf8(content)?)
     }
 
-    pub fn get_ui_texts(&mut self) -> Result<Vec<UiTexts>> {
+    pub fn get_ui_texts(&self) -> Result<Vec<UiTexts>> {
         let vehicle = self.get_json("https://pcss.porsche.com/frontend_support/v2/en_US/uitexts?application=PCSS_ALL,SERVICE_VEHICLE".to_string())?;
         let infomedia = self.get_json("https://pcss.porsche.com/frontend_support/v2/en_GB/uitexts?application=PCSS_ALL,SERVICE_INFOMEDIA".to_string())?;
         Ok(vec![vehicle, infomedia])
     }
 
-    pub fn list_workshop_literature(&mut self, vehicle: &String, year: i32, component: &String) -> Result<Vec<Document>> {
+    pub fn list_workshop_literature(&self, vehicle: &String, year: i32, component: &String) -> Result<Vec<Document>> {
         let vehicle_request = DocumentRequest {
             document_type: vec![
                 DocumentType::Ti, DocumentType::Mr, DocumentType::Rm,
@@ -260,7 +260,7 @@ impl PCSS {
         Ok(response.payload)
     }
 
-    pub fn get_workshop_literature(&mut self, vehicle: &String, year: i32, document: &Document) -> Result<WorkshopLiterature> {
+    pub fn get_workshop_literature(&self, vehicle: &String, year: i32, document: &Document) -> Result<WorkshopLiterature> {
         let url = format!(
             "https://ppn.porsche.com/pcss/workshop_literature/v1/en_US/documents/{}/{}/1?filter%5BorderType%5D={}&filter%5BmodelYear%5D={}&filter%5BengineType%5D=&filter%5BgearType%5D=&version=",
             document.document_type, document.hkap_id, vehicle, year
@@ -275,7 +275,7 @@ impl PCSS {
         Ok(wl.payload)
     }
 
-    pub fn get_media_ids(&mut self, mut ids: Vec<&String>) -> Result<Vec<(String, Vec<u8>)>> {
+    pub fn get_media_ids(&self, mut ids: Vec<&String>) -> Result<Vec<(String, Vec<u8>)>> {
         ids.sort();
         ids.dedup();
         let mut result: Vec<(String, Vec<u8>)> = vec![];
@@ -307,7 +307,7 @@ impl PCSS {
         Ok(result)
     }
 
-    pub fn get_workshop_image(&mut self, id: &String, size: &str) -> Result<Vec<u8>> {
+    pub fn get_workshop_image(&self, id: &String, size: &str) -> Result<Vec<u8>> {
         let url = format!(
             "https://ppn.porsche.com/pcss/workshop_literature/v1/images/{}?size={}&version=",
             id, size
@@ -315,7 +315,7 @@ impl PCSS {
         self.get_bytes(url)
     }
 
-    pub fn get_tool(&mut self, id: &str) -> Result<Vec<u8>> {
+    pub fn get_tool(&self, id: &str) -> Result<Vec<u8>> {
         let encoded = STANDARD.encode(id.as_bytes());
         let url = format!(
             "https://ppn.porsche.com/pcss/workshop_literature/v2/en_US/toolimage/{}",
@@ -332,13 +332,13 @@ impl PCSS {
         self.get_bytes(tool.large_file_url)
     }
 
-    pub fn get_tool_data(&mut self, id: &str) -> Result<Tool> {
+    pub fn get_tool_data(&self, id: &str) -> Result<Tool> {
         let encoded = STANDARD.encode(id.as_bytes());
         let url = format!("https://ppn.porsche.com/pcss/workshop_literature/v2/en_US/tool/{}", encoded);
         self.get_json(url)
     }
 
-    pub fn get_pdf(&mut self, id: &str) -> Result<Vec<u8>> {
+    pub fn get_pdf(&self, id: &str) -> Result<Vec<u8>> {
         let url = format!(
             "https://ppn.porsche.com/pcss/workshop_literature/v1/mediaId/{}?openFile=true",
             id

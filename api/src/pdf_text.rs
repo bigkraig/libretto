@@ -1,5 +1,3 @@
-use std::ffi::CString;
-use std::os::raw::c_int;
 use std::panic;
 use std::sync::Once;
 
@@ -17,7 +15,11 @@ static INSTALL_QUIET_PANIC_HOOK: Once = Once::new();
 /// the spew without losing control flow.
 fn install_quiet_panic_hook() {
     INSTALL_QUIET_PANIC_HOOK.call_once(|| {
+        // Silence pdf-extract's caught panics (0.7/0.10 panic on malformed PDFs)
+        // and its benign log::warn! spew. Both are process-global but set exactly
+        // once here, so this is safe to call from parallel extraction.
         panic::set_hook(Box::new(|_| {}));
+        log::set_max_level(log::LevelFilter::Error);
     });
 }
 
@@ -131,6 +133,10 @@ fn media_cloud_file_id_from_metadata(content: &[u8]) -> MediaIdLookup {
 /// PDFs with non-UTF-8 CMap streams that 0.10 panics on. Only 2 PDFs in the
 /// corpus defeat both.
 pub fn extract_pdf_text(bytes: &[u8]) -> Option<String> {
+    // Thread-safe quiet setup (idempotent) — required because this runs on the
+    // rayon pool during loads. NOTE: do not silence via per-call fd redirection;
+    // that races across threads on the process-global stdout/stderr fds.
+    install_quiet_panic_hook();
     if let Some(text) = try_with(bytes, |b| pdf_extract::extract_text_from_mem(b).ok()) {
         return Some(text);
     }
@@ -142,80 +148,11 @@ where
     F: FnOnce(&[u8]) -> Option<String> + panic::UnwindSafe,
 {
     let bytes = bytes.to_vec();
-    let result = with_silenced_stdio(|| {
-        panic::catch_unwind(panic::AssertUnwindSafe(move || extract(&bytes)))
-    });
+    let result = panic::catch_unwind(panic::AssertUnwindSafe(move || extract(&bytes)));
     match result {
         Ok(Some(text)) if !text.trim().is_empty() => Some(text),
         _ => None,
     }
-}
-
-/// pdf-extract 0.7 prints diagnostics via raw `println!`/`eprintln!`, and 0.10
-/// uses `log::warn!` which may still leak through if a logger is installed.
-/// Redirect fd 1 and fd 2 to /dev/null for the duration of the call, then
-/// restore them. Best-effort: if any libc call fails we just run unsilenced.
-fn with_silenced_stdio<F, R>(f: F) -> R
-where
-    F: FnOnce() -> R,
-{
-    let guard = StdioSilencer::new();
-    let result = f();
-    drop(guard);
-    result
-}
-
-struct StdioSilencer {
-    saved_stdout: Option<c_int>,
-    saved_stderr: Option<c_int>,
-    devnull: Option<c_int>,
-}
-
-impl StdioSilencer {
-    fn new() -> Self {
-        let devnull = CString::new("/dev/null").unwrap();
-        unsafe {
-            let null_fd = libc::open(devnull.as_ptr(), libc::O_WRONLY);
-            if null_fd < 0 {
-                return Self { saved_stdout: None, saved_stderr: None, devnull: None };
-            }
-            // Make sure Rust's line-buffered stdout flushes before redirecting.
-            libc::fflush(std::ptr::null_mut());
-            let saved_stdout = dup_fd(libc::STDOUT_FILENO);
-            let saved_stderr = dup_fd(libc::STDERR_FILENO);
-            if saved_stdout.is_some() {
-                libc::dup2(null_fd, libc::STDOUT_FILENO);
-            }
-            if saved_stderr.is_some() {
-                libc::dup2(null_fd, libc::STDERR_FILENO);
-            }
-            Self { saved_stdout, saved_stderr, devnull: Some(null_fd) }
-        }
-    }
-}
-
-impl Drop for StdioSilencer {
-    fn drop(&mut self) {
-        unsafe {
-            libc::fflush(std::ptr::null_mut());
-            if let Some(fd) = self.saved_stdout {
-                libc::dup2(fd, libc::STDOUT_FILENO);
-                libc::close(fd);
-            }
-            if let Some(fd) = self.saved_stderr {
-                libc::dup2(fd, libc::STDERR_FILENO);
-                libc::close(fd);
-            }
-            if let Some(fd) = self.devnull {
-                libc::close(fd);
-            }
-        }
-    }
-}
-
-unsafe fn dup_fd(fd: c_int) -> Option<c_int> {
-    let copy = libc::dup(fd);
-    if copy < 0 { None } else { Some(copy) }
 }
 
 fn normalize_whitespace(text: &str) -> String {
