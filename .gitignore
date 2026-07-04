@@ -9,15 +9,9 @@ web/tsconfig.tsbuildinfo
 # SQLite databases (generated, not committed)
 api/content.sqlite3
 
-# Filesystem HTTP cache (synced via B2, not git)
-api/cache/
-
 # Source PDFs and generated split output (synced via B2, not git)
 api/source_files/
 api/before-ferrari/
-
-# Vehicle thumbnails (synced via B2, not git)
-api/images/
 
 # Python
 .venv-pdf/
