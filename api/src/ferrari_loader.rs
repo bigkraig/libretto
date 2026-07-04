@@ -79,15 +79,25 @@ impl FerrariLoader {
             .map(|v| v.name.clone())
             .unwrap_or_else(|| args.model.clone());
 
-        // Look for a vehicle image in the source path
-        let image = ["vehicle.png", "vehicle.jpg", "image.png", "image.jpg"]
-            .iter()
-            .map(|n| root_path.join(n))
+        // Prefer the standard vehicle image location ({vehicle_image_path}/{year}-{model}.png),
+        // matching the porsche and audi loaders; fall back to a vehicle.png/etc dropped in the
+        // source dir.
+        let standard = Path::new(&settings.importer.vehicle_image_path)
+            .join(format!("{}-{}.png", args.year, args.model));
+        let image = std::iter::once(standard)
+            .chain(
+                ["vehicle.png", "vehicle.jpg", "image.png", "image.jpg"]
+                    .iter()
+                    .map(|n| root_path.join(n)),
+            )
             .find(|p| p.exists())
             .and_then(|p| fs::read(p).ok())
             .unwrap_or_default();
         if image.is_empty() {
-            println!("note: no vehicle image found (drop vehicle.png in {} to set one)", args.path);
+            println!(
+                "note: no vehicle image found ({}/{}-{}.png or vehicle.png in {})",
+                settings.importer.vehicle_image_path, args.year, args.model, args.path
+            );
         }
 
         self.content_store.upsert_vehicle_direct(&Vehicle {
