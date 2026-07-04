@@ -1,0 +1,583 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81662695"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81662695"
+    ,
+    
+    "version" :
+    17,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "4X00IN"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-02-25T08:32:22.405+01:00"
+    ,
+    
+    "modificationDate" :
+    1704761313686,
+    
+    "title" :
+    
+    
+    "Tightening torques for wheels"
+    ,
+    
+    "fileName" :
+    
+    
+    "81662695_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Tightening torques for wheels"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS3853195d-42e6-434b-b9d0-126a6c0328c1"
+    
+    }
+    
+    ]
+    ,
+    
+    "techvalues" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS9a37d787-12c7-4940-884b-fcb672902fb9"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "Wheel to wheel hub"
+    ,
+    
+    "description" :
+    
+    
+    "M14 x 1.5 x 49 thread (do not grease screw)"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "160 (118 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWISbfc1e0fc-e0a5-4c14-a903-82ae7a4ce54e"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "TPM valve to wheel"
+    ,
+    
+    "description" :
+    
+    
+    "Union nut, M5"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "4 (3 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "PIWIS540b16f7-81dc-4a40-ab79-4b4c25c48bb7"
+    ,
+    
+    "usageLocation" :
+    
+    
+    "Wheel electronics to TPM valve"
+    ,
+    
+    "description" :
+    
+    
+    "Internal hexagon round-head bolt, M5 x 11"
+    ,
+    
+    "kind" :
+    
+    
+    "Tightening torque"
+    ,
+    
+    "baseValue" :
+    
+    
+    "4 (3 ftlb.) Nm"
+    ,
+    
+    "tolerance1" : [
+    
+    ]
+    ,
+    
+    "tolerance2" : [
+    
+    ]
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS3853195d-42e6-434b-b9d0-126a6c0328c1\" >Tightening torques for wheels</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81765244"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Wheels</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    false,
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_USAGE_LOCATION_COL"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_USAGE_LOCATION_COL$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_DESCRIPTION_COL"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_DESCRIPTION_COL$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_KIND_COL"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_KIND_COL$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_BASE_VALUE_COL"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_BASE_VALUE_COL$"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_TOLERANCE_COL"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_TECHNICAL_VALUES_OVERVIEW_TABLE_TOLERANCE_COL$"
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "Wheel to wheel hub"
+    ,
+    
+    
+    "M14 x 1.5 x 49 thread (do not grease screw)"
+    ,
+    
+    
+    "Tightening torque"
+    ,
+    
+    
+    "160 (118 ftlb.) Nm"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "TPM valve to wheel"
+    ,
+    
+    
+    "Union nut, M5"
+    ,
+    
+    
+    "Tightening torque"
+    ,
+    
+    
+    "4 (3 ftlb.) Nm"
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Wheel electronics to TPM valve"
+    ,
+    
+    
+    "Internal hexagon round-head bolt, M5 x 11"
+    ,
+    
+    
+    "Tightening torque"
+    ,
+    
+    
+    "4 (3 ftlb.) Nm"
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

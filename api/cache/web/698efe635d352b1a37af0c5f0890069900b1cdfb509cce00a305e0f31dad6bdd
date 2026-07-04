@@ -1,0 +1,3289 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81844891"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81844891"
+    ,
+    
+    "version" :
+    25,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-02-16T12:25:16.560+01:00"
+    ,
+    
+    "modificationDate" :
+    1708163837630,
+    
+    "title" :
+    
+    
+    "Test log for classification of lithium-ion module"
+    ,
+    
+    "fileName" :
+    
+    
+    "81844891_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Visual"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS095a4f5d-b817-4c3d-8e92-75c3d24fa952"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    " Thermal"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISd725baea-a25a-4532-966b-334d49284d6f"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Functional"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISfb7a6478-d9e9-471c-bec6-6c86c4579fd1"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Transport"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS0ac2d25d-72bd-4e57-a006-4974d424ff36"
+    
+    }
+    
+    ]
+    ,
+    
+    "tools" : [
+    
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e31a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Insulated tool set"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6883"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6883"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e618a1161"
+    ,
+    
+    "label" :
+    
+    
+    "PIWIS Tester 3"
+    ,
+    
+    "kind" :
+    
+    
+    "sonderwerkzeug"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "9900"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "9900"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e621a1161"
+    ,
+    
+    "label" :
+    
+    
+    "High-voltage testing module"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6558A"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6558A"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "id" :
+    
+    
+    "d8e624a1161"
+    ,
+    
+    "label" :
+    
+    
+    "Module balancer"
+    ,
+    
+    "kind" :
+    
+    
+    "werkstatteinrichtung-fahrzeugspezifisch"
+    ,
+    
+    "toolNumber" :
+    
+    
+    "VAS 6910"
+    ,
+    
+    "toolDisplayNumber" :
+    
+    
+    "VAS 6910"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417637"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Classification</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Incorrect handling of high-voltage components"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Electric shock "
+    ,
+    
+    
+    "Risk of short circuit "
+    ,
+    
+    
+    "Risk of fire "
+    ,
+    
+    
+    "Risk of explosion "
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    
+    "Only appropriately trained and authorised persons are permitted to work on high-voltage vehicles and components."
+    ,
+    
+    
+    "Required qualification: High voltage expert."
+    ,
+    
+    
+    "Observe national requirements and legislation for this work."
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Always use insulated tools, e.g.                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e31a1161\">VAS 6883 - Insulated tool set</a>"
+    
+    }
+    
+    }
+    ,
+    
+    "                     , when working on these components.                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Observe general warning notes for working on the high-voltage vehicle electrical system.                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "2X00IN"
+    ,
+    
+    "title" :
+    
+    
+    "General warning notes for working on the high-voltage vehicle electrical system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " A lithium-ion module is classified by a high voltage expert (HVE) according to visual, thermal and functional criteria."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417641"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>General information</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "Module Part No.: "
+    ,
+    
+    
+    " ______________________________________________ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Module serial number: "
+    ,
+    
+    
+    " ______________________________________________ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Date/Time: "
+    ,
+    
+    
+    " ______________________________________________ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Name/Telephone: "
+    ,
+    
+    
+    " ______________________________________________ "
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417646"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Result of classification and signature</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Module status: </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>\"Danger\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    " □ "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                  If at least                                  <b>one </b>                                 criterion was evaluated with                                  <b>\"Danger\"</b>                                 : Start emergency process, secure and cordon off the area, contact Technical Support.                             "
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Module status: </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>\"Warning\"</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    " □ "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                  If                                  <b>one or more</b>                                  criteria were evaluated with                                  <b>\"Warning\"</b>                                  and                                  <b>no</b>                                  criteria were evaluated with \"Danger\": Quarantine the components, contact Technical Support.                             "
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Module status: </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>\"Normal\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    " □ "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                                  If                                  <b>all</b>                                  criteria were evaluated with                                  <b>\"No\"</b>                                 : Classification is \"Normal\", battery status is non-critical, battery can be transported.                             "
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Sign the test log and file it in the order folder."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417647"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Signature: ___________________________</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS095a4f5d-b817-4c3d-8e92-75c3d24fa952\" >Visual</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417650"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Initial visual assessment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> No. </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Criterion</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 1 "
+    ,
+    
+    
+    " Fire/Heat produced "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 2"
+    ,
+    
+    
+    " Smoke/Steam "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If you answered \"Yes\" to one of the points 1 to 2:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b> Module status: \"Danger\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Alert the fire brigade and take steps to deal with the danger from fire/gas leaks. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417654"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Detailed visual assessment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> No. </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Criterion</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 3"
+    ,
+    
+    
+    " Discolouration on module housing/module floor (e.g. corrosion)* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 4"
+    ,
+    
+    
+    " Crack or opening on module housing/module floor* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 5"
+    ,
+    
+    
+    " Indentation or deformation on module housing/module floor* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 6"
+    ,
+    
+    
+    " Open, accessible contacts or conductors* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 7"
+    ,
+    
+    
+    " Loose parts visible* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 8"
+    ,
+    
+    
+    " Pungent odour (e.g. solvent), burnt smell "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 9"
+    ,
+    
+    
+    " Noises from the module (e.g. hissing, crackling) "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 10"
+    ,
+    
+    
+    " Leaking fluid on module* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 11"
+    ,
+    
+    
+    "Transport packaging damaged* "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    [
+    
+    
+    "<sup> * Take a photo for documentation purposes </sup>"
+    ,4,1
+    ]
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If you answered \"Yes\" to one of the points 3 to 11:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Module status: \"Warning\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Store the lithium-ion module in the quarantine location and attach warning signs in accordance with requirements (see \"Handling lithium-ion batteries\"). Contact Technical Support. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Check the module at regular intervals at least once a day."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISd725baea-a25a-4532-966b-334d49284d6f\" > Thermal</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417667"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Thermal assessment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                  Thermal assessment involves using                  <b>VAS 6886 Temperature gauge</b>                  (infrared) on the module housing (sides and top).             "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If the temperature increases during the test, wait for the reaction before continuing to monitor the result for at least 5 days. This must be repeated for as long as required until no more reactions are detected."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    " Measurement: 1 "
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Date: __________________ "
+    ,
+    
+    
+    " Time: ____________ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Ambient temperature: _______________ ºC/(ºF) "
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Measurement result at side measuring point: ____________ ºC/(ºF) "
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Measurement result at top measuring point: ____________ ºC/(ºF) "
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    [
+    
+    
+    
+    " Measurement: 2 – 5 (damaged or faulty lithium-ion module)"
+    ,5,1
+    ]
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Date: "
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Time: "
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Ambient temperature: "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Measurement result, sides: "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Measurement result, top: "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    ,
+    
+    
+    "______ ºC/(ºF) "
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " If the temperature at one of the measuring points is > 80 ºC/(176 ºF)"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Module status: \"Danger\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Alert the fire brigade and take steps to deal with the danger from fire/gas leaks."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " If the temperature at one of the measuring points is > 60 ºC/(140 ºF) and < 80 ºC/(176 ºF) "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b> Module status: \"Warning\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Store the lithium-ion module in the quarantine location and attach warning signs in accordance with requirements (see \"Handling lithium-ion batteries\"). Contact Technical Support. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Check the module at regular intervals at least once a day."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISfb7a6478-d9e9-471c-bec6-6c86c4579fd1\" >Functional</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417804"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Functional assessment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The functional assessment using VAS 6910 - Module balancer must only be performed if there are critical faults for the classifying module stored in the fault memory of the high-voltage battery control unit. If it was not possible to assess the fault memory of the high-voltage battery control unit beforehand, the functional test on the module must be performed using VAS 6910 - Module balancer."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 The functional assessment is performed using                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e618a1161\">9900 - PIWIS Tester 3</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 ,                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e621a1161\">VAS 6558A - High-voltage testing module</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                  and                  "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href class=\"qv qv-tool\" target=\"d8e624a1161\">VAS 6910 - Module balancer</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                 .              "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> No. </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Criterion</b>"
+    
+    }
+    
+    }
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 12 "
+    ,
+    
+    
+    " High-voltage battery control unit - critical fault"
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 13"
+    ,
+    
+    
+    " Cell voltage ≥ 4.2 V"
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 14"
+    ,
+    
+    
+    " Cell temperature > 80 ºC/(176 ºF)"
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 15"
+    ,
+    
+    
+    " No module communication"
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 16"
+    ,
+    
+    
+    " Cell voltage ≤ 2.8 V"
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " 17"
+    ,
+    
+    
+    " Cell temperature > 60 ºC/(140 ºF) and < 80 ºC/(176 ºF) "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If you answered \"Yes\" to one of the points 12 to 14:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b> Module status: \"Danger\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Alert the fire brigade and take steps to deal with the danger from fire/gas leaks. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If you answered \"Yes\" to one of the points 15 to 17:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b> Module status: \"Warning\" </b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Store the lithium-ion module in the quarantine location and attach warning signs in accordance with requirements (see \"Handling lithium-ion batteries\"). Contact Technical Support. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " Check the module at regular intervals at least once a day. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS0ac2d25d-72bd-4e57-a006-4974d424ff36\" >Transport</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81417700"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Transport assessment</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Based on the result of the classification, the possibility of transporting the battery must be assessed and the specified packaging type must be used. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "18"
+    ,
+    
+    
+    " Transport "
+    ,
+    
+    
+    " Yes □ "
+    ,
+    
+    
+    " No □ "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Module status:</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Packaging type: </b>"
+    
+    }
+    
+    }
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Normal"
+    ,
+    
+    
+    " Original spare parts packaging "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Warning"
+    ,
+    
+    
+    " Special packaging "
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    " Danger"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> Cannot</b>                                      be transported                                  "
+    
+    }
+    
+    }
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

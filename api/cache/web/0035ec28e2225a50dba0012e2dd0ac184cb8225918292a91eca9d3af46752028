@@ -1,0 +1,806 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82432948"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82432948"
+    ,
+    
+    "version" :
+    6,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "9415"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "147/22"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-04-05T21:24:12.725+02:00"
+    ,
+    
+    "modificationDate" :
+    1721379087674,
+    
+    "issueDate" :
+    
+    
+    "2022-08-26T06:00:00.000+02:00"
+    ,
+    
+    "title" :
+    
+    
+    "Dust/Spots on the Headlight Lens: Observe Specified Procedure (147/22)"
+    ,
+    
+    "fileName" :
+    
+    
+    "82432948_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "65a8d1fd-eb2d-41c7-8074-a6e886d06b98"
+    ,
+    
+    
+    "0716caa1-a791-465d-999f-b006c18c2cd3"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "8557304e-7ed4-4140-bd7f-f7cb1334fbaf"
+    ,
+    
+    
+    "05deada1-fc87-47e9-8526-03b3dd05b369"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82432949"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2020"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model Line:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>All model lines</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Headlights</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "During the sales check (PDI) or after vehicle delivery to customers, complaints are received about dust/spots on the headlight lens."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Action required:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Before replacing a headlight due to visual complaints, the condition of the headlight lens and the chrome components in the headlight must be checked according to the following criteria."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Conditions for evaluating the headlight lens and chrome components:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Headlight is switched off"
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Assessment takes place in daylight <b>without</b> a shop light"
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Assessment distance 0.5 m/ 1.64 ft"
+    ,
+    
+    
+    "Assessment position 0° to 45° at front to headlight"
+    ,
+    
+    
+    "Assessment duration: 15 seconds"
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If no visual defects are perceptible under these evaluation criteria, <b>the</b> headlight<b> replacement is not justified</b>."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The following illustration shows a headlight lens that has a potential dirt and contamination when the driving light is switched on which does <b>not</b> justify replacing the headlight."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISa5a6fd32-b2bc-4210-a5a2-1f6e3e367812"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISd9979812-22f9-4fdf-8105-525a367cc6162"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "65a8d1fd-eb2d-41c7-8074-a6e886d06b98"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "8557304e-7ed4-4140-bd7f-f7cb1334fbaf"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "8b0c3af6-f4f0-439f-a652-8ac58f7204c5"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82410706"
+    ,
+    
+    "title" :
+    
+    
+    "Example graphic that does <b>not</b> justify replacing it as headlights are switched on "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS88eb65b0-6662-41fa-be0a-9120e4220a2d"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS149e669d-b32f-4cea-ae62-70681072cae62"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "0716caa1-a791-465d-999f-b006c18c2cd3"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "05deada1-fc87-47e9-8526-03b3dd05b369"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "bb8d7d29-49b7-4b60-81b6-f0bd5f9a75df"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82426561"
+    ,
+    
+    "title" :
+    
+    
+    "Example graphic, headlight switched off, no contamination visible, therefore no replacement justified"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

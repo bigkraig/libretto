@@ -1,0 +1,780 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "80532043"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "80532043"
+    ,
+    
+    "version" :
+    77,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "4495TW"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2024-04-06T05:57:44.944+02:00"
+    ,
+    
+    "modificationDate" :
+    1712569236495,
+    
+    "title" :
+    
+    
+    "Conversion table for wheel alignment values"
+    ,
+    
+    "fileName" :
+    
+    
+    "80532043_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Minutes to decimal degrees"
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWIS764a2361-3d0f-4713-8b24-7ac4e44bb6a9"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWIS764a2361-3d0f-4713-8b24-7ac4e44bb6a9\" >Minutes to decimal degrees</h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a1156420"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The wheel alignment values are specified in degrees and minutes in the Technical Manual (division in 60 units)."
+    ,
+    
+    
+    "In countries in which the decimal degree is widely used, the electronic wheel alignment testers can be converted from degrees/minutes (division in 60 units) to decimal degrees (division in 100 units) by pressing a key (special function). This function is standard for the electronic wheel alignment testers approved by Porsche."
+    ,
+    
+    
+    "Minutes (') can be converted into decimal degrees and decimal degrees into minutes (') using the conversion table. To do this, read out the required values from the table using the co-ordinates."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "pgwide" :
+    true,
+    
+    "header" : [
+    
+    
+    [
+    
+    
+    
+    "min (')"
+    ,
+    
+    
+    "0"
+    ,
+    
+    
+    "1"
+    ,
+    
+    
+    "2"
+    ,
+    
+    
+    "3"
+    ,
+    
+    
+    "4"
+    ,
+    
+    
+    "5"
+    ,
+    
+    
+    "6"
+    ,
+    
+    
+    "7"
+    ,
+    
+    
+    "8"
+    ,
+    
+    
+    "9"
+    
+    ]
+    
+    ]
+    ,
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    [
+    
+    
+    
+    "degrees (°)"
+    ,11,1
+    ]
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "0"
+    ,
+    
+    
+    "–"
+    ,
+    
+    
+    "0.017"
+    ,
+    
+    
+    "0.033"
+    ,
+    
+    
+    "0.050"
+    ,
+    
+    
+    "0.067"
+    ,
+    
+    
+    "0.083"
+    ,
+    
+    
+    "0.100"
+    ,
+    
+    
+    "0.117"
+    ,
+    
+    
+    "0.133"
+    ,
+    
+    
+    "0.150"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "10"
+    ,
+    
+    
+    "0.167"
+    ,
+    
+    
+    "0.183"
+    ,
+    
+    
+    "0.200"
+    ,
+    
+    
+    "0.217"
+    ,
+    
+    
+    "0.233"
+    ,
+    
+    
+    "0.250"
+    ,
+    
+    
+    "0.267"
+    ,
+    
+    
+    "0.283"
+    ,
+    
+    
+    "0.300"
+    ,
+    
+    
+    "0.317"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "20 (15)"
+    ,
+    
+    
+    "0.333"
+    ,
+    
+    
+    "0.350"
+    ,
+    
+    
+    "0.367"
+    ,
+    
+    
+    "0.383"
+    ,
+    
+    
+    "0.400"
+    ,
+    
+    
+    "0.417"
+    ,
+    
+    
+    "0.433"
+    ,
+    
+    
+    "0.450"
+    ,
+    
+    
+    "0.467"
+    ,
+    
+    
+    "0.483"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "30"
+    ,
+    
+    
+    "0.500"
+    ,
+    
+    
+    "0.517"
+    ,
+    
+    
+    "0.533"
+    ,
+    
+    
+    "0.550"
+    ,
+    
+    
+    "0.567"
+    ,
+    
+    
+    "0.583"
+    ,
+    
+    
+    "0.600"
+    ,
+    
+    
+    "0.617"
+    ,
+    
+    
+    "0.633"
+    ,
+    
+    
+    "0.650"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "40"
+    ,
+    
+    
+    "0.667"
+    ,
+    
+    
+    "0.683"
+    ,
+    
+    
+    "0.700"
+    ,
+    
+    
+    "0.717"
+    ,
+    
+    
+    "0.733"
+    ,
+    
+    
+    "0.750"
+    ,
+    
+    
+    "0.767"
+    ,
+    
+    
+    "0.783"
+    ,
+    
+    
+    "0.800"
+    ,
+    
+    
+    "0.817"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "50"
+    ,
+    
+    
+    "0.833"
+    ,
+    
+    
+    "0.850"
+    ,
+    
+    
+    "0.867"
+    ,
+    
+    
+    "0.883"
+    ,
+    
+    
+    "0.900"
+    ,
+    
+    
+    "0.917"
+    ,
+    
+    
+    "0.933"
+    ,
+    
+    
+    "0.950"
+    ,
+    
+    
+    "0.967"
+    ,
+    
+    
+    "0.983"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "60"
+    ,
+    
+    
+    "1.000"
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a1156444"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Conversion from minutes to decimal degrees (examples)</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Example 1: Toe 17 min (17') = 0.283 decimal degrees as per table. Procedure for this: The imaginary line starting at the top of the 7-min column moving downwards and the line starting on the left in the 10-min row moving right meet at point/column 0.283."
+    ,
+    
+    
+    "Example 2: Camber 1° 25' (1 degree and 25 min) = 1.417 decimal degrees. This is the result from the table (1 degree or 60 min) = 1.000 + 0.417 (25 min)."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a1156467"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Conversion from decimal degrees to minutes (examples)</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    
+    "Example 1: Toe 0.350 decimal degree = 21 min (21'). A search is performed for the decimal value (0.350) in the table. The co-ordinates are then formed from this point/value. Line to the left = 20' and line upwards = 1' (which equals 20' + 1')."
+    ,
+    
+    
+    "Example 2: Camber 1.683 decimal degrees = 1° 41' (1 degree and 41 min). This result is obtained as follows: Split the value into 1.000 = 1 degree (1°) and search for the remainder 0.683 in the table. Then get the co-ordinates again. Line to the left = 40' and line upwards = 1' (which equals 40' + 1')."
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

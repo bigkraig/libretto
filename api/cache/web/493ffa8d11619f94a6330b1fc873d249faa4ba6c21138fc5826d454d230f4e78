@@ -1,0 +1,1118 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "81162995"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "81162995"
+    ,
+    
+    "version" :
+    16,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "0X01"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "62/17"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2022-09-30T00:02:44.496+02:00"
+    ,
+    
+    "modificationDate" :
+    1721144688369,
+    
+    "issueDate" :
+    
+    
+    "2017-05-16T00:00:00.000+02:00"
+    ,
+    
+    "title" :
+    
+    
+    "During sales check/before vehicle handover: Checking that Supplement is included with Driver’s Manual (62/17)"
+    ,
+    
+    "fileName" :
+    
+    
+    "81162995_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "parts" : [
+    
+    
+    {
+    
+    
+    "partNumber" :
+    
+    
+    "95110018"
+    ,
+    
+    "label" :
+    
+    
+    "Directive 2014/53/EU | Radio Equipment"
+    ,
+    
+    "extendedLabel" :
+    
+    
+    "Funkanlagenrichtlinie"
+    ,
+    
+    "quantity" :
+    
+    
+    "1"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a81162996"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    ,
+    
+    
+    "LBL_TO"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2018 $LBL_TO$ 2018"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model line:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>All</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Country/market:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Only relevant for the countries listed below</b>:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "table"
+    ,
+    
+    "inputs" : {
+    
+    
+    "data" : [
+    
+    
+    [
+    
+    
+    
+    "Germany"
+    ,
+    
+    
+    "Luxembourg "
+    ,
+    
+    
+    "Switzerland"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Belgium"
+    ,
+    
+    
+    "Bulgaria"
+    ,
+    
+    
+    "Turkey"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Czech Republic "
+    ,
+    
+    
+    "Romania"
+    ,
+    
+    
+    "Israel"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Denmark "
+    ,
+    
+    
+    "Slovenia "
+    ,
+    
+    
+    "Palestine"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Finland "
+    ,
+    
+    
+    "Croatia"
+    ,
+    
+    
+    "New Caledonia"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Sweden "
+    ,
+    
+    
+    "Malta"
+    ,
+    
+    
+    "Tahiti"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "France"
+    ,
+    
+    
+    "Slovakian Republic"
+    ,
+    
+    
+    "Morocco"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Great Britain/Northern Ireland"
+    ,
+    
+    
+    "Gibraltar"
+    ,
+    
+    
+    "Oman"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Ireland "
+    ,
+    
+    
+    "Estonia "
+    ,
+    
+    
+    "Russia"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Austria"
+    ,
+    
+    
+    "Latvia "
+    ,
+    
+    
+    "Armenia"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Italy/San Marino/Vatican State"
+    ,
+    
+    
+    "Lithuania "
+    ,
+    
+    
+    "Belarus"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Spain/Andorra"
+    ,
+    
+    
+    "French Guiana"
+    ,
+    
+    
+    "Kazakhstan"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Portugal "
+    ,
+    
+    
+    "Guadeloupe"
+    ,
+    
+    
+    "Serbia"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Poland "
+    ,
+    
+    
+    "Martinique"
+    ,
+    
+    
+    "South Africa"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Hungary "
+    ,
+    
+    
+    "Réunion"
+    ,
+    
+    
+    "South Korea"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Greece "
+    ,
+    
+    
+    "Saint Barthélemy"
+    ,
+    
+    
+    "Taiwan"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Cyprus"
+    ,
+    
+    
+    "Norway"
+    ,
+    
+    
+    "United Arab Emirates"
+    
+    ]
+    ,
+    
+    [
+    
+    
+    
+    "Netherlands "
+    ,
+    
+    
+    "Iceland "
+    ,
+    
+    
+    ""
+    
+    ]
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Subject:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>\"Radio Equipment\"</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Situation:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Due to <b>legal requirements for the operation of radio equipment</b>, customers must be kept informed by providing them with required mandatory texts and technical data."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>For the countries listed above, it is important therefore that either</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>during the sales check</b> or"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>before vehicle handover to the customer</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>you check</b> that <b>the Supplement \"Directive 2014/53/EU | Radio Equipment\" is included in the Driver's Manual for the vehicle</b>."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>⇒ If the Supplement is not in the Driver's Manual, it must be ordered and placed in the vehicle or in the Driver's Manual.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Part No.:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "WKD 951.100.18 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<a href=\"\" class=\"qv qv-ersatzteil\" target=\"95110018\"> Directive 2014/53/EU | Radio Equipment</a>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " (Radio equipment directive, Driver's Manual Supplement)"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    

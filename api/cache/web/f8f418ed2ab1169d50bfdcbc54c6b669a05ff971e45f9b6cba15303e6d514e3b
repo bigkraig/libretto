@@ -1,0 +1,3060 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "82301461"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "82301461"
+    ,
+    
+    "version" :
+    5,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" : ""
+    ,
+    
+    "kdnr" :
+    
+    
+    "9X00"
+    ,
+    
+    "tiNumber" :
+    
+    
+    "112/21"
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-02-23T22:07:28.543+01:00"
+    ,
+    
+    "modificationDate" :
+    1721154608296,
+    
+    "issueDate" :
+    
+    
+    "2022-01-14T06:00:00.000+01:00"
+    ,
+    
+    "title" :
+    
+    
+    "Information on the Software System for Various Control Units in the Vehicle (112/21)"
+    ,
+    
+    "fileName" :
+    
+    
+    "82301461_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "TI"
+    ,
+    
+    "mediacloudImageIds" : {
+    
+    
+    "mediacloudSmall" : [
+    
+    
+    
+    "aab772c9-c535-497b-b205-c85c5e14f231"
+    ,
+    
+    
+    "60621690-757c-45f6-a5ee-862162f1cd32"
+    ,
+    
+    
+    "e087267e-ab64-4dfa-9314-b0833d5e9b73"
+    ,
+    
+    
+    "4cfd988e-8d09-41ad-8535-358a41784c27"
+    ,
+    
+    
+    "90b31764-b367-474e-8a8f-699e86267b42"
+    ,
+    
+    
+    "1ee54b71-ca53-4238-a425-3a67447f7c03"
+    ,
+    
+    
+    "bcce1124-e8e8-45e2-853b-adf76a5e35ad"
+    ,
+    
+    
+    "9e5232f5-cb66-4b65-8079-3bd5d07f13fb"
+    
+    ]
+    ,
+    
+    "mediacloudNormal" : [
+    
+    
+    
+    "64dbf458-4177-457f-928c-07dcdfaf12a1"
+    ,
+    
+    
+    "0fee5ddc-b917-42d2-b5ff-fc98d4dfe032"
+    ,
+    
+    
+    "19655b9f-623e-4921-a842-79f223ed0136"
+    ,
+    
+    
+    "9d2ef62a-fc1e-4f67-bd92-13f706085500"
+    ,
+    
+    
+    "9fba6ca0-01f1-4b48-8550-c11c1af20ab1"
+    ,
+    
+    
+    "80d13d48-64b6-4af2-944c-5d46c179e5c9"
+    ,
+    
+    
+    "f4506dca-b801-4982-8038-848faaab49f3"
+    ,
+    
+    
+    "28d9f9b5-976b-4274-a011-6b2bf07a12ac"
+    
+    ]
+    
+    }
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82301462"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "titleUiText" :
+    
+    
+    "LBL_MODEL_YEAR"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "translateIds" : [
+    
+    
+    
+    "LBL_FROM"
+    
+    ]
+    ,
+    
+    "html" :
+    
+    
+    "$LBL_FROM$ 2020"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Model Line:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Taycan (Y1A/Y1B)</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Concerns:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Information on the hardware/software system for various control units in the vehicle</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Information:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Ensure the consistency of a defined system of hardware and software versions.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Due to the very high levels of networking between various control units and function groups in the vehicle, the development, classification and approval of the complete vehicle software is always carried out in a so-called system. This specifies which software versions of various control units and combinations may appear in a certain system. <br/>Further enhancements will then also be added in accordance with other system releases (SRs) in accordance with this procedure. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>This defined system forms the basis for technical approval.</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "To ensure the consistency of the system in all processes in the workshop during which such a system could be changed, the required condition must always be observed in accordance with the specifications in the workshop media. This is the only way to ensure that the vehicle is tested and approved."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "This is particularly the case for:"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Performing software updates</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "After performing software updates, always make sure that the target software versions specified in the Technical Information are also in fact installed on the control units and that the system is therefore integrated. <br/>This also applies if hardware replacement is required during the software update, if the control unit was damaged during programming and must be replaced. Here, it is important to check whether the software version of the re-installed control unit is already in compliance with the prescribed target software version, or whether the control unit must be re-programmed in order to achieve the required target version."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Replacing control units</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    " After replacing control units, always check whether subsequent programming is required as described in the Workshop Manual (generally the case) or based on a Technical Information in accordance with additional instructions (special cases). "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Summary of the most important points regarding the \"software system\"</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>What is a software system?</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A software system includes all software and hardware versions of the various control units in a vehicle and their approved combinations."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>Why is the software system so important?</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The development, qualification and approval of vehicle software is always integrated into a system. Compliance with the system ensures that the vehicle in question is in a defined, functional and approved state. During software updates or other repair measures (e.g. control unit replacement), always make sure that the instructions in the workshop literature for compliance with the system are guaranteed, e.g. update to the specified target software version for software updates or required control unit programming after the control unit has been replaced. If this is not the case, comfort problems may occur due to the undefined software system that results, or there may be functional restrictions which could affect control units for assistance systems or in some cases even safety functions."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>What is a system release (SR)?</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "A system release (SR) describes a system that is released with a certain technical status."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b>What must be observed when working on the vehicle in order to comply with the system?</b>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "For all processes in the workshop during which such a software system could be changed (e.g. software updates, control unit replacement), the instructions in the workshop literature (Workshop Manual or Technical Information) must always be observed. If information about the required software versions is provided in the literature, always make sure that they are available on the control units following control unit programming. When programming rules, always make sure to use the latest PIWIS Tester software."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "To prevent programming from being aborted during software updates and any possible inconsistency in the hardware/software system due to user faults, the specifications for the battery chargers to be used and their necessary settings as well as the storage media (USB sticks) to be used must always be observed. Furthermore, no external devices (e.g. PIWIS Tester, smartphone, etc.) must be loaded in the vehicle via USB connections during control unit programming. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "If analysis of data originating with a software update reveals that a software update was not fully carried out to the specified target software levels, we reserve the right to charge back warranty claims."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "list"
+    ,
+    
+    "inputs" : {
+    
+    
+    "items" : [
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a82337510"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Further information on the system check</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "The system check is a control unit compatibility (software/hardware) check that is performed automatically by the PIWIS Tester. The check is designed to ensure that the vehicle is only handed over to the customer with the correct software system. This prevents the software versions of various control units from communicating incorrectly with each other, resulting in faults and vehicle downtimes for the customer. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "section"
+    ,
+    
+    "inputs" : {
+    
+    
+    "title" :
+    
+    
+    "Work Procedure:"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>Performing system check using the PIWIS Tester</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISf2efe642-5ac3-4ab1-b32d-aef25d6fd516"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Initially, the service technician performs the required tasks in the usual way."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "The system check starts automatically when the backup documentation procedure "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISed557274-4502-4192-ab36-3e846ee37476"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Backup documentation</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    " is started at the end. Alternatively, the system check can also be started manually using <span class=\"key\">F3</span>."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISed557274-4502-4192-ab36-3e846ee37476"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS02d98740-2656-44ff-9dbb-61dc78e4f5972"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "60621690-757c-45f6-a5ee-862162f1cd32"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "0fee5ddc-b917-42d2-b5ff-fc98d4dfe032"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "3fb3b215-6130-4576-92aa-0d80e540d4ab"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328305"
+    ,
+    
+    "title" :
+    
+    
+    "Backup documentation"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS63bd4424-f544-4d53-aa9b-e28817f44416"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "When the check is complete, the result list is displayed for the technician. <br/>This shows if control units do not yet have the required software version "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS03bb9d7a-206e-405e-9840-0b8da868048c"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Programming required</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<b> or</b> if the hardware needs to be checked against the Spare Parts Catalogue (PET) "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS427d6fb1-245d-40b2-9226-e37101eb25ee"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Hardware check required</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS03bb9d7a-206e-405e-9840-0b8da868048c"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS42600d03-25f3-43ea-87ae-bb9ef72a800d2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "e087267e-ab64-4dfa-9314-b0833d5e9b73"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "19655b9f-623e-4921-a842-79f223ed0136"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "5e504dce-195d-462e-bc6b-25640dbe2e13"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328306"
+    ,
+    
+    "title" :
+    
+    
+    "Programming required"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS427d6fb1-245d-40b2-9226-e37101eb25ee"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS4f79a9fc-524a-4c0d-9460-e0a2981ee0662"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "4cfd988e-8d09-41ad-8535-358a41784c27"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "9d2ef62a-fc1e-4f67-bd92-13f706085500"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "85262c48-3a90-4a5c-a8c1-4209476eb7c5"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328307"
+    ,
+    
+    "title" :
+    
+    
+    "Hardware check required"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS1654242c-4ec9-4a5c-8aa3-70fbabc6e683"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Click on the affected control unit to show further details and start programming "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS8d9a157e-ab62-4b0a-8fd1-c98b71222720"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Detailed view of system check - Software version</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    ". The step-by-step instructions start. <br/>The hardware is checked against the Parts Catalogue "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS5deefad2-6227-4026-b58d-7bfeb68c1360"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Detailed view of system check - Hardware</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS8d9a157e-ab62-4b0a-8fd1-c98b71222720"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS8bb5326f-47be-4c13-a8eb-f271fc90bb562"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "90b31764-b367-474e-8a8f-699e86267b42"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "9fba6ca0-01f1-4b48-8550-c11c1af20ab1"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "28f2f588-8a49-49bf-a3d8-a53452222f34"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328308"
+    ,
+    
+    "title" :
+    
+    
+    "Detailed view of system check - Software version"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS5deefad2-6227-4026-b58d-7bfeb68c1360"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISd125a148-84dd-4995-b9da-0f9f8fd0caad2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "1ee54b71-ca53-4238-a425-3a67447f7c03"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "80d13d48-64b6-4af2-944c-5d46c179e5c9"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "faaffbad-c08f-40b9-b764-2763c4eca562"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328309"
+    ,
+    
+    "title" :
+    
+    
+    "Detailed view of system check - Hardware"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS6a0c8ccc-cc92-4e01-bde4-26bbc667e1a6"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "Once programming or the hardware check is complete, another backup documentation procedure including the system check is performed. <br/>In the overview of control units and their status, all affected control units should now be re-programmed and/or checked. To do this, repeat steps 2-4 until there are no faults in any control units "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISc584f60c-70e2-4a03-8956-986def991692"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Vehicle system check complete</i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWISc584f60c-70e2-4a03-8956-986def991692"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS7c2f298a-8871-4baf-81be-1feab45a93af2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "bcce1124-e8e8-45e2-853b-adf76a5e35ad"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "f4506dca-b801-4982-8038-848faaab49f3"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "e47af3e7-6f14-4dfd-a1f2-fdb01a046578"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328311"
+    ,
+    
+    "title" :
+    
+    
+    "Vehicle system check complete"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "The vehicle may only be handed back to the customer when all control units have been checked and the system is thus compliant "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS483b22e1-825c-42d9-8986-94722480c71e"
+    ,
+    
+    "html" :
+    
+    
+    "<i>Conformity of the vehicle system</i>"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS483b22e1-825c-42d9-8986-94722480c71e"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS57e4aefa-9fd3-41fc-9254-68ca6cd1b5be2"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "aab772c9-c535-497b-b205-c85c5e14f231"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "64dbf458-4177-457f-928c-07dcdfaf12a1"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "479205dc-c5b7-4e10-8294-9685e8844194"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328313"
+    ,
+    
+    "title" :
+    
+    
+    "Conformity of the vehicle system"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "<b>In the event of a fault - Performing system check</b>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "paragraph"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "If the system check fails, this will be displayed as the result "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "link"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS886f666c-f90e-4942-ab28-40181842e950"
+    ,
+    
+    "html" :
+    
+    
+    "<i></i>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    ". Then complete the following steps:"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS9eb01cb2-ba87-45ea-a055-cf2561684e93"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "image"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "PIWIS39be6b81-bf71-49b9-8107-62c974589a95"
+    ,
+    
+    "mediacloudSmall" :
+    
+    
+    "9e5232f5-cb66-4b65-8079-3bd5d07f13fb"
+    ,
+    
+    "mediacloudNormal" :
+    
+    
+    "28d9f9b5-976b-4274-a011-6b2bf07a12ac"
+    ,
+    
+    "mediacloudLarge" :
+    
+    
+    "6be40382-dd07-4e64-a5fb-9385f6598e7c"
+    ,
+    
+    "format" :
+    
+    
+    "TODO (UNKNOWN)"
+    ,
+    
+    "key" :
+    
+    
+    "82328314"
+    ,
+    
+    "title" :
+    
+    
+    "Vehicle system test failed"
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISdd662d15-3251-4890-a549-d96feecce859"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "In the Additional menu (F7), start the \"Maintenance of vehicle data with PIWIS ONLINE\" function and write the current vehicle data record from the online system into the vehicle."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS19f093a7-71f3-42eb-91cc-eb96b64cff57"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Perform the system check again."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISb503588b-c32e-4583-94de-b6bab4024f64"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "In a fault occurs again, contact Technical Support."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
