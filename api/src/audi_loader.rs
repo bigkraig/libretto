@@ -95,6 +95,7 @@ impl DocM {
 }
 
 pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
+    let start = std::time::Instant::now();
     let resolved_path = ensure_split(&args.path)?;
     let base = Path::new(&resolved_path);
     let manifest_path = base.join("manifest.json");
@@ -277,12 +278,13 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
     store.upsert_document_texts(texts)?;
 
     println!(
-        "Done. {} documents ({} skipped), {} folder nodes, text extracted for {}/{}",
+        "Done. {} documents ({} skipped), {} folder nodes, text extracted for {}/{} in {:.1}s",
         total,
         skipped,
         manifest.nodes.len() + 1,
         extracted,
-        total - skipped
+        total - skipped,
+        start.elapsed().as_secs_f64()
     );
     Ok(())
 }

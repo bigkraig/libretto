@@ -67,6 +67,7 @@ impl FerrariLoader {
     }
 
     pub fn load(&self, args: &LoadFerrariArgs, settings: &Settings) -> Result<()> {
+        let start = std::time::Instant::now();
         let root_path = Path::new(&args.path);
         if !root_path.exists() {
             bail!("Path does not exist: {}", args.path);
@@ -138,7 +139,7 @@ impl FerrariLoader {
             prepared.into_iter().map(|p| (p.media_id, p.content)).collect();
         self.content_store.upsert_media_images(media)?;
 
-        println!("Ferrari document loading complete");
+        println!("Ferrari document loading complete in {:.1}s", start.elapsed().as_secs_f64());
         Ok(())
     }
 

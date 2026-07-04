@@ -49,8 +49,10 @@ async fn main() -> Result<()> {
         }
         Cli::VehicleImporter(args) => {
             tokio::task::block_in_place(|| {
+                let start = std::time::Instant::now();
                 let content_store = ContentStore::new(&settings);
                 let vi = VehicleImporter::new(&settings);
+                let mut imported = 0;
                 for vehicle in &settings.vehicle {
                     content_store.store_vehicle(vehicle)?;
                     if !vehicle.pcss_import {
@@ -62,7 +64,9 @@ async fn main() -> Result<()> {
                         }
                     }
                     vi.import(&vehicle.vehicle, vehicle.year, !args.no_text)?;
+                    imported += 1;
                 }
+                println!("Imported {} vehicle(s) in {:.1}s", imported, start.elapsed().as_secs_f64());
                 Ok(())
             })
         }

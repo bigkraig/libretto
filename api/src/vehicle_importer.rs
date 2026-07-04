@@ -75,6 +75,7 @@ impl VehicleImporter {
     }
 
     pub fn import<'a>(&self, vehicle: &String, year: i32, extract_text: bool) -> Result<&VehicleImporter> {
+        let start = std::time::Instant::now();
         let pcss_client = PCSS::new(&self.settings.importer.cache_dir, &self.settings.importer.cookie);
         let content_store = ContentStore::new(&self.settings);
         let mut tree_nodes = pcss_client.get_tree_nodes(&vehicle, year)?;
@@ -112,12 +113,16 @@ impl VehicleImporter {
                     &seen_media, &seen_ws, &seen_tools, extract_text)?;
                 let n = done.fetch_add(1, Ordering::Relaxed) + 1;
                 if n % 24 == 0 || n == total {
-                    println!("  loaded {}/{} nodes", n, total);
+                    println!("  loaded {}/{} nodes ({:.0}s)", n, total, start.elapsed().as_secs_f64());
                 }
                 Ok(())
             })
         })?;
 
+        println!(
+            "  {} {}: {} nodes in {:.1}s",
+            vehicle, year, total, start.elapsed().as_secs_f64()
+        );
         Ok(self)
     }
 
