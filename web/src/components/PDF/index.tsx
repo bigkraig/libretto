@@ -1,7 +1,6 @@
 import React, {JSX, useState, useEffect, useRef, useCallback} from "react";
 import {GetMediaImageUrl} from "@/lib/api";
 import {Document, Page, pdfjs} from 'react-pdf';
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import 'react-pdf/dist/Page/TextLayer.css';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -210,12 +209,7 @@ export function PDF({id}: {
 
   const url = GetMediaImageUrl(id);
   return <div ref={containerRef}>
-    <a href={url} target="_blank" rel="noreferrer"
-       className={"mb-3 inline-flex items-center gap-1 text-sm font-medium text-brass-dim hover:text-brass"}>
-      Open PDF
-      <OpenInNewIcon fontSize="small"/>
-    </a>
-    <Document className={"mt-1"} file={url} onLoadSuccess={onDocumentLoadSuccess}>
+    <Document file={url} onLoadSuccess={onDocumentLoadSuccess}>
       {pageWidth > 0 && Array.from(
         new Array(numPages),
         (el, index) => (
@@ -223,7 +217,8 @@ export function PDF({id}: {
             key={`page_${index + 1}`}
             ref={setPageRef(index + 1)}
             data-page={index + 1}
-            className="mb-4 border border-line shadow-sm"
+            style={{width: pageWidth}}
+            className="mx-auto mb-2 bg-white shadow-sm sm:mb-4 sm:border sm:border-line"
           >
             <Page
               width={pageWidth}

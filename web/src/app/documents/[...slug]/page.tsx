@@ -103,7 +103,7 @@ export default function Home() {
         </header>
 
         <div className={clsx("grid grid-cols-6")}>
-          <main className={clsx("col-span-6 lg:col-span-5 p-2 print:overflow-visible")}>
+          <main className={clsx("col-span-6 lg:col-span-5 p-0 lg:p-2 print:overflow-visible")}>
             <WorkshopLiterature hkap_id={hkap_id} translations={translations}/>
           </main>
           <aside id="sideBar" className={clsx("hidden lg:block lg:col-span-1 border-l border-line bg-white print:hidden")}>

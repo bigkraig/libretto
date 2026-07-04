@@ -18,7 +18,7 @@ export function WorkshopLiterature({hkap_id, translations}: { hkap_id: string, t
     return <div></div>
   }
 
-  return <div className={clsx("document-container", "mx-4", "bg-zinc-100")}>
+  return <div className={clsx("document-container", "mx-0 sm:mx-4", "bg-paper")}>
     {/*TEQ, 2602 from taycan*/}
     {/*<LaborOpsTable laborOps={data.laborops}/>*/}
     <PartsTable parts={workshopLiterature.parts} translations={translations}/>
