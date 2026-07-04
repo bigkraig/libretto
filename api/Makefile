@@ -37,11 +37,8 @@ migrate:
 
 load: load-porsche load-ferrari load-audi
 
-# Set NO_TEXT=1 to skip the slow PDF full-text search back-fill during import;
-# run it separately afterward with `make extract-text` (parallel across cores).
-NO_TEXT ?=
 load-porsche:
-	cargo run -- vehicle-importer $(if $(NO_TEXT),--no-text,)
+	cargo run -- vehicle-importer
 
 # Parallel PDF full-text extraction back-fill (safe to run/re-run anytime).
 extract-text:

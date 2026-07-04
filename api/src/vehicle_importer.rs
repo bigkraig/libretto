@@ -54,11 +54,6 @@ pub struct VehicleImporterArgs {
     /// Model Year
     #[arg(short = 'y')]
     pub year: Option<i32>,
-
-    /// Skip PDF full-text extraction (the slow, CPU-heavy search back-fill).
-    /// Run it separately later with `extract-pdf-text`.
-    #[arg(long, default_value_t = false)]
-    pub no_text: bool,
 }
 
 
@@ -73,7 +68,7 @@ impl VehicleImporter {
         }
     }
 
-    pub fn import<'a>(&self, vehicle: &String, year: i32, extract_text: bool) -> Result<&VehicleImporter> {
+    pub fn import<'a>(&self, vehicle: &String, year: i32) -> Result<&VehicleImporter> {
         let start = std::time::Instant::now();
         let pcss_client = PCSS::new(&self.settings.importer.cache_dir, &self.settings.importer.cookie);
         let content_store = ContentStore::new(&self.settings);
@@ -114,7 +109,7 @@ impl VehicleImporter {
         pool.install(|| {
             tree_nodes.par_iter().try_for_each(|node| -> Result<()> {
                 self.process_node(&pcss_client, &content_store, vehicle, year, node,
-                    &seen_media, &seen_ws, &seen_tools, extract_text)?;
+                    &seen_media, &seen_ws, &seen_tools)?;
                 let n = done.fetch_add(1, Ordering::Relaxed) + 1;
                 if n % 24 == 0 || n == total {
                     println!("  loaded {}/{} nodes ({:.0}s)", n, total, start.elapsed().as_secs_f64());
@@ -143,7 +138,6 @@ impl VehicleImporter {
         seen_media: &DashSet<String>,
         seen_ws: &DashSet<(String, &'static str)>,
         seen_tools: &DashSet<String>,
-        extract_text: bool,
     ) -> Result<()> {
         let all_literature = pcss.list_workshop_literature(vehicle, year, &node.node_value)?;
 
@@ -206,7 +200,7 @@ impl VehicleImporter {
             if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
                 let content = pcss.get_pdf(media_cloud_file_id)
                     .context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
-                if extract_text && document.file_format == "pdf" {
+                if document.file_format == "pdf" {
                     if let Some(text) = crate::pdf_text::extract_pdf_text(&content) {
                         let normalized = collapse_whitespace(&text);
                         if let Err(e) = store.upsert_document_text(&document.hkap_id, &normalized) {

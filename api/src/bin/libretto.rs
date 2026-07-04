@@ -73,7 +73,7 @@ async fn main() -> Result<()> {
                             continue;
                         }
                     }
-                    vi.import(&vehicle.vehicle, vehicle.year, !args.no_text)?;
+                    vi.import(&vehicle.vehicle, vehicle.year)?;
                     imported += 1;
                 }
                 println!("Imported {} vehicle(s) in {:.1}s", imported, start.elapsed().as_secs_f64());

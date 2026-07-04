@@ -21,10 +21,6 @@ pub struct LoadAudiArgs {
     /// The split step runs automatically via tools/r8_split.py when manifest.json is absent.
     #[arg(short = 'p', long, default_value = "source_files/audi/2018-R8")]
     pub path: String,
-
-    /// Skip per-document PDF text extraction (search back-fill)
-    #[arg(long, default_value_t = false)]
-    pub no_text: bool,
 }
 
 /// If `path` contains raw PDFs but no manifest.json, run r8_split.py to produce
@@ -195,11 +191,7 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
         let pdf_path = base.join(&d.pdf);
         let content = fs::read(&pdf_path)
             .unwrap_or_else(|e| panic!("failed reading slice {}: {}", pdf_path.display(), e));
-        let text = if args.no_text {
-            None
-        } else {
-            crate::pdf_text::extract_pdf_text(&content).map(|t| t.trim().to_string())
-        };
+        let text = crate::pdf_text::extract_pdf_text(&content).map(|t| t.trim().to_string());
         let worklit = Response {
             payload: WorkshopLiterature {
                 file_format: FileFormat::Pdf,
