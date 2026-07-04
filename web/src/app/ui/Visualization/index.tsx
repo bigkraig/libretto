@@ -6,7 +6,7 @@ import {GetTreeNodes} from "@/lib/api/GetTreeNodes";
 import {GetIllustration} from "@/lib/api";
 import {NavigatorLink} from "@/lib/navigator";
 
-function NoVisualization() {
+function NoVisualization(hasVehicle: boolean) {
   return (
     <div className={clsx("m-auto flex flex-col items-center gap-2 px-6 text-center")}>
       <svg viewBox="0 0 24 24" className={clsx("size-9 text-line")} fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -14,8 +14,10 @@ function NoVisualization() {
         <path d="M3 15l4.5-4.5 3 3L15 9l6 6"/>
         <circle cx="8.5" cy="8.5" r="1.25"/>
       </svg>
-      <div className={clsx("text-sm text-ink")}>No diagram for this component</div>
-      <div className={clsx("max-w-xs text-xs text-muted")}>Choose a component from the tree to view its exploded diagram.</div>
+      <div className={clsx("text-sm text-ink")}>{hasVehicle ? "No diagram for this component" : "Select a vehicle"}</div>
+      <div className={clsx("max-w-xs text-xs text-muted")}>
+        {hasVehicle ? "Open a document below to view it." : "Choose a vehicle from the list to get started."}
+      </div>
     </div>
   )
 }
@@ -33,14 +35,16 @@ function hideTooltip() {
   tooltip.style.display = "none";
 }
 
-function resetSVG() {
+function resetSVG(hasVehicle: boolean) {
   var flex = document.createElement('div')
   flex.id = "navigatorImage"
   flex.className = "flex h-full w-full items-center justify-center bg-white text-center";
   var svg = document.createElement('div');
+  const title = hasVehicle ? "No diagram for this component" : "Select a vehicle";
+  const hint = hasVehicle ? "Open a document below to view it." : "Choose a vehicle from the list to get started.";
   svg.innerHTML =
-    '<div style="font-size:13px;color:#16181D">No diagram for this component</div>' +
-    '<div style="font-size:12px;color:#6B6E73;margin-top:3px">Open a document below to view it.</div>';
+    `<div style="font-size:13px;color:#16181D">${title}</div>` +
+    `<div style="font-size:12px;color:#6B6E73;margin-top:3px">${hint}</div>`;
   svg.className = "m-auto px-6";
   flex.appendChild(svg)
   const navigatorImage = document.getElementById('navigatorImage');
@@ -60,10 +64,11 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
   const navigatorImage = document.getElementById('navigatorImage');
   const svg = document.createElement('div');
   svg.id = "navigatorImage";
-  svg.className = "flex h-full w-full items-start justify-center overflow-auto";
+  svg.className = "flex h-full w-full items-start justify-center overflow-hidden";
   svg.innerHTML = data.content;
-  // The illustration ships with fixed width/height and would overflow. Scale it to
-  // the pane width (natural height, so it starts at the top) keeping aspect ratio.
+  // The illustration ships with fixed width/height. Fill the pane and let the
+  // content scale to fit within it (meet) so it never exceeds the pane and gets
+  // clipped, while YMin keeps it anchored to the top of the window.
   const inner = svg.querySelector('svg') as SVGSVGElement | null;
   if (inner) {
     if (!inner.getAttribute('viewBox')) {
@@ -75,8 +80,7 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
     inner.removeAttribute('height');
     inner.setAttribute('preserveAspectRatio', 'xMidYMin meet');
     inner.style.width = '100%';
-    inner.style.height = 'auto';
-    inner.style.maxWidth = '100%';
+    inner.style.height = '100%';
   }
   navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
 
@@ -145,10 +149,12 @@ function SVG(params: Params) {
   const router = useRouter()
   let [svg, setSvg] = useState<SVGData>()
 
+  const hasVehicle = !!(params.vehicle && params.year)
+
   useEffect(() => {
     if (!params.vehicle || !params.year) {
       setSvg(undefined);
-      resetSVG();
+      resetSVG(false);
       return
     }
 
@@ -156,14 +162,14 @@ function SVG(params: Params) {
       console.log("i got an error", e)
       // Case where the illustration_id is no good
       setSvg(undefined);
-      resetSVG();
+      resetSVG(true);
     })
     if (svg) {
       smashSVG(router, params.navLinks, svg);
     }
   }, [router, params, svg?.active_location])
 
-  if (!svg) return NoVisualization()
+  if (!svg) return NoVisualization(hasVehicle)
 }
 
 
@@ -179,7 +185,7 @@ export default function Index({vehicle, year, location, navLinks}: Params) {
     <div className={clsx("w-full h-full p-2 bg-white")}>
       <div id="tooltip" className={clsx("hidden absolute z-30 rounded-sm bg-ink px-2 py-1 text-xs text-white pointer-events-none")}></div>
       <div id="navigatorImage"
-           className={clsx("flex h-full w-full items-start justify-center overflow-auto")}>
+           className={clsx("flex h-full w-full items-start justify-center overflow-hidden")}>
         <SVG vehicle={vehicle} year={year} location={location} navLinks={navLinks}/>
       </div>
     </div>
