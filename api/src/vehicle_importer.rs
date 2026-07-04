@@ -55,6 +55,14 @@ impl VehicleImporter {
         let ui_texts = pcss_client.get_ui_texts()?;
         content_store.upsert_ui_texts(&ui_texts)?;
 
+        // Vehicle-scoped write buffers, flushed in chunks. Media upserts go out as one
+        // concurrent batch and PDF text extraction runs as one big rayon pass — per-node
+        // batches were too small to parallelize (most nodes have 0-1 PDFs), so extraction
+        // ran nearly sequentially. Chunking bounds peak memory.
+        let mut media_buf: Vec<(String, Vec<u8>)> = Vec::new();
+        let mut pdf_buf: Vec<(String, Vec<u8>)> = Vec::new();
+        const FLUSH_AT: usize = 96;
+
         for node in &mut tree_nodes {
             // hooohooo hacks! the 991.2 gt3 transmission node does not have an illustration_id set, but it should.
             if node.node_id() == 29052 { node.illustration_id = 3708 }
@@ -77,12 +85,6 @@ impl VehicleImporter {
                 let patched_illustration = patch_illustration(illustration)?;
                 content_store.upsert_illustration(node.illustration_id, &patched_illustration)?;
             }
-
-            // Per-node write buffers: media upserts are batched concurrently and PDF
-            // text extraction is deferred so it can run in parallel (rayon) after the
-            // sequential PCSS fetch pass, instead of one blocking extraction per doc.
-            let mut node_media: Vec<(String, Vec<u8>)> = Vec::new();
-            let mut node_pdf_text: Vec<(String, Vec<u8>)> = Vec::new();
 
             for document in all_literature {
                 // These return 500 errors
@@ -142,9 +144,9 @@ impl VehicleImporter {
                 if let Some(media_cloud_file_id) = &worklit.media_cloud_file_id {
                     let content = pcss_client.get_pdf(media_cloud_file_id).context(format!("failed getting media_cloud_file_id {}", &media_cloud_file_id))?;
                     if document.file_format == "pdf" {
-                        node_pdf_text.push((document.hkap_id.clone(), content.clone()));
+                        pdf_buf.push((document.hkap_id.clone(), content.clone()));
                     }
-                    node_media.push((media_cloud_file_id.to_string(), content));
+                    media_buf.push((media_cloud_file_id.to_string(), content));
                 }
 
                 // Get Images from the document
@@ -164,7 +166,7 @@ impl VehicleImporter {
                             if media_image_ids.len() != 0 {
                                 let media_images = pcss_client.get_media_ids(media_image_ids)?;
                                 for (image_id, content) in media_images {
-                                    node_media.push((image_id, content));
+                                    media_buf.push((image_id, content));
                                 }
                             }
 
@@ -183,21 +185,37 @@ impl VehicleImporter {
                 }
             }
 
-            // Flush the node's buffered work: concurrent batch media upsert, then
-            // parallel PDF text extraction across cores, then concurrent text upsert.
-            content_store.upsert_media_images(node_media)?;
-            let texts: Vec<(String, String)> = node_pdf_text
-                .par_iter()
-                .filter_map(|(hkap_id, content)| {
-                    crate::pdf_text::extract_pdf_text(content)
-                        .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
-                })
-                .collect();
-            content_store.upsert_document_texts(texts)?;
+            // Flush in chunks to bound memory while keeping the rayon batch large
+            // enough to saturate all cores.
+            if media_buf.len() + pdf_buf.len() >= FLUSH_AT {
+                flush_writes(&content_store, std::mem::take(&mut media_buf), std::mem::take(&mut pdf_buf))?;
+            }
         }
+
+        // Flush whatever's left after the last node.
+        flush_writes(&content_store, media_buf, pdf_buf)?;
 
         Ok(self)
     }
+}
+
+/// Batch-write buffered media bytes (concurrent) and extract PDF text in parallel
+/// across all cores, then batch-write the text rows (concurrent).
+fn flush_writes(
+    store: &ContentStore,
+    media: Vec<(String, Vec<u8>)>,
+    pdfs: Vec<(String, Vec<u8>)>,
+) -> Result<()> {
+    store.upsert_media_images(media)?;
+    let texts: Vec<(String, String)> = pdfs
+        .par_iter()
+        .filter_map(|(hkap_id, content)| {
+            crate::pdf_text::extract_pdf_text(content)
+                .map(|t| (hkap_id.clone(), collapse_whitespace(&t)))
+        })
+        .collect();
+    store.upsert_document_texts(texts)?;
+    Ok(())
 }
 
 

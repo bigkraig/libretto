@@ -167,12 +167,25 @@ impl ContentStore {
         sqlx::any::install_default_drivers();
         let url = &settings.database_url;
         let is_postgres = url.starts_with("postgres");
+        // The content DB is a re-loadable cache of PCSS/source data, so per-commit
+        // durability isn't needed. Relax fsync-per-commit on every connection: this
+        // is the dominant cost of the bulk loaders (thousands of tiny autocommit
+        // INSERTs, each otherwise fsync'd). Postgres → async commit; SQLite → WAL.
+        let opts = AnyPoolOptions::new().max_connections((DB_CONCURRENCY + 2) as u32);
+        let opts = if is_postgres {
+            opts.after_connect(|conn, _meta| Box::pin(async move {
+                sqlx::query("SET synchronous_commit = off").execute(conn).await?;
+                Ok(())
+            }))
+        } else {
+            opts.after_connect(|conn, _meta| Box::pin(async move {
+                sqlx::query("PRAGMA journal_mode = WAL").execute(&mut *conn).await?;
+                sqlx::query("PRAGMA synchronous = NORMAL").execute(conn).await?;
+                Ok(())
+            }))
+        };
         let pool = tokio::task::block_in_place(|| {
-            tokio::runtime::Handle::current().block_on(
-                AnyPoolOptions::new()
-                    .max_connections((DB_CONCURRENCY + 2) as u32)
-                    .connect(url),
-            )
+            tokio::runtime::Handle::current().block_on(opts.connect(url))
         }).expect("Failed to connect to database");
         ContentStore {
             pool,
