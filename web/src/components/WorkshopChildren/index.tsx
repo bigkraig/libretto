@@ -1,0 +1,1 @@
+export { WorkshopChildren } from './WorkshopChildren';

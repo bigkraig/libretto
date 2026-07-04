@@ -1,0 +1,52 @@
+[workspace]
+members = [
+    "crates/pcss",
+]
+default-members = ["."]
+
+[package]
+name = "libretto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.8", features = ["runtime-tokio-native-tls", "sqlite", "postgres", "any", "migrate"] }
+clap = { version = "4.5.9", features = ["derive"] }
+config = { version = "0.14.0", features = ["toml"] }
+anyhow = "1.0.86"
+dotenvy = "0.15.7"
+reqwest = { version = "0.12.5", features = ["blocking", "gzip"] }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_derive = "1.0.204"
+thiserror = "1.0.63"
+serde_json = "1.0.120"
+derivative = "2.2.0"
+axum = "0.7.5"
+tracing-subscriber = "0.3.18"
+tokio = { version = "1.38.1", features = ["full"] }
+tower = "0.4.13"
+tower-http = { version = "0.5.2", features = ["compression-full", "cors"] }
+mime_guess = "2.0.5"
+quick-xml = { version = "0.36.1", features = ["serialize"] }
+regex = "1.10.5"
+base64 = "0.22.1"
+pcss = { path = "crates/pcss" }
+serde_path_to_error = "0.1.16"
+http-body-util = "0.1.2"
+mime-sniffer = "0.1.2"
+jsonxf = "1.1.1"
+nom = "7.1.3"
+struct-convert = "1.3.1"
+log = "0.4.22"
+tracing = "0.1.40"
+uuid = { version = "1.10.0", features = ["v5"] }
+lopdf = "0.31"
+pdf-extract = "0.10"
+pdf-extract-old = { package = "pdf-extract", version = "0.7" }
+libc = "0.2"
+
+[[bin]]
+name = "libretto"
+
+[lib]
+doc = false

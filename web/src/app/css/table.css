@@ -1,0 +1,134 @@
+/*h3[_content-table] {*/
+/*  margin-top: 30px*/
+/*}*/
+
+/*.row {*/
+/*  --bs-gutter-x: 1.5rem;*/
+/*  --bs-gutter-y: 0;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  margin-top: calc(-1 * var(--bs-gutter-y));*/
+/*  margin-right: calc(-0.5 * var(--bs-gutter-x));*/
+/*  margin-left: calc(-0.5 * var(--bs-gutter-x))*/
+/*}*/
+
+/*.row > * {*/
+/*  flex-shrink: 0;*/
+/*  width: 100%;*/
+/*  max-width: 100%;*/
+/*  padding-right: calc(var(--bs-gutter-x) * 0.5);*/
+/*  padding-left: calc(var(--bs-gutter-x) * 0.5);*/
+/*  margin-top: var(--bs-gutter-y)*/
+/*}*/
+
+/*.col-9 {*/
+/*  flex: 0 0 auto;*/
+/*  width: 75%*/
+/*}*/
+
+.table {
+  width: 100%;
+}
+
+/*.table {*/
+/*  --bs-table-color-type: initial;*/
+/*  --bs-table-bg-type: initial;*/
+/*  --bs-table-color-state: initial;*/
+/*  --bs-table-bg-state: initial;*/
+/*  --bs-table-color: var(--bs-emphasis-color);*/
+/*  --bs-table-bg: var(--bs-body-bg);*/
+/*  --bs-table-border-color: #e3e4e4;*/
+/*  --bs-table-accent-bg: transparent;*/
+/*  --bs-table-striped-color: var(--bs-emphasis-color);*/
+/*  --bs-table-active-color: var(--bs-emphasis-color);*/
+/*  --bs-table-hover-color: var(--bs-emphasis-color);*/
+/*  width: 100%;*/
+/*  margin-bottom: 1rem;*/
+/*  vertical-align: top;*/
+/*  border-color: var(--bs-table-border-color)*/
+/*}*/
+
+/*.table > :not(caption) > * > * {*/
+/*  padding: 0;*/
+/*  color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));*/
+/*  background-color: var(--bs-table-bg);*/
+/*  border-bottom-width: var(--bs-border-width);*/
+/*  box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)))*/
+/*}*/
+
+/*.table > tbody {*/
+/*  vertical-align: inherit*/
+/*}*/
+
+/*.table > thead {*/
+/*  vertical-align: bottom*/
+/*}*/
+
+
+/*table {*/
+/*  caption-side: bottom;*/
+/*  border-collapse: collapse*/
+/*}*/
+
+/*th {*/
+/*  text-align: inherit;*/
+/*  text-align: -webkit-match-parent*/
+/*}*/
+
+/*thead, tbody, tfoot, tr, td, th {*/
+/*  border-color: inherit;*/
+/*  border-style: solid;*/
+/*  border-width: 0*/
+/*}*/
+
+
+/*td.sort-indent, td:first-child:not(.sort-indent), th:first-child:not(.sortable) {*/
+/*  padding-left: 15px !important*/
+/*}*/
+
+/*table tr th:not(:first-child) {*/
+/*  padding-left: 20px !important*/
+/*}*/
+
+/*!* patched to not left pad the last child. maybe i regret?*!*/
+/*table tr td:not(:first-child) td:not(:last-child) {*/
+/*  padding-left: 20px !important*/
+/*}*/
+
+/*table tr th.sortable:not(:first-child) {*/
+/*  padding-left: 6px !important*/
+/*}*/
+
+/*table tr td.sort-indent:not(:first-child) {*/
+/*  padding-left: 20px !important*/
+/*}*/
+
+/*.ellipsis {*/
+/*  text-overflow: ellipsis;*/
+/*  overflow: hidden;*/
+/*  white-space: nowrap*/
+/*}*/
+
+/*table.data-table {*/
+/*  overflow: visible*/
+/*}*/
+
+/*.table thead th {*/
+/*  padding: 0*/
+/*}*/
+
+/*.table thead th .title {*/
+/*  padding-top: 0*/
+/*}*/
+
+/*svg:not(:root) {*/
+/*  overflow: visible*/
+/*}*/
+
+/*.table-pagination td {*/
+/*  border-top: none*/
+/*}*/
+
+/*.footer-top-padding {*/
+/*  padding-top: 20px !important*/
+/*}*/

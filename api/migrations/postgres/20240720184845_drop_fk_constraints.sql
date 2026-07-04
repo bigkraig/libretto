@@ -1,0 +1,9 @@
+ALTER TABLE tree_node_links DROP CONSTRAINT IF EXISTS tree_node_links_parent_node_id_fkey;
+ALTER TABLE tree_node_links DROP CONSTRAINT IF EXISTS tree_node_links_child_node_id_fkey;
+ALTER TABLE document_links DROP CONSTRAINT IF EXISTS document_links_node_id_fkey;
+ALTER TABLE document_links DROP CONSTRAINT IF EXISTS document_links_hkap_id_fkey;
+ALTER TABLE tool_distributors_links DROP CONSTRAINT IF EXISTS tool_distributors_links_tool_id_fkey;
+ALTER TABLE tool_distributors_links DROP CONSTRAINT IF EXISTS tool_distributors_links_tool_distributor_id_fkey;
+ALTER TABLE referencing_tool_documents DROP CONSTRAINT IF EXISTS referencing_tool_documents_tool_id_fkey;
+ALTER TABLE referencing_tool_documents DROP CONSTRAINT IF EXISTS referencing_tool_documents_hkap_id_fkey;
+ALTER TABLE document_text DROP CONSTRAINT IF EXISTS document_text_hkap_id_fkey;

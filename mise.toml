@@ -1,0 +1,72 @@
+[tools]
+python = "3.12"
+node = "20"
+pnpm = "9"
+
+[env]
+# API server for the web frontend to talk to in dev
+NEXT_PUBLIC_API_HOST = "http://localhost:3030"
+NEXT_PUBLIC_API_IMAGE_HOST = "http://localhost:3030"
+
+# ── Tasks ────────────────────────────────────────────────────────────────────
+
+# Start both servers in parallel
+[tasks.dev]
+description = "Start API + web dev servers"
+depends = ["dev:api", "dev:web"]
+
+[tasks."dev:api"]
+description = "Build (debug) and start the API server on :3030"
+run = "cargo run -- api"
+dir = "api"
+
+[tasks."dev:web"]
+description = "Start the Next.js dev server on :3000"
+run = "pnpm dev"
+dir = "web"
+
+# ── Database ─────────────────────────────────────────────────────────────────
+
+[tasks."db:migrate"]
+description = "Run pending sqlx migrations against content.sqlite3 (also runs automatically at startup)"
+run = "cargo run -- migrate"
+dir = "api"
+
+[tasks."tools:install"]
+description = "Install Python tool dependencies (pypdf for r8_split)"
+run = "pip3 install -q -r tools/requirements.txt"
+dir = "api"
+
+[tasks."db:reset"]
+description = "Drop and recreate content.sqlite3, then reload from cache"
+depends = ["tools:install"]
+run = """
+set -e
+rm -f content.sqlite3
+cargo run --release -- vehicle-importer
+cargo run --release -- load-ferrari --path source_files/ferrari/2017-F151M --year 2017 --model F151M
+cargo run --release -- load-audi --path source_files/audi/2018-R8
+"""
+dir = "api"
+
+[tasks."cache:migrate"]
+description = "One-time: migrate web_cache.sqlite3 → cache/ filesystem layout"
+run = "python3 tools/migrate_web_cache.py"
+dir = "api"
+
+[tasks."db:reset:vehicle"]
+description = "Reimport a single vehicle: mise run db:reset:vehicle -- -m 981810 -y 2016"
+run = "cargo run --release -- vehicle-importer"
+dir = "api"
+
+# ── Build ────────────────────────────────────────────────────────────────────
+
+[tasks.build]
+description = "Build the API in debug mode"
+run = "cargo build"
+dir = "api"
+
+[tasks."build:release"]
+description = "Build the API in release mode"
+run = "cargo build --release"
+dir = "api"

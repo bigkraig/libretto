@@ -1,0 +1,21 @@
+.document-content[_content-nested] {
+  margin-left: 52px;
+  min-height: 39px
+}
+
+.expand-button-left[_content-nested] {
+  margin-right: 15px;
+  float: left
+}
+
+.wrapper-nested-document[_content-nested] {
+  margin-top: 12px;
+  position: relative
+}
+
+.document-title-wrapper[_content-nested] .document-title[_content-nested] {
+  margin-left: 15px;
+  font-family: var(--font-porsche-next), arial, Arial-Bold, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}

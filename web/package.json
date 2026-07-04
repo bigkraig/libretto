@@ -1,0 +1,51 @@
+{
+  "name": "libretto",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@headlessui/react": "^2.1.0",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.15.20",
+    "@svgr/webpack": "^8.1.0",
+    "@table-library/react-table-library": "^4.1.7",
+    "@tanstack/react-table": "^8.19.3",
+    "clsx": "^2.1.1",
+    "compact": "link:@table-library/react-table-library/compact",
+    "next": "14.2.5",
+    "next-auth": "^4.24.14",
+    "postcss-import": "^16.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-paginate": "^8.2.0",
+    "react-pdf": "^9.1.0",
+    "sharp": "^0.33.4",
+    "sort": "link:@table-library/react-table-library/sort",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "canvas"
+    ]
+  }
+}

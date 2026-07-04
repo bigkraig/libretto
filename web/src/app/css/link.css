@@ -1,0 +1,26 @@
+.text-link[_content-link]:focus-visible {
+  outline: #3d60ed solid 2px;
+  outline-offset: 2px
+}
+
+.text-link[_content-link] span.link[_content-link] {
+  font-family: var(--font-porsche-next), Arial Narrow, ArialNarrow, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #494e51;
+  text-decoration: none;
+  transition: all .5s;
+  text-align: center;
+  cursor: pointer
+}
+
+.text-link[_content-link] span.link[_content-link]:hover, .text-link[_content-link] a[_content-link]:hover {
+  color: #d5001c
+}
+
+.text-link[_content-link] i[_content-link] {
+  display: inline-flex;
+  vertical-align: bottom;
+  font-size: 20px;
+  color: #d5001c
+}

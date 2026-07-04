@@ -1,0 +1,71 @@
+.accordion {
+  margin-bottom: 5px;
+  margin-top: 15px !important
+}
+
+.accordion section, .accordion i {
+  transition: all .5s ease-in-out
+}
+
+.accordion section {
+  background-color: #fff
+}
+
+.accordion section.hide-header-border {
+  border: none;
+  border-radius: 0
+}
+
+.accordion section .accordion-header {
+  background-color: #eff0f1;
+  margin: 0;
+  padding: 0 15px;
+  position: relative
+}
+
+.accordion section .accordion-header.hide-header-bg {
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #e3e4e4;
+  height: 34px
+}
+
+.accordion section .accordion-header .text-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center
+}
+
+.accordion section .accordion-header .text-wrapper [class^=porsche-icon-]:before, .accordion section .accordion-header .text-wrapper [class*=" porsche-icon-"]:before {
+  font-size: 24px;
+  display: table-cell;
+  vertical-align: middle
+}
+
+.accordion section .accordion-header .text-wrapper span.title {
+  color: #494e51;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal
+}
+
+.accordion section .accordion-header .text-wrapper span.title {
+  font-family: Porsche Next, arial, Arial-Bold, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0
+}
+
+.accordion section .accordion-header .text-wrapper .separator {
+  flex: 1
+}
+
+.accordion section .accordion-header .text-wrapper .icon-right {
+  display: flex
+}
+
+.accordion section .content {
+  color: #494e51;
+  padding: 20px 15px
+}

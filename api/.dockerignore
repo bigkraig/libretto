@@ -1,0 +1,22 @@
+target/
+.git/
+.idea/
+.claude/
+
+# Huge build artifacts that the image doesn't need.
+*.sqlite3
+images/
+ferrari/
+before-ferrari/
+web_cache.sqlite3
+
+# Local-only / not needed in container.
+.env*
+.dockerignore
+Dockerfile
+Makefile
+deploy.sh
+README.md
+
+# OS junk.
+.DS_Store

@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./css/tailwind.css";
+@import "./css/accordion.css";
+/*@import "./css/core.css";*/
+@import "./css/document-container.css";
+@import "./css/image.css";
+@import "./css/link.css";
+@import "./css/list.css";
+@import "./css/static.css";
+@import "./css/warning.css";
+@import "./css/nested.css";
+@import "./css/table.css";
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media print {
+  .logo-container,
+  .img-wrapper,
+  img {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+}

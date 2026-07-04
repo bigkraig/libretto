@@ -1,0 +1,31 @@
+# database_url = "sqlite://content.sqlite3"  # default; set to postgres://... for k8s
+
+[importer]
+cache_dir = "cache"
+cookie = ""
+vehicle_image_path = "images/vehicles/"
+
+[[vehicle]]
+vehicle = "Y1BFH1"
+year = 2022
+name = "Taycan Cross Turismo Turbo S"
+
+[[vehicle]]
+vehicle = "991810"
+year = 2018
+name = "991.2 GT3"
+
+[[vehicle]]
+vehicle = "981810"
+year = 2016
+name = "Cayman GT4"
+
+[[vehicle]]
+vehicle = "F151M"
+year = 2017
+name = "GTC4Lusso"
+pcss_import = false
+
+[api]
+bind_address = "0.0.0.0:3030"
+host = "http://localhost:3030"

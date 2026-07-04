@@ -1,0 +1,1 @@
+export { WorkshopLiterature } from './WorkshopLiterature';
