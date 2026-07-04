@@ -3,6 +3,7 @@ use std::path::Path;
 use std::process::Command;
 
 use anyhow::{bail, Context, Result};
+use rayon::prelude::*;
 use serde::Deserialize;
 use serde_json::json;
 
@@ -156,9 +157,21 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
     // Documents: leaf node + media bytes + document row + link (+ text).
     let total = manifest.documents.len();
     let mut skipped = 0usize;
-    let mut extracted = 0usize;
-    for (i, d) in manifest.documents.iter().enumerate() {
-        // leaf tree node for the section, linked under its repair-group/manual folder
+
+    // Fully prepared, ready-to-write document (built off-thread in the rayon pass).
+    struct Prepared {
+        media_id: String,
+        content: Vec<u8>,
+        document: Document,
+        node_id: i32,
+        hkap_id: String,
+        text: Option<String>,
+    }
+
+    // Phase 1 (sequential, cheap): write the leaf tree nodes + links for every
+    // document, and collect the ones that still need their content processed.
+    let mut to_process: Vec<&DocM> = Vec::with_capacity(total);
+    for d in &manifest.documents {
         let leaf = TreeNode {
             node_id: d.node_id,
             vehicle: Some(model.clone()),
@@ -172,23 +185,26 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
         store.upsert_tree_node_direct(&leaf)?;
         store.upsert_tree_node_links(d.parent_node_id, d.node_id)?;
 
-        // Skip PDF processing if the document is already in the DB
         if store.get_document(&d.hkap_id).is_ok() {
             skipped += 1;
-            if (i + 1) % 50 == 0 || i + 1 == total {
-                println!("  {}/{} documents ({} skipped)", i + 1, total, skipped);
-            }
-            continue;
+        } else {
+            to_process.push(d);
         }
+    }
+    println!("  {} folder/leaf nodes written; {} docs to process, {} already present",
+        manifest.nodes.len() + 1 + total, to_process.len(), skipped);
 
-        // PDF bytes -> media_images
+    // Phase 2 (parallel, CPU/IO bound): read each PDF and extract its text off the
+    // main thread, building the document payload. This is the expensive part.
+    let prepared: Vec<Prepared> = to_process.par_iter().map(|d| {
         let pdf_path = base.join(&d.pdf);
         let content = fs::read(&pdf_path)
             .unwrap_or_else(|e| panic!("failed reading slice {}: {}", pdf_path.display(), e));
-        store.upsert_media_image(&d.media_id, &content)?;
-
-        // document content JSON (mirrors the PCSS WorkshopLiterature payload the
-        // frontend expects; mediaCloudFileId points the viewer at the PDF)
+        let text = if args.no_text {
+            None
+        } else {
+            crate::pdf_text::extract_pdf_text(&content).map(|t| t.trim().to_string())
+        };
         let worklit = Response {
             payload: WorkshopLiterature {
                 file_format: FileFormat::Pdf,
@@ -223,7 +239,6 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
             },
             links: None,
         };
-
         let document = Document {
             hkap_id: d.hkap_id.clone(),
             variant_id: "1".to_string(),
@@ -237,23 +252,35 @@ pub fn run(settings: &Settings, args: &LoadAudiArgs) -> Result<()> {
             vehicle_component_with_document_index: d.index().to_string(),
             new: false,
             bookmarked: false,
-            content: serde_json::to_vec(&json!(worklit))?,
+            content: serde_json::to_vec(&json!(worklit)).expect("serialize workshop literature"),
         };
-        store.upsert_document_direct(&document)?;
-        store.link_document_to_node(d.node_id, &d.hkap_id)?;
-
-        // full-text search back-fill
-        if !args.no_text {
-            if let Some(text) = crate::pdf_text::extract_pdf_text(&content) {
-                let _ = store.upsert_document_text(&d.hkap_id, text.trim());
-                extracted += 1;
-            }
+        Prepared {
+            media_id: d.media_id.clone(),
+            content,
+            document,
+            node_id: d.node_id,
+            hkap_id: d.hkap_id.clone(),
+            text,
         }
+    }).collect();
 
-        if (i + 1) % 50 == 0 || i + 1 == total {
-            println!("  {}/{} documents ({} skipped)", i + 1, total, skipped);
+    // Phase 3 (batched, concurrent DB writes): document rows + links sequentially,
+    // media bytes and full-text rows via concurrent batch upserts.
+    for p in &prepared {
+        store.upsert_document_direct(&p.document)?;
+        store.link_document_to_node(p.node_id, &p.hkap_id)?;
+    }
+    let mut media = Vec::with_capacity(prepared.len());
+    let mut texts = Vec::new();
+    for p in prepared {
+        media.push((p.media_id, p.content));
+        if let Some(t) = p.text {
+            texts.push((p.hkap_id, t));
         }
     }
+    let extracted = texts.len();
+    store.upsert_media_images(media)?;
+    store.upsert_document_texts(texts)?;
 
     println!(
         "Done. {} documents ({} skipped), {} folder nodes, text extracted for {}/{}",

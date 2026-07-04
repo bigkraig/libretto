@@ -5,7 +5,12 @@ use std::path::Path;
 
 use anyhow::{bail, Result};
 use sqlx::AnyPool;
+use sqlx::any::AnyPoolOptions;
+use futures::stream::{StreamExt, TryStreamExt};
 use thiserror::Error;
+
+/// Concurrency used for batched DB writes (hides per-statement round-trip latency).
+const DB_CONCURRENCY: usize = 16;
 
 use pcss;
 use pcss::api_types::UiTexts;
@@ -163,7 +168,11 @@ impl ContentStore {
         let url = &settings.database_url;
         let is_postgres = url.starts_with("postgres");
         let pool = tokio::task::block_in_place(|| {
-            tokio::runtime::Handle::current().block_on(AnyPool::connect(url))
+            tokio::runtime::Handle::current().block_on(
+                AnyPoolOptions::new()
+                    .max_connections((DB_CONCURRENCY + 2) as u32)
+                    .connect(url),
+            )
         }).expect("Failed to connect to database");
         ContentStore {
             pool,
@@ -781,6 +790,50 @@ impl ContentStore {
             .bind(image)
             .execute(&self.pool)
         )?;
+        Ok(())
+    }
+
+    /// Concurrent batch upsert of media images. Runs up to DB_CONCURRENCY statements
+    /// in flight against the pool, hiding per-statement round-trip latency.
+    pub fn upsert_media_images(&self, images: Vec<(String, Vec<u8>)>) -> Result<()> {
+        if images.is_empty() {
+            return Ok(());
+        }
+        let q = self.q("INSERT INTO media_images (id, content) VALUES (?, ?) \
+                 ON CONFLICT(id) DO UPDATE SET content = excluded.content");
+        block(async {
+            futures::stream::iter(images)
+                .map(Ok::<_, sqlx::Error>)
+                .try_for_each_concurrent(DB_CONCURRENCY, |(id, content)| {
+                    let q = &q;
+                    async move {
+                        sqlx::query(q).bind(id).bind(content).execute(&self.pool).await.map(|_| ())
+                    }
+                })
+                .await
+        })?;
+        Ok(())
+    }
+
+    /// Concurrent batch upsert of document full-text rows.
+    pub fn upsert_document_texts(&self, texts: Vec<(String, String)>) -> Result<()> {
+        if texts.is_empty() {
+            return Ok(());
+        }
+        let q = self.q("INSERT INTO document_text (hkap_id, text, text_squished) VALUES (?, ?, ?) \
+                 ON CONFLICT(hkap_id) DO UPDATE SET text = excluded.text, text_squished = excluded.text_squished");
+        block(async {
+            futures::stream::iter(texts)
+                .map(Ok::<_, sqlx::Error>)
+                .try_for_each_concurrent(DB_CONCURRENCY, |(hkap_id, text)| {
+                    let q = &q;
+                    async move {
+                        let squished = squish(&text);
+                        sqlx::query(q).bind(hkap_id).bind(text).bind(squished).execute(&self.pool).await.map(|_| ())
+                    }
+                })
+                .await
+        })?;
         Ok(())
     }
 
