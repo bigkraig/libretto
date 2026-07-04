@@ -1,0 +1,1238 @@
+
+    
+    {
+    
+    
+    "payload" : {
+    
+    
+    "fileFormat" :
+    
+    
+    "xml"
+    ,
+    
+    "languageCode" :
+    
+    
+    "en_US"
+    ,
+    
+    "variantId" :
+    1,
+    
+    "hkapId" :
+    
+    
+    "3327483"
+    ,
+    
+    "targetHkapId" :
+    
+    
+    "3327483"
+    ,
+    
+    "version" :
+    8,
+    
+    "latestVersion" :
+    null,
+    
+    "versionSourceSystem" : ""
+    ,
+    
+    "sourceSystem" :
+    
+    
+    "REDSYS"
+    ,
+    
+    "kdnr" :
+    
+    
+    "456005"
+    ,
+    
+    "tiNumber" : ""
+    ,
+    
+    "publicationDate" :
+    
+    
+    "2023-01-05T04:40:41.293+01:00"
+    ,
+    
+    "modificationDate" :
+    1672980621324,
+    
+    "title" :
+    
+    
+    "Initialising and calibrating steering-angle sensor "
+    ,
+    
+    "fileName" :
+    
+    
+    "3327483_1_en_US.xml"
+    ,
+    
+    "documentType" :
+    
+    
+    "RM"
+    ,
+    
+    "toc" : [
+    
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "General warning notes "
+    ,
+    
+    "anchor" :
+    
+    
+    "PIWISeccb47e02f9b1004896f9ef933b98354"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Checking steering-angle sensor "
+    ,
+    
+    "anchor" :
+    
+    
+    "g4560xxx_1"
+    
+    }
+    ,
+    
+    {
+    
+    
+    "label" :
+    
+    
+    "Adjusting steering-angle sensor "
+    ,
+    
+    "anchor" :
+    
+    
+    "g4560xxx_2"
+    
+    }
+    
+    ]
+    ,
+    
+    "content" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"PIWISeccb47e02f9b1004896f9ef933b98354\" >General warning notes </h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a3380012"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "2Warnung"
+    ,
+    
+    "source" :
+    
+    
+    "Steering-angle sensor not calibrated or calibrated incorrectly"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "Unexpected vehicle handling"
+    ,
+    
+    
+    "Steering-angle sensor does not function"
+    ,
+    
+    
+    "Malfunction in steering-angle sensor"
+    
+    ]
+    ,
+    
+    "actions" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "                         After working on wheel suspension parts, when replacing the steering-angle sensor, and after changing the wheel alignment values, calibrate the steering-angle sensor using the                          <b>PIWIS Tester</b>                         .                     "
+    
+    }
+    
+    }
+    ,
+    
+    
+    "Keep the front wheels in straight-ahead position on the measuring platform during calibration."
+    ,
+    
+    
+    "For vehicles with electromechanical steering, also re-teach the electric steering lock settings."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The steering-angle sensor is integrated into the steering column switch and records the movements of the steering wheel (steering wheel angle) using light switches. The data is transmitted to the PSM control unit via the CAN bus. "
+    ,
+    
+    
+    "During initialisation, the steering-angle sensor learns its current position (straight-ahead position). "
+    ,
+    
+    
+    "The steering-angle sensor must always be initialised if terminal 30 was interrupted (for example, battery replacement, undervoltage, steering column switch disconnected, relevant fuse removed)! "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "mixed"
+    ,
+    
+    "inputs" : {
+    
+    
+    "children" : [
+    
+    
+    "                     Calibration must be performed when working on or carrying out subsequent work on the chassis. This is described in detail in the next chapter                      "
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "nested"
+    ,
+    
+    "inputs" : {
+    
+    
+    "type" :
+    
+    
+    "dok"
+    ,
+    
+    "documentType" :
+    
+    
+    "RL"
+    ,
+    
+    "aposNumber" :
+    
+    
+    "456000"
+    ,
+    
+    "activity" :
+    
+    
+    "15"
+    ,
+    
+    "title" :
+    
+    
+    "Initialising and calibrating steering-angle sensor - section on \"Calibrating\""
+    
+    }
+    
+    }
+    ,
+    
+    "                     .                 "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    
+    "The calibration results in zero point balancing (exactly straight ahead). "
+    ,
+    
+    
+    "The steering angle sensor is calibrated when first fitted and when any work has been carried out on steering and chassis. Examples of this would be opening the steering wiring and alterations to toe and camber. "
+    ,
+    
+    
+    "Calibration includes initialisation. "
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"g4560xxx_1\" >Checking steering-angle sensor </h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a3392794"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Initialise steering-angle sensor</h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8e40b54038f91004866b8146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Turn wheels to straight-ahead position."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8e40b54038f91004866c8146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Start engine."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8e40b54038f91004866d8146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "From the straight-ahead position, turn steering wheel approx. 20° to the left and 20° to the right (past straight-ahead position)."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS8e40b54038f91004866e8146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Drive the vehicle straight ahead for at least three seconds at a speed above 6 km/h (3.7 mph)."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "After successful initialisation, the stored fault code is erased from the fault memory. The PSM indicator light in the instrument cluster goes out."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "After initialisation has been completed, the battery must not be disconnected, the relevant fuse must not be removed and there must not be undervoltage. Otherwise, initialisation will have to be carried out again."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h2 id=\"g4560xxx_2\" >Adjusting steering-angle sensor </h2>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "anchor"
+    ,
+    
+    "inputs" : {
+    
+    
+    "id" :
+    
+    
+    "a3393813"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "html" :
+    
+    
+    "<h3>Calibrating steering-angle sensor </h3>"
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "warning"
+    ,
+    
+    "inputs" : {
+    
+    
+    "category" :
+    
+    
+    "Information"
+    ,
+    
+    "consequences" : [
+    
+    
+    
+    "The steering-angle sensor must be recalibrated on the measuring platform following repairs to or work on the chassis/steering or if the steering-angle sensor/steering column switch/hydraulic unit is replaced."
+    ,
+    
+    
+    "Calibration includes initialisation."
+    ,
+    
+    
+    "In order to be able to calibrate the steering-angle sensor correctly, the vehicle must be on the measuring platform, the wheel alignment values must be correct and the steering must be in the straight-ahead position. "
+    ,
+    
+    
+    "To calibrate the steering angle correctly, the PSM control unit must first be coded successfully (e.g. after replacing the hydraulic unit)."
+    ,
+    
+    
+    "The safety code is displayed under >> PSM >> Actual values << in the Porsche System Tester. Please take note of this code for future use."
+    
+    ]
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "                 The steering angle sensor must be calibrated using the menu with PIWIS tester under the specified test conditions:                 "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISbc5ec8b838f9100486768146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Switch on ignition. "
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISdf604d2838f9100486808146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Turn wheels or steering wheel to straight-ahead position."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISe12993a838f9100486818146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Before calibrating, first turn the steering wheel from the straight-ahead position approx. 20° to the left and 20° to the right (past straight-ahead position)."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4"
+    ,
+    
+    "id" :
+    
+    
+    "PIWISced3ed7038f91004867e8146099fb299"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Calibrate steering-angle sensor."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "with wheels and steering wheel in straight-ahead position. "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Turn wheels or steering wheel to straight-ahead position and calibrate the steering-angle sensor. To calibrate, you must enter the security code in the actual values menu."
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "In the straight-ahead position, the steering wheel must deviate by no more than ± 2.0° from the horizontal position (steering centre position). "
+    
+    }
+    
+    }
+    ,
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "plot"
+    ,
+    
+    "inputs" : [
+    
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4.1"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS48409be09a5210048659beca66b4a58b"
+    ,
+    
+    "children" : [
+    
+    
+    {
+    
+    
+    "type" :
+    
+    
+    "static"
+    ,
+    
+    "inputs" : {
+    
+    
+    "para" :
+    true,
+    
+    "html" :
+    
+    
+    "Request safety code in the Porsche System Tester under >> PSM >> Actual values <<. Take note of this code for future use."
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4.2"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS486108a89a5210048659beca66b4a58b"
+    ,
+    
+    "children" : ""
+    
+    }
+    ,
+    
+    {
+    
+    
+    "position" :
+    
+    
+    "4.3"
+    ,
+    
+    "id" :
+    
+    
+    "PIWIS48767cd89a5210048659beca66b4a58b"
+    ,
+    
+    "children" : ""
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
+    
