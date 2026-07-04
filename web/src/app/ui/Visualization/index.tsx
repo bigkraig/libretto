@@ -58,10 +58,27 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
   }
 
   const navigatorImage = document.getElementById('navigatorImage');
-  var svg = document.createElement('svg');
-  svg.id = "navigatorImage"
+  const svg = document.createElement('div');
+  svg.id = "navigatorImage";
+  svg.className = "flex h-full w-full items-center justify-center overflow-hidden";
   svg.innerHTML = data.content;
-  svg.className = "h-full outline outline-1 outline-zinc-300 aspect-[1.41]";
+  // The illustration ships with fixed width/height and would overflow. Make it
+  // scale to fit the pane while keeping its aspect ratio.
+  const inner = svg.querySelector('svg') as SVGSVGElement | null;
+  if (inner) {
+    if (!inner.getAttribute('viewBox')) {
+      const w = parseFloat(inner.getAttribute('width') || '');
+      const h = parseFloat(inner.getAttribute('height') || '');
+      if (w && h) inner.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    }
+    inner.removeAttribute('width');
+    inner.removeAttribute('height');
+    inner.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    inner.style.width = '100%';
+    inner.style.height = '100%';
+    inner.style.maxWidth = '100%';
+    inner.style.maxHeight = '100%';
+  }
   navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
 
   const navigatorLocations = new Map(navLinks.map(l => [
@@ -160,10 +177,10 @@ export type Params = {
 
 export default function Index({vehicle, year, location, navLinks}: Params) {
   return (
-    <div className={clsx("w-full h-full pl-2 pb-2 justify-items-start bg-white")}>
-      <div id="tooltip" className={clsx("hidden absolute bg-porschegrey text-white px-[10px] py-[5px]")}></div>
+    <div className={clsx("w-full h-full p-2 bg-white")}>
+      <div id="tooltip" className={clsx("hidden absolute z-30 rounded-sm bg-ink px-2 py-1 text-xs text-white pointer-events-none")}></div>
       <div id="navigatorImage"
-           className={clsx("font-bold flex h-full outline outline-1 outline-zinc-300 aspect-[1.41] text-center")}>
+           className={clsx("flex h-full w-full items-center justify-center overflow-hidden")}>
         <SVG vehicle={vehicle} year={year} location={location} navLinks={navLinks}/>
       </div>
     </div>
