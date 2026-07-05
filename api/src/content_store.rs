@@ -231,10 +231,11 @@ impl ContentStore {
     }
 
     pub fn get_parent(&self, id: i32) -> Result<i32> {
+        // Must go through self.q() so the `?` placeholder is rewritten to `$1` on
+        // Postgres; a raw `?` is a syntax error there and the query silently fails.
+        let q = self.q("SELECT id, parent_node_id, child_node_id FROM tree_node_links WHERE child_node_id = ?");
         let results: Vec<TreeNodeLinks> = block(
-            sqlx::query_as::<_, TreeNodeLinks>(
-                "SELECT id, parent_node_id, child_node_id FROM tree_node_links WHERE child_node_id = ?"
-            )
+            sqlx::query_as::<_, TreeNodeLinks>(&q)
             .bind(id)
             .fetch_all(&self.pool)
         )?;
