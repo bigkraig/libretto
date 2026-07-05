@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useMemo, useRef} from "react";
 import {useRouter} from 'next/navigation'
-import {AppRouterInstance} from "next/dist/shared/lib/app-router-context.shared-runtime";
 import clsx from "clsx";
+import useSWR from "swr";
 import {GetTreeNodes} from "@/lib/api/GetTreeNodes";
 import {GetIllustration} from "@/lib/api";
 import {NavigatorLink} from "@/lib/navigator";
 
-function NoVisualization(hasVehicle: boolean) {
+function NoVisualization({hasVehicle}: { hasVehicle: boolean }) {
   return (
     <div className={clsx("m-auto flex flex-col items-center gap-2 px-6 text-center")}>
       <svg viewBox="0 0 24 24" className={clsx("size-9 text-line")} fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -20,114 +20,6 @@ function NoVisualization(hasVehicle: boolean) {
       </div>
     </div>
   )
-}
-
-function showTooltip(evt: MouseEvent, text: string | undefined) {
-  let tooltip = document.getElementById("tooltip") as HTMLElement;
-  tooltip.innerHTML = text?? "No tooltip available";
-  tooltip.style.display = "block";
-  tooltip.style.left = evt.pageX + -20 + 'px';
-  tooltip.style.top = evt.pageY + 20 + 'px';
-}
-
-function hideTooltip() {
-  var tooltip = document.getElementById("tooltip") as HTMLElement;
-  tooltip.style.display = "none";
-}
-
-function resetSVG(hasVehicle: boolean) {
-  var flex = document.createElement('div')
-  flex.id = "navigatorImage"
-  flex.className = "flex h-full w-full items-center justify-center bg-white text-center";
-  var svg = document.createElement('div');
-  const title = hasVehicle ? "No diagram for this component" : "Select a vehicle";
-  const hint = hasVehicle ? "Open a document below to view it." : "Choose a vehicle from the list to get started.";
-  svg.innerHTML =
-    `<div style="font-size:13px;color:#16181D">${title}</div>` +
-    `<div style="font-size:12px;color:#6B6E73;margin-top:3px">${hint}</div>`;
-  svg.className = "m-auto px-6";
-  flex.appendChild(svg)
-  const navigatorImage = document.getElementById('navigatorImage');
-  navigatorImage?.parentNode?.replaceChild(flex, navigatorImage);
-}
-
-function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SVGData) {
-  if (typeof document == 'undefined') {
-    return
-  }
-
-  const img = document.getElementById('navigatorImage')
-  if (!img) {
-    return
-  }
-
-  const navigatorImage = document.getElementById('navigatorImage');
-  const svg = document.createElement('div');
-  svg.id = "navigatorImage";
-  svg.className = "flex h-full w-full items-start justify-center overflow-hidden";
-  svg.innerHTML = data.content;
-  // The illustration ships with fixed width/height. Fill the pane and let the
-  // content scale to fit within it (meet) so it never exceeds the pane and gets
-  // clipped, while YMin keeps it anchored to the top of the window.
-  const inner = svg.querySelector('svg') as SVGSVGElement | null;
-  if (inner) {
-    if (!inner.getAttribute('viewBox')) {
-      const w = parseFloat(inner.getAttribute('width') || '');
-      const h = parseFloat(inner.getAttribute('height') || '');
-      if (w && h) inner.setAttribute('viewBox', `0 0 ${w} ${h}`);
-    }
-    inner.removeAttribute('width');
-    inner.removeAttribute('height');
-    inner.setAttribute('preserveAspectRatio', 'xMidYMin meet');
-    inner.style.width = '100%';
-    inner.style.height = 'auto';
-    // Cap by viewport height so a landscape illustration can't grow taller than the
-    // pane and overflow (the pane's own height doesn't resolve reliably here). meet
-    // then letterboxes the content within, so nothing is clipped.
-    inner.style.maxHeight = '58vh';
-  }
-  navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
-
-  const navigatorLocations = new Map(navLinks.map(l => [
-    (l.kind == "drive_file" ? "FES_" : "NAV_") + l.location, l.href]));
-
-  const navToolTips = new Map(navLinks.map(l => [
-    (l.kind == "drive_file" ? "FES_" : "NAV_") + l.location, l.text]));
-
-  for (const hotspot of svg.querySelectorAll('#CC_HOTSPOT')) {
-    for (const qualifiedName of ["path", "polygon", "rect"]) {
-      for (const polygon of hotspot.getElementsByTagName(qualifiedName) as HTMLCollectionOf<SVGElement>) {
-
-        // If the navigator has a location that matches the polygon id, we make it selectable
-        if (navigatorLocations.has(polygon.id)) {
-          polygon.setAttribute('class', polygon.getAttribute('class') + ' selectable')
-          polygon.addEventListener('mousemove', (evt) => showTooltip(evt, navToolTips.get(polygon.id)));
-          polygon.addEventListener('mouseout', () => hideTooltip());
-        } else {
-          polygon.setAttribute('class', polygon.getAttribute('class') + ' not-selectable')
-        }
-
-        polygon.onclick = () => {
-          const href = navigatorLocations.get(polygon.id);
-          if (href) {
-            router.push(href)
-          }
-        }
-      }
-    }
-  }
-
-  // Highlights the active polygon
-  for (const qualifiedName of ["path", "polygon"]) {
-    const polygons = svg.getElementsByTagName(qualifiedName) as HTMLCollectionOf<SVGElement>;
-    for (const polygon of polygons) {
-      if (polygon.id.endsWith(`_${data.active_location}`)) {
-        polygon.style.fill = '#C0862C';
-        polygon.style.fillOpacity = "0.55"
-      }
-    }
-  }
-  return
 }
 
 async function retrieveSVG(vehicle: string, year: number, location: number | null): Promise<SVGData> {
@@ -149,34 +41,6 @@ interface SVGData {
   content: string,
 }
 
-function SVG(params: Params) {
-  const router = useRouter()
-  let [svg, setSvg] = useState<SVGData>()
-
-  const hasVehicle = !!(params.vehicle && params.year)
-
-  useEffect(() => {
-    if (!params.vehicle || !params.year) {
-      setSvg(undefined);
-      resetSVG(false);
-      return
-    }
-
-    retrieveSVG(params.vehicle, params.year, params.location).then((data) => setSvg(data)).catch(e => {
-      console.log("i got an error", e)
-      // Case where the illustration_id is no good
-      setSvg(undefined);
-      resetSVG(true);
-    })
-    if (svg) {
-      smashSVG(router, params.navLinks, svg);
-    }
-  }, [router, params, svg?.active_location])
-
-  if (!svg) return NoVisualization(hasVehicle)
-}
-
-
 export type Params = {
   vehicle: string | null,
   year: number | null,
@@ -185,12 +49,130 @@ export type Params = {
 }
 
 export default function Index({vehicle, year, location, navLinks}: Params) {
+  const router = useRouter()
+  const containerRef = useRef<HTMLDivElement>(null)
+  const tooltipRef = useRef<HTMLDivElement>(null)
+  const hasVehicle = !!(vehicle && year)
+
+  // Illustration for the current node, cached by (vehicle, year, location). Throws
+  // when there's no diagram, which SWR surfaces as `error`.
+  const {data, error} = useSWR<SVGData>(
+    hasVehicle ? ["illustration", vehicle, year, location] : null,
+    () => retrieveSVG(vehicle!, year!, location),
+  )
+
+  // Hotspot id -> destination href / tooltip label, from the current nav links.
+  const {hrefById, labelById} = useMemo(() => {
+    const hrefById = new Map<string, string>()
+    const labelById = new Map<string, string>()
+    for (const l of navLinks) {
+      const key = (l.kind == "drive_file" ? "FES_" : "NAV_") + l.location
+      hrefById.set(key, l.href)
+      labelById.set(key, l.text)
+    }
+    return {hrefById, labelById}
+  }, [navLinks])
+
+  // The illustration ships as an <svg> with fixed width/height. After React injects
+  // it, size it to a consistent box, tag the hotspots selectable/not, and highlight
+  // the active one. React treats the innerHTML as opaque, so these imperative tweaks
+  // survive re-renders (they only re-run when the illustration or links change).
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container || !data) return
+
+    const inner = container.querySelector('svg') as SVGSVGElement | null
+    if (!inner) return
+
+    if (!inner.getAttribute('viewBox')) {
+      const w = parseFloat(inner.getAttribute('width') || '')
+      const h = parseFloat(inner.getAttribute('height') || '')
+      if (w && h) inner.setAttribute('viewBox', `0 0 ${w} ${h}`)
+    }
+    inner.removeAttribute('width')
+    inner.removeAttribute('height')
+    inner.setAttribute('preserveAspectRatio', 'xMidYMin meet')
+    inner.style.width = '100%'
+    inner.style.height = 'auto'
+    // Cap by viewport height so a landscape illustration can't grow taller than the
+    // pane and overflow; meet then letterboxes the content, so nothing is clipped.
+    inner.style.maxHeight = '58vh'
+
+    for (const hotspot of container.querySelectorAll('#CC_HOTSPOT')) {
+      for (const tag of ["path", "polygon", "rect"]) {
+        for (const poly of hotspot.getElementsByTagName(tag) as HTMLCollectionOf<SVGElement>) {
+          poly.classList.add(hrefById.has(poly.id) ? 'selectable' : 'not-selectable')
+        }
+      }
+    }
+
+    for (const tag of ["path", "polygon"]) {
+      for (const poly of inner.getElementsByTagName(tag) as HTMLCollectionOf<SVGElement>) {
+        if (poly.id.endsWith(`_${data.active_location}`)) {
+          poly.style.fill = '#C0862C'
+          poly.style.fillOpacity = "0.55"
+        }
+      }
+    }
+  }, [data, hrefById])
+
+  // Walk up from the event target to the first hotspot element we know about.
+  function hotspotIdAt(target: EventTarget | null): string | null {
+    let el = target as Element | null
+    while (el && el !== containerRef.current) {
+      if (el.id && hrefById.has(el.id)) return el.id
+      el = el.parentElement
+    }
+    return null
+  }
+
+  function onClick(e: React.MouseEvent) {
+    const id = hotspotIdAt(e.target)
+    const href = id && hrefById.get(id)
+    if (href) router.push(href)
+  }
+
+  function onMouseMove(e: React.MouseEvent) {
+    const tooltip = tooltipRef.current
+    if (!tooltip) return
+    const id = hotspotIdAt(e.target)
+    if (!id) { tooltip.style.display = 'none'; return }
+    tooltip.textContent = labelById.get(id) ?? "No tooltip available"
+    tooltip.style.display = 'block'
+    tooltip.style.left = `${e.clientX - 20}px`
+    tooltip.style.top = `${e.clientY + 20}px`
+  }
+
+  function onMouseLeave() {
+    if (tooltipRef.current) tooltipRef.current.style.display = 'none'
+  }
+
+  let content: React.ReactNode
+  if (!hasVehicle) {
+    content = <NoVisualization hasVehicle={false}/>
+  } else if (error) {
+    content = <NoVisualization hasVehicle={true}/>
+  } else if (!data) {
+    content = <div className={clsx("m-auto")}/>
+  } else {
+    content = (
+      <div
+        ref={containerRef}
+        className={clsx("flex h-full w-full items-start justify-center overflow-hidden")}
+        onClick={onClick}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+        dangerouslySetInnerHTML={{__html: data.content}}
+      />
+    )
+  }
+
   return (
     <div className={clsx("w-full h-full p-2 bg-white")}>
-      <div id="tooltip" className={clsx("hidden absolute z-30 rounded-sm bg-ink px-2 py-1 text-xs text-white pointer-events-none")}></div>
-      <div id="navigatorImage"
-           className={clsx("flex h-full w-full items-start justify-center overflow-hidden")}>
-        <SVG vehicle={vehicle} year={year} location={location} navLinks={navLinks}/>
+      <div ref={tooltipRef}
+           className={clsx("hidden fixed z-30 rounded-sm bg-ink px-2 py-1 text-xs text-white pointer-events-none")}/>
+      <div className={clsx("flex h-full w-full items-start justify-center overflow-hidden")}>
+        {content}
       </div>
     </div>
   );

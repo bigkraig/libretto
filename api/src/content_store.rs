@@ -14,7 +14,7 @@ const DB_CONCURRENCY: usize = 16;
 
 use pcss;
 use pcss::api_types::UiTexts;
-use crate::models::{Document, Part, TreeNode, TreeNodeLinks, Vehicle, Translations, Tool, ToolDistributor};
+use crate::models::{Document, Part, TreeNode, TreeNodeLinks, TreeNodePath, Vehicle, Translations, Tool, ToolDistributor};
 use crate::settings;
 use crate::settings::Settings;
 
@@ -303,6 +303,55 @@ impl ContentStore {
             .fetch_all(&self.pool)
         )?;
         results.sort();
+        Ok(results)
+    }
+
+    // Every document for a whole vehicle. Instead of recursively expanding the tree
+    // from the root, filter document_links straight through tree_nodes by
+    // (vehicle, year) — covered by the UNIQUE(vehicle, year, node_id) index — so we
+    // never walk thousands of nodes.
+    pub fn list_vehicle_documents(&self, vehicle: &str, year: i32) -> Result<Vec<Document>> {
+        let empty_content = if self.is_postgres { "''::bytea" } else { "x''" };
+        let sql = format!(
+            "SELECT DISTINCT d.hkap_id, d.variant_id, d.language_code, d.version, d.vehicle_component, \
+             d.title, d.document_type, d.publication_date, d.file_format, \
+             d.vehicle_component_with_document_index, d.new, d.bookmarked, {} AS content \
+             FROM documents d \
+             JOIN document_links dl ON dl.hkap_id = d.hkap_id \
+             JOIN tree_nodes tn ON tn.node_id = dl.node_id \
+             WHERE tn.vehicle = ? AND tn.year = ?",
+            empty_content,
+        );
+        let q = self.q(&sql);
+        let mut results: Vec<Document> = block(
+            sqlx::query_as::<_, Document>(&q)
+            .bind(vehicle)
+            .bind(year)
+            .fetch_all(&self.pool)
+        )?;
+        results.sort();
+        Ok(results)
+    }
+
+    // Ancestor path (root -> current) for a node, in one recursive CTE walking up
+    // parent links. Lets the breadcrumb load in a single request instead of one
+    // GetTreeNodes call per level.
+    pub fn get_ancestors(&self, node_id: i32) -> Result<Vec<TreeNodePath>> {
+        let sql = "WITH RECURSIVE anc(node_id, depth) AS ( \
+                     SELECT ?, 0 \
+                     UNION ALL \
+                     SELECT tnl.parent_node_id, anc.depth + 1 \
+                       FROM tree_node_links tnl JOIN anc ON tnl.child_node_id = anc.node_id \
+                   ) \
+                   SELECT tn.node_id, tn.node_value, tn.name \
+                     FROM anc JOIN tree_nodes tn ON tn.node_id = anc.node_id \
+                     ORDER BY anc.depth DESC";
+        let q = self.q(sql);
+        let results: Vec<TreeNodePath> = block(
+            sqlx::query_as::<_, TreeNodePath>(&q)
+            .bind(node_id)
+            .fetch_all(&self.pool)
+        )?;
         Ok(results)
     }
 

@@ -7,12 +7,12 @@ export function PlotContent({obj: {inputs}, translations}: { obj: ContentPlot, t
   const plotItems = inputs;
   const children: React.JSX.Element[] = []
 
-  plotItems.map((child) => {
+  plotItems.forEach((child, i) => {
     const nested = Array.isArray(child.children) && child.children.map((c, index) => {
       return <WorkshopChildren obj={c} key={index} translations={translations}/>;
     });
 
-    children.push(<div _content-plot="" key={child.position} className={clsx("plot-element")}>
+    children.push(<div _content-plot="" key={child.id ?? child.position ?? i} className={clsx("plot-element")}>
       <span _content-plot="" className={clsx("plot-information plot-index ")} id={child.id}>
         {child.position}
       </span>
