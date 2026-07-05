@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, {useEffect, useState} from "react"
-import {ArrowUpward, ChevronLeft, Folder, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
+import {ChevronLeft, Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
 import {NavigatorLink} from "@/lib/navigator"
 import clsx from "clsx";
 import {GetVehicle, Vehicle} from "@/lib/api";
@@ -78,11 +78,15 @@ function NavLinks(params: Params) {
         params.navLinks.map((link: NavigatorLink, index) => {
           const isOpen = link.kind === "open_folder"
           const isVehicle = link.kind === "vehicle"
-          const backToVehicles = isOpen && link.href === "/"
+          // Children of the current folder are indented one level beneath it, so the
+          // tree structure (and the way up, via the dedented parent) reads visually.
+          const isChild = link.kind === "folder" || link.kind === "drive_file"
           const iconColor = link.selected ? "text-brass" : "text-white/45"
           const className = clsx(
             "flex items-center border-l-2 text-[13px] transition-colors",
-            isVehicle ? "gap-3 px-4 py-2.5" : "gap-2.5 px-4 py-2",
+            isVehicle && "gap-3 px-4 py-2.5",
+            isOpen && "gap-2.5 px-4 py-2",
+            isChild && "gap-2.5 py-2 pl-10 pr-4",
             link.selected
               ? "border-brass bg-white/[0.06] text-white font-medium"
               : "border-transparent text-white/70 hover:bg-white/[0.05] hover:text-white",
@@ -101,16 +105,11 @@ function NavLinks(params: Params) {
             >
               {link.kind == "vehicle" && <MarqueBadge marque={link.icon}/>}
               {link.kind == "folder" && <Folder className={clsx("size-[18px] shrink-0", iconColor)}/>}
-              {link.kind == "open_folder" && <ArrowUpward className={clsx("size-[18px] shrink-0 text-brass")}/>}
+              {link.kind == "open_folder" && <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>}
               {link.kind == "drive_file" && !link.selected && <InsertDriveFile className={clsx("size-[18px] shrink-0", iconColor)}/>}
               {link.kind == "drive_file" && link.selected &&
                   <InsertDriveFileOutlined className={clsx("size-[18px] shrink-0", iconColor)}/>}
               <p className={clsx("my-auto")}>{link.text}</p>
-              {isOpen && (
-                <span className={clsx("ml-auto font-mono text-[10px] uppercase tracking-wider text-white/40")}>
-                  {backToVehicles ? "Vehicles" : "Up"}
-                </span>
-              )}
             </Link>
           );
         })
