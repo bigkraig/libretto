@@ -165,7 +165,7 @@ function NavLinks(params: Params) {
           const className = clsx(
             "flex items-center border-l-2 text-[13px] transition-colors",
             isVehicle && "gap-3 px-4 py-2.5",
-            isChild && "gap-2.5 py-2 pl-8 pr-4",
+            isChild && "gap-2.5 py-2 pl-6 pr-4",
             link.selected
               ? "border-brass bg-white/[0.06] text-white font-medium"
               : "border-transparent text-white/70 hover:bg-white/[0.05] hover:text-white",

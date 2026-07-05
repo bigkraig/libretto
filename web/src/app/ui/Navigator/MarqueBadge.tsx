@@ -24,15 +24,15 @@ export function MarqueBadge({marque}: { marque?: string }) {
   // a fixed-width slot keeps the vehicle names aligned. The circular chip is only
   // the monogram stand-in.
   if (showEmblem) {
-    // Light plate so thin/dark emblems (Audi rings, Porsche crest) stay legible on
-    // the dark sidebar; colored ones (Ferrari) sit on it fine too.
+    // Emblems render bare on the dark sidebar (no plate); a fixed-width slot keeps
+    // the vehicle names aligned.
     return (
-      <span className={clsx("inline-flex h-7 w-9 shrink-0 items-center justify-center rounded-sm bg-white")}>
+      <span className={clsx("inline-flex h-7 w-9 shrink-0 items-center justify-center")}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={`/marques/${slug}.svg`}
           alt={slug}
-          className={clsx("max-h-5 max-w-7 object-contain")}
+          className={clsx("max-h-6 max-w-8 object-contain")}
           onError={() => setFailed(true)}
         />
       </span>
