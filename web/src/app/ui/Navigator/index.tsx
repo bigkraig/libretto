@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, {useEffect, useState} from "react"
-import {ChevronLeft, Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
+import {Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
 import {NavigatorLink} from "@/lib/navigator"
 import clsx from "clsx";
 import {GetVehicle, Vehicle} from "@/lib/api";
@@ -33,7 +33,7 @@ function Header(params: { vehicle: string, year: number }) {
   if (!vehicle) return (
     <div className={clsx("bg-ink px-4 py-3 md:px-6 md:py-6 border-b border-white/10")}>
       <div className={clsx("flex items-center gap-3 md:block")}>
-        <div className={clsx("h-11 w-16 shrink-0 animate-pulse rounded bg-white/10 md:mx-auto md:h-auto md:aspect-[3/2] md:w-full md:max-w-[220px]")}/>
+        <div className={clsx("h-11 w-16 shrink-0 animate-pulse rounded bg-white/10 md:mx-auto md:h-24 md:w-2/3")}/>
         <div className={clsx("h-4 w-32 animate-pulse rounded bg-white/10 md:mx-auto md:mt-4 md:w-2/3")}/>
       </div>
     </div>
@@ -42,11 +42,11 @@ function Header(params: { vehicle: string, year: number }) {
   return (
     <Link href="/" className={clsx("block bg-ink px-4 py-3 md:px-6 md:py-6 border-b border-white/10")}>
       <div className={clsx("flex items-center gap-3 md:block")}>
-        {/* Fixed-ratio box (matches the skeleton) so every vehicle photo — whatever
+        {/* Fixed-height box (matches the skeleton) so every vehicle photo — whatever
             its aspect ratio — occupies the same height and the tree below never jumps. */}
-        <div className={clsx("shrink-0 md:mx-auto md:flex md:aspect-[3/2] md:w-full md:max-w-[220px] md:items-center md:justify-center")}>
+        <div className={clsx("shrink-0 md:mx-auto md:flex md:h-24 md:w-full md:items-center md:justify-center")}>
           <Image
-            className={clsx("h-11 w-auto md:h-full md:w-full md:object-contain")}
+            className={clsx("h-11 w-auto md:h-full md:w-auto md:max-w-full md:object-contain")}
             src={vehicle.image_url}
             width={500}
             height={500}
@@ -85,33 +85,19 @@ function NavLinks(params: Params) {
           // explicit control: a "Back" row up one level (the parent), and the top
           // "All vehicles" bar for the root, where there's no parent folder.
           if (link.kind === "open_folder") {
-            const isRoot = link.href === "/"
             const linkedVisualization = link.text.split(" ")[0]
             return (
-              <React.Fragment key={link.text}>
-                {!isRoot && (
-                  <Link
-                    href={link.href}
-                    onClick={resetLocalStorage}
-                    className={clsx(
-                      "flex items-center gap-1 border-l-2 border-transparent px-3 py-2",
-                      "font-mono text-[11px] uppercase tracking-[0.14em] text-white/50 hover:text-white transition-colors",
-                    )}
-                  >
-                    <ChevronLeft className={clsx("size-4 shrink-0")}/> Back
-                  </Link>
+              <div
+                key={link.text}
+                id={linkedVisualization}
+                className={clsx(
+                  "flex items-center gap-2.5 border-l-2 border-transparent px-4 py-2",
+                  "mb-1 border-b border-white/10 text-[13px] font-semibold text-white",
                 )}
-                <div
-                  id={linkedVisualization}
-                  className={clsx(
-                    "flex items-center gap-2.5 border-l-2 border-transparent px-4 py-2",
-                    "mb-1 border-b border-white/10 text-[13px] font-semibold text-white",
-                  )}
-                >
-                  <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>
-                  <p className={clsx("my-auto")}>{link.text}</p>
-                </div>
-              </React.Fragment>
+              >
+                <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>
+                <p className={clsx("my-auto")}>{link.text}</p>
+              </div>
             )
           }
 
@@ -176,13 +162,6 @@ export default function Index({navLinks, location, vehicle, year}: Params) {
   const HeaderComponent = isVehicleAndYearPresent ? <Header vehicle={vehicle} year={year}/> : <RootHeader/>;
 
   return <div className={clsx("w-full h-full flex flex-col bg-ink border border-ink-2 overflow-hidden")}>
-    {isVehicleAndYearPresent && (
-      <Link href="/"
-            className={clsx("flex items-center gap-1 border-b border-white/10 px-3 py-2",
-                            "font-mono text-[11px] uppercase tracking-[0.14em] text-white/50 hover:text-white transition-colors")}>
-        <ChevronLeft className={clsx("size-4 shrink-0")}/> All vehicles
-      </Link>
-    )}
     {HeaderComponent}
     <NavLinks navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
   </div>
