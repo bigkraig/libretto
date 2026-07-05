@@ -4,11 +4,21 @@ import Navigator from "@/app/ui/Navigator";
 import WorkshopLiterature from "@/app/ui/WorkshopLiterature";
 import Visualization from "@/app/ui/Visualization";
 import {useSearchParams} from "next/navigation";
-import React, {useEffect, useState} from "react";
+import React, {Suspense, useEffect, useState} from "react";
 import clsx from "clsx";
 import {GetLinks, NavigatorLink} from "@/lib/navigator";
 
+// useSearchParams() must sit under a Suspense boundary (Next 15+ no longer offers
+// the missingSuspenseWithCSRBailout opt-out).
 export default function Home() {
+  return (
+    <Suspense>
+      <HomeContent/>
+    </Suspense>
+  );
+}
+
+function HomeContent() {
   const searchParams = useSearchParams()
   const vehicle = searchParams.get("vehicle");
   const year = searchParams.get("year")?Number(searchParams.get("year")):null;

@@ -11,7 +11,7 @@ function devBypass(req: NextRequest) {
 
 const authMiddleware = withAuth({ pages: { signIn: "/auth/signin" } });
 
-export default function middleware(req: NextRequest, event: any) {
+export default function proxy(req: NextRequest, event: any) {
   const bypass = devBypass(req);
   if (bypass) return bypass;
   return (authMiddleware as any)(req, event);

@@ -1,14 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    webpack: {
-        config: {
-            resolve: {
-                alias: {
-                    canvas: false,
-                }
-            }
-        }
-    },
     images: {
         // All images come from the auth-gated API. Next's image optimizer runs server-side
         // and can't carry the user's session, so it gets redirected to login and reports
@@ -37,9 +28,6 @@ const nextConfig = {
                 pathname: '/**',
             },
         ],
-    },
-    experimental: {
-        missingSuspenseWithCSRBailout: false,
     },
     output: 'standalone',
 };

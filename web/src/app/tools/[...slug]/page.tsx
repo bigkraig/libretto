@@ -19,7 +19,7 @@ import {TablePagination, ThemeProvider} from "@mui/material";
 import {muiTheme} from "@/lib";
 import {TablePaginationActions} from "@/app/ui/Table";
 import {Dialog, DialogBackdrop, DialogPanel, DialogTitle} from "@headlessui/react";
-import {CloseIcon} from "next/dist/client/components/react-dev-overlay/internal/icons/CloseIcon";
+import CloseIcon from "@mui/icons-material/Close";
 
 function back() {
   window.history.go(-1);
