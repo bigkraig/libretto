@@ -234,3 +234,11 @@ pub struct ReferencingToolDocument {
     pub tool_id: i32,
     pub hkap_id: String,
 }
+
+// Lightweight node projection for the ancestor-path (breadcrumb) endpoint.
+#[derive(Default, Debug, sqlx::FromRow, Serialize, Deserialize, Clone)]
+pub struct TreeNodePath {
+    pub node_id: i32,
+    pub node_value: String,
+    pub name: Option<String>,
+}

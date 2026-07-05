@@ -4,6 +4,8 @@ export {GetWorkshopLiterature} from "./GetWorkshopLiterature";
 export {ListVehicles} from './ListVehicles';
 export {ListDocuments} from './ListDocuments';
 export {ListVehicleDocuments} from './ListVehicleDocuments';
+export {GetAncestors} from './GetAncestors';
+export type {AncestorNode} from './GetAncestors';
 export {SearchDocumentsInSubtree} from './SearchDocumentsInSubtree';
 export {SearchDocumentsByVehicle} from './SearchDocumentsByVehicle';
 export {GetWorkshopImageUrl} from './GetWorkshopImageUrl';

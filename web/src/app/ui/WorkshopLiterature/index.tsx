@@ -6,6 +6,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import Tooltip from '@mui/material/Tooltip';
 import React, {useEffect, useRef, useState} from "react";
 import clsx from "clsx";
+import useSWR from "swr";
 import {InsertDriveFile, PictureAsPdf} from "@mui/icons-material";
 import {IDocument, ListDocuments, ListVehicleDocuments, SearchDocumentsByVehicle, SearchDocumentsInSubtree} from "@/lib/api";
 import {useSearchParams} from "next/navigation";
@@ -118,27 +119,25 @@ export type Params = {
 }
 
 export default function Index({location, vehicle, year}: Params) {
-  let [documents, setDocuments] = useState<IDocument[]>([])
   let [query, setQuery] = useState<string>("")
   let [searchResults, setSearchResults] = useState<IDocument[] | null>(null)
   let [searching, setSearching] = useState<boolean>(false)
   const searchAbortRef = useRef<AbortController | null>(null)
 
-  useEffect(() => {
-    if (!vehicle || !year) {
-      setDocuments([])
-      return
-    }
+  // Base list, cached by (location, vehicle, year). A component (location) shows its
+  // subtree; no component shows the whole vehicle.
+  const {data: documents = []} = useSWR(
+    vehicle && year ? ["docs", location, vehicle, year] : null,
+    () => (location ? ListDocuments(location) : ListVehicleDocuments(year!, vehicle!)),
+  )
 
+  // Restore the saved scroll position when the base list changes.
+  useEffect(() => {
     const d = document.querySelector(`#${documentsDiv}`)
     if (d) {
       d.scrollTop = Number(localStorage.getItem(key) || "")
     }
-
-    // A component (location) shows its subtree; no component shows the whole vehicle.
-    const req = location ? ListDocuments(location) : ListVehicleDocuments(year, vehicle)
-    req.then(docs => setDocuments(docs)).catch(() => setDocuments([]))
-  }, [location, vehicle, year])
+  }, [documents])
 
   // Reset search when navigating to a different location.
   useEffect(() => {

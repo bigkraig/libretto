@@ -20,7 +20,7 @@ use tower_http::compression::CompressionLayer;
 use tower_http::cors::CorsLayer;
 use tracing::error;
 use crate::content_store::ContentStore;
-use crate::models::{Document, TreeNode, Vehicle};
+use crate::models::{Document, TreeNode, TreeNodePath, Vehicle};
 use crate::settings::Settings;
 
 #[derive(clap::Args)]
@@ -90,6 +90,7 @@ pub async fn serve(bind_address: &String, api: Api) -> Result<(), anyhow::Error>
         .route("/:year/:model/", get(root_tree_node))
         .route("/:year/:model/documents", get(get_vehicle_documents))
         .route("/nodes/:node_id", get(get_tree_node))
+        .route("/nodes/:node_id/ancestors", get(get_ancestors))
         .route("/nodes/:node_id/documents", get(get_documents))
         .route("/nodes/:node_id/documents/search", get(search_documents_in_subtree))
         .route("/illustrations/:illustration_id", get(get_illustration));
@@ -448,12 +449,17 @@ async fn get_documents(State(state): State<Arc<Api>>, Path(node_id): Path<i32>) 
     Ok(Json(result))
 }
 
-// Every document for a vehicle (the root node's whole subtree), so the list can
-// show data the moment a vehicle is picked, before drilling into a component.
+// Every document for a vehicle (its whole tree), so the list can show data the
+// moment a vehicle is picked, before drilling into a component. Filters by
+// (vehicle, year) directly rather than recursively expanding the tree from the root.
 async fn get_vehicle_documents(State(state): State<Arc<Api>>, Path((year, vehicle)): Path<(i32, String)>) -> Result<Json<Vec<DocumentsResponse>>, AppError> {
-    let root = state.content_store.get_tree_node(&vehicle, year, None)?;
-    let result = state.content_store.list_documents_by_node_id(root.node_id)?.iter().map(|d| d.into()).collect::<Vec<DocumentsResponse>>();
+    let result = state.content_store.list_vehicle_documents(&vehicle, year)?.iter().map(|d| d.into()).collect::<Vec<DocumentsResponse>>();
     Ok(Json(result))
+}
+
+// Ancestor path (root -> current) for a node, for the sidebar breadcrumb.
+async fn get_ancestors(State(state): State<Arc<Api>>, Path(node_id): Path<i32>) -> Result<Json<Vec<TreeNodePath>>, AppError> {
+    Ok(Json(state.content_store.get_ancestors(node_id)?))
 }
 
 #[derive(Debug, Deserialize)]

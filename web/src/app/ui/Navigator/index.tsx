@@ -3,8 +3,8 @@ import React, {useEffect, useState} from "react"
 import {Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui/icons-material";
 import {NavigatorLink} from "@/lib/navigator"
 import clsx from "clsx";
-import {GetVehicle, Vehicle} from "@/lib/api";
-import {GetTreeNodes} from "@/lib/api/GetTreeNodes";
+import useSWR from "swr";
+import {GetAncestors, GetVehicle, Vehicle} from "@/lib/api";
 import {HREF} from "@/lib";
 import Image from "next/image";
 import {MarqueBadge} from "./MarqueBadge";
@@ -70,40 +70,26 @@ type Crumb = { href: string, label: string }
 
 // The ancestor path (everything ABOVE the current folder) — each segment a link
 // back up the tree. The current folder itself is shown in the list below (as the
-// header of its children), not here. Walks parent_node_id up to the root (the tree
-// carries one level of parent per node, so we fetch each ancestor).
+// header of its children), not here. Loaded in one request (backend returns the
+// full root->current path) and cached by SWR, so revisits are instant.
 function Breadcrumb({vehicle, year, location}: { vehicle: string, year: number, location: number | null }) {
-  const [crumbs, setCrumbs] = useState<Crumb[] | null>(null)
+  const {data} = useSWR(
+    location != null ? ["ancestors", location] : null,
+    () => GetAncestors(location as number),
+  )
 
-  useEffect(() => {
-    let cancelled = false
-
-    async function build() {
-      // Nothing above the root — no ancestor path to show.
-      if (location == null) { if (!cancelled) setCrumbs([]); return }
-
-      const chain: Crumb[] = []
-      // Start one level up (skip the current node — it lives in the list).
-      const current = await GetTreeNodes(vehicle, year, location)
-      let id: number | null = current.parent_node_id
-      let guard = 0
-      while (id != null && guard < 16) {
-        const node = await GetTreeNodes(vehicle, year, id)
-        const label = node.node_value && node.node_value !== "000"
-          ? `${node.node_value} ${node.name}`
-          : node.name
-        // The root (node_value "000") links to the vehicle root (location cleared).
-        const isRoot = node.parent_node_id == null
-        chain.unshift({href: HREF(vehicle, year, isRoot ? null : node.node_id), label})
-        id = node.parent_node_id
-        guard++
-      }
-      if (!cancelled) setCrumbs(chain)
-    }
-
-    build().catch(() => { if (!cancelled) setCrumbs([]) })
-    return () => { cancelled = true }
-  }, [vehicle, year, location])
+  // At the root there's no ancestor path; otherwise drop the last entry (the
+  // current folder — it heads the list below). null while loading so the row
+  // stays empty but keeps its height.
+  const crumbs: Crumb[] | null = location == null
+    ? []
+    : data
+      ? data.slice(0, -1).map((n): Crumb => {
+          const isRoot = n.node_value === "000"
+          const label = n.node_value && !isRoot ? `${n.node_value} ${n.name ?? ""}`.trim() : (n.name ?? "")
+          return {href: HREF(vehicle, year, isRoot ? null : n.node_id), label}
+        })
+      : null
 
   // Always occupy the same height (empty at the root, or while ancestors load) so
   // the list below never shifts as the path row's contents come and go.
