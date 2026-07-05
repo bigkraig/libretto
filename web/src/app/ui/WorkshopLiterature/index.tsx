@@ -102,7 +102,7 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
               <span className={clsx("shrink-0 font-mono text-[13px] text-brass-dim")}>
                 {doc.vehicle_component_with_document_index}
               </span>
-              <span className={clsx("truncate text-[14px] text-ink")}>{doc.title}</span>
+              <span className={clsx("truncate text-[13px] text-ink")}>{doc.title}</span>
             </a>
           );
         })
