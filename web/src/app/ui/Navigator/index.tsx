@@ -76,21 +76,53 @@ function NavLinks(params: Params) {
     <div id={navigatorDiv} className={clsx("w-full h-full overflow-y-auto py-1")}>
       {
         params.navLinks.map((link: NavigatorLink, index) => {
-          const isOpen = link.kind === "open_folder"
+          // The current folder is a static "you are here" label — not a link — so it
+          // no longer doubles (confusingly) as the go-up button. Going up gets its own
+          // explicit control: a "Back" row up one level (the parent), and the top
+          // "All vehicles" bar for the root, where there's no parent folder.
+          if (link.kind === "open_folder") {
+            const isRoot = link.href === "/"
+            const linkedVisualization = link.text.split(" ")[0]
+            return (
+              <React.Fragment key={link.text}>
+                {!isRoot && (
+                  <Link
+                    href={link.href}
+                    onClick={resetLocalStorage}
+                    className={clsx(
+                      "flex items-center gap-1 border-l-2 border-transparent px-3 py-2",
+                      "font-mono text-[11px] uppercase tracking-[0.14em] text-white/50 hover:text-white transition-colors",
+                    )}
+                  >
+                    <ChevronLeft className={clsx("size-4 shrink-0")}/> Back
+                  </Link>
+                )}
+                <div
+                  id={linkedVisualization}
+                  className={clsx(
+                    "flex items-center gap-2.5 border-l-2 border-transparent px-4 py-2",
+                    "mb-1 border-b border-white/10 text-[13px] font-semibold text-white",
+                  )}
+                >
+                  <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>
+                  <p className={clsx("my-auto")}>{link.text}</p>
+                </div>
+              </React.Fragment>
+            )
+          }
+
           const isVehicle = link.kind === "vehicle"
           // Children of the current folder are indented one level beneath it, so the
-          // tree structure (and the way up, via the dedented parent) reads visually.
+          // tree structure reads visually.
           const isChild = link.kind === "folder" || link.kind === "drive_file"
           const iconColor = link.selected ? "text-brass" : "text-white/45"
           const className = clsx(
             "flex items-center border-l-2 text-[13px] transition-colors",
             isVehicle && "gap-3 px-4 py-2.5",
-            isOpen && "gap-2.5 px-4 py-2",
             isChild && "gap-2.5 py-2 pl-10 pr-4",
             link.selected
               ? "border-brass bg-white/[0.06] text-white font-medium"
               : "border-transparent text-white/70 hover:bg-white/[0.05] hover:text-white",
-            isOpen && "mb-1 border-b border-white/10 font-semibold text-white",
           )
 
           const linkedVisualization = link.text.split(" ")[0]
@@ -105,7 +137,6 @@ function NavLinks(params: Params) {
             >
               {link.kind == "vehicle" && <MarqueBadge marque={link.icon}/>}
               {link.kind == "folder" && <Folder className={clsx("size-[18px] shrink-0", iconColor)}/>}
-              {link.kind == "open_folder" && <FolderOpen className={clsx("size-[18px] shrink-0 text-brass")}/>}
               {link.kind == "drive_file" && !link.selected && <InsertDriveFile className={clsx("size-[18px] shrink-0", iconColor)}/>}
               {link.kind == "drive_file" && link.selected &&
                   <InsertDriveFileOutlined className={clsx("size-[18px] shrink-0", iconColor)}/>}
