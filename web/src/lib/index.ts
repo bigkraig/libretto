@@ -30,7 +30,9 @@ export function HREF(vehicle: string, year: number, node_id: number | null = nul
   return href
 }
 
-declare global {
+// React 19 sources the JSX namespace from the `react` module rather than a global
+// `JSX`, so these custom lowercase intrinsic elements must augment it there.
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       anchor_component: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
