@@ -92,7 +92,7 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
                href={href}
                className={clsx(
                  "group flex items-center gap-3 px-4 py-2.5",
-                 "hover:bg-brass-wash focus:bg-brass-wash focus-visible:outline-none transition-colors",
+                 "hover:bg-white focus:bg-white focus-visible:outline-none transition-colors",
                )}>
               <TypeBadge type={doc.document_type}/>
               {doc.file_format == "pdf"
@@ -201,7 +201,7 @@ export default function Index({location, vehicle, year}: Params) {
       : "Search all documents for this vehicle (title & content)"
 
   return (
-    <div className={clsx("w-full h-full flex flex-col bg-white border border-line overflow-hidden")}>
+    <div className={clsx("w-full h-full flex flex-col bg-paper border border-line overflow-hidden")}>
       <div className={clsx("flex w-full flex-wrap items-center justify-between gap-x-4 gap-y-2 bg-ink px-4 py-2.5")}>
 
         <div className={clsx("flex w-full items-center gap-2.5 md:w-auto")}>
