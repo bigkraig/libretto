@@ -71,6 +71,9 @@ export default function Home() {
 
   const dtype = (workshopLiterature.documentType || "").toUpperCase();
   const badgeCls = "bg-brass-wash text-brass-dim";
+  // Only show the TOC sidebar when there's actually a TOC — otherwise it's a blank
+  // white column and the paper background should just run to the edge.
+  const hasToc = Array.isArray(workshopLiterature.toc) && workshopLiterature.toc.length > 0;
 
   return (
     <DocumentContext.Provider
@@ -99,14 +102,16 @@ export default function Home() {
         </header>
 
         <div className={clsx("grid grid-cols-6")}>
-          <main className={clsx("col-span-6 lg:col-span-5 p-0 lg:p-2 print:overflow-visible")}>
+          <main className={clsx(hasToc ? "col-span-6 lg:col-span-5" : "col-span-6", "p-0 lg:p-2 print:overflow-visible")}>
             <WorkshopLiterature hkap_id={hkap_id} translations={translations}/>
           </main>
-          <aside id="sideBar" className={clsx("hidden lg:block lg:col-span-1 border-l border-line bg-white print:hidden")}>
-            <div className={clsx("sticky top-14")}>
-              <SideBarIndex toc={workshopLiterature.toc}></SideBarIndex>
-            </div>
-          </aside>
+          {hasToc && (
+            <aside id="sideBar" className={clsx("hidden lg:block lg:col-span-1 border-l border-line bg-white print:hidden")}>
+              <div className={clsx("sticky top-14")}>
+                <SideBarIndex toc={workshopLiterature.toc}></SideBarIndex>
+              </div>
+            </aside>
+          )}
         </div>
       </div>
     </DocumentContext.Provider>
