@@ -388,9 +388,12 @@ async fn get_illustration(State(state): State<Arc<Api>>, Path(illustration_id): 
 }
 
 async fn get_tool_data(State(state): State<Arc<Api>>, Path((year, vehicle, tool_id)): Path<(i32, String, String)>) -> Result<Json<ToolDataResponse>, AppError> {
-    println!("Getting tool: {}", tool_id);
-    let decoded = STANDARD.decode(tool_id.as_bytes()).expect("Failed to decode image id");
-    let tool_id = &String::from_utf8(decoded.clone()).expect("Failed to convert tool id to string");
+    // The tool id arrives base64-encoded in the URL. Return an error on malformed
+    // input rather than panicking (which would crash the worker thread).
+    let decoded = STANDARD.decode(tool_id.as_bytes())
+        .map_err(|e| anyhow::anyhow!("invalid tool id encoding: {e}"))?;
+    let tool_id = &String::from_utf8(decoded)
+        .map_err(|e| anyhow::anyhow!("invalid tool id: {e}"))?;
     let tool = state.content_store.get_tool_data(tool_id)?;
     let mut result: ToolDataResponse = tool.clone().into();
     result.distributors = state.content_store.get_tool_distributors(tool.id.unwrap())?.into();
