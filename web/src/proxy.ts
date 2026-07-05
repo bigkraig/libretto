@@ -2,9 +2,11 @@ import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-// Set AUTH_BYPASS=true in .env.local to skip auth in development
+// Set AUTH_BYPASS=true in .env.local to skip auth in development. This runs
+// server-side (the proxy), so it's a plain server env var — NOT NEXT_PUBLIC_ —
+// and never ships in the client bundle.
 function devBypass(req: NextRequest) {
-  if (process.env.NEXT_PUBLIC_AUTH_BYPASS === "true") {
+  if (process.env.AUTH_BYPASS === "true") {
     return NextResponse.next();
   }
 }

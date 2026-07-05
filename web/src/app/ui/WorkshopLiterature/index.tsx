@@ -89,7 +89,7 @@ function DocumentsList({documents}: { documents: IDocument[] }) {
         documents.slice(0, visible).map((doc: IDocument) => {
           const href = `/documents/${year}/${vehicle}/${doc.hkap_id}`
           return (
-            <a key={doc.id}
+            <a key={doc.hkap_id}
                href={href}
                className={clsx(
                  "group flex items-center gap-3 px-4 py-2.5",
