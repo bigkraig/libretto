@@ -4,6 +4,8 @@ import {Folder, FolderOpen, InsertDriveFile, InsertDriveFileOutlined} from "@mui
 import {NavigatorLink} from "@/lib/navigator"
 import clsx from "clsx";
 import {GetVehicle, Vehicle} from "@/lib/api";
+import {GetTreeNodes} from "@/lib/api/GetTreeNodes";
+import {HREF} from "@/lib";
 import Image from "next/image";
 import {MarqueBadge} from "./MarqueBadge";
 import {LibrettoMark} from "@/app/ui/LibrettoMark";
@@ -64,6 +66,67 @@ function Header(params: { vehicle: string, year: number }) {
   )
 }
 
+type Crumb = { href: string, label: string }
+
+// The ancestor path (everything ABOVE the current folder) — each segment a link
+// back up the tree. The current folder itself is shown in the list below (as the
+// header of its children), not here. Walks parent_node_id up to the root (the tree
+// carries one level of parent per node, so we fetch each ancestor).
+function Breadcrumb({vehicle, year, location}: { vehicle: string, year: number, location: number | null }) {
+  const [crumbs, setCrumbs] = useState<Crumb[] | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function build() {
+      // Nothing above the root — no ancestor path to show.
+      if (location == null) { if (!cancelled) setCrumbs([]); return }
+
+      const chain: Crumb[] = []
+      // Start one level up (skip the current node — it lives in the list).
+      const current = await GetTreeNodes(vehicle, year, location)
+      let id: number | null = current.parent_node_id
+      let guard = 0
+      while (id != null && guard < 16) {
+        const node = await GetTreeNodes(vehicle, year, id)
+        const label = node.node_value && node.node_value !== "000"
+          ? `${node.node_value} ${node.name}`
+          : node.name
+        // The root (node_value "000") links to the vehicle root (location cleared).
+        const isRoot = node.parent_node_id == null
+        chain.unshift({href: HREF(vehicle, year, isRoot ? null : node.node_id), label})
+        id = node.parent_node_id
+        guard++
+      }
+      if (!cancelled) setCrumbs(chain)
+    }
+
+    build().catch(() => { if (!cancelled) setCrumbs([]) })
+    return () => { cancelled = true }
+  }, [vehicle, year, location])
+
+  // At the root (or before ancestors resolve to something) there is no path row.
+  if (crumbs != null && crumbs.length === 0) return null
+
+  return (
+    <div className={clsx(
+      "flex items-center gap-1.5 border-b border-white/10 px-4 py-2 text-[12px]",
+      "overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden",
+    )}>
+      {(crumbs ?? []).map((c, i) => (
+        <span key={i} className={clsx("flex shrink-0 items-center gap-1.5")}>
+          {i > 0 && <span className={clsx("text-white/30")}>›</span>}
+          <Link href={c.href} onClick={resetLocalStorage}
+                className={clsx("text-white/50 hover:text-white transition-colors")}>{c.label}</Link>
+        </span>
+      ))}
+      {/* trailing separator points down to the current folder in the list */}
+      {crumbs != null && crumbs.length > 0 && <span className={clsx("shrink-0 text-white/30")}>›</span>}
+      {crumbs == null && <span className={clsx("text-white/30")}>…</span>}
+    </div>
+  )
+}
+
 function NavLinks(params: Params) {
   useEffect(() => {
     const value = localStorage.getItem(key) || ""
@@ -80,16 +143,13 @@ function NavLinks(params: Params) {
     <div id={navigatorDiv} className={clsx("w-full h-full overflow-y-auto py-1")}>
       {
         params.navLinks.map((link: NavigatorLink, index) => {
-          // The current folder is a static "you are here" label — not a link — so it
-          // no longer doubles (confusingly) as the go-up button. Going up gets its own
-          // explicit control: a "Back" row up one level (the parent), and the top
-          // "All vehicles" bar for the root, where there's no parent folder.
+          // The current folder is the header of the list; its children are offset
+          // (indented) beneath it so the hierarchy reads. The breadcrumb above carries
+          // the ancestor path.
           if (link.kind === "open_folder") {
-            const linkedVisualization = link.text.split(" ")[0]
             return (
               <div
                 key={link.text}
-                id={linkedVisualization}
                 className={clsx(
                   "flex items-center gap-2.5 border-l-2 border-transparent px-4 py-2",
                   "mb-1 border-b border-white/10 text-[13px] font-semibold text-white",
@@ -102,8 +162,6 @@ function NavLinks(params: Params) {
           }
 
           const isVehicle = link.kind === "vehicle"
-          // Children of the current folder are indented one level beneath it, so the
-          // tree structure reads visually.
           const isChild = link.kind === "folder" || link.kind === "drive_file"
           const iconColor = link.selected ? "text-brass" : "text-white/45"
           const className = clsx(
@@ -163,6 +221,7 @@ export default function Index({navLinks, location, vehicle, year}: Params) {
 
   return <div className={clsx("w-full h-full flex flex-col bg-ink border border-ink-2 overflow-hidden")}>
     {HeaderComponent}
+    {isVehicleAndYearPresent && <Breadcrumb vehicle={vehicle} year={year} location={location}/>}
     <NavLinks navLinks={navLinks} location={location} vehicle={vehicle} year={year}/>
   </div>
 }
