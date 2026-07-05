@@ -105,12 +105,11 @@ function Breadcrumb({vehicle, year, location}: { vehicle: string, year: number, 
     return () => { cancelled = true }
   }, [vehicle, year, location])
 
-  // At the root (or before ancestors resolve to something) there is no path row.
-  if (crumbs != null && crumbs.length === 0) return null
-
+  // Always occupy the same height (empty at the root, or while ancestors load) so
+  // the list below never shifts as the path row's contents come and go.
   return (
     <div className={clsx(
-      "flex items-center gap-1.5 border-b border-white/10 px-4 py-2 text-[12px]",
+      "flex h-9 shrink-0 items-center gap-1.5 px-4 text-[12px]",
       "overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden",
     )}>
       {(crumbs ?? []).map((c, i) => (
@@ -122,7 +121,6 @@ function Breadcrumb({vehicle, year, location}: { vehicle: string, year: number, 
       ))}
       {/* trailing separator points down to the current folder in the list */}
       {crumbs != null && crumbs.length > 0 && <span className={clsx("shrink-0 text-white/30")}>›</span>}
-      {crumbs == null && <span className={clsx("text-white/30")}>…</span>}
     </div>
   )
 }
