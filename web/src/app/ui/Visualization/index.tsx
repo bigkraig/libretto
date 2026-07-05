@@ -78,13 +78,13 @@ function smashSVG(router: AppRouterInstance, navLinks: NavigatorLink[], data: SV
     }
     inner.removeAttribute('width');
     inner.removeAttribute('height');
+    // Give every illustration the SAME box — full pane width by a fixed viewport
+    // height — and letterbox-fit the content within it (meet, top-anchored). This
+    // keeps a consistent image size across navigations instead of the box growing
+    // and shrinking with each illustration's intrinsic aspect ratio.
     inner.setAttribute('preserveAspectRatio', 'xMidYMin meet');
     inner.style.width = '100%';
-    inner.style.height = 'auto';
-    // Cap by viewport height so a landscape illustration can't grow taller than the
-    // pane and overflow (the pane's own height doesn't resolve reliably here). meet
-    // then letterboxes the content within, so nothing is clipped.
-    inner.style.maxHeight = '58vh';
+    inner.style.height = '56vh';
   }
   navigatorImage?.parentNode?.replaceChild(svg, navigatorImage);
 
