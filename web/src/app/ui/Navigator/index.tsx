@@ -42,13 +42,17 @@ function Header(params: { vehicle: string, year: number }) {
   return (
     <Link href="/" className={clsx("block bg-ink px-4 py-3 md:px-6 md:py-6 border-b border-white/10")}>
       <div className={clsx("flex items-center gap-3 md:block")}>
-        <Image
-          className={clsx("h-11 w-auto shrink-0 md:mx-auto md:h-auto md:w-full md:max-w-[220px]")}
-          src={vehicle.image_url}
-          width={500}
-          height={500}
-          alt={vehicle.name}
-        />
+        {/* Fixed-ratio box (matches the skeleton) so every vehicle photo — whatever
+            its aspect ratio — occupies the same height and the tree below never jumps. */}
+        <div className={clsx("shrink-0 md:mx-auto md:flex md:aspect-[3/2] md:w-full md:max-w-[220px] md:items-center md:justify-center")}>
+          <Image
+            className={clsx("h-11 w-auto md:h-full md:w-full md:object-contain")}
+            src={vehicle.image_url}
+            width={500}
+            height={500}
+            alt={vehicle.name}
+          />
+        </div>
         <div className={clsx("min-w-0 md:mt-3 md:text-center")}>
           <p className={clsx("truncate text-sm font-semibold text-white md:text-base")}>{vehicle.name}</p>
           <p className={clsx("font-mono text-[10px] uppercase tracking-[0.18em] text-brass md:mt-1 md:text-[11px]")}>
